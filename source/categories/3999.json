@@ -1,0 +1,149 @@
+[
+    {
+        "id": 4002,
+        "pid": 3999,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/3999\/4002\/",
+        "parents_uri": null,
+        "uri": "grili-dlya-barbekyu",
+        "inherite": 0,
+        "ordering": 120512,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/grili-dlya-barbekyu-1666768321.jpg",
+        "deleted_at": null,
+        "created_at": "2022-10-25 14:08:52",
+        "updated_at": "2024-04-04 13:21:16",
+        "search_ordering": 120513,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "2985",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0413\u0440\u0438\u043b\u0438 \u0434\u043b\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e\", \"uk\": \"\u0413\u0440\u0438\u043b\u0456 \u0434\u043b\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0413\u0440\u0438\u043b\u0438 \u0434\u043b\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4002",
+        "slider_id": null,
+        "key": 4002,
+        "title": "\u0413\u0440\u0438\u043b\u0438 \u0434\u043b\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e",
+        "folder": true,
+        "lazy": false,
+        "slug": "grili-dlya-barbekyu",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0413\u0440\u0438\u043b\u0438 \u0434\u043b\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e",
+                "uk": "\u0413\u0440\u0438\u043b\u0456 \u0434\u043b\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4000,
+        "pid": 3999,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/3999\/4000\/",
+        "parents_uri": null,
+        "uri": "aksesuari-dlya-barbekyu",
+        "inherite": 0,
+        "ordering": 120514,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-barbekyu-1666768341.jpg",
+        "deleted_at": null,
+        "created_at": "2022-10-25 11:19:32",
+        "updated_at": "2024-04-04 13:21:43",
+        "search_ordering": 120515,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "2985",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4000",
+        "slider_id": null,
+        "key": 4000,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksesuari-dlya-barbekyu",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4001,
+        "pid": 3999,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/3999\/4001\/",
+        "parents_uri": null,
+        "uri": "rozpalyuvannya",
+        "inherite": 0,
+        "ordering": 120516,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/rozzhig-1666768362.jpg",
+        "deleted_at": null,
+        "created_at": "2022-10-25 11:21:12",
+        "updated_at": "2024-04-04 13:22:02",
+        "search_ordering": 120517,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "500088",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0420\u043e\u0437\u0436\u0438\u0433\", \"uk\": \"\u0420\u043e\u0437\u043f\u0430\u043b\u044e\u0432\u0430\u043d\u043d\u044f\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0420\u043e\u0437\u0436\u0438\u0433",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4001",
+        "slider_id": null,
+        "key": 4001,
+        "title": "\u0420\u043e\u0437\u0436\u0438\u0433",
+        "folder": true,
+        "lazy": false,
+        "slug": "rozpalyuvannya",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0420\u043e\u0437\u0436\u0438\u0433",
+                "uk": "\u0420\u043e\u0437\u043f\u0430\u043b\u044e\u0432\u0430\u043d\u043d\u044f"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

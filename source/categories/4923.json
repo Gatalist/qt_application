@@ -1,0 +1,100 @@
+[
+    {
+        "id": 4956,
+        "pid": 4923,
+        "name_1c": null,
+        "parents": "\/0\/1657\/5022\/4923\/4956\/",
+        "parents_uri": null,
+        "uri": "dozatori-dlya-mila",
+        "inherite": 0,
+        "ordering": 120132,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/dozatori-dlya-mila-1702471623.jpg",
+        "deleted_at": null,
+        "created_at": "2023-12-13 14:41:54",
+        "updated_at": "2024-04-04 13:12:56",
+        "search_ordering": 120131,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0414\u043e\u0437\u0430\u0442\u043e\u0440\u0438 \u0434\u043b\u044f \u043c\u044b\u043b\u0430\", \"uk\": \"\u0414\u043e\u0437\u0430\u0442\u043e\u0440\u0438 \u0434\u043b\u044f \u043c\u0438\u043b\u0430\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0414\u043e\u0437\u0430\u0442\u043e\u0440\u0438 \u0434\u043b\u044f \u043c\u044b\u043b\u0430",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4956",
+        "slider_id": null,
+        "key": 4956,
+        "title": "\u0414\u043e\u0437\u0430\u0442\u043e\u0440\u0438 \u0434\u043b\u044f \u043c\u044b\u043b\u0430",
+        "folder": true,
+        "lazy": false,
+        "slug": "dozatori-dlya-mila",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0414\u043e\u0437\u0430\u0442\u043e\u0440\u0438 \u0434\u043b\u044f \u043c\u044b\u043b\u0430",
+                "uk": "\u0414\u043e\u0437\u0430\u0442\u043e\u0440\u0438 \u0434\u043b\u044f \u043c\u0438\u043b\u0430"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 5055,
+        "pid": 4923,
+        "name_1c": null,
+        "parents": "\/0\/1657\/5022\/4923\/5055\/",
+        "parents_uri": null,
+        "uri": "susharki-dlya-odyagu-ta-vzuttya",
+        "inherite": 0,
+        "ordering": 120134,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/sushilki-dlya-odezhdy-i-obuvi-1706696803.jpg",
+        "deleted_at": null,
+        "created_at": "2024-01-30 10:42:06",
+        "updated_at": "2024-04-04 13:13:19",
+        "search_ordering": 120135,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0421\u0443\u0448\u0438\u043b\u043a\u0438 \u0434\u043b\u044f \u043e\u0434\u0435\u0436\u0434\u044b \u0438 \u043e\u0431\u0443\u0432\u0438\", \"uk\": \"\u0421\u0443\u0448\u0430\u0440\u043a\u0438 \u0434\u043b\u044f \u043e\u0434\u044f\u0433\u0443 \u0442\u0430 \u0432\u0437\u0443\u0442\u0442\u044f\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0421\u0443\u0448\u0438\u043b\u043a\u0438 \u0434\u043b\u044f \u043e\u0434\u0435\u0436\u0434\u044b \u0438 \u043e\u0431\u0443\u0432\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_5055",
+        "slider_id": null,
+        "key": 5055,
+        "title": "\u0421\u0443\u0448\u0438\u043b\u043a\u0438 \u0434\u043b\u044f \u043e\u0434\u0435\u0436\u0434\u044b \u0438 \u043e\u0431\u0443\u0432\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "susharki-dlya-odyagu-ta-vzuttya",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0421\u0443\u0448\u0438\u043b\u043a\u0438 \u0434\u043b\u044f \u043e\u0434\u0435\u0436\u0434\u044b \u0438 \u043e\u0431\u0443\u0432\u0438",
+                "uk": "\u0421\u0443\u0448\u0430\u0440\u043a\u0438 \u0434\u043b\u044f \u043e\u0434\u044f\u0433\u0443 \u0442\u0430 \u0432\u0437\u0443\u0442\u0442\u044f"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

@@ -1,0 +1,492 @@
+[
+    {
+        "id": 765,
+        "pid": 3346,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3346\/765\/",
+        "parents_uri": null,
+        "uri": "fonariki",
+        "inherite": 0,
+        "ordering": 120805,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/fonariki-20190627.jpg",
+        "deleted_at": null,
+        "created_at": "2018-08-17 10:36:02",
+        "updated_at": "2024-04-04 13:25:26",
+        "search_ordering": 120806,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1019",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0424\u043e\u043d\u0430\u0440\u0438\u043a\u0438\", \"uk\": \"\u041b\u0456\u0445\u0442\u0430\u0440\u0438\u043a\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0424\u043e\u043d\u0430\u0440\u0438\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_765",
+        "slider_id": null,
+        "key": 765,
+        "title": "\u0424\u043e\u043d\u0430\u0440\u0438\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "fonariki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0424\u043e\u043d\u0430\u0440\u0438\u043a\u0438",
+                "uk": "\u041b\u0456\u0445\u0442\u0430\u0440\u0438\u043a\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3349,
+        "pid": 3346,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3346\/3349\/",
+        "parents_uri": null,
+        "uri": "binokli",
+        "inherite": 0,
+        "ordering": 120810,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/binokli-20210928.jpg",
+        "deleted_at": null,
+        "created_at": "2021-09-28 15:25:24",
+        "updated_at": "2024-04-04 13:36:32",
+        "search_ordering": 120811,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "157",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0411\u0438\u043d\u043e\u043a\u043b\u0438\", \"uk\": \"\u0411\u0456\u043d\u043e\u043a\u043b\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0411\u0438\u043d\u043e\u043a\u043b\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3349",
+        "slider_id": null,
+        "key": 3349,
+        "title": "\u0411\u0438\u043d\u043e\u043a\u043b\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "binokli",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0411\u0438\u043d\u043e\u043a\u043b\u0438",
+                "uk": "\u0411\u0456\u043d\u043e\u043a\u043b\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3350,
+        "pid": 3346,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3346\/3350\/",
+        "parents_uri": null,
+        "uri": "teleskopy",
+        "inherite": 0,
+        "ordering": 120815,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/teleskopy-20210928.jpg",
+        "deleted_at": null,
+        "created_at": "2021-09-28 17:02:14",
+        "updated_at": "2024-04-04 13:36:52",
+        "search_ordering": 120816,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "165",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0422\u0435\u043b\u0435\u0441\u043a\u043e\u043f\u044b\", \"uk\": \"\u0422\u0435\u043b\u0435\u0441\u043a\u043e\u043f\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0422\u0435\u043b\u0435\u0441\u043a\u043e\u043f\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3350",
+        "slider_id": null,
+        "key": 3350,
+        "title": "\u0422\u0435\u043b\u0435\u0441\u043a\u043e\u043f\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "teleskopy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0422\u0435\u043b\u0435\u0441\u043a\u043e\u043f\u044b",
+                "uk": "\u0422\u0435\u043b\u0435\u0441\u043a\u043e\u043f\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3353,
+        "pid": 3346,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3346\/3353\/",
+        "parents_uri": null,
+        "uri": "podzornye-truby",
+        "inherite": 0,
+        "ordering": 120820,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/podzornye-truby-20210928.jpg",
+        "deleted_at": null,
+        "created_at": "2021-09-28 19:08:06",
+        "updated_at": "2024-04-04 13:37:03",
+        "search_ordering": 120821,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "4136",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u043e\u0434\u0437\u043e\u0440\u043d\u044b\u0435 \u0442\u0440\u0443\u0431\u044b\", \"uk\": \"\u041f\u0456\u0434\u0437\u043e\u0440\u043d\u0456 \u0442\u0440\u0443\u0431\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041f\u043e\u0434\u0437\u043e\u0440\u043d\u044b\u0435 \u0442\u0440\u0443\u0431\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3353",
+        "slider_id": null,
+        "key": 3353,
+        "title": "\u041f\u043e\u0434\u0437\u043e\u0440\u043d\u044b\u0435 \u0442\u0440\u0443\u0431\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "podzornye-truby",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u043e\u0434\u0437\u043e\u0440\u043d\u044b\u0435 \u0442\u0440\u0443\u0431\u044b",
+                "uk": "\u041f\u0456\u0434\u0437\u043e\u0440\u043d\u0456 \u0442\u0440\u0443\u0431\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3354,
+        "pid": 3346,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3346\/3354\/",
+        "parents_uri": null,
+        "uri": "palatki",
+        "inherite": 0,
+        "ordering": 120825,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/palatki-20210929.jpg",
+        "deleted_at": null,
+        "created_at": "2021-09-29 12:19:57",
+        "updated_at": "2024-04-04 13:37:15",
+        "search_ordering": 120826,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1022",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0430\u043b\u0430\u0442\u043a\u0438\", \"uk\": \"\u041d\u0430\u043c\u0435\u0442\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041f\u0430\u043b\u0430\u0442\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3354",
+        "slider_id": null,
+        "key": 3354,
+        "title": "\u041f\u0430\u043b\u0430\u0442\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "palatki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0430\u043b\u0430\u0442\u043a\u0438",
+                "uk": "\u041d\u0430\u043c\u0435\u0442\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3348,
+        "pid": 3346,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3346\/3348\/",
+        "parents_uri": null,
+        "uri": "gamaki",
+        "inherite": 0,
+        "ordering": 120830,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/gamaki-20210928.jpg",
+        "deleted_at": null,
+        "created_at": "2021-09-28 12:38:27",
+        "updated_at": "2024-04-04 13:37:26",
+        "search_ordering": 120831,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "717",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0413\u0430\u043c\u0430\u043a\u0438\", \"uk\": \"\u0413\u0430\u043c\u0430\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0413\u0430\u043c\u0430\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3348",
+        "slider_id": null,
+        "key": 3348,
+        "title": "\u0413\u0430\u043c\u0430\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "gamaki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0413\u0430\u043c\u0430\u043a\u0438",
+                "uk": "\u0413\u0430\u043c\u0430\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3352,
+        "pid": 3346,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3346\/3352\/",
+        "parents_uri": null,
+        "uri": "naduvnye-matrasy",
+        "inherite": 0,
+        "ordering": 120835,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/naduvnye-matrasy-20210928.jpg",
+        "deleted_at": null,
+        "created_at": "2021-09-28 18:33:27",
+        "updated_at": "2024-04-04 13:37:53",
+        "search_ordering": 120836,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "3695",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041d\u0430\u0434\u0443\u0432\u043d\u044b\u0435 \u043c\u0430\u0442\u0440\u0430\u0441\u044b \u0438 \u043c\u0435\u0448\u043a\u0438\", \"uk\": \"\u041d\u0430\u0434\u0443\u0432\u043d\u0456 \u043c\u0430\u0442\u0440\u0430\u0441\u0438 \u0442\u0430 \u043c\u0456\u0448\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041d\u0430\u0434\u0443\u0432\u043d\u044b\u0435 \u043c\u0430\u0442\u0440\u0430\u0441\u044b \u0438 \u043c\u0435\u0448\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3352",
+        "slider_id": null,
+        "key": 3352,
+        "title": "\u041d\u0430\u0434\u0443\u0432\u043d\u044b\u0435 \u043c\u0430\u0442\u0440\u0430\u0441\u044b \u0438 \u043c\u0435\u0448\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "naduvnye-matrasy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041d\u0430\u0434\u0443\u0432\u043d\u044b\u0435 \u043c\u0430\u0442\u0440\u0430\u0441\u044b \u0438 \u043c\u0435\u0448\u043a\u0438",
+                "uk": "\u041d\u0430\u0434\u0443\u0432\u043d\u0456 \u043c\u0430\u0442\u0440\u0430\u0441\u0438 \u0442\u0430 \u043c\u0456\u0448\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3351,
+        "pid": 3346,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3346\/3351\/",
+        "parents_uri": null,
+        "uri": "raskladushki",
+        "inherite": 0,
+        "ordering": 120840,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/raskladushki-20210928.jpg",
+        "deleted_at": null,
+        "created_at": "2021-09-28 17:36:08",
+        "updated_at": "2024-04-04 13:38:19",
+        "search_ordering": 120841,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "3089",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0420\u0430\u0441\u043a\u043b\u0430\u0434\u0443\u0448\u043a\u0438\", \"uk\": \"\u0420\u043e\u0437\u043a\u043b\u0430\u0434\u0430\u0447\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0420\u0430\u0441\u043a\u043b\u0430\u0434\u0443\u0448\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3351",
+        "slider_id": null,
+        "key": 3351,
+        "title": "\u0420\u0430\u0441\u043a\u043b\u0430\u0434\u0443\u0448\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "raskladushki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0420\u0430\u0441\u043a\u043b\u0430\u0434\u0443\u0448\u043a\u0438",
+                "uk": "\u0420\u043e\u0437\u043a\u043b\u0430\u0434\u0430\u0447\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3347,
+        "pid": 3346,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3346\/3347\/",
+        "parents_uri": null,
+        "uri": "prochie-aksessuary-dlya-otdyha",
+        "inherite": 0,
+        "ordering": 120845,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/prochie-aksessuary-dlya-otdykha-20210928.jpg",
+        "deleted_at": null,
+        "created_at": "2021-09-24 14:24:29",
+        "updated_at": "2024-04-04 13:38:37",
+        "search_ordering": 120846,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1011",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0440\u043e\u0447\u0438\u0435 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043e\u0442\u0434\u044b\u0445\u0430\", \"uk\": \"\u0406\u043d\u0448\u0456 \u0430\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0432\u0456\u0434\u043f\u043e\u0447\u0438\u043d\u043a\u0443\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041f\u0440\u043e\u0447\u0438\u0435 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043e\u0442\u0434\u044b\u0445\u0430",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3347",
+        "slider_id": null,
+        "key": 3347,
+        "title": "\u041f\u0440\u043e\u0447\u0438\u0435 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043e\u0442\u0434\u044b\u0445\u0430",
+        "folder": true,
+        "lazy": false,
+        "slug": "prochie-aksessuary-dlya-otdyha",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0440\u043e\u0447\u0438\u0435 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043e\u0442\u0434\u044b\u0445\u0430",
+                "uk": "\u0406\u043d\u0448\u0456 \u0430\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0432\u0456\u0434\u043f\u043e\u0447\u0438\u043d\u043a\u0443"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 1260,
+        "pid": 3346,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3346\/1260\/",
+        "parents_uri": null,
+        "uri": "tools",
+        "inherite": 0,
+        "ordering": 120850,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/prochie-instrumenty-1673450454.jpg",
+        "deleted_at": null,
+        "created_at": "2019-03-29 12:14:04",
+        "updated_at": "2024-04-04 13:38:56",
+        "search_ordering": 120851,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "604",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0440\u043e\u0447\u0438\u0435 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u044b\", \"uk\": \"\u0406\u043d\u0448\u0456 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u0440\u043e\u0447\u0438\u0435 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1260",
+        "slider_id": null,
+        "key": 1260,
+        "title": "\u041f\u0440\u043e\u0447\u0438\u0435 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "tools",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0440\u043e\u0447\u0438\u0435 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u044b",
+                "uk": "\u0406\u043d\u0448\u0456 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

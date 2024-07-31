@@ -1,0 +1,149 @@
+[
+    {
+        "id": 226,
+        "pid": 111,
+        "name_1c": null,
+        "parents": "\/0\/44\/111\/226\/",
+        "parents_uri": null,
+        "uri": "karty-pamyati",
+        "inherite": 0,
+        "ordering": 31010,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/karty-pamyati-20180206.jpg",
+        "deleted_at": null,
+        "created_at": "2017-09-27 16:03:43",
+        "updated_at": "2023-02-22 09:41:01",
+        "search_ordering": 31010,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "384",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u0430\u0440\u0442\u044b \u043f\u0430\u043c\u044f\u0442\u0438\", \"uk\": \"\u041a\u0430\u0440\u0442\u0438 \u043f\u0430\u043c'\u044f\u0442\u0456\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041a\u0430\u0440\u0442\u044b \u043f\u0430\u043c\u044f\u0442\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_226",
+        "slider_id": null,
+        "key": 226,
+        "title": "\u041a\u0430\u0440\u0442\u044b \u043f\u0430\u043c\u044f\u0442\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "karty-pamyati",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u0430\u0440\u0442\u044b \u043f\u0430\u043c\u044f\u0442\u0438",
+                "uk": "\u041a\u0430\u0440\u0442\u0438 \u043f\u0430\u043c'\u044f\u0442\u0456"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 229,
+        "pid": 111,
+        "name_1c": null,
+        "parents": "\/0\/44\/111\/229\/",
+        "parents_uri": null,
+        "uri": "fleshki",
+        "inherite": 0,
+        "ordering": 31020,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/fleshki-20180206.jpg",
+        "deleted_at": null,
+        "created_at": "2017-09-27 16:10:25",
+        "updated_at": "2023-02-22 09:41:15",
+        "search_ordering": 31020,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "384",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0424\u043b\u0435\u0448\u043a\u0438\", \"uk\": \"\u0424\u043b\u0435\u0448\u043a\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0424\u043b\u0435\u0448\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_229",
+        "slider_id": null,
+        "key": 229,
+        "title": "\u0424\u043b\u0435\u0448\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "fleshki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0424\u043b\u0435\u0448\u043a\u0438",
+                "uk": "\u0424\u043b\u0435\u0448\u043a\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 232,
+        "pid": 111,
+        "name_1c": null,
+        "parents": "\/0\/44\/111\/232\/",
+        "parents_uri": null,
+        "uri": "vneshnie-zhestkie-diski",
+        "inherite": 0,
+        "ordering": 31030,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/vneshnie-zhestkie-diski-20180206.jpg",
+        "deleted_at": null,
+        "created_at": "2017-10-09 11:31:04",
+        "updated_at": "2023-02-22 09:41:30",
+        "search_ordering": 31030,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "288",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0412\u043d\u0435\u0448\u043d\u0438\u0435 \u0436\u0435\u0441\u0442\u043a\u0438\u0435 \u0434\u0438\u0441\u043a\u0438\", \"uk\": \"\u0417\u043e\u0432\u043d\u0456\u0448\u043d\u0456 \u0436\u043e\u0440\u0441\u0442\u043a\u0456 \u0434\u0438\u0441\u043a\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0412\u043d\u0435\u0448\u043d\u0438\u0435 \u0436\u0435\u0441\u0442\u043a\u0438\u0435 \u0434\u0438\u0441\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_232",
+        "slider_id": null,
+        "key": 232,
+        "title": "\u0412\u043d\u0435\u0448\u043d\u0438\u0435 \u0436\u0435\u0441\u0442\u043a\u0438\u0435 \u0434\u0438\u0441\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "vneshnie-zhestkie-diski",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0412\u043d\u0435\u0448\u043d\u0438\u0435 \u0436\u0435\u0441\u0442\u043a\u0438\u0435 \u0434\u0438\u0441\u043a\u0438",
+                "uk": "\u0417\u043e\u0432\u043d\u0456\u0448\u043d\u0456 \u0436\u043e\u0440\u0441\u0442\u043a\u0456 \u0434\u0438\u0441\u043a\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

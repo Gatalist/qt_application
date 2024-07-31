@@ -1,0 +1,103 @@
+[
+    {
+        "id": 20,
+        "pid": 18,
+        "name_1c": "\u0421\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u044b",
+        "parents": "\/0\/18\/20\/",
+        "parents_uri": null,
+        "uri": "smartfony",
+        "inherite": 0,
+        "ordering": 10100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/smartfony-1678698065.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-17 18:39:32",
+        "updated_at": "2024-04-04 15:27:16",
+        "search_ordering": 10102,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 1,
+            "test": "test"
+        },
+        "google_category_patch": "267",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0421\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u044b\", \"uk\": \"\u0421\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0421\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_20",
+        "slider_id": null,
+        "key": 20,
+        "title": "\u0421\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "smartfony",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0421\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u044b",
+                "uk": "\u0421\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 108,
+        "pid": 18,
+        "name_1c": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u044b",
+        "parents": "\/0\/18\/108\/",
+        "parents_uri": null,
+        "uri": "mobilnye-telefony",
+        "inherite": 0,
+        "ordering": 10200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/mobilnye-telefony-20200120.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:55",
+        "updated_at": "2024-04-04 15:27:34",
+        "search_ordering": 10202,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "267",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u044b\", \"uk\": \"\u041c\u043e\u0431\u0456\u043b\u044c\u043d\u0456 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_108",
+        "slider_id": null,
+        "key": 108,
+        "title": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "mobilnye-telefony",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u044b",
+                "uk": "\u041c\u043e\u0431\u0456\u043b\u044c\u043d\u0456 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

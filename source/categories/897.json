@@ -1,0 +1,498 @@
+[
+    {
+        "id": 96,
+        "pid": 897,
+        "name_1c": null,
+        "parents": "\/0\/897\/96\/",
+        "parents_uri": null,
+        "uri": "noutbuki-i-ultrabuki",
+        "inherite": 0,
+        "ordering": 20100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/noutbuki-i-ultrabuki-1709634129.jpg",
+        "deleted_at": null,
+        "created_at": "2016-08-15 12:52:20",
+        "updated_at": "2024-03-05 12:22:10",
+        "search_ordering": 20101,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "328",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041d\u043e\u0443\u0442\u0431\u0443\u043a\u0438 \u0438 \u0443\u043b\u044c\u0442\u0440\u0430\u0431\u0443\u043a\u0438\", \"uk\": \"\u041d\u043e\u0443\u0442\u0431\u0443\u043a\u0438 \u0442\u0430 \u0443\u043b\u044c\u0442\u0440\u0430\u0431\u0443\u043a\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a\u0438 \u0438 \u0443\u043b\u044c\u0442\u0440\u0430\u0431\u0443\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_96",
+        "slider_id": null,
+        "key": 96,
+        "title": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a\u0438 \u0438 \u0443\u043b\u044c\u0442\u0440\u0430\u0431\u0443\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "noutbuki-i-ultrabuki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a\u0438 \u0438 \u0443\u043b\u044c\u0442\u0440\u0430\u0431\u0443\u043a\u0438",
+                "uk": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a\u0438 \u0442\u0430 \u0443\u043b\u044c\u0442\u0440\u0430\u0431\u0443\u043a\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 109,
+        "pid": 897,
+        "name_1c": "Mac",
+        "parents": "\/0\/897\/109\/",
+        "parents_uri": null,
+        "uri": "imac",
+        "inherite": 0,
+        "ordering": 20200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/imac-1709634140.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-17 18:39:32",
+        "updated_at": "2024-03-05 12:22:21",
+        "search_ordering": 20201,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 2
+        },
+        "google_category_patch": "278",
+        "name_trans": "{\"md\": \"\", \"ru\": \"iMac\", \"uk\": \"iMac\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "iMac",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_109",
+        "slider_id": null,
+        "key": 109,
+        "title": "iMac",
+        "folder": true,
+        "lazy": false,
+        "slug": "imac",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "iMac",
+                "uk": "iMac"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2253,
+        "pid": 897,
+        "name_1c": null,
+        "parents": "\/0\/897\/2253\/",
+        "parents_uri": null,
+        "uri": "monobloki",
+        "inherite": 0,
+        "ordering": 20300,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/monobloki-1709634154.jpeg",
+        "deleted_at": null,
+        "created_at": "2020-09-28 16:28:32",
+        "updated_at": "2024-03-05 12:22:34",
+        "search_ordering": 20301,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "325",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041c\u043e\u043d\u043e\u0431\u043b\u043e\u043a\u0438\", \"uk\": \"\u041c\u043e\u043d\u043e\u0431\u043b\u043e\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041c\u043e\u043d\u043e\u0431\u043b\u043e\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2253",
+        "slider_id": null,
+        "key": 2253,
+        "title": "\u041c\u043e\u043d\u043e\u0431\u043b\u043e\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "monobloki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041c\u043e\u043d\u043e\u0431\u043b\u043e\u043a\u0438",
+                "uk": "\u041c\u043e\u043d\u043e\u0431\u043b\u043e\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 63,
+        "pid": 897,
+        "name_1c": null,
+        "parents": "\/0\/897\/63\/",
+        "parents_uri": null,
+        "uri": "planshety",
+        "inherite": 0,
+        "ordering": 20400,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/planshety-1709634166.jpeg",
+        "deleted_at": null,
+        "created_at": "2016-08-02 17:39:42",
+        "updated_at": "2024-03-05 12:22:46",
+        "search_ordering": 20401,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 6
+        },
+        "google_category_patch": "4745",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u043b\u0430\u043d\u0448\u0435\u0442\u044b\", \"uk\": \"\u041f\u043b\u0430\u043d\u0448\u0435\u0442\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u043b\u0430\u043d\u0448\u0435\u0442\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_63",
+        "slider_id": null,
+        "key": 63,
+        "title": "\u041f\u043b\u0430\u043d\u0448\u0435\u0442\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "planshety",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u043b\u0430\u043d\u0448\u0435\u0442\u044b",
+                "uk": "\u041f\u043b\u0430\u043d\u0448\u0435\u0442\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3768,
+        "pid": 897,
+        "name_1c": null,
+        "parents": "\/0\/897\/3768\/",
+        "parents_uri": null,
+        "uri": "mac-studio",
+        "inherite": 0,
+        "ordering": 20500,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/mac-studio-20220309.png",
+        "deleted_at": null,
+        "created_at": "2022-03-09 09:53:46",
+        "updated_at": "2023-02-21 16:29:53",
+        "search_ordering": 20500,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "292",
+        "name_trans": "{\"md\": \"\", \"ru\": \"Mac Studio\", \"uk\": \"Mac Studio\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "Mac Studio",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3768",
+        "slider_id": null,
+        "key": 3768,
+        "title": "Mac Studio",
+        "folder": true,
+        "lazy": false,
+        "slug": "mac-studio",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "Mac Studio",
+                "uk": "Mac Studio"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 963,
+        "pid": 897,
+        "name_1c": null,
+        "parents": "\/0\/897\/963\/",
+        "parents_uri": null,
+        "uri": "mac-mini",
+        "inherite": 0,
+        "ordering": 20600,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/mac-mini-20181031.jpg",
+        "deleted_at": null,
+        "created_at": "2018-10-31 10:31:15",
+        "updated_at": "2023-02-21 16:29:41",
+        "search_ordering": 20600,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "278",
+        "name_trans": "{\"md\": \"\", \"ru\": \"Mac Mini\", \"uk\": \"Mac Mini\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "Mac Mini",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_963",
+        "slider_id": null,
+        "key": 963,
+        "title": "Mac Mini",
+        "folder": true,
+        "lazy": false,
+        "slug": "mac-mini",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "Mac Mini",
+                "uk": "Mac Mini"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 137,
+        "pid": 897,
+        "name_1c": null,
+        "parents": "\/0\/897\/137\/",
+        "parents_uri": null,
+        "uri": "elektronnie-knigi-1",
+        "inherite": 0,
+        "ordering": 20700,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/elektronnye-knigi-1709634178.jpg",
+        "deleted_at": null,
+        "created_at": "2017-06-19 14:14:48",
+        "updated_at": "2024-03-05 12:22:58",
+        "search_ordering": 20701,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 7
+        },
+        "google_category_patch": "4745",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u044b\u0435 \u043a\u043d\u0438\u0433\u0438\", \"uk\": \"\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0456 \u043a\u043d\u0438\u0433\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u044b\u0435 \u043a\u043d\u0438\u0433\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_137",
+        "slider_id": null,
+        "key": 137,
+        "title": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u044b\u0435 \u043a\u043d\u0438\u0433\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "elektronnie-knigi-1",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u044b\u0435 \u043a\u043d\u0438\u0433\u0438",
+                "uk": "\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0456 \u043a\u043d\u0438\u0433\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 1829,
+        "pid": 897,
+        "name_1c": null,
+        "parents": "\/0\/897\/1829\/",
+        "parents_uri": null,
+        "uri": "graficheskie-planshety",
+        "inherite": 0,
+        "ordering": 20900,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/graficheskie-planshety-1709634192.jpeg",
+        "deleted_at": null,
+        "created_at": "2019-11-07 10:51:59",
+        "updated_at": "2024-03-05 12:23:12",
+        "search_ordering": 20901,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "302",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0413\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u044b\", \"uk\": \"\u0413\u0440\u0430\u0444\u0456\u0447\u043d\u0456 \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0413\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u044b",
+        "footnote": "",
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1829",
+        "slider_id": null,
+        "key": 1829,
+        "title": "\u0413\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "graficheskie-planshety",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0413\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u044b",
+                "uk": "\u0413\u0440\u0430\u0444\u0456\u0447\u043d\u0456 \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2025,
+        "pid": 897,
+        "name_1c": null,
+        "parents": "\/0\/897\/2025\/",
+        "parents_uri": null,
+        "uri": "pechat-i-skanirovanie",
+        "inherite": 0,
+        "ordering": 21000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/pechat-i-skanirovanie-1709634203.jpeg",
+        "deleted_at": null,
+        "created_at": "2020-04-22 15:26:50",
+        "updated_at": "2024-03-05 12:23:23",
+        "search_ordering": 21001,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "345",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0435\u0447\u0430\u0442\u044c \u0438 \u0441\u043a\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435\", \"uk\": \"\u0414\u0440\u0443\u043a \u0456 \u0441\u043a\u0430\u043d\u0443\u0432\u0430\u043d\u043d\u044f\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u0435\u0447\u0430\u0442\u044c \u0438 \u0441\u043a\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435",
+        "footnote": "",
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2025",
+        "slider_id": null,
+        "key": 2025,
+        "title": "\u041f\u0435\u0447\u0430\u0442\u044c \u0438 \u0441\u043a\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435",
+        "folder": true,
+        "lazy": true,
+        "slug": "pechat-i-skanirovanie",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0435\u0447\u0430\u0442\u044c \u0438 \u0441\u043a\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435",
+                "uk": "\u0414\u0440\u0443\u043a \u0456 \u0441\u043a\u0430\u043d\u0443\u0432\u0430\u043d\u043d\u044f"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2753,
+        "pid": 897,
+        "name_1c": null,
+        "parents": "\/0\/897\/2753\/",
+        "parents_uri": null,
+        "uri": "istochniki-bespereboynogo-pitaniya",
+        "inherite": 0,
+        "ordering": 21100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/istochniki-bespereboynogo-pitaniya-1709634214.jpeg",
+        "deleted_at": null,
+        "created_at": "2021-02-23 14:28:45",
+        "updated_at": "2024-03-05 12:23:34",
+        "search_ordering": 21101,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1348",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0438 \u0431\u0435\u0441\u043f\u0435\u0440\u0435\u0431\u043e\u0439\u043d\u043e\u0433\u043e \u043f\u0438\u0442\u0430\u043d\u0438\u044f\", \"uk\": \"\u0414\u0436\u0435\u0440\u0435\u043b\u0430 \u0431\u0435\u0437\u043f\u0435\u0440\u0435\u0431\u0456\u0439\u043d\u043e\u0433\u043e \u0436\u0438\u0432\u043b\u0435\u043d\u043d\u044f\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0438 \u0431\u0435\u0441\u043f\u0435\u0440\u0435\u0431\u043e\u0439\u043d\u043e\u0433\u043e \u043f\u0438\u0442\u0430\u043d\u0438\u044f",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2753",
+        "slider_id": null,
+        "key": 2753,
+        "title": "\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0438 \u0431\u0435\u0441\u043f\u0435\u0440\u0435\u0431\u043e\u0439\u043d\u043e\u0433\u043e \u043f\u0438\u0442\u0430\u043d\u0438\u044f",
+        "folder": true,
+        "lazy": false,
+        "slug": "istochniki-bespereboynogo-pitaniya",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0438 \u0431\u0435\u0441\u043f\u0435\u0440\u0435\u0431\u043e\u0439\u043d\u043e\u0433\u043e \u043f\u0438\u0442\u0430\u043d\u0438\u044f",
+                "uk": "\u0414\u0436\u0435\u0440\u0435\u043b\u0430 \u0431\u0435\u0437\u043f\u0435\u0440\u0435\u0431\u0456\u0439\u043d\u043e\u0433\u043e \u0436\u0438\u0432\u043b\u0435\u043d\u043d\u044f"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

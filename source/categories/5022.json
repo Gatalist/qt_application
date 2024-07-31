@@ -1,0 +1,345 @@
+[
+    {
+        "id": 4923,
+        "pid": 5022,
+        "name_1c": null,
+        "parents": "\/0\/1657\/5022\/4923\/",
+        "parents_uri": null,
+        "uri": "dlya-vannoyi-kimnati",
+        "inherite": 0,
+        "ordering": 120130,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/dlya-vannoy-komnaty-1702465238.jpg",
+        "deleted_at": null,
+        "created_at": "2023-12-13 12:55:55",
+        "updated_at": "2024-04-04 13:09:39",
+        "search_ordering": 120132,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0414\u043b\u044f \u0432\u0430\u043d\u043d\u043e\u0439 \u043a\u043e\u043c\u043d\u0430\u0442\u044b\", \"uk\": \"\u0414\u043b\u044f \u0432\u0430\u043d\u043d\u043e\u0457 \u043a\u0456\u043c\u043d\u0430\u0442\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0414\u043b\u044f \u0432\u0430\u043d\u043d\u043e\u0439 \u043a\u043e\u043c\u043d\u0430\u0442\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4923",
+        "slider_id": null,
+        "key": 4923,
+        "title": "\u0414\u043b\u044f \u0432\u0430\u043d\u043d\u043e\u0439 \u043a\u043e\u043c\u043d\u0430\u0442\u044b",
+        "folder": true,
+        "lazy": true,
+        "slug": "dlya-vannoyi-kimnati",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0414\u043b\u044f \u0432\u0430\u043d\u043d\u043e\u0439 \u043a\u043e\u043c\u043d\u0430\u0442\u044b",
+                "uk": "\u0414\u043b\u044f \u0432\u0430\u043d\u043d\u043e\u0457 \u043a\u0456\u043c\u043d\u0430\u0442\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3141,
+        "pid": 5022,
+        "name_1c": null,
+        "parents": "\/0\/1657\/5022\/3141\/",
+        "parents_uri": null,
+        "uri": "setevye-filtry",
+        "inherite": 0,
+        "ordering": 120140,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/setevye-filtry-20210521.jpg",
+        "deleted_at": null,
+        "created_at": "2021-05-17 10:59:23",
+        "updated_at": "2024-04-04 13:10:24",
+        "search_ordering": 120141,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "3160",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u0444\u0438\u043b\u044c\u0442\u0440\u044b\", \"uk\": \"\u041c\u0435\u0440\u0435\u0436\u0435\u0432\u0456 \u0444\u0456\u043b\u044c\u0442\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u0444\u0438\u043b\u044c\u0442\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3141",
+        "slider_id": null,
+        "key": 3141,
+        "title": "\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u0444\u0438\u043b\u044c\u0442\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "setevye-filtry",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u0444\u0438\u043b\u044c\u0442\u0440\u044b",
+                "uk": "\u041c\u0435\u0440\u0435\u0436\u0435\u0432\u0456 \u0444\u0456\u043b\u044c\u0442\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 5088,
+        "pid": 5022,
+        "name_1c": null,
+        "parents": "\/0\/1657\/5022\/5088\/",
+        "parents_uri": null,
+        "uri": "pobutova-himiya",
+        "inherite": 0,
+        "ordering": 120150,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/bytovaya-khimiya-1706716007.jpg",
+        "deleted_at": null,
+        "created_at": "2024-01-31 11:58:58",
+        "updated_at": "2024-04-04 13:10:53",
+        "search_ordering": 120152,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0411\u044b\u0442\u043e\u0432\u0430\u044f \u0445\u0438\u043c\u0438\u044f\", \"uk\": \"\u041f\u043e\u0431\u0443\u0442\u043e\u0432\u0430 \u0445\u0456\u043c\u0456\u044f\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0411\u044b\u0442\u043e\u0432\u0430\u044f \u0445\u0438\u043c\u0438\u044f",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_5088",
+        "slider_id": null,
+        "key": 5088,
+        "title": "\u0411\u044b\u0442\u043e\u0432\u0430\u044f \u0445\u0438\u043c\u0438\u044f",
+        "folder": true,
+        "lazy": false,
+        "slug": "pobutova-himiya",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0411\u044b\u0442\u043e\u0432\u0430\u044f \u0445\u0438\u043c\u0438\u044f",
+                "uk": "\u041f\u043e\u0431\u0443\u0442\u043e\u0432\u0430 \u0445\u0456\u043c\u0456\u044f"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 52,
+        "pid": 5022,
+        "name_1c": null,
+        "parents": "\/0\/1657\/5022\/52\/",
+        "parents_uri": null,
+        "uri": "tovary-dlya-zhivotnykh",
+        "inherite": 0,
+        "ordering": 120160,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/tovary-dlya-zhivotnykh-20210623.jpg",
+        "deleted_at": null,
+        "created_at": "2016-08-01 15:15:05",
+        "updated_at": "2024-04-04 13:11:12",
+        "search_ordering": 120162,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "2",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0422\u043e\u0432\u0430\u0440\u044b \u0434\u043b\u044f \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0445\", \"uk\": \"\u0422\u043e\u0432\u0430\u0440\u0438 \u0434\u043b\u044f \u0442\u0432\u0430\u0440\u0438\u043d\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0422\u043e\u0432\u0430\u0440\u044b \u0434\u043b\u044f \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0445",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_52",
+        "slider_id": null,
+        "key": 52,
+        "title": "\u0422\u043e\u0432\u0430\u0440\u044b \u0434\u043b\u044f \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0445",
+        "folder": true,
+        "lazy": false,
+        "slug": "tovary-dlya-zhivotnykh",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0422\u043e\u0432\u0430\u0440\u044b \u0434\u043b\u044f \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0445",
+                "uk": "\u0422\u043e\u0432\u0430\u0440\u0438 \u0434\u043b\u044f \u0442\u0432\u0430\u0440\u0438\u043d"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 1199,
+        "pid": 5022,
+        "name_1c": null,
+        "parents": "\/0\/1657\/5022\/1199\/",
+        "parents_uri": null,
+        "uri": "lifestyle",
+        "inherite": 0,
+        "ordering": 120170,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/poleznye-tovary-dlya-doma-20201211.jpg",
+        "deleted_at": null,
+        "created_at": "2019-02-28 15:48:16",
+        "updated_at": "2024-04-04 13:11:41",
+        "search_ordering": 120172,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "536",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u043e\u043b\u0435\u0437\u043d\u044b\u0435 \u0442\u043e\u0432\u0430\u0440\u044b \u0434\u043b\u044f \u0434\u043e\u043c\u0430\", \"uk\": \"\u041a\u043e\u0440\u0438\u0441\u043d\u0456 \u0442\u043e\u0432\u0430\u0440\u0438 \u0434\u043b\u044f \u0434\u043e\u043c\u0443\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u043e\u043b\u0435\u0437\u043d\u044b\u0435 \u0442\u043e\u0432\u0430\u0440\u044b \u0434\u043b\u044f \u0434\u043e\u043c\u0430",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1199",
+        "slider_id": null,
+        "key": 1199,
+        "title": "\u041f\u043e\u043b\u0435\u0437\u043d\u044b\u0435 \u0442\u043e\u0432\u0430\u0440\u044b \u0434\u043b\u044f \u0434\u043e\u043c\u0430",
+        "folder": true,
+        "lazy": false,
+        "slug": "lifestyle",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u043e\u043b\u0435\u0437\u043d\u044b\u0435 \u0442\u043e\u0432\u0430\u0440\u044b \u0434\u043b\u044f \u0434\u043e\u043c\u0430",
+                "uk": "\u041a\u043e\u0440\u0438\u0441\u043d\u0456 \u0442\u043e\u0432\u0430\u0440\u0438 \u0434\u043b\u044f \u0434\u043e\u043c\u0443"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 5023,
+        "pid": 5022,
+        "name_1c": null,
+        "parents": "\/0\/1657\/5022\/5023\/",
+        "parents_uri": null,
+        "uri": "godinniki-ta-budilniki",
+        "inherite": 0,
+        "ordering": 120180,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/chasy-i-budilniki-1703085302.jpg",
+        "deleted_at": null,
+        "created_at": "2023-12-20 17:14:21",
+        "updated_at": "2024-04-04 13:12:00",
+        "search_ordering": 120182,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0427\u0430\u0441\u044b \u0438 \u0431\u0443\u0434\u0438\u043b\u044c\u043d\u0438\u043a\u0438\", \"uk\": \"\u0413\u043e\u0434\u0438\u043d\u043d\u0438\u043a\u0438 \u0442\u0430 \u0431\u0443\u0434\u0438\u043b\u044c\u043d\u0438\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0427\u0430\u0441\u044b \u0438 \u0431\u0443\u0434\u0438\u043b\u044c\u043d\u0438\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_5023",
+        "slider_id": null,
+        "key": 5023,
+        "title": "\u0427\u0430\u0441\u044b \u0438 \u0431\u0443\u0434\u0438\u043b\u044c\u043d\u0438\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "godinniki-ta-budilniki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0427\u0430\u0441\u044b \u0438 \u0431\u0443\u0434\u0438\u043b\u044c\u043d\u0438\u043a\u0438",
+                "uk": "\u0413\u043e\u0434\u0438\u043d\u043d\u0438\u043a\u0438 \u0442\u0430 \u0431\u0443\u0434\u0438\u043b\u044c\u043d\u0438\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3078,
+        "pid": 5022,
+        "name_1c": null,
+        "parents": "\/0\/1657\/5022\/3078\/",
+        "parents_uri": null,
+        "uri": "osveschenie",
+        "inherite": 0,
+        "ordering": 120190,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/osveshchenie-20210430.jpg",
+        "deleted_at": null,
+        "created_at": "2021-04-28 16:09:13",
+        "updated_at": "2024-04-04 13:12:16",
+        "search_ordering": 120192,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "594",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435\", \"uk\": \"\u041e\u0441\u0432\u0456\u0442\u043b\u0435\u043d\u043d\u044f\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3078",
+        "slider_id": null,
+        "key": 3078,
+        "title": "\u041e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435",
+        "folder": true,
+        "lazy": false,
+        "slug": "osveschenie",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435",
+                "uk": "\u041e\u0441\u0432\u0456\u0442\u043b\u0435\u043d\u043d\u044f"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

@@ -1,0 +1,296 @@
+[
+    {
+        "id": 4033,
+        "pid": 3834,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3834\/4033\/",
+        "parents_uri": null,
+        "uri": "generatori",
+        "inherite": 0,
+        "ordering": 120905,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/generatory-1667293221.jpg",
+        "deleted_at": null,
+        "created_at": "2022-11-01 10:58:57",
+        "updated_at": "2024-04-04 13:40:59",
+        "search_ordering": 120906,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1218",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0413\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440\u044b\", \"uk\": \"\u0413\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0413\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4033",
+        "slider_id": null,
+        "key": 4033,
+        "title": "\u0413\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "generatori",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0413\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440\u044b",
+                "uk": "\u0413\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3835,
+        "pid": 3834,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3834\/3835\/",
+        "parents_uri": null,
+        "uri": "portativnye-zaryadnye-stancii",
+        "inherite": 0,
+        "ordering": 120910,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/portativnye-zaryadnye-stantsii-20220817.jpg",
+        "deleted_at": null,
+        "created_at": "2022-08-17 19:54:00",
+        "updated_at": "2024-04-04 13:41:13",
+        "search_ordering": 120911,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "279",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u044b\u0435 \u0437\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u0441\u0442\u0430\u043d\u0446\u0438\u0438\", \"uk\": \"\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u0456 \u0437\u0430\u0440\u044f\u0434\u043d\u0456 \u0441\u0442\u0430\u043d\u0446\u0456\u0457\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u044b\u0435 \u0437\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u0441\u0442\u0430\u043d\u0446\u0438\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3835",
+        "slider_id": null,
+        "key": 3835,
+        "title": "\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u044b\u0435 \u0437\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u0441\u0442\u0430\u043d\u0446\u0438\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "portativnye-zaryadnye-stancii",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u044b\u0435 \u0437\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u0441\u0442\u0430\u043d\u0446\u0438\u0438",
+                "uk": "\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u0456 \u0437\u0430\u0440\u044f\u0434\u043d\u0456 \u0441\u0442\u0430\u043d\u0446\u0456\u0457"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3836,
+        "pid": 3834,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3834\/3836\/",
+        "parents_uri": null,
+        "uri": "solnechnye-paneli",
+        "inherite": 0,
+        "ordering": 120920,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/solnechnye-paneli-20220817.jpg",
+        "deleted_at": null,
+        "created_at": "2022-08-17 19:56:34",
+        "updated_at": "2024-04-04 13:42:30",
+        "search_ordering": 120921,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "4714",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0421\u043e\u043b\u043d\u0435\u0447\u043d\u044b\u0435 \u043f\u0430\u043d\u0435\u043b\u0438\", \"uk\": \"\u0421\u043e\u043d\u044f\u0447\u043d\u0456 \u043f\u0430\u043d\u0435\u043b\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0421\u043e\u043b\u043d\u0435\u0447\u043d\u044b\u0435 \u043f\u0430\u043d\u0435\u043b\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3836",
+        "slider_id": null,
+        "key": 3836,
+        "title": "\u0421\u043e\u043b\u043d\u0435\u0447\u043d\u044b\u0435 \u043f\u0430\u043d\u0435\u043b\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "solnechnye-paneli",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0421\u043e\u043b\u043d\u0435\u0447\u043d\u044b\u0435 \u043f\u0430\u043d\u0435\u043b\u0438",
+                "uk": "\u0421\u043e\u043d\u044f\u0447\u043d\u0456 \u043f\u0430\u043d\u0435\u043b\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4395,
+        "pid": 3834,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3834\/4395\/",
+        "parents_uri": null,
+        "uri": "cistemi-energonezalezhnosti",
+        "inherite": 0,
+        "ordering": 120930,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/komplekt-energonezavisimosti-1696315844.png",
+        "deleted_at": null,
+        "created_at": "2023-10-03 09:32:44",
+        "updated_at": "2024-04-04 13:42:46",
+        "search_ordering": 120932,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u044b \u044d\u043d\u0435\u0440\u0433\u043e\u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438\", \"uk\": \"\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0438 \u0435\u043d\u0435\u0440\u0433\u043e\u043d\u0435\u0437\u0430\u043b\u0435\u0436\u043d\u043e\u0441\u0442\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u044b \u044d\u043d\u0435\u0440\u0433\u043e\u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4395",
+        "slider_id": null,
+        "key": 4395,
+        "title": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u044b \u044d\u043d\u0435\u0440\u0433\u043e\u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "cistemi-energonezalezhnosti",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u044b \u044d\u043d\u0435\u0440\u0433\u043e\u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438",
+                "uk": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0438 \u0435\u043d\u0435\u0440\u0433\u043e\u043d\u0435\u0437\u0430\u043b\u0435\u0436\u043d\u043e\u0441\u0442\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4527,
+        "pid": 3834,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3834\/4527\/",
+        "parents_uri": null,
+        "uri": "invertori",
+        "inherite": 0,
+        "ordering": 120940,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/invertory-1698241589.jpg",
+        "deleted_at": null,
+        "created_at": "2023-10-25 16:43:32",
+        "updated_at": "2024-04-04 13:43:02",
+        "search_ordering": 120942,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0418\u043d\u0432\u0435\u0440\u0442\u043e\u0440\u044b\", \"uk\": \"\u0406\u043d\u0432\u0435\u0440\u0442\u043e\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0418\u043d\u0432\u0435\u0440\u0442\u043e\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4527",
+        "slider_id": null,
+        "key": 4527,
+        "title": "\u0418\u043d\u0432\u0435\u0440\u0442\u043e\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "invertori",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0418\u043d\u0432\u0435\u0440\u0442\u043e\u0440\u044b",
+                "uk": "\u0406\u043d\u0432\u0435\u0440\u0442\u043e\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3933,
+        "pid": 3834,
+        "name_1c": null,
+        "parents": "\/0\/1657\/3834\/3933\/",
+        "parents_uri": null,
+        "uri": "aksesuari-mobilnih-dzherel-zhivlennya",
+        "inherite": 0,
+        "ordering": 120950,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksesuary-mobilnykh-istochnikov-pitaniya-20220901.jpg",
+        "deleted_at": null,
+        "created_at": "2022-09-01 19:53:44",
+        "updated_at": "2024-04-04 13:43:20",
+        "search_ordering": 120952,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "222",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0445 \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u043e\u0432 \u043f\u0438\u0442\u0430\u043d\u0438\u044f\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u043c\u043e\u0431\u0456\u043b\u044c\u043d\u0438\u0445 \u0434\u0436\u0435\u0440\u0435\u043b \u0436\u0438\u0432\u043b\u0435\u043d\u043d\u044f\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0445 \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u043e\u0432 \u043f\u0438\u0442\u0430\u043d\u0438\u044f",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3933",
+        "slider_id": null,
+        "key": 3933,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0445 \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u043e\u0432 \u043f\u0438\u0442\u0430\u043d\u0438\u044f",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksesuari-mobilnih-dzherel-zhivlennya",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0445 \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u043e\u0432 \u043f\u0438\u0442\u0430\u043d\u0438\u044f",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u043c\u043e\u0431\u0456\u043b\u044c\u043d\u0438\u0445 \u0434\u0436\u0435\u0440\u0435\u043b \u0436\u0438\u0432\u043b\u0435\u043d\u043d\u044f"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

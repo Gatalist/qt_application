@@ -1,0 +1,394 @@
+[
+    {
+        "id": 4466,
+        "pid": 4495,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4495\/4466\/",
+        "parents_uri": null,
+        "uri": "kuhonni-doshki",
+        "inherite": 0,
+        "ordering": 93100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kukhonnye-doski-1697531300.jpg",
+        "deleted_at": null,
+        "created_at": "2023-10-17 11:25:38",
+        "updated_at": "2024-04-04 14:33:00",
+        "search_ordering": 93102,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u0443\u0445\u043e\u043d\u043d\u044b\u0435 \u0434\u043e\u0441\u043a\u0438\", \"uk\": \"\u041a\u0443\u0445\u043e\u043d\u043d\u0456 \u0434\u043e\u0448\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u0443\u0445\u043e\u043d\u043d\u044b\u0435 \u0434\u043e\u0441\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4466",
+        "slider_id": null,
+        "key": 4466,
+        "title": "\u041a\u0443\u0445\u043e\u043d\u043d\u044b\u0435 \u0434\u043e\u0441\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "kuhonni-doshki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u0443\u0445\u043e\u043d\u043d\u044b\u0435 \u0434\u043e\u0441\u043a\u0438",
+                "uk": "\u041a\u0443\u0445\u043e\u043d\u043d\u0456 \u0434\u043e\u0448\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3359,
+        "pid": 4495,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4495\/3359\/",
+        "parents_uri": null,
+        "uri": "nabor-nozhi-i-nozhnicy",
+        "inherite": 0,
+        "ordering": 93200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/nabor-nozhi-i-nozhnitsy-20211021.jpg",
+        "deleted_at": null,
+        "created_at": "2021-10-21 10:47:42",
+        "updated_at": "2024-04-04 14:33:13",
+        "search_ordering": 93202,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "668",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041d\u0430\u0431\u043e\u0440 (\u041d\u043e\u0436\u0438 \u0438 \u043d\u043e\u0436\u043d\u0438\u0446\u044b)\", \"uk\": \"\u041d\u0430\u0431\u0456\u0440 (\u041d\u043e\u0436\u0456 \u0439 \u043d\u043e\u0436\u0438\u0446\u0456)\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041d\u0430\u0431\u043e\u0440 (\u041d\u043e\u0436\u0438 \u0438 \u043d\u043e\u0436\u043d\u0438\u0446\u044b)",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3359",
+        "slider_id": null,
+        "key": 3359,
+        "title": "\u041d\u0430\u0431\u043e\u0440 (\u041d\u043e\u0436\u0438 \u0438 \u043d\u043e\u0436\u043d\u0438\u0446\u044b)",
+        "folder": true,
+        "lazy": false,
+        "slug": "nabor-nozhi-i-nozhnicy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041d\u0430\u0431\u043e\u0440 (\u041d\u043e\u0436\u0438 \u0438 \u043d\u043e\u0436\u043d\u0438\u0446\u044b)",
+                "uk": "\u041d\u0430\u0431\u0456\u0440 (\u041d\u043e\u0436\u0456 \u0439 \u043d\u043e\u0436\u0438\u0446\u0456)"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3360,
+        "pid": 4495,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4495\/3360\/",
+        "parents_uri": null,
+        "uri": "nozhi",
+        "inherite": 0,
+        "ordering": 93300,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/nozhi-20211021.jpg",
+        "deleted_at": null,
+        "created_at": "2021-10-21 10:49:51",
+        "updated_at": "2024-04-04 14:33:26",
+        "search_ordering": 93302,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "665",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041d\u043e\u0436\u0438\", \"uk\": \"\u041d\u043e\u0436\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041d\u043e\u0436\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3360",
+        "slider_id": null,
+        "key": 3360,
+        "title": "\u041d\u043e\u0436\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "nozhi",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041d\u043e\u0436\u0438",
+                "uk": "\u041d\u043e\u0436\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3361,
+        "pid": 4495,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4495\/3361\/",
+        "parents_uri": null,
+        "uri": "nozhnicy",
+        "inherite": 0,
+        "ordering": 93400,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/nozhnitsy-20211021.jpg",
+        "deleted_at": null,
+        "created_at": "2021-10-21 10:51:40",
+        "updated_at": "2024-04-04 14:33:51",
+        "search_ordering": 93402,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "5251",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041d\u043e\u0436\u043d\u0438\u0446\u044b\", \"uk\": \"\u041d\u043e\u0436\u0438\u0446\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041d\u043e\u0436\u043d\u0438\u0446\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3361",
+        "slider_id": null,
+        "key": 3361,
+        "title": "\u041d\u043e\u0436\u043d\u0438\u0446\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "nozhnicy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041d\u043e\u0436\u043d\u0438\u0446\u044b",
+                "uk": "\u041d\u043e\u0436\u0438\u0446\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4596,
+        "pid": 4495,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4495\/4596\/",
+        "parents_uri": null,
+        "uri": "tertki",
+        "inherite": 0,
+        "ordering": 93500,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/terki-1699346187.jpg",
+        "deleted_at": null,
+        "created_at": "2023-11-07 10:35:11",
+        "updated_at": "2024-04-04 14:34:09",
+        "search_ordering": 93502,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0422\u0435\u0440\u043a\u0438\", \"uk\": \"\u0422\u0435\u0440\u0442\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0422\u0435\u0440\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4596",
+        "slider_id": null,
+        "key": 4596,
+        "title": "\u0422\u0435\u0440\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "tertki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0422\u0435\u0440\u043a\u0438",
+                "uk": "\u0422\u0435\u0440\u0442\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 5123,
+        "pid": 4495,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4495\/5123\/",
+        "parents_uri": null,
+        "uri": "podribnyuvachi-dlya-specij",
+        "inherite": 0,
+        "ordering": 93600,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/izmelchiteli-dlya-spetsiy-1707814822.jpg",
+        "deleted_at": null,
+        "created_at": "2024-02-13 10:57:34",
+        "updated_at": "2024-04-04 14:34:27",
+        "search_ordering": 93602,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0418\u0437\u043c\u0435\u043b\u044c\u0447\u0438\u0442\u0435\u043b\u0438 \u0434\u043b\u044f \u0441\u043f\u0435\u0446\u0438\u0439\", \"uk\": \"\u041f\u043e\u0434\u0440\u0456\u0431\u043d\u044e\u0432\u0430\u0447\u0456 \u0434\u043b\u044f \u0441\u043f\u0435\u0446\u0456\u0439\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0418\u0437\u043c\u0435\u043b\u044c\u0447\u0438\u0442\u0435\u043b\u0438 \u0434\u043b\u044f \u0441\u043f\u0435\u0446\u0438\u0439",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_5123",
+        "slider_id": null,
+        "key": 5123,
+        "title": "\u0418\u0437\u043c\u0435\u043b\u044c\u0447\u0438\u0442\u0435\u043b\u0438 \u0434\u043b\u044f \u0441\u043f\u0435\u0446\u0438\u0439",
+        "folder": true,
+        "lazy": false,
+        "slug": "podribnyuvachi-dlya-specij",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0418\u0437\u043c\u0435\u043b\u044c\u0447\u0438\u0442\u0435\u043b\u0438 \u0434\u043b\u044f \u0441\u043f\u0435\u0446\u0438\u0439",
+                "uk": "\u041f\u043e\u0434\u0440\u0456\u0431\u043d\u044e\u0432\u0430\u0447\u0456 \u0434\u043b\u044f \u0441\u043f\u0435\u0446\u0456\u0439"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 5254,
+        "pid": 4495,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4495\/5254\/",
+        "parents_uri": null,
+        "uri": "pres-dlya-chasniku",
+        "inherite": 0,
+        "ordering": 93700,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/press-dlya-chesnoka-1710320752.png",
+        "deleted_at": null,
+        "created_at": "2024-03-13 11:04:45",
+        "updated_at": "2024-04-04 14:34:51",
+        "search_ordering": 93702,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0440\u0435\u0441\u0441 \u0434\u043b\u044f \u0447\u0435\u0441\u043d\u043e\u043a\u0430\", \"uk\": \"\u041f\u0440\u0435\u0441 \u0434\u043b\u044f \u0447\u0430\u0441\u043d\u0438\u043a\u0443\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041f\u0440\u0435\u0441\u0441 \u0434\u043b\u044f \u0447\u0435\u0441\u043d\u043e\u043a\u0430",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_5254",
+        "slider_id": null,
+        "key": 5254,
+        "title": "\u041f\u0440\u0435\u0441\u0441 \u0434\u043b\u044f \u0447\u0435\u0441\u043d\u043e\u043a\u0430",
+        "folder": true,
+        "lazy": false,
+        "slug": "pres-dlya-chasniku",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0440\u0435\u0441\u0441 \u0434\u043b\u044f \u0447\u0435\u0441\u043d\u043e\u043a\u0430",
+                "uk": "\u041f\u0440\u0435\u0441 \u0434\u043b\u044f \u0447\u0430\u0441\u043d\u0438\u043a\u0443"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3372,
+        "pid": 4495,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4495\/3372\/",
+        "parents_uri": null,
+        "uri": "tochilki-dlya-nozhey",
+        "inherite": 0,
+        "ordering": 93800,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/tochilki-dlya-nozhey-20211103.jpg",
+        "deleted_at": null,
+        "created_at": "2021-11-03 16:38:44",
+        "updated_at": "2024-04-04 14:35:12",
+        "search_ordering": 93802,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "2948",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0422\u043e\u0447\u0438\u043b\u043a\u0438 \u0434\u043b\u044f \u043d\u043e\u0436\u0435\u0439\", \"uk\": \"\u0422\u043e\u0447\u0438\u043b\u0430 \u0434\u043b\u044f \u043d\u043e\u0436\u0456\u0432\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0422\u043e\u0447\u0438\u043b\u043a\u0438 \u0434\u043b\u044f \u043d\u043e\u0436\u0435\u0439",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3372",
+        "slider_id": null,
+        "key": 3372,
+        "title": "\u0422\u043e\u0447\u0438\u043b\u043a\u0438 \u0434\u043b\u044f \u043d\u043e\u0436\u0435\u0439",
+        "folder": true,
+        "lazy": false,
+        "slug": "tochilki-dlya-nozhey",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0422\u043e\u0447\u0438\u043b\u043a\u0438 \u0434\u043b\u044f \u043d\u043e\u0436\u0435\u0439",
+                "uk": "\u0422\u043e\u0447\u0438\u043b\u0430 \u0434\u043b\u044f \u043d\u043e\u0436\u0456\u0432"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

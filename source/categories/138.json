@@ -1,0 +1,202 @@
+[
+    {
+        "id": 161,
+        "pid": 138,
+        "name_1c": "\u0421\u043c\u0430\u0440\u0442-\u0447\u0430\u0441\u044b",
+        "parents": "\/0\/138\/161\/",
+        "parents_uri": null,
+        "uri": "smart-chasy",
+        "inherite": 0,
+        "ordering": 71000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/smart-chasy-1709895516.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:55",
+        "updated_at": "2024-04-04 15:13:34",
+        "search_ordering": 71002,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 5
+        },
+        "google_category_patch": "278",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0421\u043c\u0430\u0440\u0442-\u0447\u0430\u0441\u044b\", \"uk\": \"\u0421\u043c\u0430\u0440\u0442-\u0433\u043e\u0434\u0438\u043d\u043d\u0438\u043a\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0421\u043c\u0430\u0440\u0442-\u0447\u0430\u0441\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_161",
+        "slider_id": null,
+        "key": 161,
+        "title": "\u0421\u043c\u0430\u0440\u0442-\u0447\u0430\u0441\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "smart-chasy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0421\u043c\u0430\u0440\u0442-\u0447\u0430\u0441\u044b",
+                "uk": "\u0421\u043c\u0430\u0440\u0442-\u0433\u043e\u0434\u0438\u043d\u043d\u0438\u043a\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 160,
+        "pid": 138,
+        "name_1c": "\u0424\u0438\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u044b",
+        "parents": "\/0\/138\/160\/",
+        "parents_uri": null,
+        "uri": "fitnes-trekery-160",
+        "inherite": 0,
+        "ordering": 72000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/fitnes-trekery-1709895527.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:54",
+        "updated_at": "2024-04-04 15:13:48",
+        "search_ordering": 72002,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 4
+        },
+        "google_category_patch": "990",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0424\u0438\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u044b\", \"uk\": \"\u0424\u0456\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0424\u0438\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_160",
+        "slider_id": null,
+        "key": 160,
+        "title": "\u0424\u0438\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "fitnes-trekery-160",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0424\u0438\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u044b",
+                "uk": "\u0424\u0456\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 162,
+        "pid": 138,
+        "name_1c": "\u0410\u0421\u0421 \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442-\u0447\u0430\u0441\u043e\u0432",
+        "parents": "\/0\/138\/162\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-smart-chasov",
+        "inherite": 0,
+        "ordering": 73000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-smart-chasov-1709895539.jpeg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:54",
+        "updated_at": "2024-04-04 15:14:00",
+        "search_ordering": 73002,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "278",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442-\u0447\u0430\u0441\u043e\u0432\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442-\u0433\u043e\u0434\u0438\u043d\u043d\u0438\u043a\u0456\u0432\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442-\u0447\u0430\u0441\u043e\u0432",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_162",
+        "slider_id": null,
+        "key": 162,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442-\u0447\u0430\u0441\u043e\u0432",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksessuary-dlya-smart-chasov",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442-\u0447\u0430\u0441\u043e\u0432",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442-\u0433\u043e\u0434\u0438\u043d\u043d\u0438\u043a\u0456\u0432"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 159,
+        "pid": 138,
+        "name_1c": "\u0410\u0421\u0421 \u0434\u043b\u044f \u0444\u0438\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u043e\u0432",
+        "parents": "\/0\/138\/159\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-fitnes-trekerov",
+        "inherite": 0,
+        "ordering": 74000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-fitnes-trekerov-1709895554.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:54",
+        "updated_at": "2024-04-04 15:14:13",
+        "search_ordering": 74002,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "990",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0444\u0438\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u043e\u0432\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0444\u0456\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u0456\u0432\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0444\u0438\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u043e\u0432",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_159",
+        "slider_id": null,
+        "key": 159,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0444\u0438\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u043e\u0432",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksessuary-dlya-fitnes-trekerov",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0444\u0438\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u043e\u0432",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0444\u0456\u0442\u043d\u0435\u0441-\u0442\u0440\u0435\u043a\u0435\u0440\u0456\u0432"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

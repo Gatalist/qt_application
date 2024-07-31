@@ -1,0 +1,492 @@
+[
+    {
+        "id": 435,
+        "pid": 1197,
+        "name_1c": null,
+        "parents": "\/0\/1657\/1197\/435\/",
+        "parents_uri": null,
+        "uri": "videoregistratory",
+        "inherite": 0,
+        "ordering": 120310,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/videoregistratory-20201201.jpg",
+        "deleted_at": null,
+        "created_at": "2018-03-18 00:16:43",
+        "updated_at": "2024-04-04 13:14:00",
+        "search_ordering": 110311,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "155",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0412\u0438\u0434\u0435\u043e\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440\u044b\", \"uk\": \"\u0412\u0456\u0434\u0435\u043e\u0440\u0435\u0454\u0441\u0442\u0440\u0430\u0442\u043e\u0440\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0412\u0438\u0434\u0435\u043e\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_435",
+        "slider_id": null,
+        "key": 435,
+        "title": "\u0412\u0438\u0434\u0435\u043e\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "videoregistratory",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0412\u0438\u0434\u0435\u043e\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440\u044b",
+                "uk": "\u0412\u0456\u0434\u0435\u043e\u0440\u0435\u0454\u0441\u0442\u0440\u0430\u0442\u043e\u0440\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 1920,
+        "pid": 1197,
+        "name_1c": null,
+        "parents": "\/0\/1657\/1197\/1920\/",
+        "parents_uri": null,
+        "uri": "navigatory",
+        "inherite": 0,
+        "ordering": 120315,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/navigatory-20200409.jpg",
+        "deleted_at": null,
+        "created_at": "2020-03-03 15:02:31",
+        "updated_at": "2024-04-04 13:14:20",
+        "search_ordering": 120316,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "339",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041d\u0430\u0432\u0438\u0433\u0430\u0442\u043e\u0440\u044b\", \"uk\": \"\u041d\u0430\u0432\u0456\u0433\u0430\u0442\u043e\u0440\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041d\u0430\u0432\u0438\u0433\u0430\u0442\u043e\u0440\u044b",
+        "footnote": "",
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1920",
+        "slider_id": null,
+        "key": 1920,
+        "title": "\u041d\u0430\u0432\u0438\u0433\u0430\u0442\u043e\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "navigatory",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041d\u0430\u0432\u0438\u0433\u0430\u0442\u043e\u0440\u044b",
+                "uk": "\u041d\u0430\u0432\u0456\u0433\u0430\u0442\u043e\u0440\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2052,
+        "pid": 1197,
+        "name_1c": null,
+        "parents": "\/0\/1657\/1197\/2052\/",
+        "parents_uri": null,
+        "uri": "magnitoly",
+        "inherite": 0,
+        "ordering": 120320,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/magnitoly-20200508.png",
+        "deleted_at": null,
+        "created_at": "2020-05-07 21:35:51",
+        "updated_at": "2024-04-04 13:14:49",
+        "search_ordering": 120321,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "242",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041c\u0430\u0433\u043d\u0438\u0442\u043e\u043b\u044b\", \"uk\": \"\u041c\u0430\u0433\u043d\u0456\u0442\u043e\u043b\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041c\u0430\u0433\u043d\u0438\u0442\u043e\u043b\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2052",
+        "slider_id": null,
+        "key": 2052,
+        "title": "\u041c\u0430\u0433\u043d\u0438\u0442\u043e\u043b\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "magnitoly",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041c\u0430\u0433\u043d\u0438\u0442\u043e\u043b\u044b",
+                "uk": "\u041c\u0430\u0433\u043d\u0456\u0442\u043e\u043b\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2450,
+        "pid": 1197,
+        "name_1c": null,
+        "parents": "\/0\/1657\/1197\/2450\/",
+        "parents_uri": null,
+        "uri": "kompressory-datchiki-davleniya",
+        "inherite": 0,
+        "ordering": 120325,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kompressory-i-datchiki-davleniya-20201201.jpg",
+        "deleted_at": null,
+        "created_at": "2020-12-01 14:08:41",
+        "updated_at": "2024-04-04 13:15:17",
+        "search_ordering": 120326,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "2015",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u043e\u043c\u043f\u0440\u0435\u0441\u0441\u043e\u0440\u044b \u0438 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u0434\u0430\u0432\u043b\u0435\u043d\u0438\u044f\", \"uk\": \"\u041a\u043e\u043c\u043f\u0440\u0435\u0441\u043e\u0440\u0438 \u0442\u0430 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u0442\u0438\u0441\u043a\u0443\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u043e\u043c\u043f\u0440\u0435\u0441\u0441\u043e\u0440\u044b \u0438 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u0434\u0430\u0432\u043b\u0435\u043d\u0438\u044f",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2450",
+        "slider_id": null,
+        "key": 2450,
+        "title": "\u041a\u043e\u043c\u043f\u0440\u0435\u0441\u0441\u043e\u0440\u044b \u0438 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u0434\u0430\u0432\u043b\u0435\u043d\u0438\u044f",
+        "folder": true,
+        "lazy": false,
+        "slug": "kompressory-datchiki-davleniya",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u043e\u043c\u043f\u0440\u0435\u0441\u0441\u043e\u0440\u044b \u0438 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u0434\u0430\u0432\u043b\u0435\u043d\u0438\u044f",
+                "uk": "\u041a\u043e\u043c\u043f\u0440\u0435\u0441\u043e\u0440\u0438 \u0442\u0430 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u0442\u0438\u0441\u043a\u0443"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 1198,
+        "pid": 1197,
+        "name_1c": null,
+        "parents": "\/0\/1657\/1197\/1198\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-avto",
+        "inherite": 0,
+        "ordering": 120330,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-avto-20201201.jpg",
+        "deleted_at": null,
+        "created_at": "2019-02-28 15:46:46",
+        "updated_at": "2024-04-04 13:15:41",
+        "search_ordering": 120331,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "913",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0440\u043e\u0447\u0438\u0435 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0430\u0432\u0442\u043e\", \"uk\": \"\u0406\u043d\u0448\u0456 \u0430\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0430\u0432\u0442\u043e\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u0440\u043e\u0447\u0438\u0435 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0430\u0432\u0442\u043e",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1198",
+        "slider_id": null,
+        "key": 1198,
+        "title": "\u041f\u0440\u043e\u0447\u0438\u0435 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0430\u0432\u0442\u043e",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksessuary-dlya-avto",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0440\u043e\u0447\u0438\u0435 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0430\u0432\u0442\u043e",
+                "uk": "\u0406\u043d\u0448\u0456 \u0430\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0430\u0432\u0442\u043e"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2448,
+        "pid": 1197,
+        "name_1c": null,
+        "parents": "\/0\/1657\/1197\/2448\/",
+        "parents_uri": null,
+        "uri": "avtomobilnye-pylesosy",
+        "inherite": 0,
+        "ordering": 120335,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/avtomobilnye-pylesosy-20201201.jpg",
+        "deleted_at": null,
+        "created_at": "2020-12-01 13:03:34",
+        "updated_at": "2024-04-04 13:16:06",
+        "search_ordering": 120336,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "619",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b\", \"uk\": \"\u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0456\u043b\u044c\u043d\u0456 \u043f\u0438\u043b\u043e\u0441\u043e\u0441\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2448",
+        "slider_id": null,
+        "key": 2448,
+        "title": "\u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "avtomobilnye-pylesosy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+                "uk": "\u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0456\u043b\u044c\u043d\u0456 \u043f\u0438\u043b\u043e\u0441\u043e\u0441\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 56,
+        "pid": 1197,
+        "name_1c": "\u041f\u043e\u0434\u0441\u0442\u0430\u0432\u043a\u0438",
+        "parents": "\/0\/1657\/1197\/56\/",
+        "parents_uri": null,
+        "uri": "derzhateli-i-podstavki",
+        "inherite": 0,
+        "ordering": 120340,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/derzhateli-i-podstavki-20201201.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:52",
+        "updated_at": "2024-04-04 13:16:20",
+        "search_ordering": 120341,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "5566",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0414\u0435\u0440\u0436\u0430\u0442\u0435\u043b\u0438 \u0438 \u043f\u043e\u0434\u0441\u0442\u0430\u0432\u043a\u0438\", \"uk\": \"\u0422\u0440\u0438\u043c\u0430\u0447\u0456 \u0442\u0430 \u043f\u0456\u0434\u0441\u0442\u0430\u0432\u043a\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0414\u0435\u0440\u0436\u0430\u0442\u0435\u043b\u0438 \u0438 \u043f\u043e\u0434\u0441\u0442\u0430\u0432\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_56",
+        "slider_id": null,
+        "key": 56,
+        "title": "\u0414\u0435\u0440\u0436\u0430\u0442\u0435\u043b\u0438 \u0438 \u043f\u043e\u0434\u0441\u0442\u0430\u0432\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "derzhateli-i-podstavki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0414\u0435\u0440\u0436\u0430\u0442\u0435\u043b\u0438 \u0438 \u043f\u043e\u0434\u0441\u0442\u0430\u0432\u043a\u0438",
+                "uk": "\u0422\u0440\u0438\u043c\u0430\u0447\u0456 \u0442\u0430 \u043f\u0456\u0434\u0441\u0442\u0430\u0432\u043a\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2449,
+        "pid": 1197,
+        "name_1c": null,
+        "parents": "\/0\/1657\/1197\/2449\/",
+        "parents_uri": null,
+        "uri": "aromatizatory",
+        "inherite": 0,
+        "ordering": 120345,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aromatizatory-20201201.jpg",
+        "deleted_at": null,
+        "created_at": "2020-12-01 13:25:34",
+        "updated_at": "2024-04-04 13:16:37",
+        "search_ordering": 120346,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "592",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u0440\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0442\u043e\u0440\u044b\", \"uk\": \"\u0410\u0440\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0442\u043e\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u0440\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0442\u043e\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2449",
+        "slider_id": null,
+        "key": 2449,
+        "title": "\u0410\u0440\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0442\u043e\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "aromatizatory",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u0440\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0442\u043e\u0440\u044b",
+                "uk": "\u0410\u0440\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0442\u043e\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2451,
+        "pid": 1197,
+        "name_1c": null,
+        "parents": "\/0\/1657\/1197\/2451\/",
+        "parents_uri": null,
+        "uri": "parkovochnye-karty",
+        "inherite": 0,
+        "ordering": 120350,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/parkovochnye-karty-20201201.png",
+        "deleted_at": null,
+        "created_at": "2020-12-01 14:10:35",
+        "updated_at": "2024-04-04 13:16:55",
+        "search_ordering": 120351,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "null",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0430\u0440\u043a\u043e\u0432\u043e\u0447\u043d\u044b\u0435 \u043a\u0430\u0440\u0442\u044b\", \"uk\": \"\u041f\u0430\u0440\u043a\u0443\u0432\u0430\u043b\u044c\u043d\u0456 \u043a\u0430\u0440\u0442\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041f\u0430\u0440\u043a\u043e\u0432\u043e\u0447\u043d\u044b\u0435 \u043a\u0430\u0440\u0442\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2451",
+        "slider_id": null,
+        "key": 2451,
+        "title": "\u041f\u0430\u0440\u043a\u043e\u0432\u043e\u0447\u043d\u044b\u0435 \u043a\u0430\u0440\u0442\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "parkovochnye-karty",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0430\u0440\u043a\u043e\u0432\u043e\u0447\u043d\u044b\u0435 \u043a\u0430\u0440\u0442\u044b",
+                "uk": "\u041f\u0430\u0440\u043a\u0443\u0432\u0430\u043b\u044c\u043d\u0456 \u043a\u0430\u0440\u0442\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 5187,
+        "pid": 1197,
+        "name_1c": null,
+        "parents": "\/0\/1657\/1197\/5187\/",
+        "parents_uri": null,
+        "uri": "zaryadni-stanciyi-dlya-elektromobiliv",
+        "inherite": 0,
+        "ordering": 120360,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/zaryadnye-stantsii-dlya-elektromobiley-1708006943.jpg",
+        "deleted_at": null,
+        "created_at": "2024-02-15 14:11:01",
+        "updated_at": "2024-04-04 13:17:19",
+        "search_ordering": 120361,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0417\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u0441\u0442\u0430\u043d\u0446\u0438\u0438 \u0434\u043b\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0431\u0438\u043b\u0435\u0439\", \"uk\": \"\u0417\u0430\u0440\u044f\u0434\u043d\u0456 \u0441\u0442\u0430\u043d\u0446\u0456\u0457 \u0434\u043b\u044f \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0431\u0456\u043b\u0456\u0432\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0417\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u0441\u0442\u0430\u043d\u0446\u0438\u0438 \u0434\u043b\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0431\u0438\u043b\u0435\u0439",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_5187",
+        "slider_id": null,
+        "key": 5187,
+        "title": "\u0417\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u0441\u0442\u0430\u043d\u0446\u0438\u0438 \u0434\u043b\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0431\u0438\u043b\u0435\u0439",
+        "folder": true,
+        "lazy": false,
+        "slug": "zaryadni-stanciyi-dlya-elektromobiliv",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0417\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u0441\u0442\u0430\u043d\u0446\u0438\u0438 \u0434\u043b\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0431\u0438\u043b\u0435\u0439",
+                "uk": "\u0417\u0430\u0440\u044f\u0434\u043d\u0456 \u0441\u0442\u0430\u043d\u0446\u0456\u0457 \u0434\u043b\u044f \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0431\u0456\u043b\u0456\u0432"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

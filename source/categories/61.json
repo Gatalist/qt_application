@@ -1,0 +1,102 @@
+[
+    {
+        "id": 153,
+        "pid": 61,
+        "name_1c": null,
+        "parents": "\/0\/1664\/61\/153\/",
+        "parents_uri": null,
+        "uri": "3d-ruchki",
+        "inherite": 0,
+        "ordering": 160410,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/3d-ruchki-20180205.jpg",
+        "deleted_at": null,
+        "created_at": "2017-06-20 14:44:24",
+        "updated_at": "2024-04-04 12:30:39",
+        "search_ordering": 160411,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 4
+        },
+        "google_category_patch": "222",
+        "name_trans": "{\"md\": \"\", \"ru\": \"3D-\u0440\u0443\u0447\u043a\u0438\", \"uk\": \"3D-\u0440\u0443\u0447\u043a\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "3D-\u0440\u0443\u0447\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_153",
+        "slider_id": null,
+        "key": 153,
+        "title": "3D-\u0440\u0443\u0447\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "3d-ruchki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "3D-\u0440\u0443\u0447\u043a\u0438",
+                "uk": "3D-\u0440\u0443\u0447\u043a\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 155,
+        "pid": 61,
+        "name_1c": null,
+        "parents": "\/0\/1664\/61\/155\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-3d-ruchek",
+        "inherite": 0,
+        "ordering": 160420,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-3d-ruchek-20180205.jpg",
+        "deleted_at": null,
+        "created_at": "2017-06-20 14:45:53",
+        "updated_at": "2024-04-04 12:30:55",
+        "search_ordering": 160421,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "222",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f 3D-\u0440\u0443\u0447\u0435\u043a\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f 3D-\u0440\u0443\u0447\u043e\u043a\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f 3D-\u0440\u0443\u0447\u0435\u043a",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_155",
+        "slider_id": null,
+        "key": 155,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f 3D-\u0440\u0443\u0447\u0435\u043a",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksessuary-dlya-3d-ruchek",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f 3D-\u0440\u0443\u0447\u0435\u043a",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f 3D-\u0440\u0443\u0447\u043e\u043a"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

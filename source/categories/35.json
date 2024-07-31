@@ -1,0 +1,394 @@
+[
+    {
+        "id": 46,
+        "pid": 35,
+        "name_1c": null,
+        "parents": "\/0\/44\/35\/46\/",
+        "parents_uri": null,
+        "uri": "wi-fi-routery",
+        "inherite": 0,
+        "ordering": 30510,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/wi-fi-routery-20180205.jpg",
+        "deleted_at": null,
+        "created_at": "2016-08-01 14:53:10",
+        "updated_at": "2023-02-22 09:42:55",
+        "search_ordering": 30510,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "342",
+        "name_trans": "{\"md\": \"\", \"ru\": \"Wi-Fi \u0440\u043e\u0443\u0442\u0435\u0440\u044b\", \"uk\": \"Wi-Fi \u0440\u043e\u0443\u0442\u0435\u0440\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "Wi-Fi \u0440\u043e\u0443\u0442\u0435\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_46",
+        "slider_id": null,
+        "key": 46,
+        "title": "Wi-Fi \u0440\u043e\u0443\u0442\u0435\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "wi-fi-routery",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "Wi-Fi \u0440\u043e\u0443\u0442\u0435\u0440\u044b",
+                "uk": "Wi-Fi \u0440\u043e\u0443\u0442\u0435\u0440\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 214,
+        "pid": 35,
+        "name_1c": null,
+        "parents": "\/0\/44\/35\/214\/",
+        "parents_uri": null,
+        "uri": "rasshiriteli-zony-wi-fi",
+        "inherite": 0,
+        "ordering": 30520,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/rasshiriteli-zony-wi-fi-20200120.jpg",
+        "deleted_at": null,
+        "created_at": "2017-06-22 12:01:52",
+        "updated_at": "2023-02-22 09:45:32",
+        "search_ordering": 30520,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "342",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0420\u0430\u0441\u0448\u0438\u0440\u0438\u0442\u0435\u043b\u0438 \u0437\u043e\u043d\u044b Wi-Fi\", \"uk\": \"\u0420\u043e\u0437\u0448\u0438\u0440\u044e\u0432\u0430\u0447\u0456 \u0437\u043e\u043d\u0438 Wi-Fi\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0420\u0430\u0441\u0448\u0438\u0440\u0438\u0442\u0435\u043b\u0438 \u0437\u043e\u043d\u044b Wi-Fi",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_214",
+        "slider_id": null,
+        "key": 214,
+        "title": "\u0420\u0430\u0441\u0448\u0438\u0440\u0438\u0442\u0435\u043b\u0438 \u0437\u043e\u043d\u044b Wi-Fi",
+        "folder": true,
+        "lazy": false,
+        "slug": "rasshiriteli-zony-wi-fi",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0420\u0430\u0441\u0448\u0438\u0440\u0438\u0442\u0435\u043b\u0438 \u0437\u043e\u043d\u044b Wi-Fi",
+                "uk": "\u0420\u043e\u0437\u0448\u0438\u0440\u044e\u0432\u0430\u0447\u0456 \u0437\u043e\u043d\u0438 Wi-Fi"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 30,
+        "pid": 35,
+        "name_1c": "\u041c\u043e\u0434\u0435\u043c\u044b 3G",
+        "parents": "\/0\/44\/35\/30\/",
+        "parents_uri": null,
+        "uri": "mobilnye-3g-wi-fi-routery",
+        "inherite": 0,
+        "ordering": 30530,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/mobilnye-3g-wi-fi-routery-20180205.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-28 09:35:04",
+        "updated_at": "2023-02-22 09:45:17",
+        "search_ordering": 30530,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "342",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 3G \u043c\u043e\u0434\u0435\u043c\u044b \u0438 Wi-Fi \u0440\u043e\u0443\u0442\u0435\u0440\u044b\", \"uk\": \"\u041c\u043e\u0431\u0456\u043b\u044c\u043d\u0456 3G \u043c\u043e\u0434\u0435\u043c\u0438 \u0442\u0430 Wi-Fi \u0440\u043e\u0443\u0442\u0435\u0440\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 3G \u043c\u043e\u0434\u0435\u043c\u044b \u0438 Wi-Fi \u0440\u043e\u0443\u0442\u0435\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_30",
+        "slider_id": null,
+        "key": 30,
+        "title": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 3G \u043c\u043e\u0434\u0435\u043c\u044b \u0438 Wi-Fi \u0440\u043e\u0443\u0442\u0435\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "mobilnye-3g-wi-fi-routery",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 3G \u043c\u043e\u0434\u0435\u043c\u044b \u0438 Wi-Fi \u0440\u043e\u0443\u0442\u0435\u0440\u044b",
+                "uk": "\u041c\u043e\u0431\u0456\u043b\u044c\u043d\u0456 3G \u043c\u043e\u0434\u0435\u043c\u0438 \u0442\u0430 Wi-Fi \u0440\u043e\u0443\u0442\u0435\u0440\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2646,
+        "pid": 35,
+        "name_1c": null,
+        "parents": "\/0\/44\/35\/2646\/",
+        "parents_uri": null,
+        "uri": "kommutatory",
+        "inherite": 0,
+        "ordering": 30540,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kommutatory-20210209.jpg",
+        "deleted_at": null,
+        "created_at": "2021-02-08 16:58:10",
+        "updated_at": "2023-02-22 09:45:01",
+        "search_ordering": 30540,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "2455",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u043e\u043c\u043c\u0443\u0442\u0430\u0442\u043e\u0440\u044b\", \"uk\": \"\u041a\u043e\u043c\u0443\u0442\u0430\u0442\u043e\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u043e\u043c\u043c\u0443\u0442\u0430\u0442\u043e\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2646",
+        "slider_id": null,
+        "key": 2646,
+        "title": "\u041a\u043e\u043c\u043c\u0443\u0442\u0430\u0442\u043e\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "kommutatory",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u043e\u043c\u043c\u0443\u0442\u0430\u0442\u043e\u0440\u044b",
+                "uk": "\u041a\u043e\u043c\u0443\u0442\u0430\u0442\u043e\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2910,
+        "pid": 35,
+        "name_1c": null,
+        "parents": "\/0\/44\/35\/2910\/",
+        "parents_uri": null,
+        "uri": "setevye-hranilischa",
+        "inherite": 0,
+        "ordering": 30550,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/setevye-khranilishcha-nas-20210325.png",
+        "deleted_at": null,
+        "created_at": "2021-03-24 14:14:15",
+        "updated_at": "2023-02-22 09:44:41",
+        "search_ordering": 30550,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "5269",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u0445\u0440\u0430\u043d\u0438\u043b\u0438\u0449\u0430 (NAS)\", \"uk\": \"\u041c\u0435\u0440\u0435\u0436\u0435\u0432\u0456 \u0441\u0445\u043e\u0432\u0438\u0449\u0430 (NAS)\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u0445\u0440\u0430\u043d\u0438\u043b\u0438\u0449\u0430 (NAS)",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2910",
+        "slider_id": null,
+        "key": 2910,
+        "title": "\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u0445\u0440\u0430\u043d\u0438\u043b\u0438\u0449\u0430 (NAS)",
+        "folder": true,
+        "lazy": false,
+        "slug": "setevye-hranilischa",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u0445\u0440\u0430\u043d\u0438\u043b\u0438\u0449\u0430 (NAS)",
+                "uk": "\u041c\u0435\u0440\u0435\u0436\u0435\u0432\u0456 \u0441\u0445\u043e\u0432\u0438\u0449\u0430 (NAS)"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3341,
+        "pid": 35,
+        "name_1c": null,
+        "parents": "\/0\/44\/35\/3341\/",
+        "parents_uri": null,
+        "uri": "setevye-adaptery",
+        "inherite": 0,
+        "ordering": 30560,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/setevye-adaptery-20210916.jpg",
+        "deleted_at": null,
+        "created_at": "2021-09-10 17:32:17",
+        "updated_at": "2023-02-22 09:44:17",
+        "search_ordering": 30560,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "258",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u0430\u0434\u0430\u043f\u0442\u0435\u0440\u044b\", \"uk\": \"\u041c\u0435\u0440\u0435\u0436\u0435\u0432\u0456 \u0430\u0434\u0430\u043f\u0442\u0435\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u0430\u0434\u0430\u043f\u0442\u0435\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3341",
+        "slider_id": null,
+        "key": 3341,
+        "title": "\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u0430\u0434\u0430\u043f\u0442\u0435\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "setevye-adaptery",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u0430\u0434\u0430\u043f\u0442\u0435\u0440\u044b",
+                "uk": "\u041c\u0435\u0440\u0435\u0436\u0435\u0432\u0456 \u0430\u0434\u0430\u043f\u0442\u0435\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3342,
+        "pid": 35,
+        "name_1c": null,
+        "parents": "\/0\/44\/35\/3342\/",
+        "parents_uri": null,
+        "uri": "adaptery-powerline",
+        "inherite": 0,
+        "ordering": 30570,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/adaptery-powerline-20210913.jpg",
+        "deleted_at": null,
+        "created_at": "2021-09-10 17:35:53",
+        "updated_at": "2023-02-22 09:44:02",
+        "search_ordering": 30570,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "505299",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u0434\u0430\u043f\u0442\u0435\u0440\u044b Powerline\", \"uk\": \"\u0410\u0434\u0430\u043f\u0442\u0435\u0440\u0438 Powerline\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u0434\u0430\u043f\u0442\u0435\u0440\u044b Powerline",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3342",
+        "slider_id": null,
+        "key": 3342,
+        "title": "\u0410\u0434\u0430\u043f\u0442\u0435\u0440\u044b Powerline",
+        "folder": true,
+        "lazy": false,
+        "slug": "adaptery-powerline",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u0434\u0430\u043f\u0442\u0435\u0440\u044b Powerline",
+                "uk": "\u0410\u0434\u0430\u043f\u0442\u0435\u0440\u0438 Powerline"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3340,
+        "pid": 35,
+        "name_1c": null,
+        "parents": "\/0\/44\/35\/3340\/",
+        "parents_uri": null,
+        "uri": "patch-kordy",
+        "inherite": 0,
+        "ordering": 30580,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/patch-kordy-20210913.jpg",
+        "deleted_at": null,
+        "created_at": "2021-09-10 17:27:52",
+        "updated_at": "2024-04-02 15:18:57",
+        "search_ordering": 30581,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1480",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0430\u0442\u0447-\u043a\u043e\u0440\u0434\u044b\", \"uk\": \"\u041f\u0430\u0442\u0447-\u043a\u043e\u0440\u0434\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041f\u0430\u0442\u0447-\u043a\u043e\u0440\u0434\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3340",
+        "slider_id": null,
+        "key": 3340,
+        "title": "\u041f\u0430\u0442\u0447-\u043a\u043e\u0440\u0434\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "patch-kordy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0430\u0442\u0447-\u043a\u043e\u0440\u0434\u044b",
+                "uk": "\u041f\u0430\u0442\u0447-\u043a\u043e\u0440\u0434\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

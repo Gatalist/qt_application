@@ -1,0 +1,355 @@
+[
+    {
+        "id": 110,
+        "pid": 185,
+        "name_1c": null,
+        "parents": "\/0\/185\/110\/",
+        "parents_uri": null,
+        "uri": "electroscooters",
+        "inherite": 185,
+        "ordering": 130100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/elektrosamokaty-1709546244.jpg",
+        "deleted_at": null,
+        "created_at": "2017-03-21 17:52:57",
+        "updated_at": "2024-04-04 12:56:24",
+        "search_ordering": 130101,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 8
+        },
+        "google_category_patch": "888",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u0430\u043c\u043e\u043a\u0430\u0442\u044b\", \"uk\": \"\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u0430\u043c\u043e\u043a\u0430\u0442\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u0430\u043c\u043e\u043a\u0430\u0442\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_110",
+        "slider_id": null,
+        "key": 110,
+        "title": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u0430\u043c\u043e\u043a\u0430\u0442\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "electroscooters",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u0430\u043c\u043e\u043a\u0430\u0442\u044b",
+                "uk": "\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u0430\u043c\u043e\u043a\u0430\u0442\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 114,
+        "pid": 185,
+        "name_1c": null,
+        "parents": "\/0\/185\/114\/",
+        "parents_uri": null,
+        "uri": "electricbicycles",
+        "inherite": 185,
+        "ordering": 130200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/elektrovelosipedy-1709546261.jpeg",
+        "deleted_at": null,
+        "created_at": "2017-03-21 17:55:41",
+        "updated_at": "2024-04-04 12:56:44",
+        "search_ordering": 130201,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 8
+        },
+        "google_category_patch": "888",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0432\u0435\u043b\u043e\u0441\u0438\u043f\u0435\u0434\u044b\", \"uk\": \"\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u0432\u0435\u043b\u043e\u0441\u0438\u043f\u0435\u0434\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0432\u0435\u043b\u043e\u0441\u0438\u043f\u0435\u0434\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_114",
+        "slider_id": null,
+        "key": 114,
+        "title": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0432\u0435\u043b\u043e\u0441\u0438\u043f\u0435\u0434\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "electricbicycles",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0432\u0435\u043b\u043e\u0441\u0438\u043f\u0435\u0434\u044b",
+                "uk": "\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u0432\u0435\u043b\u043e\u0441\u0438\u043f\u0435\u0434\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 113,
+        "pid": 185,
+        "name_1c": null,
+        "parents": "\/0\/185\/113\/",
+        "parents_uri": null,
+        "uri": "electricstrokes",
+        "inherite": 185,
+        "ordering": 130300,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/elektroskutery-1709546275.jpeg",
+        "deleted_at": null,
+        "created_at": "2017-03-21 17:55:10",
+        "updated_at": "2024-04-04 12:57:00",
+        "search_ordering": 130301,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 8
+        },
+        "google_category_patch": "888",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u043a\u0443\u0442\u0435\u0440\u044b\", \"uk\": \"\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u043a\u0443\u0442\u0435\u0440\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u043a\u0443\u0442\u0435\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_113",
+        "slider_id": null,
+        "key": 113,
+        "title": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u043a\u0443\u0442\u0435\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "electricstrokes",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u043a\u0443\u0442\u0435\u0440\u044b",
+                "uk": "\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u043a\u0443\u0442\u0435\u0440\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 502,
+        "pid": 185,
+        "name_1c": null,
+        "parents": "\/0\/185\/502\/",
+        "parents_uri": null,
+        "uri": "elektromotocikly",
+        "inherite": 185,
+        "ordering": 130400,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/elektromototsikly-1709546292.jpeg",
+        "deleted_at": null,
+        "created_at": "2018-04-19 16:26:34",
+        "updated_at": "2024-04-04 12:57:15",
+        "search_ordering": 130401,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "919",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0442\u043e\u0446\u0438\u043a\u043b\u044b\", \"uk\": \"\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0442\u043e\u0446\u0438\u043a\u043b\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0442\u043e\u0446\u0438\u043a\u043b\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_502",
+        "slider_id": null,
+        "key": 502,
+        "title": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0442\u043e\u0446\u0438\u043a\u043b\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "elektromotocikly",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0442\u043e\u0446\u0438\u043a\u043b\u044b",
+                "uk": "\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0442\u043e\u0446\u0438\u043a\u043b\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 633,
+        "pid": 185,
+        "name_1c": null,
+        "parents": "\/0\/185\/633\/",
+        "parents_uri": null,
+        "uri": "akvabordy",
+        "inherite": 0,
+        "ordering": 130500,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/akvabordy-20180625.jpg",
+        "deleted_at": null,
+        "created_at": "2018-06-25 14:39:13",
+        "updated_at": "2024-04-04 12:57:32",
+        "search_ordering": 130501,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "5614",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0412\u043e\u0434\u043d\u044b\u0439 \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\", \"uk\": \"\u0412\u043e\u0434\u043d\u0438\u0439 \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0412\u043e\u0434\u043d\u044b\u0439 \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_633",
+        "slider_id": null,
+        "key": 633,
+        "title": "\u0412\u043e\u0434\u043d\u044b\u0439 \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442",
+        "folder": true,
+        "lazy": false,
+        "slug": "akvabordy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0412\u043e\u0434\u043d\u044b\u0439 \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442",
+                "uk": "\u0412\u043e\u0434\u043d\u0438\u0439 \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 107,
+        "pid": 185,
+        "name_1c": null,
+        "parents": "\/0\/185\/107\/",
+        "parents_uri": null,
+        "uri": "monowheels",
+        "inherite": 185,
+        "ordering": 130600,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/monokolesa-1709546305.jpg",
+        "deleted_at": null,
+        "created_at": "2017-03-21 17:50:47",
+        "updated_at": "2024-04-04 12:57:46",
+        "search_ordering": 130601,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 8
+        },
+        "google_category_patch": "888",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041c\u043e\u043d\u043e\u043a\u043e\u043b\u0435\u0441\u0430\", \"uk\": \"\u041c\u043e\u043d\u043e\u043a\u043e\u043b\u0435\u0441\u0430\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041c\u043e\u043d\u043e\u043a\u043e\u043b\u0435\u0441\u0430",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_107",
+        "slider_id": null,
+        "key": 107,
+        "title": "\u041c\u043e\u043d\u043e\u043a\u043e\u043b\u0435\u0441\u0430",
+        "folder": true,
+        "lazy": false,
+        "slug": "monowheels",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041c\u043e\u043d\u043e\u043a\u043e\u043b\u0435\u0441\u0430",
+                "uk": "\u041c\u043e\u043d\u043e\u043a\u043e\u043b\u0435\u0441\u0430"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 117,
+        "pid": 185,
+        "name_1c": null,
+        "parents": "\/0\/185\/117\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-elektrotransporta",
+        "inherite": 0,
+        "ordering": 130700,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-elektrotransporta-20210506.png",
+        "deleted_at": null,
+        "created_at": "2017-03-21 17:57:34",
+        "updated_at": "2024-04-04 12:58:01",
+        "search_ordering": 130701,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 8
+        },
+        "google_category_patch": "888",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0443\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_117",
+        "slider_id": null,
+        "key": 117,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+        "folder": true,
+        "lazy": true,
+        "slug": "aksessuary-dlya-elektrotransporta",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0443"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

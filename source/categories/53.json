@@ -1,0 +1,692 @@
+[
+    {
+        "id": 149,
+        "pid": 53,
+        "name_1c": null,
+        "parents": "\/0\/53\/149\/",
+        "parents_uri": null,
+        "uri": "kvadrokoptery-i-drony",
+        "inherite": 0,
+        "ordering": 150100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kvadrokoptery-i-drony-20220902.jpg",
+        "deleted_at": null,
+        "created_at": "2017-06-20 14:30:17",
+        "updated_at": "2024-04-04 12:44:43",
+        "search_ordering": 150101,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 4
+        },
+        "google_category_patch": "2546",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u0432\u0430\u0434\u0440\u043e\u043a\u043e\u043f\u0442\u0435\u0440\u044b \u0438 \u0434\u0440\u043e\u043d\u044b\", \"uk\": \"\u041a\u0432\u0430\u0434\u0440\u043e\u043a\u043e\u043f\u0442\u0435\u0440\u0438 \u0442\u0430 \u0434\u0440\u043e\u043d\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041a\u0432\u0430\u0434\u0440\u043e\u043a\u043e\u043f\u0442\u0435\u0440\u044b \u0438 \u0434\u0440\u043e\u043d\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_149",
+        "slider_id": null,
+        "key": 149,
+        "title": "\u041a\u0432\u0430\u0434\u0440\u043e\u043a\u043e\u043f\u0442\u0435\u0440\u044b \u0438 \u0434\u0440\u043e\u043d\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "kvadrokoptery-i-drony",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u0432\u0430\u0434\u0440\u043e\u043a\u043e\u043f\u0442\u0435\u0440\u044b \u0438 \u0434\u0440\u043e\u043d\u044b",
+                "uk": "\u041a\u0432\u0430\u0434\u0440\u043e\u043a\u043e\u043f\u0442\u0435\u0440\u0438 \u0442\u0430 \u0434\u0440\u043e\u043d\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 175,
+        "pid": 53,
+        "name_1c": "\u042d\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440\u044b",
+        "parents": "\/0\/53\/175\/",
+        "parents_uri": null,
+        "uri": "ekshn-kamery",
+        "inherite": 0,
+        "ordering": 150200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/ekshn-kamery-20220902.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:53",
+        "updated_at": "2024-04-04 12:39:48",
+        "search_ordering": 150201,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "142",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u042d\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440\u044b\", \"uk\": \"\u0415\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u042d\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_175",
+        "slider_id": null,
+        "key": 175,
+        "title": "\u042d\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "ekshn-kamery",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u042d\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440\u044b",
+                "uk": "\u0415\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4197,
+        "pid": 53,
+        "name_1c": null,
+        "parents": "\/0\/53\/4197\/",
+        "parents_uri": null,
+        "uri": "dityachi-fotoaparati",
+        "inherite": 0,
+        "ordering": 150300,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/detskie-fotoapparaty-1684483060.jpg",
+        "deleted_at": null,
+        "created_at": "2023-05-19 10:55:00",
+        "updated_at": "2024-04-04 12:40:06",
+        "search_ordering": 150301,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "537",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0414\u0435\u0442\u0441\u043a\u0438\u0435 \u0444\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442\u044b\", \"uk\": \"\u0414\u0438\u0442\u044f\u0447\u0456 \u0444\u043e\u0442\u043e\u0430\u043f\u0430\u0440\u0430\u0442\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0414\u0435\u0442\u0441\u043a\u0438\u0435 \u0444\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4197",
+        "slider_id": null,
+        "key": 4197,
+        "title": "\u0414\u0435\u0442\u0441\u043a\u0438\u0435 \u0444\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "dityachi-fotoaparati",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0414\u0435\u0442\u0441\u043a\u0438\u0435 \u0444\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442\u044b",
+                "uk": "\u0414\u0438\u0442\u044f\u0447\u0456 \u0444\u043e\u0442\u043e\u0430\u043f\u0430\u0440\u0430\u0442\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 221,
+        "pid": 53,
+        "name_1c": null,
+        "parents": "\/0\/53\/221\/",
+        "parents_uri": null,
+        "uri": "stedikamy",
+        "inherite": 0,
+        "ordering": 150400,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/stedikamy-20220902.jpg",
+        "deleted_at": null,
+        "created_at": "2017-09-27 14:32:26",
+        "updated_at": "2024-04-04 12:40:36",
+        "search_ordering": 150401,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "2027",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0421\u0442\u0435\u0434\u0438\u043a\u0430\u043c\u044b\", \"uk\": \"\u0421\u0442\u0435\u0434\u0456\u043a\u0430\u043c\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0421\u0442\u0435\u0434\u0438\u043a\u0430\u043c\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_221",
+        "slider_id": null,
+        "key": 221,
+        "title": "\u0421\u0442\u0435\u0434\u0438\u043a\u0430\u043c\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "stedikamy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0421\u0442\u0435\u0434\u0438\u043a\u0430\u043c\u044b",
+                "uk": "\u0421\u0442\u0435\u0434\u0456\u043a\u0430\u043c\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 1227,
+        "pid": 53,
+        "name_1c": null,
+        "parents": "\/0\/53\/1227\/",
+        "parents_uri": null,
+        "uri": "cameras",
+        "inherite": 0,
+        "ordering": 150500,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/fotoapparaty-20220902.jpg",
+        "deleted_at": null,
+        "created_at": "2019-03-12 09:46:42",
+        "updated_at": "2024-04-04 12:41:01",
+        "search_ordering": 150501,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "141",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0424\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442\u044b\", \"uk\": \"\u0424\u043e\u0442\u043e\u0430\u043f\u0430\u0440\u0430\u0442\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0424\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1227",
+        "slider_id": null,
+        "key": 1227,
+        "title": "\u0424\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "cameras",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0424\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442\u044b",
+                "uk": "\u0424\u043e\u0442\u043e\u0430\u043f\u0430\u0440\u0430\u0442\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3339,
+        "pid": 53,
+        "name_1c": null,
+        "parents": "\/0\/53\/3339\/",
+        "parents_uri": null,
+        "uri": "vspyshku",
+        "inherite": 0,
+        "ordering": 150600,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/vspyshki-20220902.jpg",
+        "deleted_at": null,
+        "created_at": "2021-09-09 12:20:11",
+        "updated_at": "2024-04-04 12:41:32",
+        "search_ordering": 150601,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "148",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0412\u0441\u043f\u044b\u0448\u043a\u0438\", \"uk\": \"\u0421\u043f\u0430\u043b\u0430\u0445\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0412\u0441\u043f\u044b\u0448\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3339",
+        "slider_id": null,
+        "key": 3339,
+        "title": "\u0412\u0441\u043f\u044b\u0448\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "vspyshku",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0412\u0441\u043f\u044b\u0448\u043a\u0438",
+                "uk": "\u0421\u043f\u0430\u043b\u0430\u0445\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 1791,
+        "pid": 53,
+        "name_1c": null,
+        "parents": "\/0\/53\/1791\/",
+        "parents_uri": null,
+        "uri": "obektivy",
+        "inherite": 0,
+        "ordering": 150700,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/obektivy-20220902.jpg",
+        "deleted_at": null,
+        "created_at": "2019-10-21 11:46:52",
+        "updated_at": "2024-04-04 12:41:53",
+        "search_ordering": 150701,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "149",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041e\u0431\u044a\u0435\u043a\u0442\u0438\u0432\u044b\", \"uk\": \"\u041e\u0431'\u0454\u043a\u0442\u0438\u0432\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041e\u0431\u044a\u0435\u043a\u0442\u0438\u0432\u044b",
+        "footnote": "",
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1791",
+        "slider_id": null,
+        "key": 1791,
+        "title": "\u041e\u0431\u044a\u0435\u043a\u0442\u0438\u0432\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "obektivy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041e\u0431\u044a\u0435\u043a\u0442\u0438\u0432\u044b",
+                "uk": "\u041e\u0431'\u0454\u043a\u0442\u0438\u0432\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3043,
+        "pid": 53,
+        "name_1c": null,
+        "parents": "\/0\/53\/3043\/",
+        "parents_uri": null,
+        "uri": "videokamery",
+        "inherite": 0,
+        "ordering": 150800,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/videokamery-20220902.jpg",
+        "deleted_at": null,
+        "created_at": "2021-04-22 15:29:48",
+        "updated_at": "2024-04-04 12:42:16",
+        "search_ordering": 150801,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "155",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0412\u0438\u0434\u0435\u043e\u043a\u0430\u043c\u0435\u0440\u044b\", \"uk\": \"\u0412\u0456\u0434\u0435\u043e\u043a\u0430\u043c\u0435\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0412\u0438\u0434\u0435\u043e\u043a\u0430\u043c\u0435\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3043",
+        "slider_id": null,
+        "key": 3043,
+        "title": "\u0412\u0438\u0434\u0435\u043e\u043a\u0430\u043c\u0435\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "videokamery",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0412\u0438\u0434\u0435\u043e\u043a\u0430\u043c\u0435\u0440\u044b",
+                "uk": "\u0412\u0456\u0434\u0435\u043e\u043a\u0430\u043c\u0435\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 177,
+        "pid": 53,
+        "name_1c": "\u0424\u043e\u0442\u043e-\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u044b",
+        "parents": "\/0\/53\/177\/",
+        "parents_uri": null,
+        "uri": "portativnye-foto-printery",
+        "inherite": 0,
+        "ordering": 150900,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/portativnye-fotoprintery-20220902.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:53",
+        "updated_at": "2024-04-04 12:42:40",
+        "search_ordering": 150901,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "500106",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u044b\u0435 \u0444\u043e\u0442\u043e\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u044b\", \"uk\": \"\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u0456 \u0444\u043e\u0442\u043e\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u044b\u0435 \u0444\u043e\u0442\u043e\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_177",
+        "slider_id": null,
+        "key": 177,
+        "title": "\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u044b\u0435 \u0444\u043e\u0442\u043e\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "portativnye-foto-printery",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u044b\u0435 \u0444\u043e\u0442\u043e\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u044b",
+                "uk": "\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u0456 \u0444\u043e\u0442\u043e\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4791,
+        "pid": 53,
+        "name_1c": null,
+        "parents": "\/0\/53\/4791\/",
+        "parents_uri": null,
+        "uri": "rgb-osvitlennya",
+        "inherite": 0,
+        "ordering": 151000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/rgb-osveshchenie-1700550768.jpg",
+        "deleted_at": null,
+        "created_at": "2023-11-21 09:12:21",
+        "updated_at": "2024-04-04 12:45:27",
+        "search_ordering": 151001,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"RGB \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435\", \"uk\": \"RGB \u043e\u0441\u0432\u0456\u0442\u043b\u0435\u043d\u043d\u044f\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "RGB \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4791",
+        "slider_id": null,
+        "key": 4791,
+        "title": "RGB \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435",
+        "folder": true,
+        "lazy": false,
+        "slug": "rgb-osvitlennya",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "RGB \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435",
+                "uk": "RGB \u043e\u0441\u0432\u0456\u0442\u043b\u0435\u043d\u043d\u044f"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 181,
+        "pid": 53,
+        "name_1c": "\u041c\u043e\u043d\u043e\u043f\u043e\u0434\u044b \u0434\u043b\u044f \u0441\u0435\u043b\u0444\u0438",
+        "parents": "\/0\/53\/181\/",
+        "parents_uri": null,
+        "uri": "selfi-monopody-i-shtativy",
+        "inherite": 0,
+        "ordering": 151100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/selfi-monopody-i-shtativy-20220902.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:53",
+        "updated_at": "2024-04-04 12:46:12",
+        "search_ordering": 151101,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 4
+        },
+        "google_category_patch": "2027",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0421\u0435\u043b\u0444\u0438-\u043c\u043e\u043d\u043e\u043f\u043e\u0434\u044b \u0438 \u0448\u0442\u0430\u0442\u0438\u0432\u044b\", \"uk\": \"\u0421\u0435\u043b\u0444\u0456-\u043c\u043e\u043d\u043e\u043f\u043e\u0434\u0438 \u0442\u0430 \u0448\u0442\u0430\u0442\u0438\u0432\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0421\u0435\u043b\u0444\u0438-\u043c\u043e\u043d\u043e\u043f\u043e\u0434\u044b \u0438 \u0448\u0442\u0430\u0442\u0438\u0432\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_181",
+        "slider_id": null,
+        "key": 181,
+        "title": "\u0421\u0435\u043b\u0444\u0438-\u043c\u043e\u043d\u043e\u043f\u043e\u0434\u044b \u0438 \u0448\u0442\u0430\u0442\u0438\u0432\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "selfi-monopody-i-shtativy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0421\u0435\u043b\u0444\u0438-\u043c\u043e\u043d\u043e\u043f\u043e\u0434\u044b \u0438 \u0448\u0442\u0430\u0442\u0438\u0432\u044b",
+                "uk": "\u0421\u0435\u043b\u0444\u0456-\u043c\u043e\u043d\u043e\u043f\u043e\u0434\u0438 \u0442\u0430 \u0448\u0442\u0430\u0442\u0438\u0432\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 176,
+        "pid": 53,
+        "name_1c": "\u0410\u0421\u0421 \u0434\u043b\u044f \u042d\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440",
+        "parents": "\/0\/53\/176\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-ekshn-kamer",
+        "inherite": 0,
+        "ordering": 151200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-ekshn-kamer-20220902.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:55",
+        "updated_at": "2024-04-04 12:46:56",
+        "search_ordering": 151201,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "142",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u044d\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0435\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u044d\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_176",
+        "slider_id": null,
+        "key": 176,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u044d\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksessuary-dlya-ekshn-kamer",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u044d\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0435\u043a\u0448\u043d-\u043a\u0430\u043c\u0435\u0440"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4362,
+        "pid": 53,
+        "name_1c": null,
+        "parents": "\/0\/53\/4362\/",
+        "parents_uri": null,
+        "uri": "aksesuari-dlya-kvadrokopteriv",
+        "inherite": 0,
+        "ordering": 151300,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-kvadrokopterov-1694516555.jpg",
+        "deleted_at": null,
+        "created_at": "2023-09-12 14:00:28",
+        "updated_at": "2024-04-04 12:47:26",
+        "search_ordering": 151301,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "386",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043a\u0432\u0430\u0434\u0440\u043e\u043a\u043e\u043f\u0442\u0435\u0440\u043e\u0432\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043a\u0432\u0430\u0434\u0440\u043e\u043a\u043e\u043f\u0442\u0435\u0440\u0456\u0432\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043a\u0432\u0430\u0434\u0440\u043e\u043a\u043e\u043f\u0442\u0435\u0440\u043e\u0432",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4362",
+        "slider_id": null,
+        "key": 4362,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043a\u0432\u0430\u0434\u0440\u043e\u043a\u043e\u043f\u0442\u0435\u0440\u043e\u0432",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksesuari-dlya-kvadrokopteriv",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043a\u0432\u0430\u0434\u0440\u043e\u043a\u043e\u043f\u0442\u0435\u0440\u043e\u0432",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043a\u0432\u0430\u0434\u0440\u043e\u043a\u043e\u043f\u0442\u0435\u0440\u0456\u0432"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 178,
+        "pid": 53,
+        "name_1c": "\u0410\u0421\u0421 \u0434\u043b\u044f \u0444\u043e\u0442\u043e-\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u043e\u0432",
+        "parents": "\/0\/53\/178\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-foto-printerov",
+        "inherite": 0,
+        "ordering": 151400,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-fotoprinterov-20220902.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:53",
+        "updated_at": "2024-04-04 12:47:52",
+        "search_ordering": 151401,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "500106",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0444\u043e\u0442\u043e\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u043e\u0432\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0444\u043e\u0442\u043e\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u0456\u0432\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0444\u043e\u0442\u043e\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u043e\u0432",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_178",
+        "slider_id": null,
+        "key": 178,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0444\u043e\u0442\u043e\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u043e\u0432",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksessuary-dlya-foto-printerov",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0444\u043e\u0442\u043e\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u043e\u0432",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0444\u043e\u0442\u043e\u043f\u0440\u0438\u043d\u0442\u0435\u0440\u0456\u0432"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

@@ -1,0 +1,247 @@
+[
+    {
+        "id": 2166,
+        "pid": 2580,
+        "name_1c": null,
+        "parents": "\/0\/86\/2580\/2166\/",
+        "parents_uri": null,
+        "uri": "myshi",
+        "inherite": 0,
+        "ordering": 50610,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/myshi-20210914.jpg",
+        "deleted_at": null,
+        "created_at": "2020-07-10 11:49:26",
+        "updated_at": "2024-04-04 15:23:10",
+        "search_ordering": 50612,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "304",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041c\u044b\u0448\u0438\", \"uk\": \"\u041c\u0438\u0448\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041c\u044b\u0448\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2166",
+        "slider_id": null,
+        "key": 2166,
+        "title": "\u041c\u044b\u0448\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "myshi",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041c\u044b\u0448\u0438",
+                "uk": "\u041c\u0438\u0448\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2547,
+        "pid": 2580,
+        "name_1c": null,
+        "parents": "\/0\/86\/2580\/2547\/",
+        "parents_uri": null,
+        "uri": "igrovye-nabory",
+        "inherite": 0,
+        "ordering": 50620,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/igrovye-nabory-20201230.jpg",
+        "deleted_at": null,
+        "created_at": "2020-12-28 12:47:42",
+        "updated_at": "2024-04-04 15:23:25",
+        "search_ordering": 50622,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "3166",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0418\u0433\u0440\u043e\u0432\u044b\u0435 \u043d\u0430\u0431\u043e\u0440\u044b\", \"uk\": \"\u0406\u0433\u0440\u043e\u0432\u0456 \u043d\u0430\u0431\u043e\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0418\u0433\u0440\u043e\u0432\u044b\u0435 \u043d\u0430\u0431\u043e\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2547",
+        "slider_id": null,
+        "key": 2547,
+        "title": "\u0418\u0433\u0440\u043e\u0432\u044b\u0435 \u043d\u0430\u0431\u043e\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "igrovye-nabory",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0418\u0433\u0440\u043e\u0432\u044b\u0435 \u043d\u0430\u0431\u043e\u0440\u044b",
+                "uk": "\u0406\u0433\u0440\u043e\u0432\u0456 \u043d\u0430\u0431\u043e\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2167,
+        "pid": 2580,
+        "name_1c": null,
+        "parents": "\/0\/86\/2580\/2167\/",
+        "parents_uri": null,
+        "uri": "klaviatury",
+        "inherite": 0,
+        "ordering": 50630,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/klaviatury-20210914.jpg",
+        "deleted_at": null,
+        "created_at": "2020-07-10 11:52:38",
+        "updated_at": "2024-04-04 15:23:38",
+        "search_ordering": 50632,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "303",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u044b\", \"uk\": \"\u041a\u043b\u0430\u0432\u0456\u0430\u0442\u0443\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2167",
+        "slider_id": null,
+        "key": 2167,
+        "title": "\u041a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "klaviatury",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u044b",
+                "uk": "\u041a\u043b\u0430\u0432\u0456\u0430\u0442\u0443\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4560,
+        "pid": 2580,
+        "name_1c": null,
+        "parents": "\/0\/86\/2580\/4560\/",
+        "parents_uri": null,
+        "uri": "aksesuari-dlya-klaviatur",
+        "inherite": 0,
+        "ordering": 50640,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-klaviatur-1698394128.jpg",
+        "deleted_at": null,
+        "created_at": "2023-10-27 11:01:52",
+        "updated_at": "2024-04-04 15:23:53",
+        "search_ordering": 50642,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043a\u043b\u0430\u0432\u0456\u0430\u0442\u0443\u0440\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4560",
+        "slider_id": null,
+        "key": 4560,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksesuari-dlya-klaviatur",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043a\u043b\u0430\u0432\u0456\u0430\u0442\u0443\u0440"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2168,
+        "pid": 2580,
+        "name_1c": null,
+        "parents": "\/0\/86\/2580\/2168\/",
+        "parents_uri": null,
+        "uri": "kovriki-dlya-myshi",
+        "inherite": 0,
+        "ordering": 50650,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kovriki-dlya-myshi-20210914.jpg",
+        "deleted_at": null,
+        "created_at": "2020-07-10 11:54:25",
+        "updated_at": "2024-04-04 15:24:43",
+        "search_ordering": 50652,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1993",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u043e\u0432\u0440\u0438\u043a\u0438 \u0434\u043b\u044f \u043c\u044b\u0448\u0438\", \"uk\": \"\u041a\u0438\u043b\u0438\u043c\u043a\u0438 \u0434\u043b\u044f \u043c\u0438\u0448\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u043e\u0432\u0440\u0438\u043a\u0438 \u0434\u043b\u044f \u043c\u044b\u0448\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2168",
+        "slider_id": null,
+        "key": 2168,
+        "title": "\u041a\u043e\u0432\u0440\u0438\u043a\u0438 \u0434\u043b\u044f \u043c\u044b\u0448\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "kovriki-dlya-myshi",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u043e\u0432\u0440\u0438\u043a\u0438 \u0434\u043b\u044f \u043c\u044b\u0448\u0438",
+                "uk": "\u041a\u0438\u043b\u0438\u043c\u043a\u0438 \u0434\u043b\u044f \u043c\u0438\u0448\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

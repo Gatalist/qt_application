@@ -1,0 +1,7 @@
+pyqt5
+requests
+yt-dlp
+openpyxl
+pandas
+selenium
+pyperclip

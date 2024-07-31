@@ -1,0 +1,51 @@
+[
+    {
+        "id": 2153,
+        "pid": 2151,
+        "name_1c": null,
+        "parents": "\/0\/1664\/2151\/2153\/",
+        "parents_uri": null,
+        "uri": "detskie-kolyaski",
+        "inherite": 2151,
+        "ordering": 160510,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/detskie-kolyaski-20200706.png",
+        "deleted_at": null,
+        "created_at": "2020-07-03 15:03:07",
+        "updated_at": "2024-04-04 12:31:23",
+        "search_ordering": 160511,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "568",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0414\u0435\u0442\u0441\u043a\u0438\u0435 \u043a\u043e\u043b\u044f\u0441\u043a\u0438\", \"uk\": \"\u0414\u0438\u0442\u044f\u0447\u0456 \u043a\u043e\u043b\u044f\u0441\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0414\u0435\u0442\u0441\u043a\u0438\u0435 \u043a\u043e\u043b\u044f\u0441\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2153",
+        "slider_id": null,
+        "key": 2153,
+        "title": "\u0414\u0435\u0442\u0441\u043a\u0438\u0435 \u043a\u043e\u043b\u044f\u0441\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "detskie-kolyaski",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0414\u0435\u0442\u0441\u043a\u0438\u0435 \u043a\u043e\u043b\u044f\u0441\u043a\u0438",
+                "uk": "\u0414\u0438\u0442\u044f\u0447\u0456 \u043a\u043e\u043b\u044f\u0441\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

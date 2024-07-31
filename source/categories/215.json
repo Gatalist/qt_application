@@ -1,0 +1,100 @@
+[
+    {
+        "id": 42,
+        "pid": 215,
+        "name_1c": "\u0417\u0430\u0449\u0438\u0442\u043d\u044b\u0435 \u043f\u043b\u0435\u043d\u043a\u0438 \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u043e\u0432",
+        "parents": "\/0\/44\/215\/42\/",
+        "parents_uri": null,
+        "uri": "zashchitnye-plenki-dlya-smartfonov",
+        "inherite": 0,
+        "ordering": 30410,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/zashchitnye-plenki-dlya-smartfonov-20200120.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:55",
+        "updated_at": "2023-02-22 09:46:19",
+        "search_ordering": 30410,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "267",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0417\u0430\u0449\u0438\u0442\u043d\u044b\u0435 \u0441\u0442\u0435\u043a\u043b\u0430 \u0438 \u043f\u043b\u0435\u043d\u043a\u0438 \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u043e\u0432\", \"uk\": \"\u0417\u0430\u0445\u0438\u0441\u043d\u0435 \u0441\u043a\u043b\u043e \u0442\u0430 \u043f\u043b\u0456\u0432\u043a\u0438 \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u0456\u0432\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0417\u0430\u0449\u0438\u0442\u043d\u044b\u0435 \u0441\u0442\u0435\u043a\u043b\u0430 \u0438 \u043f\u043b\u0435\u043d\u043a\u0438 \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u043e\u0432",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_42",
+        "slider_id": null,
+        "key": 42,
+        "title": "\u0417\u0430\u0449\u0438\u0442\u043d\u044b\u0435 \u0441\u0442\u0435\u043a\u043b\u0430 \u0438 \u043f\u043b\u0435\u043d\u043a\u0438 \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u043e\u0432",
+        "folder": true,
+        "lazy": false,
+        "slug": "zashchitnye-plenki-dlya-smartfonov",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0417\u0430\u0449\u0438\u0442\u043d\u044b\u0435 \u0441\u0442\u0435\u043a\u043b\u0430 \u0438 \u043f\u043b\u0435\u043d\u043a\u0438 \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u043e\u0432",
+                "uk": "\u0417\u0430\u0445\u0438\u0441\u043d\u0435 \u0441\u043a\u043b\u043e \u0442\u0430 \u043f\u043b\u0456\u0432\u043a\u0438 \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u0456\u0432"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 77,
+        "pid": 215,
+        "name_1c": "\u0417\u0430\u0449\u0438\u0442\u043d\u044b\u0435 \u043f\u043b\u0435\u043d\u043a\u0438 \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u043e\u0432",
+        "parents": "\/0\/44\/215\/77\/",
+        "parents_uri": null,
+        "uri": "zashchitnye-plenki-dlya-planshetov",
+        "inherite": 0,
+        "ordering": 30420,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/zashchitnye-plenki-dlya-planshetov-20200120.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:55",
+        "updated_at": "2023-02-22 09:46:09",
+        "search_ordering": 30420,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "5466",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0417\u0430\u0449\u0438\u0442\u043d\u044b\u0435 \u043f\u043b\u0435\u043d\u043a\u0438 \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u043e\u0432\", \"uk\": \"\u0417\u0430\u0445\u0438\u0441\u043d\u0456 \u043f\u043b\u0456\u0432\u043a\u0438 \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u0456\u0432\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0417\u0430\u0449\u0438\u0442\u043d\u044b\u0435 \u043f\u043b\u0435\u043d\u043a\u0438 \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u043e\u0432",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_77",
+        "slider_id": null,
+        "key": 77,
+        "title": "\u0417\u0430\u0449\u0438\u0442\u043d\u044b\u0435 \u043f\u043b\u0435\u043d\u043a\u0438 \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u043e\u0432",
+        "folder": true,
+        "lazy": false,
+        "slug": "zashchitnye-plenki-dlya-planshetov",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0417\u0430\u0449\u0438\u0442\u043d\u044b\u0435 \u043f\u043b\u0435\u043d\u043a\u0438 \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u043e\u0432",
+                "uk": "\u0417\u0430\u0445\u0438\u0441\u043d\u0456 \u043f\u043b\u0456\u0432\u043a\u0438 \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u0456\u0432"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

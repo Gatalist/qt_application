@@ -1,0 +1,296 @@
+[
+    {
+        "id": 2223,
+        "pid": 3735,
+        "name_1c": null,
+        "parents": "\/0\/4131\/3735\/2223\/",
+        "parents_uri": null,
+        "uri": "kofemashiny",
+        "inherite": 0,
+        "ordering": 83100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kofemashiny-1677064851.jpg",
+        "deleted_at": null,
+        "created_at": "2020-09-04 12:37:26",
+        "updated_at": "2024-04-04 14:59:48",
+        "search_ordering": 83102,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "736",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u043e\u0444\u0435\u043c\u0430\u0448\u0438\u043d\u044b\", \"uk\": \"\u041a\u0430\u0432\u043e\u043c\u0430\u0448\u0438\u043d\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u043e\u0444\u0435\u043c\u0430\u0448\u0438\u043d\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2223",
+        "slider_id": null,
+        "key": 2223,
+        "title": "\u041a\u043e\u0444\u0435\u043c\u0430\u0448\u0438\u043d\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "kofemashiny",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u043e\u0444\u0435\u043c\u0430\u0448\u0438\u043d\u044b",
+                "uk": "\u041a\u0430\u0432\u043e\u043c\u0430\u0448\u0438\u043d\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3736,
+        "pid": 3735,
+        "name_1c": null,
+        "parents": "\/0\/4131\/3735\/3736\/",
+        "parents_uri": null,
+        "uri": "kofevarki",
+        "inherite": 0,
+        "ordering": 83200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kofevarki-1677064880.jpg",
+        "deleted_at": null,
+        "created_at": "2022-02-22 16:10:46",
+        "updated_at": "2024-04-04 15:00:05",
+        "search_ordering": 83202,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "736",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u043e\u0444\u0435\u0432\u0430\u0440\u043a\u0438\", \"uk\": \"\u041a\u0430\u0432\u043e\u0432\u0430\u0440\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u043e\u0444\u0435\u0432\u0430\u0440\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3736",
+        "slider_id": null,
+        "key": 3736,
+        "title": "\u041a\u043e\u0444\u0435\u0432\u0430\u0440\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "kofevarki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u043e\u0444\u0435\u0432\u0430\u0440\u043a\u0438",
+                "uk": "\u041a\u0430\u0432\u043e\u0432\u0430\u0440\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3737,
+        "pid": 3735,
+        "name_1c": null,
+        "parents": "\/0\/4131\/3735\/3737\/",
+        "parents_uri": null,
+        "uri": "kapuchinatory",
+        "inherite": 0,
+        "ordering": 83300,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kapuchinatory-1677064868.jpg",
+        "deleted_at": null,
+        "created_at": "2022-02-22 16:14:47",
+        "updated_at": "2024-04-04 15:00:24",
+        "search_ordering": 83302,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "505666",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u0430\u043f\u0443\u0447\u0438\u043d\u0430\u0442\u043e\u0440\u044b\", \"uk\": \"\u041a\u0430\u043f\u0443\u0447\u0438\u043d\u0430\u0442\u043e\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u0430\u043f\u0443\u0447\u0438\u043d\u0430\u0442\u043e\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3737",
+        "slider_id": null,
+        "key": 3737,
+        "title": "\u041a\u0430\u043f\u0443\u0447\u0438\u043d\u0430\u0442\u043e\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "kapuchinatory",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u0430\u043f\u0443\u0447\u0438\u043d\u0430\u0442\u043e\u0440\u044b",
+                "uk": "\u041a\u0430\u043f\u0443\u0447\u0438\u043d\u0430\u0442\u043e\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3738,
+        "pid": 3735,
+        "name_1c": null,
+        "parents": "\/0\/4131\/3735\/3738\/",
+        "parents_uri": null,
+        "uri": "kofemolki",
+        "inherite": 0,
+        "ordering": 83400,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kofemolki-1677064897.jpg",
+        "deleted_at": null,
+        "created_at": "2022-02-22 16:20:30",
+        "updated_at": "2024-04-04 15:00:42",
+        "search_ordering": 83402,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "734",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u043e\u0444\u0435\u043c\u043e\u043b\u043a\u0438\", \"uk\": \"\u041a\u0430\u0432\u043e\u043c\u043e\u043b\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u043e\u0444\u0435\u043c\u043e\u043b\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3738",
+        "slider_id": null,
+        "key": 3738,
+        "title": "\u041a\u043e\u0444\u0435\u043c\u043e\u043b\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "kofemolki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u043e\u0444\u0435\u043c\u043e\u043b\u043a\u0438",
+                "uk": "\u041a\u0430\u0432\u043e\u043c\u043e\u043b\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3739,
+        "pid": 3735,
+        "name_1c": null,
+        "parents": "\/0\/4131\/3735\/3739\/",
+        "parents_uri": null,
+        "uri": "kofe",
+        "inherite": 0,
+        "ordering": 83500,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kofe-20220222.jpg",
+        "deleted_at": null,
+        "created_at": "2022-02-22 16:30:16",
+        "updated_at": "2024-04-04 15:01:04",
+        "search_ordering": 83502,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "3988",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u043e\u0444\u0435\", \"uk\": \"\u041a\u0430\u0432\u0430\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u043e\u0444\u0435",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3739",
+        "slider_id": null,
+        "key": 3739,
+        "title": "\u041a\u043e\u0444\u0435",
+        "folder": true,
+        "lazy": false,
+        "slug": "kofe",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u043e\u0444\u0435",
+                "uk": "\u041a\u0430\u0432\u0430"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3740,
+        "pid": 3735,
+        "name_1c": null,
+        "parents": "\/0\/4131\/3735\/3740\/",
+        "parents_uri": null,
+        "uri": "chistyashchie-sredstva-dlya-kofemashin",
+        "inherite": 0,
+        "ordering": 83600,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/chistyashchie-sredstva-dlya-kofemashin-1677064909.jpg",
+        "deleted_at": null,
+        "created_at": "2022-02-22 16:33:45",
+        "updated_at": "2024-04-04 15:01:30",
+        "search_ordering": 83602,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "3988",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0427\u0438\u0441\u0442\u044f\u0449\u0438\u0435 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0434\u043b\u044f \u043a\u043e\u0444\u0435\u043c\u0430\u0448\u0438\u043d\", \"uk\": \"\u0427\u0438\u0441\u0442\u044f\u0447\u0456 \u0437\u0430\u0441\u043e\u0431\u0438 \u0434\u043b\u044f \u043a\u043e\u0444\u0435\u043c\u0430\u0448\u0438\u043d\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0427\u0438\u0441\u0442\u044f\u0449\u0438\u0435 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0434\u043b\u044f \u043a\u043e\u0444\u0435\u043c\u0430\u0448\u0438\u043d",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3740",
+        "slider_id": null,
+        "key": 3740,
+        "title": "\u0427\u0438\u0441\u0442\u044f\u0449\u0438\u0435 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0434\u043b\u044f \u043a\u043e\u0444\u0435\u043c\u0430\u0448\u0438\u043d",
+        "folder": true,
+        "lazy": false,
+        "slug": "chistyashchie-sredstva-dlya-kofemashin",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0427\u0438\u0441\u0442\u044f\u0449\u0438\u0435 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0434\u043b\u044f \u043a\u043e\u0444\u0435\u043c\u0430\u0448\u0438\u043d",
+                "uk": "\u0427\u0438\u0441\u0442\u044f\u0447\u0456 \u0437\u0430\u0441\u043e\u0431\u0438 \u0434\u043b\u044f \u043a\u043e\u0444\u0435\u043c\u0430\u0448\u0438\u043d"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

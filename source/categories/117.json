@@ -1,0 +1,345 @@
+[
+    {
+        "id": 238,
+        "pid": 117,
+        "name_1c": null,
+        "parents": "\/0\/185\/117\/238\/",
+        "parents_uri": null,
+        "uri": "shlemu",
+        "inherite": 0,
+        "ordering": 130710,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/shlemy-20210524.jpg",
+        "deleted_at": null,
+        "created_at": "2017-12-12 10:00:00",
+        "updated_at": "2024-04-04 12:58:55",
+        "search_ordering": 130711,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "3214",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0428\u043b\u0435\u043c\u044b\", \"uk\": \"\u0428\u043e\u043b\u043e\u043c\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0428\u043b\u0435\u043c\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_238",
+        "slider_id": null,
+        "key": 238,
+        "title": "\u0428\u043b\u0435\u043c\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "shlemu",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0428\u043b\u0435\u043c\u044b",
+                "uk": "\u0428\u043e\u043b\u043e\u043c\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 239,
+        "pid": 117,
+        "name_1c": null,
+        "parents": "\/0\/185\/117\/239\/",
+        "parents_uri": null,
+        "uri": "zashhita",
+        "inherite": 0,
+        "ordering": 130720,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/nakolenniki-i-nalokotniki-20210524.jpg",
+        "deleted_at": null,
+        "created_at": "2017-12-12 10:01:35",
+        "updated_at": "2024-04-04 12:59:11",
+        "search_ordering": 130721,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "3214",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041d\u0430\u043a\u043e\u043b\u0435\u043d\u043d\u0438\u043a\u0438 \u0438 \u043d\u0430\u043b\u043e\u043a\u043e\u0442\u043d\u0438\u043a\u0438\", \"uk\": \"\u0417\u0430\u0445\u0438\u0441\u0442\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041d\u0430\u043a\u043e\u043b\u0435\u043d\u043d\u0438\u043a\u0438 \u0438 \u043d\u0430\u043b\u043e\u043a\u043e\u0442\u043d\u0438\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_239",
+        "slider_id": null,
+        "key": 239,
+        "title": "\u041d\u0430\u043a\u043e\u043b\u0435\u043d\u043d\u0438\u043a\u0438 \u0438 \u043d\u0430\u043b\u043e\u043a\u043e\u0442\u043d\u0438\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "zashhita",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041d\u0430\u043a\u043e\u043b\u0435\u043d\u043d\u0438\u043a\u0438 \u0438 \u043d\u0430\u043b\u043e\u043a\u043e\u0442\u043d\u0438\u043a\u0438",
+                "uk": "\u0417\u0430\u0445\u0438\u0441\u0442"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 240,
+        "pid": 117,
+        "name_1c": null,
+        "parents": "\/0\/185\/117\/240\/",
+        "parents_uri": null,
+        "uri": "nasosy",
+        "inherite": 0,
+        "ordering": 130730,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/nasosy-20180202.jpg",
+        "deleted_at": null,
+        "created_at": "2017-12-12 10:02:57",
+        "updated_at": "2024-04-04 12:59:32",
+        "search_ordering": 130731,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "3827",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041d\u0430\u0441\u043e\u0441\u044b\", \"uk\": \"\u041d\u0430\u0441\u043e\u0441\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041d\u0430\u0441\u043e\u0441\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_240",
+        "slider_id": null,
+        "key": 240,
+        "title": "\u041d\u0430\u0441\u043e\u0441\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "nasosy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041d\u0430\u0441\u043e\u0441\u044b",
+                "uk": "\u041d\u0430\u0441\u043e\u0441\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 241,
+        "pid": 117,
+        "name_1c": null,
+        "parents": "\/0\/185\/117\/241\/",
+        "parents_uri": null,
+        "uri": "chexly-i-sumki",
+        "inherite": 0,
+        "ordering": 130740,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/chekhly-i-sumki-20210427.jpg",
+        "deleted_at": null,
+        "created_at": "2017-12-12 10:06:54",
+        "updated_at": "2024-04-04 12:59:50",
+        "search_ordering": 130741,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "5181",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0427\u0435\u0445\u043b\u044b \u0438 \u0441\u0443\u043c\u043a\u0438\", \"uk\": \"\u0427\u043e\u0445\u043b\u0438 \u0442\u0430 \u0441\u0443\u043c\u043a\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0427\u0435\u0445\u043b\u044b \u0438 \u0441\u0443\u043c\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_241",
+        "slider_id": null,
+        "key": 241,
+        "title": "\u0427\u0435\u0445\u043b\u044b \u0438 \u0441\u0443\u043c\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "chexly-i-sumki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0427\u0435\u0445\u043b\u044b \u0438 \u0441\u0443\u043c\u043a\u0438",
+                "uk": "\u0427\u043e\u0445\u043b\u0438 \u0442\u0430 \u0441\u0443\u043c\u043a\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 242,
+        "pid": 117,
+        "name_1c": null,
+        "parents": "\/0\/185\/117\/242\/",
+        "parents_uri": null,
+        "uri": "antiugonnye-zamki",
+        "inherite": 0,
+        "ordering": 130750,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/antiugonnye-zamki-20180202.JPG",
+        "deleted_at": null,
+        "created_at": "2017-12-12 10:08:31",
+        "updated_at": "2024-04-04 13:00:09",
+        "search_ordering": 130751,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1974",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043d\u0442\u0438\u0443\u0433\u043e\u043d\u043d\u044b\u0435 \u0437\u0430\u043c\u043a\u0438\", \"uk\": \"\u041f\u0440\u043e\u0442\u0438\u0443\u0433\u0456\u043d\u043d\u0456 \u0437\u0430\u043c\u043a\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0410\u043d\u0442\u0438\u0443\u0433\u043e\u043d\u043d\u044b\u0435 \u0437\u0430\u043c\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_242",
+        "slider_id": null,
+        "key": 242,
+        "title": "\u0410\u043d\u0442\u0438\u0443\u0433\u043e\u043d\u043d\u044b\u0435 \u0437\u0430\u043c\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "antiugonnye-zamki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043d\u0442\u0438\u0443\u0433\u043e\u043d\u043d\u044b\u0435 \u0437\u0430\u043c\u043a\u0438",
+                "uk": "\u041f\u0440\u043e\u0442\u0438\u0443\u0433\u0456\u043d\u043d\u0456 \u0437\u0430\u043c\u043a\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 244,
+        "pid": 117,
+        "name_1c": null,
+        "parents": "\/0\/185\/117\/244\/",
+        "parents_uri": null,
+        "uri": "perchatki-dlya-personalnogo-transporta",
+        "inherite": 0,
+        "ordering": 130760,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/perchatki-dlya-personalnogo-transporta-20210524.jpg",
+        "deleted_at": null,
+        "created_at": "2017-12-12 10:10:10",
+        "updated_at": "2024-04-04 13:00:34",
+        "search_ordering": 130761,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "170",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0438 \u0434\u043b\u044f \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430\", \"uk\": \"\u0420\u0443\u043a\u0430\u0432\u0438\u0447\u043a\u0438 \u0434\u043b\u044f \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0443\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0438 \u0434\u043b\u044f \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_244",
+        "slider_id": null,
+        "key": 244,
+        "title": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0438 \u0434\u043b\u044f \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+        "folder": true,
+        "lazy": false,
+        "slug": "perchatki-dlya-personalnogo-transporta",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0438 \u0434\u043b\u044f \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+                "uk": "\u0420\u0443\u043a\u0430\u0432\u0438\u0447\u043a\u0438 \u0434\u043b\u044f \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0443"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 245,
+        "pid": 117,
+        "name_1c": null,
+        "parents": "\/0\/185\/117\/245\/",
+        "parents_uri": null,
+        "uri": "prochie-aksessuary-dlya-elektrotransporta",
+        "inherite": 0,
+        "ordering": 130770,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/prochie-aksessuary-dlya-personalnogo-transporta-20210524.jpg",
+        "deleted_at": null,
+        "created_at": "2017-12-12 10:10:51",
+        "updated_at": "2024-04-04 13:01:17",
+        "search_ordering": 130771,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "888",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0440\u043e\u0447\u0438\u0435 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430\", \"uk\": \"\u0406\u043d\u0448\u0456 \u0430\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0443\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u0440\u043e\u0447\u0438\u0435 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_245",
+        "slider_id": null,
+        "key": 245,
+        "title": "\u041f\u0440\u043e\u0447\u0438\u0435 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+        "folder": true,
+        "lazy": false,
+        "slug": "prochie-aksessuary-dlya-elektrotransporta",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0440\u043e\u0447\u0438\u0435 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0430",
+                "uk": "\u0406\u043d\u0448\u0456 \u0430\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0443"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

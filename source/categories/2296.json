@@ -1,0 +1,492 @@
+[
+    {
+        "id": 4297,
+        "pid": 4296,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/4296\/4297\/",
+        "parents_uri": null,
+        "uri": "shurupoverti-ta-vikrutki",
+        "inherite": 0,
+        "ordering": 120602,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/shurupoverty-i-otvertki-1692952202.jpg",
+        "deleted_at": null,
+        "created_at": "2023-08-15 09:39:16",
+        "updated_at": "2024-04-04 13:30:23",
+        "search_ordering": 120603,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1167",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0428\u0443\u0440\u0443\u043f\u043e\u0432\u0435\u0440\u0442\u044b \u0438 \u043e\u0442\u0432\u0435\u0440\u0442\u043a\u0438\", \"uk\": \"\u0428\u0443\u0440\u0443\u043f\u043e\u0432\u0435\u0440\u0442\u0438 \u0442\u0430 \u0432\u0438\u043a\u0440\u0443\u0442\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0428\u0443\u0440\u0443\u043f\u043e\u0432\u0435\u0440\u0442\u044b \u0438 \u043e\u0442\u0432\u0435\u0440\u0442\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4297",
+        "slider_id": null,
+        "key": 4297,
+        "title": "\u0428\u0443\u0440\u0443\u043f\u043e\u0432\u0435\u0440\u0442\u044b \u0438 \u043e\u0442\u0432\u0435\u0440\u0442\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "shurupoverti-ta-vikrutki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0428\u0443\u0440\u0443\u043f\u043e\u0432\u0435\u0440\u0442\u044b \u0438 \u043e\u0442\u0432\u0435\u0440\u0442\u043a\u0438",
+                "uk": "\u0428\u0443\u0440\u0443\u043f\u043e\u0432\u0435\u0440\u0442\u0438 \u0442\u0430 \u0432\u0438\u043a\u0440\u0443\u0442\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4298,
+        "pid": 4296,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/4296\/4298\/",
+        "parents_uri": null,
+        "uri": "shlifuvalni-mashinki",
+        "inherite": 0,
+        "ordering": 120604,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/shlifovalnye-mashinki-1692082991.jpg",
+        "deleted_at": null,
+        "created_at": "2023-08-15 09:41:05",
+        "updated_at": "2024-04-04 13:30:48",
+        "search_ordering": 120605,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1167",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0428\u043b\u0438\u0444\u043e\u0432\u0430\u043b\u044c\u043d\u044b\u0435 \u043c\u0430\u0448\u0438\u043d\u043a\u0438\", \"uk\": \"\u0428\u043b\u0456\u0444\u0443\u0432\u0430\u043b\u044c\u043d\u0456 \u043c\u0430\u0448\u0438\u043d\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0428\u043b\u0438\u0444\u043e\u0432\u0430\u043b\u044c\u043d\u044b\u0435 \u043c\u0430\u0448\u0438\u043d\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4298",
+        "slider_id": null,
+        "key": 4298,
+        "title": "\u0428\u043b\u0438\u0444\u043e\u0432\u0430\u043b\u044c\u043d\u044b\u0435 \u043c\u0430\u0448\u0438\u043d\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "shlifuvalni-mashinki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0428\u043b\u0438\u0444\u043e\u0432\u0430\u043b\u044c\u043d\u044b\u0435 \u043c\u0430\u0448\u0438\u043d\u043a\u0438",
+                "uk": "\u0428\u043b\u0456\u0444\u0443\u0432\u0430\u043b\u044c\u043d\u0456 \u043c\u0430\u0448\u0438\u043d\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4299,
+        "pid": 4296,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/4296\/4299\/",
+        "parents_uri": null,
+        "uri": "perforatori",
+        "inherite": 0,
+        "ordering": 120606,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/perforatory-1692083089.jpg",
+        "deleted_at": null,
+        "created_at": "2023-08-15 09:45:50",
+        "updated_at": "2024-04-04 13:31:09",
+        "search_ordering": 120607,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "7077",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0435\u0440\u0444\u043e\u0440\u0430\u0442\u043e\u0440\u044b\", \"uk\": \"\u041f\u0435\u0440\u0444\u043e\u0440\u0430\u0442\u043e\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041f\u0435\u0440\u0444\u043e\u0440\u0430\u0442\u043e\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4299",
+        "slider_id": null,
+        "key": 4299,
+        "title": "\u041f\u0435\u0440\u0444\u043e\u0440\u0430\u0442\u043e\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "perforatori",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0435\u0440\u0444\u043e\u0440\u0430\u0442\u043e\u0440\u044b",
+                "uk": "\u041f\u0435\u0440\u0444\u043e\u0440\u0430\u0442\u043e\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4300,
+        "pid": 4296,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/4296\/4300\/",
+        "parents_uri": null,
+        "uri": "elektrodrili-ta-mikseri",
+        "inherite": 0,
+        "ordering": 120608,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/elektrodreli-i-miksery-1692083201.jpg",
+        "deleted_at": null,
+        "created_at": "2023-08-15 09:46:57",
+        "updated_at": "2024-04-04 13:31:24",
+        "search_ordering": 120609,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1217",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0434\u0440\u0435\u043b\u0438 \u0438 \u043c\u0438\u043a\u0441\u0435\u0440\u044b\", \"uk\": \"\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u0434\u0440\u0438\u043b\u0456 \u0442\u0430 \u043c\u0456\u043a\u0441\u0435\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0434\u0440\u0435\u043b\u0438 \u0438 \u043c\u0438\u043a\u0441\u0435\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4300",
+        "slider_id": null,
+        "key": 4300,
+        "title": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0434\u0440\u0435\u043b\u0438 \u0438 \u043c\u0438\u043a\u0441\u0435\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "elektrodrili-ta-mikseri",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0434\u0440\u0435\u043b\u0438 \u0438 \u043c\u0438\u043a\u0441\u0435\u0440\u044b",
+                "uk": "\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u0434\u0440\u0438\u043b\u0456 \u0442\u0430 \u043c\u0456\u043a\u0441\u0435\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4301,
+        "pid": 4296,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/4296\/4301\/",
+        "parents_uri": null,
+        "uri": "elektrolobziki",
+        "inherite": 0,
+        "ordering": 120610,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/elektrolobziki-1692083285.jpg",
+        "deleted_at": null,
+        "created_at": "2023-08-15 09:48:19",
+        "updated_at": "2024-04-04 13:33:16",
+        "search_ordering": 120611,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "3725",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043b\u043e\u0431\u0437\u0438\u043a\u0438\", \"uk\": \"\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u043b\u043e\u0431\u0437\u0438\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043b\u043e\u0431\u0437\u0438\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4301",
+        "slider_id": null,
+        "key": 4301,
+        "title": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043b\u043e\u0431\u0437\u0438\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "elektrolobziki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043b\u043e\u0431\u0437\u0438\u043a\u0438",
+                "uk": "\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u043b\u043e\u0431\u0437\u0438\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4302,
+        "pid": 4296,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/4296\/4302\/",
+        "parents_uri": null,
+        "uri": "bagatofunkcionalnij-elektrichnij-instrument",
+        "inherite": 0,
+        "ordering": 120612,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/mnogofunktsionalnyy-elektricheskiy-instrument-1692084177.jpg",
+        "deleted_at": null,
+        "created_at": "2023-08-15 09:49:34",
+        "updated_at": "2024-04-04 13:33:32",
+        "search_ordering": 120613,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1167",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041c\u043d\u043e\u0433\u043e\u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u044d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\", \"uk\": \"\u0411\u0430\u0433\u0430\u0442\u043e\u0444\u0443\u043d\u043a\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0438\u0439 \u0435\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u043d\u0438\u0439 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041c\u043d\u043e\u0433\u043e\u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u044d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4302",
+        "slider_id": null,
+        "key": 4302,
+        "title": "\u041c\u043d\u043e\u0433\u043e\u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u044d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442",
+        "folder": true,
+        "lazy": false,
+        "slug": "bagatofunkcionalnij-elektrichnij-instrument",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041c\u043d\u043e\u0433\u043e\u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u044d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442",
+                "uk": "\u0411\u0430\u0433\u0430\u0442\u043e\u0444\u0443\u043d\u043a\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0438\u0439 \u0435\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u043d\u0438\u0439 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4303,
+        "pid": 4296,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/4296\/4303\/",
+        "parents_uri": null,
+        "uri": "feni-budivelni",
+        "inherite": 0,
+        "ordering": 120614,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/feny-stroitelnye-1692083410.jpg",
+        "deleted_at": null,
+        "created_at": "2023-08-15 09:50:41",
+        "updated_at": "2024-04-04 13:34:08",
+        "search_ordering": 120615,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1220",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0424\u0435\u043d\u044b \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435\", \"uk\": \"\u0424\u0435\u043d\u0438 \u0431\u0443\u0434\u0456\u0432\u0435\u043b\u044c\u043d\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0424\u0435\u043d\u044b \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4303",
+        "slider_id": null,
+        "key": 4303,
+        "title": "\u0424\u0435\u043d\u044b \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435",
+        "folder": true,
+        "lazy": false,
+        "slug": "feni-budivelni",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0424\u0435\u043d\u044b \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435",
+                "uk": "\u0424\u0435\u043d\u0438 \u0431\u0443\u0434\u0456\u0432\u0435\u043b\u044c\u043d\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4725,
+        "pid": 4296,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/4296\/4725\/",
+        "parents_uri": null,
+        "uri": "diskovi-elektropili",
+        "inherite": 0,
+        "ordering": 120616,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/diskovye-elektropily-1699947446.jpg",
+        "deleted_at": null,
+        "created_at": "2023-11-14 09:36:28",
+        "updated_at": "2024-04-04 13:34:29",
+        "search_ordering": 120617,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0414\u0438\u0441\u043a\u043e\u0432\u044b\u0435 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0438\u043b\u044b\", \"uk\": \"\u0414\u0438\u0441\u043a\u043e\u0432\u0456 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0438\u043b\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0414\u0438\u0441\u043a\u043e\u0432\u044b\u0435 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0438\u043b\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4725",
+        "slider_id": null,
+        "key": 4725,
+        "title": "\u0414\u0438\u0441\u043a\u043e\u0432\u044b\u0435 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0438\u043b\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "diskovi-elektropili",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0414\u0438\u0441\u043a\u043e\u0432\u044b\u0435 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0438\u043b\u044b",
+                "uk": "\u0414\u0438\u0441\u043a\u043e\u0432\u0456 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0438\u043b\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4305,
+        "pid": 4296,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/4296\/4305\/",
+        "parents_uri": null,
+        "uri": "elektrorubanki",
+        "inherite": 0,
+        "ordering": 120618,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/elektrorubanki-1692083569.jpg",
+        "deleted_at": null,
+        "created_at": "2023-08-15 09:53:39",
+        "updated_at": "2024-04-04 13:34:49",
+        "search_ordering": 120619,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1187",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0440\u0443\u0431\u0430\u043d\u043a\u0438\", \"uk\": \"\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u0440\u0443\u0431\u0430\u043d\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0440\u0443\u0431\u0430\u043d\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4305",
+        "slider_id": null,
+        "key": 4305,
+        "title": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0440\u0443\u0431\u0430\u043d\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "elektrorubanki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0440\u0443\u0431\u0430\u043d\u043a\u0438",
+                "uk": "\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u0440\u0443\u0431\u0430\u043d\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4306,
+        "pid": 4296,
+        "name_1c": null,
+        "parents": "\/0\/1657\/2745\/4296\/4306\/",
+        "parents_uri": null,
+        "uri": "akumulyatori-ta-zaryadni-pristroyi-dlya-elektroinstrumentu",
+        "inherite": 0,
+        "ordering": 120620,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/akkumulyatory-i-zaryadnye-ustroystva-dlya-elektroinstrumenta-1692083674.jpg",
+        "deleted_at": null,
+        "created_at": "2023-08-15 09:55:22",
+        "updated_at": "2024-04-04 13:35:03",
+        "search_ordering": 120621,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1167",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u044b \u0438 \u0437\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430 \u0434\u043b\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430\", \"uk\": \"\u0410\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u0438 \u0442\u0430 \u0437\u0430\u0440\u044f\u0434\u043d\u0456 \u043f\u0440\u0438\u0441\u0442\u0440\u043e\u0457 \u0434\u043b\u044f \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0443\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u044b \u0438 \u0437\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430 \u0434\u043b\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4306",
+        "slider_id": null,
+        "key": 4306,
+        "title": "\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u044b \u0438 \u0437\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430 \u0434\u043b\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430",
+        "folder": true,
+        "lazy": false,
+        "slug": "akumulyatori-ta-zaryadni-pristroyi-dlya-elektroinstrumentu",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u044b \u0438 \u0437\u0430\u0440\u044f\u0434\u043d\u044b\u0435 \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430 \u0434\u043b\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430",
+                "uk": "\u0410\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u0438 \u0442\u0430 \u0437\u0430\u0440\u044f\u0434\u043d\u0456 \u043f\u0440\u0438\u0441\u0442\u0440\u043e\u0457 \u0434\u043b\u044f \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0443"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

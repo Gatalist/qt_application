@@ -1,0 +1,149 @@
+[
+    {
+        "id": 2026,
+        "pid": 2025,
+        "name_1c": null,
+        "parents": "\/0\/897\/2025\/2026\/",
+        "parents_uri": null,
+        "uri": "mfu",
+        "inherite": 0,
+        "ordering": 21100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/mfu-20200429.jpg",
+        "deleted_at": null,
+        "created_at": "2020-04-22 15:28:18",
+        "updated_at": "2024-03-05 12:23:34",
+        "search_ordering": 21101,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "345",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041c\u0424\u0423\", \"uk\": \"\u0411\u0424\u041f\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041c\u0424\u0423",
+        "footnote": "",
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2026",
+        "slider_id": null,
+        "key": 2026,
+        "title": "\u041c\u0424\u0423",
+        "folder": true,
+        "lazy": false,
+        "slug": "mfu",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041c\u0424\u0423",
+                "uk": "\u0411\u0424\u041f"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2027,
+        "pid": 2025,
+        "name_1c": null,
+        "parents": "\/0\/897\/2025\/2027\/",
+        "parents_uri": null,
+        "uri": "printery",
+        "inherite": 0,
+        "ordering": 21200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/printery-20200429.jpg",
+        "deleted_at": null,
+        "created_at": "2020-04-22 15:29:10",
+        "updated_at": "2023-02-21 16:31:29",
+        "search_ordering": 21200,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "500106",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0440\u0438\u043d\u0442\u0435\u0440\u044b\", \"uk\": \"\u041f\u0440\u0438\u043d\u0442\u0435\u0440\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u0440\u0438\u043d\u0442\u0435\u0440\u044b",
+        "footnote": "",
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2027",
+        "slider_id": null,
+        "key": 2027,
+        "title": "\u041f\u0440\u0438\u043d\u0442\u0435\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "printery",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0440\u0438\u043d\u0442\u0435\u0440\u044b",
+                "uk": "\u041f\u0440\u0438\u043d\u0442\u0435\u0440\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4136,
+        "pid": 2025,
+        "name_1c": null,
+        "parents": "\/0\/897\/2025\/4136\/",
+        "parents_uri": null,
+        "uri": "vytratni-materialy-dlya-prynteriv",
+        "inherite": 0,
+        "ordering": 21300,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/raskhodnye-materialy-dlya-printerov-1676889906.jpg",
+        "deleted_at": null,
+        "created_at": "2023-02-20 12:44:02",
+        "updated_at": "2023-09-27 12:03:31",
+        "search_ordering": 21300,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "5258",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0420\u0430\u0441\u0445\u043e\u0434\u043d\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b \u0434\u043b\u044f \u043f\u0440\u0438\u043d\u0442\u0435\u0440\u043e\u0432\", \"uk\": \"\u0412\u0438\u0442\u0440\u0430\u0442\u043d\u0456 \u043c\u0430\u0442\u0435\u0440\u0456\u0430\u043b\u0438 \u0434\u043b\u044f \u043f\u0440\u0438\u043d\u0442\u0435\u0440\u0456\u0432\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0420\u0430\u0441\u0445\u043e\u0434\u043d\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b \u0434\u043b\u044f \u043f\u0440\u0438\u043d\u0442\u0435\u0440\u043e\u0432",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4136",
+        "slider_id": null,
+        "key": 4136,
+        "title": "\u0420\u0430\u0441\u0445\u043e\u0434\u043d\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b \u0434\u043b\u044f \u043f\u0440\u0438\u043d\u0442\u0435\u0440\u043e\u0432",
+        "folder": true,
+        "lazy": true,
+        "slug": "vytratni-materialy-dlya-prynteriv",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0420\u0430\u0441\u0445\u043e\u0434\u043d\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b \u0434\u043b\u044f \u043f\u0440\u0438\u043d\u0442\u0435\u0440\u043e\u0432",
+                "uk": "\u0412\u0438\u0442\u0440\u0430\u0442\u043d\u0456 \u043c\u0430\u0442\u0435\u0440\u0456\u0430\u043b\u0438 \u0434\u043b\u044f \u043f\u0440\u0438\u043d\u0442\u0435\u0440\u0456\u0432"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

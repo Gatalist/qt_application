@@ -1,0 +1,198 @@
+[
+    {
+        "id": 700,
+        "pid": 2350,
+        "name_1c": null,
+        "parents": "\/0\/2232\/2350\/700\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-robotov-uborshh",
+        "inherite": 0,
+        "ordering": 106100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-robotov-pylesosov-1676973462.jpg",
+        "deleted_at": null,
+        "created_at": "2018-07-24 11:08:48",
+        "updated_at": "2024-04-04 14:19:26",
+        "search_ordering": 106102,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "604",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0440\u043e\u0431\u043e\u0442\u043e\u0432-\u043f\u044b\u043b\u0435\u0441\u043e\u0441\u043e\u0432\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0440\u043e\u0431\u043e\u0442\u0456\u0432-\u043f\u0438\u043b\u043e\u0441\u043e\u0441\u0456\u0432\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0440\u043e\u0431\u043e\u0442\u043e\u0432-\u043f\u044b\u043b\u0435\u0441\u043e\u0441\u043e\u0432",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_700",
+        "slider_id": null,
+        "key": 700,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0440\u043e\u0431\u043e\u0442\u043e\u0432-\u043f\u044b\u043b\u0435\u0441\u043e\u0441\u043e\u0432",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksessuary-dlya-robotov-uborshh",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0440\u043e\u0431\u043e\u0442\u043e\u0432-\u043f\u044b\u043b\u0435\u0441\u043e\u0441\u043e\u0432",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0440\u043e\u0431\u043e\u0442\u0456\u0432-\u043f\u0438\u043b\u043e\u0441\u043e\u0441\u0456\u0432"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2252,
+        "pid": 2350,
+        "name_1c": null,
+        "parents": "\/0\/2232\/2350\/2252\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-pylesosov",
+        "inherite": 0,
+        "ordering": 106200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-pylesosov-1676973486.jpg",
+        "deleted_at": null,
+        "created_at": "2020-09-22 15:05:10",
+        "updated_at": "2024-04-04 14:19:55",
+        "search_ordering": 106202,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "618",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u043e\u0432\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043f\u0438\u043b\u043e\u0441\u043e\u0441\u0456\u0432\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u043e\u0432",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2252",
+        "slider_id": null,
+        "key": 2252,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u043e\u0432",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksessuary-dlya-pylesosov",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u043e\u0432",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043f\u0438\u043b\u043e\u0441\u043e\u0441\u0456\u0432"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3274,
+        "pid": 2350,
+        "name_1c": null,
+        "parents": "\/0\/2232\/2350\/3274\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-poloterov-i-elektroshvabry",
+        "inherite": 0,
+        "ordering": 106300,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-poloterov-i-elektroshvabry-1676973508.jpg",
+        "deleted_at": null,
+        "created_at": "2021-08-12 10:56:36",
+        "updated_at": "2024-04-04 14:20:14",
+        "search_ordering": 106302,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "604",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043f\u043e\u043b\u043e\u0442\u0435\u0440\u043e\u0432 \u0438 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0448\u0432\u0430\u0431\u0440\u044b\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043d\u0430\u0442\u0438\u0440\u0430\u0447\u0456\u0432 \u0442\u0430 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0448\u0432\u0430\u0431\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043f\u043e\u043b\u043e\u0442\u0435\u0440\u043e\u0432 \u0438 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0448\u0432\u0430\u0431\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3274",
+        "slider_id": null,
+        "key": 3274,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043f\u043e\u043b\u043e\u0442\u0435\u0440\u043e\u0432 \u0438 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0448\u0432\u0430\u0431\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksessuary-dlya-poloterov-i-elektroshvabry",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043f\u043e\u043b\u043e\u0442\u0435\u0440\u043e\u0432 \u0438 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0448\u0432\u0430\u0431\u0440\u044b",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043d\u0430\u0442\u0438\u0440\u0430\u0447\u0456\u0432 \u0442\u0430 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0448\u0432\u0430\u0431\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2384,
+        "pid": 2350,
+        "name_1c": null,
+        "parents": "\/0\/2232\/2350\/2384\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-tehniki-karcher",
+        "inherite": 0,
+        "ordering": 106400,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-tekhniki-kaercher-1676973528.jpg",
+        "deleted_at": null,
+        "created_at": "2020-11-20 14:32:19",
+        "updated_at": "2024-04-04 14:20:31",
+        "search_ordering": 106402,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "604",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0438 K\u00e4rcher\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0442\u0435\u0445\u043d\u0456\u043a\u0438 K\u00e4rcher\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0438 K\u00e4rcher",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2384",
+        "slider_id": null,
+        "key": 2384,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0438 K\u00e4rcher",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksessuary-dlya-tehniki-karcher",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0438 K\u00e4rcher",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u0442\u0435\u0445\u043d\u0456\u043a\u0438 K\u00e4rcher"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

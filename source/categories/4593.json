@@ -1,0 +1,100 @@
+[
+    {
+        "id": 4594,
+        "pid": 4593,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4593\/4594\/",
+        "parents_uri": null,
+        "uri": "harchovi-kontejneri",
+        "inherite": 0,
+        "ordering": 97100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/pishchevye-konteynery-1699343216.jpg",
+        "deleted_at": null,
+        "created_at": "2023-11-07 09:45:56",
+        "updated_at": "2024-04-04 14:47:56",
+        "search_ordering": 97102,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0438\u0449\u0435\u0432\u044b\u0435 \u043a\u043e\u043d\u0442\u0435\u0439\u043d\u0435\u0440\u044b\", \"uk\": \"\u0425\u0430\u0440\u0447\u043e\u0432\u0456 \u043a\u043e\u043d\u0442\u0435\u0439\u043d\u0435\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041f\u0438\u0449\u0435\u0432\u044b\u0435 \u043a\u043e\u043d\u0442\u0435\u0439\u043d\u0435\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4594",
+        "slider_id": null,
+        "key": 4594,
+        "title": "\u041f\u0438\u0449\u0435\u0432\u044b\u0435 \u043a\u043e\u043d\u0442\u0435\u0439\u043d\u0435\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "harchovi-kontejneri",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0438\u0449\u0435\u0432\u044b\u0435 \u043a\u043e\u043d\u0442\u0435\u0439\u043d\u0435\u0440\u044b",
+                "uk": "\u0425\u0430\u0440\u0447\u043e\u0432\u0456 \u043a\u043e\u043d\u0442\u0435\u0439\u043d\u0435\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4595,
+        "pid": 4593,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4593\/4595\/",
+        "parents_uri": null,
+        "uri": "banki-ta-yemnosti",
+        "inherite": 0,
+        "ordering": 97200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/banki-i-emkosti-1699343305.jpg",
+        "deleted_at": null,
+        "created_at": "2023-11-07 09:47:51",
+        "updated_at": "2024-04-04 14:48:15",
+        "search_ordering": 97202,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0411\u0430\u043d\u043a\u0438 \u0438 \u0451\u043c\u043a\u043e\u0441\u0442\u0438\", \"uk\": \"\u0411\u0430\u043d\u043a\u0438 \u0442\u0430 \u0454\u043c\u043d\u043e\u0441\u0442\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0411\u0430\u043d\u043a\u0438 \u0438 \u0451\u043c\u043a\u043e\u0441\u0442\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4595",
+        "slider_id": null,
+        "key": 4595,
+        "title": "\u0411\u0430\u043d\u043a\u0438 \u0438 \u0451\u043c\u043a\u043e\u0441\u0442\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "banki-ta-yemnosti",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0411\u0430\u043d\u043a\u0438 \u0438 \u0451\u043c\u043a\u043e\u0441\u0442\u0438",
+                "uk": "\u0411\u0430\u043d\u043a\u0438 \u0442\u0430 \u0454\u043c\u043d\u043e\u0441\u0442\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

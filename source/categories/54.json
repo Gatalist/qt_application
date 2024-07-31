@@ -1,0 +1,445 @@
+[
+    {
+        "id": 3085,
+        "pid": 54,
+        "name_1c": null,
+        "parents": "\/0\/54\/3085\/",
+        "parents_uri": null,
+        "uri": "umnye-sireny-i-signalizacii",
+        "inherite": 0,
+        "ordering": 140100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/umnye-sireny-i-signalizatsii-20210525.jpg",
+        "deleted_at": null,
+        "created_at": "2021-04-29 16:16:42",
+        "updated_at": "2024-04-04 12:49:53",
+        "search_ordering": 140101,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "3873",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0423\u043c\u043d\u044b\u0435 \u0441\u0438\u0440\u0435\u043d\u044b \u0438 \u0441\u0438\u0433\u043d\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438\", \"uk\": \"\u0420\u043e\u0437\u0443\u043c\u043d\u0456 \u0441\u0438\u0440\u0435\u043d\u0438 \u0442\u0430 \u0441\u0438\u0433\u043d\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u0457\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0423\u043c\u043d\u044b\u0435 \u0441\u0438\u0440\u0435\u043d\u044b \u0438 \u0441\u0438\u0433\u043d\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3085",
+        "slider_id": null,
+        "key": 3085,
+        "title": "\u0423\u043c\u043d\u044b\u0435 \u0441\u0438\u0440\u0435\u043d\u044b \u0438 \u0441\u0438\u0433\u043d\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "umnye-sireny-i-signalizacii",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0423\u043c\u043d\u044b\u0435 \u0441\u0438\u0440\u0435\u043d\u044b \u0438 \u0441\u0438\u0433\u043d\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438",
+                "uk": "\u0420\u043e\u0437\u0443\u043c\u043d\u0456 \u0441\u0438\u0440\u0435\u043d\u0438 \u0442\u0430 \u0441\u0438\u0433\u043d\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u0457"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3086,
+        "pid": 54,
+        "name_1c": null,
+        "parents": "\/0\/54\/3086\/",
+        "parents_uri": null,
+        "uri": "ustroystva-i-datchiki-bezopasnosti",
+        "inherite": 0,
+        "ordering": 140200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/ustroystva-i-datchiki-bezopasnosti-20210525.jpg",
+        "deleted_at": null,
+        "created_at": "2021-04-29 16:50:34",
+        "updated_at": "2024-04-04 12:50:04",
+        "search_ordering": 140201,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "365",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430 \u0438 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438\", \"uk\": \"\u041f\u0440\u0438\u0441\u0442\u0440\u043e\u0457 \u0442\u0430 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u0431\u0435\u0437\u043f\u0435\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430 \u0438 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3086",
+        "slider_id": null,
+        "key": 3086,
+        "title": "\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430 \u0438 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "ustroystva-i-datchiki-bezopasnosti",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430 \u0438 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438",
+                "uk": "\u041f\u0440\u0438\u0441\u0442\u0440\u043e\u0457 \u0442\u0430 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u0431\u0435\u0437\u043f\u0435\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3087,
+        "pid": 54,
+        "name_1c": null,
+        "parents": "\/0\/54\/3087\/",
+        "parents_uri": null,
+        "uri": "umnye-rozetki",
+        "inherite": 0,
+        "ordering": 140300,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/umnye-rozetki-20210520.jpg",
+        "deleted_at": null,
+        "created_at": "2021-04-29 16:57:01",
+        "updated_at": "2024-04-04 12:50:20",
+        "search_ordering": 140301,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1869",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0423\u043c\u043d\u044b\u0435 \u0440\u043e\u0437\u0435\u0442\u043a\u0438\", \"uk\": \"\u0420\u043e\u0437\u0443\u043c\u043d\u0456 \u0440\u043e\u0437\u0435\u0442\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0423\u043c\u043d\u044b\u0435 \u0440\u043e\u0437\u0435\u0442\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3087",
+        "slider_id": null,
+        "key": 3087,
+        "title": "\u0423\u043c\u043d\u044b\u0435 \u0440\u043e\u0437\u0435\u0442\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "umnye-rozetki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0423\u043c\u043d\u044b\u0435 \u0440\u043e\u0437\u0435\u0442\u043a\u0438",
+                "uk": "\u0420\u043e\u0437\u0443\u043c\u043d\u0456 \u0440\u043e\u0437\u0435\u0442\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3088,
+        "pid": 54,
+        "name_1c": null,
+        "parents": "\/0\/54\/3088\/",
+        "parents_uri": null,
+        "uri": "ustroystva-upravleniya-i-aksessuary",
+        "inherite": 0,
+        "ordering": 140400,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/ustroystva-upravleniya-i-aksessuary-20210430.jpg",
+        "deleted_at": null,
+        "created_at": "2021-04-30 11:56:02",
+        "updated_at": "2024-04-04 12:50:30",
+        "search_ordering": 140401,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "341",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u0438 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b\", \"uk\": \"\u041f\u0440\u0438\u0441\u0442\u0440\u043e\u0457 \u043a\u0435\u0440\u0443\u0432\u0430\u043d\u043d\u044f \u0442\u0430 \u0430\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u0438 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3088",
+        "slider_id": null,
+        "key": 3088,
+        "title": "\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u0438 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "ustroystva-upravleniya-i-aksessuary",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u0438 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b",
+                "uk": "\u041f\u0440\u0438\u0441\u0442\u0440\u043e\u0457 \u043a\u0435\u0440\u0443\u0432\u0430\u043d\u043d\u044f \u0442\u0430 \u0430\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3089,
+        "pid": 54,
+        "name_1c": null,
+        "parents": "\/0\/54\/3089\/",
+        "parents_uri": null,
+        "uri": "datchiki-temperatury-i-vlazhnosti",
+        "inherite": 0,
+        "ordering": 140500,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/datchiki-temperatury-i-vlazhnosti-20210525.jpg",
+        "deleted_at": null,
+        "created_at": "2021-04-30 12:12:57",
+        "updated_at": "2024-04-04 12:50:42",
+        "search_ordering": 140501,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1305",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0414\u0430\u0442\u0447\u0438\u043a\u0438 \u0442\u0435\u043c\u043f\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0438 \u0432\u043b\u0430\u0436\u043d\u043e\u0441\u0442\u0438\", \"uk\": \"\u0414\u0430\u0442\u0447\u0438\u043a\u0438 \u0442\u0435\u043c\u043f\u0435\u0440\u0430\u0442\u0443\u0440\u0438 \u0442\u0430 \u0432\u043e\u043b\u043e\u0433\u043e\u0441\u0442\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0414\u0430\u0442\u0447\u0438\u043a\u0438 \u0442\u0435\u043c\u043f\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0438 \u0432\u043b\u0430\u0436\u043d\u043e\u0441\u0442\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3089",
+        "slider_id": null,
+        "key": 3089,
+        "title": "\u0414\u0430\u0442\u0447\u0438\u043a\u0438 \u0442\u0435\u043c\u043f\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0438 \u0432\u043b\u0430\u0436\u043d\u043e\u0441\u0442\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "datchiki-temperatury-i-vlazhnosti",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0414\u0430\u0442\u0447\u0438\u043a\u0438 \u0442\u0435\u043c\u043f\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0438 \u0432\u043b\u0430\u0436\u043d\u043e\u0441\u0442\u0438",
+                "uk": "\u0414\u0430\u0442\u0447\u0438\u043a\u0438 \u0442\u0435\u043c\u043f\u0435\u0440\u0430\u0442\u0443\u0440\u0438 \u0442\u0430 \u0432\u043e\u043b\u043e\u0433\u043e\u0441\u0442\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 173,
+        "pid": 54,
+        "name_1c": "\u0412\u0438\u0434\u0435\u043e\u043d\u0430\u0431\u043b\u044e\u0434\u0435\u043d\u0438\u0435",
+        "parents": "\/0\/54\/173\/",
+        "parents_uri": null,
+        "uri": "videonablyudenie",
+        "inherite": 0,
+        "ordering": 140600,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/videonablyudenie-20210520.png",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:53",
+        "updated_at": "2024-04-04 12:50:56",
+        "search_ordering": 140601,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "155",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0412\u0438\u0434\u0435\u043e\u043d\u0430\u0431\u043b\u044e\u0434\u0435\u043d\u0438\u0435\", \"uk\": \"\u0412\u0456\u0434\u0435\u043e\u0441\u043f\u043e\u0441\u0442\u0435\u0440\u0435\u0436\u0435\u043d\u043d\u044f\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0412\u0438\u0434\u0435\u043e\u043d\u0430\u0431\u043b\u044e\u0434\u0435\u043d\u0438\u0435",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_173",
+        "slider_id": null,
+        "key": 173,
+        "title": "\u0412\u0438\u0434\u0435\u043e\u043d\u0430\u0431\u043b\u044e\u0434\u0435\u043d\u0438\u0435",
+        "folder": true,
+        "lazy": false,
+        "slug": "videonablyudenie",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0412\u0438\u0434\u0435\u043e\u043d\u0430\u0431\u043b\u044e\u0434\u0435\u043d\u0438\u0435",
+                "uk": "\u0412\u0456\u0434\u0435\u043e\u0441\u043f\u043e\u0441\u0442\u0435\u0440\u0435\u0436\u0435\u043d\u043d\u044f"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 169,
+        "pid": 54,
+        "name_1c": "\u0423\u043c\u043d\u043e\u0435 \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435",
+        "parents": "\/0\/54\/169\/",
+        "parents_uri": null,
+        "uri": "umnoe-osveshchenie",
+        "inherite": 0,
+        "ordering": 140700,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/umnoe-osveshchenie-20210521.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:54",
+        "updated_at": "2024-04-04 12:51:07",
+        "search_ordering": 140701,
+        "is_hidden": false,
+        "additional_params": {
+            "admitad_tarif_code": 4
+        },
+        "google_category_patch": "594",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0423\u043c\u043d\u043e\u0435 \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435\", \"uk\": \"\u0420\u043e\u0437\u0443\u043c\u043d\u0435 \u043e\u0441\u0432\u0456\u0442\u043b\u0435\u043d\u043d\u044f\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0423\u043c\u043d\u043e\u0435 \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_169",
+        "slider_id": null,
+        "key": 169,
+        "title": "\u0423\u043c\u043d\u043e\u0435 \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435",
+        "folder": true,
+        "lazy": true,
+        "slug": "umnoe-osveshchenie",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0423\u043c\u043d\u043e\u0435 \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435",
+                "uk": "\u0420\u043e\u0437\u0443\u043c\u043d\u0435 \u043e\u0441\u0432\u0456\u0442\u043b\u0435\u043d\u043d\u044f"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 174,
+        "pid": 54,
+        "name_1c": "\u041f\u043e\u0438\u0441\u043a\u043e\u0432\u044b\u0435 \u0431\u0440\u0435\u043b\u043a\u0438 \u0438 GPS",
+        "parents": "\/0\/54\/174\/",
+        "parents_uri": null,
+        "uri": "poiskovye-brelki-i-gps-trekery",
+        "inherite": 0,
+        "ordering": 140800,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/poiskovye-brelki-i-gps-trekery-20210520.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:52",
+        "updated_at": "2024-04-04 12:51:29",
+        "search_ordering": 140801,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "6544",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u043e\u0438\u0441\u043a\u043e\u0432\u044b\u0435 \u0431\u0440\u0435\u043b\u043a\u0438 \u0438 GPS-\u0442\u0440\u0435\u043a\u0435\u0440\u044b\", \"uk\": \"\u041f\u043e\u0448\u0443\u043a\u043e\u0432\u0456 \u0431\u0440\u0435\u043b\u043a\u0438 \u0442\u0430 GPS-\u0442\u0440\u0435\u043a\u0435\u0440\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u043e\u0438\u0441\u043a\u043e\u0432\u044b\u0435 \u0431\u0440\u0435\u043b\u043a\u0438 \u0438 GPS-\u0442\u0440\u0435\u043a\u0435\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_174",
+        "slider_id": null,
+        "key": 174,
+        "title": "\u041f\u043e\u0438\u0441\u043a\u043e\u0432\u044b\u0435 \u0431\u0440\u0435\u043b\u043a\u0438 \u0438 GPS-\u0442\u0440\u0435\u043a\u0435\u0440\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "poiskovye-brelki-i-gps-trekery",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u043e\u0438\u0441\u043a\u043e\u0432\u044b\u0435 \u0431\u0440\u0435\u043b\u043a\u0438 \u0438 GPS-\u0442\u0440\u0435\u043a\u0435\u0440\u044b",
+                "uk": "\u041f\u043e\u0448\u0443\u043a\u043e\u0432\u0456 \u0431\u0440\u0435\u043b\u043a\u0438 \u0442\u0430 GPS-\u0442\u0440\u0435\u043a\u0435\u0440\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3084,
+        "pid": 54,
+        "name_1c": null,
+        "parents": "\/0\/54\/3084\/",
+        "parents_uri": null,
+        "uri": "umnye-vyklyuchateli",
+        "inherite": 0,
+        "ordering": 140900,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/umnye-vyklyuchateli-20210520.jpg",
+        "deleted_at": null,
+        "created_at": "2021-04-29 15:40:28",
+        "updated_at": "2024-04-04 12:51:54",
+        "search_ordering": 140901,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "499932",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0423\u043c\u043d\u044b\u0435 \u0432\u044b\u043a\u043b\u044e\u0447\u0430\u0442\u0435\u043b\u0438\", \"uk\": \"\u0420\u043e\u0437\u0443\u043c\u043d\u0456 \u0432\u0438\u043c\u0438\u043a\u0430\u0447\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0423\u043c\u043d\u044b\u0435 \u0432\u044b\u043a\u043b\u044e\u0447\u0430\u0442\u0435\u043b\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3084",
+        "slider_id": null,
+        "key": 3084,
+        "title": "\u0423\u043c\u043d\u044b\u0435 \u0432\u044b\u043a\u043b\u044e\u0447\u0430\u0442\u0435\u043b\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "umnye-vyklyuchateli",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0423\u043c\u043d\u044b\u0435 \u0432\u044b\u043a\u043b\u044e\u0447\u0430\u0442\u0435\u043b\u0438",
+                "uk": "\u0420\u043e\u0437\u0443\u043c\u043d\u0456 \u0432\u0438\u043c\u0438\u043a\u0430\u0447\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

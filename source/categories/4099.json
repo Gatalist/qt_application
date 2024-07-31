@@ -1,0 +1,345 @@
+[
+    {
+        "id": 1524,
+        "pid": 4099,
+        "name_1c": null,
+        "parents": "\/0\/2232\/4099\/1524\/",
+        "parents_uri": null,
+        "uri": "pylesosy",
+        "inherite": 0,
+        "ordering": 103100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/pylesosy-1676973044.jpg",
+        "deleted_at": null,
+        "created_at": "2019-06-06 12:46:22",
+        "updated_at": "2024-04-04 14:14:10",
+        "search_ordering": 103102,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "619",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u044b\u043b\u0435\u0441\u043e\u0441\u044b\", \"uk\": \"\u041f\u0438\u043b\u043e\u0441\u043e\u0441\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1524",
+        "slider_id": null,
+        "key": 1524,
+        "title": "\u041f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "pylesosy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+                "uk": "\u041f\u0438\u043b\u043e\u0441\u043e\u0441\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 1161,
+        "pid": 4099,
+        "name_1c": null,
+        "parents": "\/0\/2232\/4099\/1161\/",
+        "parents_uri": null,
+        "uri": "ruchnye-pylesosy",
+        "inherite": 0,
+        "ordering": 103200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/ruchnye-pylesosy-1676973066.jpg",
+        "deleted_at": null,
+        "created_at": "2019-01-18 10:51:38",
+        "updated_at": "2024-04-04 14:14:30",
+        "search_ordering": 103202,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "619",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0420\u0443\u0447\u043d\u044b\u0435 \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b\", \"uk\": \"\u0420\u0443\u0447\u043d\u0456 \u043f\u0438\u043b\u043e\u0441\u043e\u0441\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0420\u0443\u0447\u043d\u044b\u0435 \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1161",
+        "slider_id": null,
+        "key": 1161,
+        "title": "\u0420\u0443\u0447\u043d\u044b\u0435 \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "ruchnye-pylesosy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0420\u0443\u0447\u043d\u044b\u0435 \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+                "uk": "\u0420\u0443\u0447\u043d\u0456 \u043f\u0438\u043b\u043e\u0441\u043e\u0441\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 146,
+        "pid": 4099,
+        "name_1c": null,
+        "parents": "\/0\/2232\/4099\/146\/",
+        "parents_uri": null,
+        "uri": "roboty-uborshhiki",
+        "inherite": 0,
+        "ordering": 103300,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/roboty-pylesosy-1676973092.jpg",
+        "deleted_at": null,
+        "created_at": "2017-06-20 14:08:25",
+        "updated_at": "2024-04-04 14:14:54",
+        "search_ordering": 103302,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "619",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0420\u043e\u0431\u043e\u0442\u044b-\u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b\", \"uk\": \"\u0420\u043e\u0431\u043e\u0442\u0438-\u043f\u0438\u043b\u043e\u0441\u043e\u0441\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0420\u043e\u0431\u043e\u0442\u044b-\u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_146",
+        "slider_id": null,
+        "key": 146,
+        "title": "\u0420\u043e\u0431\u043e\u0442\u044b-\u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "roboty-uborshhiki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0420\u043e\u0431\u043e\u0442\u044b-\u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+                "uk": "\u0420\u043e\u0431\u043e\u0442\u0438-\u043f\u0438\u043b\u043e\u0441\u043e\u0441\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 1194,
+        "pid": 4099,
+        "name_1c": null,
+        "parents": "\/0\/2232\/4099\/1194\/",
+        "parents_uri": null,
+        "uri": "polotery-i-elektroveniki",
+        "inherite": 0,
+        "ordering": 103400,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/polotery-i-elektroveniki-1676973132.jpg",
+        "deleted_at": null,
+        "created_at": "2019-02-28 15:28:18",
+        "updated_at": "2024-04-04 14:15:16",
+        "search_ordering": 103402,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "630",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u043e\u043b\u043e\u0442\u0435\u0440\u044b \u0438 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0432\u0435\u043d\u0438\u043a\u0438\", \"uk\": \"\u041f\u0456\u0434\u043b\u043e\u0433\u043e\u043d\u0430\u0442\u0438\u0440\u0430\u0447\u0456 \u0442\u0430 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0432\u0456\u043d\u0438\u043a\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u043e\u043b\u043e\u0442\u0435\u0440\u044b \u0438 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0432\u0435\u043d\u0438\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1194",
+        "slider_id": null,
+        "key": 1194,
+        "title": "\u041f\u043e\u043b\u043e\u0442\u0435\u0440\u044b \u0438 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0432\u0435\u043d\u0438\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "polotery-i-elektroveniki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u043e\u043b\u043e\u0442\u0435\u0440\u044b \u0438 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0432\u0435\u043d\u0438\u043a\u0438",
+                "uk": "\u041f\u0456\u0434\u043b\u043e\u0433\u043e\u043d\u0430\u0442\u0438\u0440\u0430\u0447\u0456 \u0442\u0430 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0432\u0456\u043d\u0438\u043a\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 1195,
+        "pid": 4099,
+        "name_1c": null,
+        "parents": "\/0\/2232\/4099\/1195\/",
+        "parents_uri": null,
+        "uri": "okonnye-pylesosy",
+        "inherite": 0,
+        "ordering": 103500,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/okonnye-pylesosy-1676973167.jpg",
+        "deleted_at": null,
+        "created_at": "2019-02-28 15:31:27",
+        "updated_at": "2024-04-04 14:15:36",
+        "search_ordering": 103502,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "619",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041e\u043a\u043e\u043d\u043d\u044b\u0435 \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b\", \"uk\": \"\u0412\u0456\u043a\u043e\u043d\u043d\u0456 \u043f\u0438\u043b\u043e\u0441\u043e\u0441\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041e\u043a\u043e\u043d\u043d\u044b\u0435 \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1195",
+        "slider_id": null,
+        "key": 1195,
+        "title": "\u041e\u043a\u043e\u043d\u043d\u044b\u0435 \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "okonnye-pylesosy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041e\u043a\u043e\u043d\u043d\u044b\u0435 \u043f\u044b\u043b\u0435\u0441\u043e\u0441\u044b",
+                "uk": "\u0412\u0456\u043a\u043e\u043d\u043d\u0456 \u043f\u0438\u043b\u043e\u0441\u043e\u0441\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 1326,
+        "pid": 4099,
+        "name_1c": null,
+        "parents": "\/0\/2232\/4099\/1326\/",
+        "parents_uri": null,
+        "uri": "mini-mojki",
+        "inherite": 0,
+        "ordering": 103600,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/mini-moyki-1676973215.jpg",
+        "deleted_at": null,
+        "created_at": "2019-05-14 11:46:08",
+        "updated_at": "2024-04-04 14:15:53",
+        "search_ordering": 103602,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "604",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041c\u0438\u043d\u0438-\u043c\u043e\u0439\u043a\u0438\", \"uk\": \"\u041c\u0456\u043d\u0456-\u043c\u0438\u0439\u043a\u0438\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041c\u0438\u043d\u0438-\u043c\u043e\u0439\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1326",
+        "slider_id": null,
+        "key": 1326,
+        "title": "\u041c\u0438\u043d\u0438-\u043c\u043e\u0439\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "mini-mojki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041c\u0438\u043d\u0438-\u043c\u043e\u0439\u043a\u0438",
+                "uk": "\u041c\u0456\u043d\u0456-\u043c\u0438\u0439\u043a\u0438"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 1359,
+        "pid": 4099,
+        "name_1c": null,
+        "parents": "\/0\/2232\/4099\/1359\/",
+        "parents_uri": null,
+        "uri": "paroochistiteli",
+        "inherite": 0,
+        "ordering": 103700,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/paroochistiteli-1676973295.jpg",
+        "deleted_at": null,
+        "created_at": "2019-05-16 17:39:03",
+        "updated_at": "2024-04-04 14:16:17",
+        "search_ordering": 103702,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "604",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041f\u0430\u0440\u043e\u043e\u0447\u0438\u0441\u0442\u0438\u0442\u0435\u043b\u0438\", \"uk\": \"\u041f\u0430\u0440\u043e\u043e\u0447\u0438\u0449\u0443\u0432\u0430\u0447\u0456\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u041f\u0430\u0440\u043e\u043e\u0447\u0438\u0441\u0442\u0438\u0442\u0435\u043b\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_1359",
+        "slider_id": null,
+        "key": 1359,
+        "title": "\u041f\u0430\u0440\u043e\u043e\u0447\u0438\u0441\u0442\u0438\u0442\u0435\u043b\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "paroochistiteli",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041f\u0430\u0440\u043e\u043e\u0447\u0438\u0441\u0442\u0438\u0442\u0435\u043b\u0438",
+                "uk": "\u041f\u0430\u0440\u043e\u043e\u0447\u0438\u0449\u0443\u0432\u0430\u0447\u0456"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

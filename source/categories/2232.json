@@ -1,0 +1,345 @@
+[
+    {
+        "id": 4098,
+        "pid": 2232,
+        "name_1c": null,
+        "parents": "\/0\/2232\/4098\/",
+        "parents_uri": null,
+        "uri": "bolshaya-tehnika-dlya-doma",
+        "inherite": 0,
+        "ordering": 101000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/bolshaya-tekhnika-dlya-doma-1676901366.jpg",
+        "deleted_at": null,
+        "created_at": "2023-02-14 15:29:44",
+        "updated_at": "2024-04-04 14:03:34",
+        "search_ordering": 101002,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "604",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u0440\u0443\u043f\u043d\u0430\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0430 \u0434\u043b\u044f \u0434\u043e\u043c\u0430\", \"uk\": \"\u0412\u0435\u043b\u0438\u043a\u0430 \u0442\u0435\u0445\u043d\u0456\u043a\u0430 \u0434\u043b\u044f \u0434\u043e\u043c\u0443\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u0440\u0443\u043f\u043d\u0430\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0430 \u0434\u043b\u044f \u0434\u043e\u043c\u0430",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4098",
+        "slider_id": null,
+        "key": 4098,
+        "title": "\u041a\u0440\u0443\u043f\u043d\u0430\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0430 \u0434\u043b\u044f \u0434\u043e\u043c\u0430",
+        "folder": true,
+        "lazy": true,
+        "slug": "bolshaya-tehnika-dlya-doma",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u0440\u0443\u043f\u043d\u0430\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0430 \u0434\u043b\u044f \u0434\u043e\u043c\u0430",
+                "uk": "\u0412\u0435\u043b\u0438\u043a\u0430 \u0442\u0435\u0445\u043d\u0456\u043a\u0430 \u0434\u043b\u044f \u0434\u043e\u043c\u0443"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2235,
+        "pid": 2232,
+        "name_1c": null,
+        "parents": "\/0\/2232\/2235\/",
+        "parents_uri": null,
+        "uri": "klimaticheskaya-tehnika",
+        "inherite": 0,
+        "ordering": 102000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/klimaticheskaya-tekhnika-1676901378.jpg",
+        "deleted_at": null,
+        "created_at": "2020-09-09 16:33:39",
+        "updated_at": "2024-04-04 14:03:54",
+        "search_ordering": 102002,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1626",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u043b\u0438\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0430\", \"uk\": \"\u041a\u043b\u0456\u043c\u0430\u0442\u0438\u0447\u043d\u0430 \u0442\u0435\u0445\u043d\u0456\u043a\u0430\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u043b\u0438\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0430",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2235",
+        "slider_id": null,
+        "key": 2235,
+        "title": "\u041a\u043b\u0438\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0430",
+        "folder": true,
+        "lazy": true,
+        "slug": "klimaticheskaya-tehnika",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u043b\u0438\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0430",
+                "uk": "\u041a\u043b\u0456\u043c\u0430\u0442\u0438\u0447\u043d\u0430 \u0442\u0435\u0445\u043d\u0456\u043a\u0430"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4099,
+        "pid": 2232,
+        "name_1c": null,
+        "parents": "\/0\/2232\/4099\/",
+        "parents_uri": null,
+        "uri": "uborka",
+        "inherite": 0,
+        "ordering": 103000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/uborka-1676901009.jpg",
+        "deleted_at": null,
+        "created_at": "2023-02-14 16:18:10",
+        "updated_at": "2024-04-04 14:04:19",
+        "search_ordering": 103002,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "4973",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0423\u0431\u043e\u0440\u043a\u0430\", \"uk\": \"\u041f\u0440\u0438\u0431\u0438\u0440\u0430\u043d\u043d\u044f\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0423\u0431\u043e\u0440\u043a\u0430",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4099",
+        "slider_id": null,
+        "key": 4099,
+        "title": "\u0423\u0431\u043e\u0440\u043a\u0430",
+        "folder": true,
+        "lazy": true,
+        "slug": "uborka",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0423\u0431\u043e\u0440\u043a\u0430",
+                "uk": "\u041f\u0440\u0438\u0431\u0438\u0440\u0430\u043d\u043d\u044f"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4100,
+        "pid": 2232,
+        "name_1c": null,
+        "parents": "\/0\/2232\/4100\/",
+        "parents_uri": null,
+        "uri": "uhod-za-odezhdoj",
+        "inherite": 0,
+        "ordering": 104000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/ukhod-za-odezhdoy-1676900985.jpg",
+        "deleted_at": null,
+        "created_at": "2023-02-14 16:32:12",
+        "updated_at": "2024-04-04 14:04:33",
+        "search_ordering": 104002,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "630",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0423\u0445\u043e\u0434 \u0437\u0430 \u043e\u0434\u0435\u0436\u0434\u043e\u0439\", \"uk\": \"\u0414\u043e\u0433\u043b\u044f\u0434 \u0437\u0430 \u043e\u0434\u044f\u0433\u043e\u043c\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0423\u0445\u043e\u0434 \u0437\u0430 \u043e\u0434\u0435\u0436\u0434\u043e\u0439",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4100",
+        "slider_id": null,
+        "key": 4100,
+        "title": "\u0423\u0445\u043e\u0434 \u0437\u0430 \u043e\u0434\u0435\u0436\u0434\u043e\u0439",
+        "folder": true,
+        "lazy": true,
+        "slug": "uhod-za-odezhdoj",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0423\u0445\u043e\u0434 \u0437\u0430 \u043e\u0434\u0435\u0436\u0434\u043e\u0439",
+                "uk": "\u0414\u043e\u0433\u043b\u044f\u0434 \u0437\u0430 \u043e\u0434\u044f\u0433\u043e\u043c"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3009,
+        "pid": 2232,
+        "name_1c": null,
+        "parents": "\/0\/2232\/3009\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-klimaticheskoy-tehniki",
+        "inherite": 0,
+        "ordering": 105000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-klimaticheskoy-tekhniki-1676901146.jpg",
+        "deleted_at": null,
+        "created_at": "2021-04-20 14:47:25",
+        "updated_at": "2024-04-04 14:04:48",
+        "search_ordering": 105002,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "1626",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043a\u043b\u0438\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0442\u0435\u0445\u043d\u0438\u043a\u0438 \", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043a\u043b\u0456\u043c\u0430\u0442\u0438\u0447\u043d\u043e\u0457 \u0442\u0435\u0445\u043d\u0456\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043a\u043b\u0438\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0442\u0435\u0445\u043d\u0438\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3009",
+        "slider_id": null,
+        "key": 3009,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043a\u043b\u0438\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0442\u0435\u0445\u043d\u0438\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksessuary-dlya-klimaticheskoy-tehniki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043a\u043b\u0438\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0442\u0435\u0445\u043d\u0438\u043a\u0438 ",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043a\u043b\u0456\u043c\u0430\u0442\u0438\u0447\u043d\u043e\u0457 \u0442\u0435\u0445\u043d\u0456\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 2350,
+        "pid": 2232,
+        "name_1c": null,
+        "parents": "\/0\/2232\/2350\/",
+        "parents_uri": null,
+        "uri": "rashodnye-materialy-i-aksessuary",
+        "inherite": 0,
+        "ordering": 106000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/raskhodnye-materialy-i-aksessuary-1676901104.jpg",
+        "deleted_at": null,
+        "created_at": "2020-11-12 16:28:18",
+        "updated_at": "2024-04-04 14:05:27",
+        "search_ordering": 106002,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "3348",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0420\u0430\u0441\u0445\u043e\u0434\u043d\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b \u0438 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b\", \"uk\": \"\u0412\u0438\u0442\u0440\u0430\u0442\u043d\u0456 \u043c\u0430\u0442\u0435\u0440\u0456\u0430\u043b\u0438 \u0442\u0430 \u0430\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0420\u0430\u0441\u0445\u043e\u0434\u043d\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b \u0438 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_2350",
+        "slider_id": null,
+        "key": 2350,
+        "title": "\u0420\u0430\u0441\u0445\u043e\u0434\u043d\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b \u0438 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b",
+        "folder": true,
+        "lazy": true,
+        "slug": "rashodnye-materialy-i-aksessuary",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0420\u0430\u0441\u0445\u043e\u0434\u043d\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b \u0438 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b",
+                "uk": "\u0412\u0438\u0442\u0440\u0430\u0442\u043d\u0456 \u043c\u0430\u0442\u0435\u0440\u0456\u0430\u043b\u0438 \u0442\u0430 \u0430\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3242,
+        "pid": 2232,
+        "name_1c": null,
+        "parents": "\/0\/2232\/3242\/",
+        "parents_uri": null,
+        "uri": "aksessuary-dlya-stiralnyh-i-sushilnyh-mashin",
+        "inherite": 0,
+        "ordering": 107000,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/aksessuary-dlya-stiralnykh-i-sushilnykh-mashin-1676901123.jpg",
+        "deleted_at": null,
+        "created_at": "2021-07-26 11:09:51",
+        "updated_at": "2024-04-04 14:06:13",
+        "search_ordering": 107002,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "627",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0441\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u044b\u0445 \u0438 \u0441\u0443\u0448\u0438\u043b\u044c\u043d\u044b\u0445 \u043c\u0430\u0448\u0438\u043d\", \"uk\": \"\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043f\u0440\u0430\u043b\u044c\u043d\u0438\u0445 \u0442\u0430 \u0441\u0443\u0448\u0438\u043b\u044c\u043d\u0438\u0445 \u043c\u0430\u0448\u0438\u043d\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0441\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u044b\u0445 \u0438 \u0441\u0443\u0448\u0438\u043b\u044c\u043d\u044b\u0445 \u043c\u0430\u0448\u0438\u043d",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3242",
+        "slider_id": null,
+        "key": 3242,
+        "title": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0441\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u044b\u0445 \u0438 \u0441\u0443\u0448\u0438\u043b\u044c\u043d\u044b\u0445 \u043c\u0430\u0448\u0438\u043d",
+        "folder": true,
+        "lazy": false,
+        "slug": "aksessuary-dlya-stiralnyh-i-sushilnyh-mashin",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u0441\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u044b\u0445 \u0438 \u0441\u0443\u0448\u0438\u043b\u044c\u043d\u044b\u0445 \u043c\u0430\u0448\u0438\u043d",
+                "uk": "\u0410\u043a\u0441\u0435\u0441\u0443\u0430\u0440\u0438 \u0434\u043b\u044f \u043f\u0440\u0430\u043b\u044c\u043d\u0438\u0445 \u0442\u0430 \u0441\u0443\u0448\u0438\u043b\u044c\u043d\u0438\u0445 \u043c\u0430\u0448\u0438\u043d"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

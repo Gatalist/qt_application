@@ -1,0 +1,296 @@
+[
+    {
+        "id": 3806,
+        "pid": 4494,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4494\/3806\/",
+        "parents_uri": null,
+        "uri": "nabory-posudy",
+        "inherite": 0,
+        "ordering": 91100,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/nabory-posudy-20220929.jpg",
+        "deleted_at": null,
+        "created_at": "2022-07-31 11:03:27",
+        "updated_at": "2024-04-04 14:30:54",
+        "search_ordering": 91102,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "672",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041d\u0430\u0431\u043e\u0440\u044b \u043f\u043e\u0441\u0443\u0434\u044b\", \"uk\": \"\u041d\u0430\u0431\u043e\u0440\u0438 \u043f\u043e\u0441\u0443\u0434\u0443\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041d\u0430\u0431\u043e\u0440\u044b \u043f\u043e\u0441\u0443\u0434\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3806",
+        "slider_id": null,
+        "key": 3806,
+        "title": "\u041d\u0430\u0431\u043e\u0440\u044b \u043f\u043e\u0441\u0443\u0434\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "nabory-posudy",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041d\u0430\u0431\u043e\u0440\u044b \u043f\u043e\u0441\u0443\u0434\u044b",
+                "uk": "\u041d\u0430\u0431\u043e\u0440\u0438 \u043f\u043e\u0441\u0443\u0434\u0443"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3805,
+        "pid": 4494,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4494\/3805\/",
+        "parents_uri": null,
+        "uri": "kastryuli",
+        "inherite": 0,
+        "ordering": 91200,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kastryuli-20220731.jpg",
+        "deleted_at": null,
+        "created_at": "2022-07-31 11:01:35",
+        "updated_at": "2024-04-04 14:31:09",
+        "search_ordering": 91202,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "661",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u0430\u0441\u0442\u0440\u044e\u043b\u0438\", \"uk\": \"\u041a\u0430\u0441\u0442\u0440\u0443\u043b\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u0430\u0441\u0442\u0440\u044e\u043b\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3805",
+        "slider_id": null,
+        "key": 3805,
+        "title": "\u041a\u0430\u0441\u0442\u0440\u044e\u043b\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "kastryuli",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u0430\u0441\u0442\u0440\u044e\u043b\u0438",
+                "uk": "\u041a\u0430\u0441\u0442\u0440\u0443\u043b\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 3804,
+        "pid": 4494,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4494\/3804\/",
+        "parents_uri": null,
+        "uri": "skovorodki",
+        "inherite": 0,
+        "ordering": 91300,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/skovorodki-20220731.jpg",
+        "deleted_at": null,
+        "created_at": "2022-07-31 10:59:26",
+        "updated_at": "2024-04-04 14:31:35",
+        "search_ordering": 91302,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "662",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0421\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u043a\u0438\", \"uk\": \"\u0421\u043a\u043e\u0432\u043e\u0440\u0456\u0434\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0421\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_3804",
+        "slider_id": null,
+        "key": 3804,
+        "title": "\u0421\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "skovorodki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0421\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u043a\u0438",
+                "uk": "\u0421\u043a\u043e\u0432\u043e\u0440\u0456\u0434\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4692,
+        "pid": 4494,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4494\/4692\/",
+        "parents_uri": null,
+        "uri": "sotejniki",
+        "inherite": 0,
+        "ordering": 91400,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/soteyniki-1699863530.jpg",
+        "deleted_at": null,
+        "created_at": "2023-11-13 10:18:24",
+        "updated_at": "2024-04-04 14:31:49",
+        "search_ordering": 91402,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0421\u043e\u0442\u0435\u0439\u043d\u0438\u043a\u0438\", \"uk\": \"\u0421\u043e\u0442\u0435\u0439\u043d\u0438\u043a\u0438\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u0421\u043e\u0442\u0435\u0439\u043d\u0438\u043a\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4692",
+        "slider_id": null,
+        "key": 4692,
+        "title": "\u0421\u043e\u0442\u0435\u0439\u043d\u0438\u043a\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "sotejniki",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0421\u043e\u0442\u0435\u0439\u043d\u0438\u043a\u0438",
+                "uk": "\u0421\u043e\u0442\u0435\u0439\u043d\u0438\u043a\u0438"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4468,
+        "pid": 4494,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4494\/4468\/",
+        "parents_uri": null,
+        "uri": "kovshi",
+        "inherite": 0,
+        "ordering": 91500,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kovshi-1697531751.jpg",
+        "deleted_at": null,
+        "created_at": "2023-10-17 11:34:33",
+        "updated_at": "2024-04-04 14:32:02",
+        "search_ordering": 91502,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": null,
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u043e\u0432\u0448\u0438\", \"uk\": \"\u041a\u043e\u0432\u0448\u0456\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u043e\u0432\u0448\u0438",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4468",
+        "slider_id": null,
+        "key": 4468,
+        "title": "\u041a\u043e\u0432\u0448\u0438",
+        "folder": true,
+        "lazy": false,
+        "slug": "kovshi",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u043e\u0432\u0448\u0438",
+                "uk": "\u041a\u043e\u0432\u0448\u0456"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 4065,
+        "pid": 4494,
+        "name_1c": null,
+        "parents": "\/0\/3801\/4494\/4065\/",
+        "parents_uri": null,
+        "uri": "krishki-dlya-posudu",
+        "inherite": 0,
+        "ordering": 91600,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/kryshki-dlya-posudy-1667305430.jpg",
+        "deleted_at": null,
+        "created_at": "2022-11-01 14:23:14",
+        "updated_at": "2024-04-04 14:32:23",
+        "search_ordering": 91602,
+        "is_hidden": false,
+        "additional_params": [],
+        "google_category_patch": "2626",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u041a\u0440\u044b\u0448\u043a\u0438 \u0434\u043b\u044f \u043f\u043e\u0441\u0443\u0434\u044b\", \"uk\": \"\u041a\u0440\u0438\u0448\u043a\u0438 \u0434\u043b\u044f \u043f\u043e\u0441\u0443\u0434\u0443\"}",
+        "descr_trans": "{}",
+        "descr": "",
+        "name": "\u041a\u0440\u044b\u0448\u043a\u0438 \u0434\u043b\u044f \u043f\u043e\u0441\u0443\u0434\u044b",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_4065",
+        "slider_id": null,
+        "key": 4065,
+        "title": "\u041a\u0440\u044b\u0448\u043a\u0438 \u0434\u043b\u044f \u043f\u043e\u0441\u0443\u0434\u044b",
+        "folder": true,
+        "lazy": false,
+        "slug": "krishki-dlya-posudu",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u041a\u0440\u044b\u0448\u043a\u0438 \u0434\u043b\u044f \u043f\u043e\u0441\u0443\u0434\u044b",
+                "uk": "\u041a\u0440\u0438\u0448\u043a\u0438 \u0434\u043b\u044f \u043f\u043e\u0441\u0443\u0434\u0443"
+            },
+            "descr": {
+                "ru": "",
+                "uk": "",
+                "md": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

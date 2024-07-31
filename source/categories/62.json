@@ -1,0 +1,149 @@
+[
+    {
+        "id": 40,
+        "pid": 62,
+        "name_1c": "\u0427\u0435\u0445\u043b\u044b \u0434\u043b\u044f \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0445",
+        "parents": "\/0\/44\/62\/40\/",
+        "parents_uri": null,
+        "uri": "chekhly-dlya-smartfonov",
+        "inherite": 0,
+        "ordering": 30210,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/chekhly-dlya-smartfonov-20200120.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-17 18:39:32",
+        "updated_at": "2023-02-22 09:47:55",
+        "search_ordering": 30210,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "2353",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0427\u0435\u0445\u043b\u044b \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u043e\u0432\", \"uk\": \"\u0427\u043e\u0445\u043b\u0438 \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u0456\u0432\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0427\u0435\u0445\u043b\u044b \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u043e\u0432",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_40",
+        "slider_id": null,
+        "key": 40,
+        "title": "\u0427\u0435\u0445\u043b\u044b \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u043e\u0432",
+        "folder": true,
+        "lazy": false,
+        "slug": "chekhly-dlya-smartfonov",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0427\u0435\u0445\u043b\u044b \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u043e\u0432",
+                "uk": "\u0427\u043e\u0445\u043b\u0438 \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u0456\u0432"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 73,
+        "pid": 62,
+        "name_1c": "\u0427\u0435\u0445\u043b\u044b \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u043e\u0432",
+        "parents": "\/0\/44\/62\/73\/",
+        "parents_uri": null,
+        "uri": "chekhly-dlya-planshetov",
+        "inherite": 0,
+        "ordering": 30220,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/chekhly-dlya-planshetov-20180206.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-17 18:39:32",
+        "updated_at": "2023-02-22 09:47:43",
+        "search_ordering": 30220,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "503002",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0427\u0435\u0445\u043b\u044b \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u043e\u0432\", \"uk\": \"\u0427\u043e\u0445\u043b\u0438 \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u0456\u0432\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0427\u0435\u0445\u043b\u044b \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u043e\u0432",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_73",
+        "slider_id": null,
+        "key": 73,
+        "title": "\u0427\u0435\u0445\u043b\u044b \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u043e\u0432",
+        "folder": true,
+        "lazy": false,
+        "slug": "chekhly-dlya-planshetov",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0427\u0435\u0445\u043b\u044b \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u043e\u0432",
+                "uk": "\u0427\u043e\u0445\u043b\u0438 \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u0456\u0432"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    },
+    {
+        "id": 41,
+        "pid": 62,
+        "name_1c": "\u0427\u0435\u0445\u043b\u044b \u0434\u043b\u044f \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u043e\u0432",
+        "parents": "\/0\/44\/62\/41\/",
+        "parents_uri": null,
+        "uri": "chexly-i-sumki-dlya-noutbukov",
+        "inherite": 0,
+        "ordering": 30230,
+        "image": "https:\/\/i.citrus.world\/uploads\/images\/catalog\/categories\/chekhly-i-sumki-dlya-noutbukov-20180206.jpg",
+        "deleted_at": null,
+        "created_at": "2016-03-18 16:25:54",
+        "updated_at": "2023-02-22 09:47:22",
+        "search_ordering": 30230,
+        "is_hidden": false,
+        "additional_params": null,
+        "google_category_patch": "5181",
+        "name_trans": "{\"md\": \"\", \"ru\": \"\u0427\u0435\u0445\u043b\u044b \u0438 \u0441\u0443\u043c\u043a\u0438 \u0434\u043b\u044f \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u043e\u0432\", \"uk\": \"\u0427\u043e\u0445\u043b\u0438 \u0442\u0430 \u0441\u0443\u043c\u043a\u0438 \u0434\u043b\u044f \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u0456\u0432\"}",
+        "descr_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "descr": "",
+        "name": "\u0427\u0435\u0445\u043b\u044b \u0438 \u0441\u0443\u043c\u043a\u0438 \u0434\u043b\u044f \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u043e\u0432",
+        "footnote": null,
+        "footnote_trans": "{\"md\": \"\", \"ru\": \"\", \"uk\": \"\"}",
+        "is_regional_url": true,
+        "meta_tag_key": "CATEGORY_41",
+        "slider_id": null,
+        "key": 41,
+        "title": "\u0427\u0435\u0445\u043b\u044b \u0438 \u0441\u0443\u043c\u043a\u0438 \u0434\u043b\u044f \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u043e\u0432",
+        "folder": true,
+        "lazy": false,
+        "slug": "chexly-i-sumki-dlya-noutbukov",
+        "translations": {
+            "name": {
+                "md": "",
+                "ru": "\u0427\u0435\u0445\u043b\u044b \u0438 \u0441\u0443\u043c\u043a\u0438 \u0434\u043b\u044f \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u043e\u0432",
+                "uk": "\u0427\u043e\u0445\u043b\u0438 \u0442\u0430 \u0441\u0443\u043c\u043a\u0438 \u0434\u043b\u044f \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u0456\u0432"
+            },
+            "descr": {
+                "md": "",
+                "ru": "",
+                "uk": ""
+            },
+            "footnote": {
+                "md": "",
+                "ru": null,
+                "uk": ""
+            }
+        }
+    }
+]

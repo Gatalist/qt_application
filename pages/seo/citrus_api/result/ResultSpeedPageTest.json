@@ -1,0 +1,32 @@
+[
+    {
+        "id": 728686,
+        "url": "https://www.ctrs.com.ua/noutbuki-i-ultrabuki/acer-aspire-3-a315-35-c2l7-nxa6leu026-pure-silver-728686.html",
+        "first_contentful_paint": "2.3 s",
+        "largest_contentful_paint": "8.4 s",
+        "total_blocking_time": "670 ms",
+        "cumulative_layout_shift": "0.139",
+        "speed_index": "3.4 s",
+        "performance": 0.5
+    },
+    {
+        "id": 727676,
+        "url": "https://www.ctrs.com.ua/noutbuki-i-ultrabuki/acer-aspire-a515-48m-r1yx-nxkj9eu00b-steel-gray-727676.html",
+        "first_contentful_paint": "2.3 s",
+        "largest_contentful_paint": "5.1 s",
+        "total_blocking_time": "1,010 ms",
+        "cumulative_layout_shift": "0.019",
+        "speed_index": "3.6 s",
+        "performance": 0.56
+    },
+    {
+        "id": 730225,
+        "url": "https://www.ctrs.com.ua/noutbuki-i-ultrabuki/acer-aspire-7-a715-42g-r1a5-nhqbfeu008-charcoal-black-730225.html",
+        "first_contentful_paint": "2.3 s",
+        "largest_contentful_paint": "4.8 s",
+        "total_blocking_time": "1,060 ms",
+        "cumulative_layout_shift": "0.037",
+        "speed_index": "3.4 s",
+        "performance": 0.57
+    }
+]
