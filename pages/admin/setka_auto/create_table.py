@@ -5,7 +5,6 @@ from openpyxl.worksheet.datavalidation import DataValidation
 import pandas as pd
 
 
-
 class Document:
     def __init__(self, open_file):
         self.open_file = open_file
@@ -24,42 +23,25 @@ class Document:
         self.choices_price = ['-', 'Да', 'Нет']
         self.choices_filter = ['-', 'Да', 'Нет']
 
-    # добавляем первую строку, заголовки колонок
-    def add_title_column(self, sheet_obj):
-        # устанавливаем название колонок
-        sheet_obj["A1"] = "№ группы"
+    def modify_cell(self, obj, cell, text):
+        # устанавливаем текст ячейки
+        obj[cell] = text
         # цвета заливки ячеек
-        sheet_obj["A1"].fill = self.color_fill_call(self.color_basic)
+        obj[cell].fill = self.color_fill_call(self.color_basic)
         # Центрирование текста в ячейке
-        sheet_obj["A1"].alignment = Alignment(horizontal='center', vertical='center') 
+        obj[cell].alignment = Alignment(horizontal='center', vertical='center')
+        return obj
 
-        sheet_obj["B1"] = "Группа характеристик"
-        sheet_obj["B1"].fill = self.color_fill_call(self.color_basic)
-        sheet_obj["B1"].alignment = Alignment(horizontal='center', vertical='center')
-
-        sheet_obj["C1"] = "№ хар-ки"
-        sheet_obj["C1"].fill = self.color_fill_call(self.color_basic)
-        sheet_obj["C1"].alignment = Alignment(horizontal='center', vertical='center')
-
-        sheet_obj["D1"] = "Характеристика"
-        sheet_obj["D1"].fill = self.color_fill_call(self.color_basic)
-        sheet_obj["D1"].alignment = Alignment(horizontal='center', vertical='center')
-
-        sheet_obj["E1"] = "Значение (примеры)"
-        sheet_obj["E1"].fill = self.color_fill_call(self.color_value)
-        sheet_obj["E1"].alignment = Alignment(horizontal='center', vertical='center')
-
-        sheet_obj["F1"] = "Тип характеристики"
-        sheet_obj["F1"].fill = self.color_fill_call(self.color_basic)
-        sheet_obj["F1"].alignment = Alignment(horizontal='center', vertical='center')
-
-        sheet_obj["G1"] = "Ценники ( иконки в категории)"
-        sheet_obj["G1"].fill = self.color_fill_call(self.color_basic)
-        sheet_obj["G1"].alignment = Alignment(horizontal='center', vertical='center')
-
-        sheet_obj["H1"] = "Отображение Фильтра в категории"
-        sheet_obj["H1"].fill = self.color_fill_call(self.color_basic)
-        sheet_obj["H1"].alignment = Alignment(horizontal='center', vertical='center')
+        # добавляем первую строку, заголовки колонок
+    def add_title_column(self, sheet_obj):
+        self.modify_cell(sheet_obj, "A1", "№ группы")
+        self.modify_cell(sheet_obj, "B1", "Группа характеристик")
+        self.modify_cell(sheet_obj, "C1", "№ хар-ки")
+        self.modify_cell(sheet_obj, "D1", "Характеристика")
+        self.modify_cell(sheet_obj, "E1", "Значение (примеры)")
+        self.modify_cell(sheet_obj, "F1", "Тип характеристики")
+        self.modify_cell(sheet_obj, "G1", "Ценники ( иконки в категории)")
+        self.modify_cell(sheet_obj, "H1", "Отображение Фильтра в категории")
 
         # Установка высоты первой строки
         sheet_obj.row_dimensions[1].height = 30
@@ -74,7 +56,8 @@ class Document:
         sheet_obj.column_dimensions['G'].width = 35
         sheet_obj.column_dimensions['H'].width = 35
 
-    def add_choices_to_call(self, sheet_obj, call, list_name):
+    @staticmethod
+    def add_choices_to_cell(sheet_obj, call, list_name):
         """ Добавляем выпадающий список значений в ячейку """
         # Создание объекта DataValidation
         data_validation = DataValidation(
@@ -86,12 +69,12 @@ class Document:
         sheet_obj.add_data_validation(data_validation)
         # Первый элемент списка выбираем по умолчанию
         sheet_obj[call].value = list_name[0]
-
         return sheet_obj, data_validation
 
 
     # Открываем файл, если его нет создаем новый
-    def open_or_create_xl(self, name):
+    @staticmethod
+    def open_or_create_xl(name):
         try:
             # Загрузка файла Excel
             work_book = load_workbook(name)
@@ -111,7 +94,8 @@ class Document:
         return new_sheet
 
     # Создание объекта для заполнения (цвет фона)
-    def color_fill_call(self, color):
+    @staticmethod
+    def color_fill_call(color):
         return PatternFill(start_color=color, end_color=color, fill_type='solid')  # Например, желтый цвет
 
     # Запись данных в файл xlsx
@@ -131,17 +115,17 @@ class CreateTable(Document):
         self.column_name_list.pop(0)
 
     def get_data_column(self, column_name):
-        """Получаем первые 3 уникальные значения с столбца (атрибута)"""
+        """Получаем первые 3 уникальные значения столбца (атрибута)"""
         data_column = self.data[column_name]
         data_col_3_row = list(set(data_column))[:3]
         unique_data_col = [str(elem).split(';')[0] for elem in data_col_3_row if str(elem) != "nan"]
         print(unique_data_col)
         return unique_data_col
 
-    def strip_name_column(self, column_name: str):
+    @staticmethod
+    def strip_name_column(column_name: str):
         """Получаем название столбца (атрибута)"""
         return column_name.split('-')[0]
-       
 
     def complete_table(self, sheet_obj, col_name):
         num_local = self.num
@@ -151,21 +135,18 @@ class CreateTable(Document):
         sheet_obj[call_d].alignment = Alignment(horizontal='center', vertical='center')
         
         # Тип характеристики
-        # Добавляем список выбора поля
         call_f = f"F{num_local}"
-        self.add_choices_to_call(sheet_obj, call_f, self.choices_type)
+        self.add_choices_to_cell(sheet_obj, call_f, self.choices_type)
         sheet_obj[call_f].alignment = Alignment(horizontal='center', vertical='center')
 
-        # Ценники ( иконки в категории)
-        # Добавляем список выбора поля
+        # Ценники (иконки в категории)
         call_f = f"G{num_local}"
-        self.add_choices_to_call(sheet_obj, call_f, self.choices_price)
+        self.add_choices_to_cell(sheet_obj, call_f, self.choices_price)
         sheet_obj[call_f].alignment = Alignment(horizontal='center', vertical='center')
 
         # Отображение Фильтра в категории
-        # Добавляем список выбора поля
         call_f = f"H{num_local}"
-        self.add_choices_to_call(sheet_obj, call_f, self.choices_price)
+        self.add_choices_to_cell(sheet_obj, call_f, self.choices_price)
         sheet_obj[call_f].alignment = Alignment(horizontal='center', vertical='center')
 
         # Добавляем значение (примеры)
@@ -175,25 +156,6 @@ class CreateTable(Document):
             num_local += 1
         self.num += 4
 
-    def for_to_colunm(self, sheet_obj):
+    def for_to_columns(self, sheet_obj):
         for col_name in self.column_name_list:
             self.complete_table(sheet_obj, col_name)
-
-
-# # ------------------------ Записываем в xlsx документ
-# pyxl = CreateTable(open_file='pro')
-
-# # создаем лист на который будем записывать данные
-# sheet_obj = pyxl.add_new_sheet('Гаджеты виртуальной реальности')
-
-# # добавляем титульную строку
-# pyxl.add_title_column(sheet_obj)
-
-# # Удаляем ID, Name из списка названий колонок
-# pyxl.dell_id_name_from_list()
-
-# # добавляем результаты
-# pyxl.for_to_colunm(sheet_obj)
-
-# # сохраняем файл
-# pyxl.save_xlsx("new")

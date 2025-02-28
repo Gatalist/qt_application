@@ -56,7 +56,7 @@ class WindowCreateSetka(QWidget):
             self.document.dell_id_name_from_list()
 
             # добавляем результаты
-            self.document.for_to_colunm(sheet_obj)
+            self.document.for_to_columns(sheet_obj)
 
             # сохраняем файл
             name = "Сгенерированая сетка.xlsx"
