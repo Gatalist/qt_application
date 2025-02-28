@@ -84,8 +84,8 @@ class ExcelDocument(Settings):
 
     # получаем обьект ячейки по координатам: например 'AC4'
     def get_cell_obj(self, cell_letter, cell_number) -> object:
-        cell = f'{cell_letter}{cell_number}'
-        return self.work_sheet[cell]
+        call = f'{cell_letter}{cell_number}'
+        return self.work_sheet[call]
     
     # сохраняем результат в ячейку
     def save_result_in_cell(self, cell_object: object, text: str) -> object:
@@ -194,8 +194,8 @@ class ReadExcelDocument:
 
 
 class WriteExcelDocument:
-    symbols_1 = [";;", "; ;", ";  ;" ";;;", ";;;;"]
-    symbols_2 = ["  ", "   ", "    ", "\t"] #, "\r\n", "\n", "\r"]
+    symbols_1 = [";;", ";;;", ";;;;", "; ;", ";  ;", ";   ;"]
+    symbols_2 = ["  ", "   ", "    ", "\t", "\r\n", "\n", "\r"]
 
     # делаем первую букву каждой строки заглавной
     def upper_first_letter_in_text(self, text: str) -> str:
@@ -316,43 +316,45 @@ class WriteExcelDocument:
 
         yield f"✅ Текст добавлен в колонку [ {cell_past} ] - {result} \n"
 
-    # удаяем текст поиска с ячейки и добавляем в другую ячейку
-    def move_search_text_to_other_cell(self, document: object, cell_move: str, cell_past: str, search: list):
+    # удаляем текст поиска с ячейки и добавляем в другую ячейку
+    def move_search_text_to_other_cell(self, document: object, cell_move: str, cell_past: str, search: str):
         result = 0
+        list_search_text_lower = [word.lower() for word in search.split(';')]
+        print("[+] SEARCH TEXT", list_search_text_lower)
+
         for number_string in document.list_row:
             cell_move_obj = document.get_cell_obj(cell_move, number_string)
+            cell_past_obj = document.get_cell_obj(cell_past, number_string)
             
-            call_curent_text = cell_move_obj.value
-            if call_curent_text is not None:
-                list_search_text_lower = [word.lower() for word in search.split(';')]
-
+            call_current_text = cell_move_obj.value
+            if call_current_text is not None:
                 new_cell_list_text = []
                 current_cell_list_text = []
-                
-                # перебираем список совпадений
-                list_cur_text = call_curent_text.split(';')
-                for search_word in list_search_text_lower:
-                    # перебераем список строк
-                    for line in list_cur_text:
-                        if line.lower().find(search_word) != -1:
-                            if line not in new_cell_list_text:
-                                new_cell_list_text.append(line)
-                        else:
-                            current_cell_list_text.append(line)
 
-                # удаляем найденные атрибуты с текущего текста
-                new_curent_text = ";".join(current_cell_list_text)
-                
+                # Разбиваем строку, сохраняя порядок
+                list_cur_text = [line.strip() for line in call_current_text.split(';')]
+
+                for line in list_cur_text:
+                    for search_word in list_search_text_lower:
+                        if line.lower().find(search_word) != -1 and line not in new_cell_list_text:
+                           new_cell_list_text.append(line)  # Добавляем в новый список
+
+                for line in list_cur_text:
+                    if line not in new_cell_list_text and line not in current_cell_list_text:
+                        current_cell_list_text.append(line)
+
                 # save text in current cell
-                document.save_result_in_cell(cell_move_obj, new_curent_text)
+                new_current_text = ";".join(current_cell_list_text)
+                document.save_result_in_cell(cell_move_obj, new_current_text)
 
                 # добавление фрагмента текста в другую ячейку
                 cell_past_txt_add = ";".join(new_cell_list_text)
-                cell_past_obj = document.get_cell_obj(cell_past, number_string)
-
                 document.save_result_in_cell(cell_past_obj, cell_past_txt_add)
 
-                yield self.out_text(number_string, new_curent_text)
+                print(number_string, "text_old", call_current_text)
+                print(number_string, "text_cur_call", new_current_text)
+                print(number_string, "text_new_call", cell_past_txt_add, '\n')
+                yield self.out_text(number_string, new_current_text)
                 result += 1
 
         yield f"✅ Изменено строк - {result} \n"
