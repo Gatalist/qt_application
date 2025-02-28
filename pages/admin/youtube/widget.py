@@ -1,4 +1,5 @@
 from PyQt5.QtWidgets import QWidget, QFileDialog, QMessageBox, QTableWidgetItem
+from PyQt5.QtCore import Qt
 from datetime import datetime
 import threading
 
@@ -67,8 +68,9 @@ class WindowYoutube(QWidget):
         options |= QFileDialog.ShowDirsOnly  # Добавление флага ShowDirsOnly
         folder = QFileDialog.getExistingDirectory(self, "Select Directory", "", options=options)
         if folder:
+            print("[ + ] folder ->", folder)
             self.ui.line_save.setText(folder)
-            self.youtube.set_patch(folder)
+            self.youtube.path_save = folder
     
     # скачивание видео
     def download_video(self):

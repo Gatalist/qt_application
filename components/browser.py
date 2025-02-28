@@ -7,8 +7,7 @@ import os
 from settings import Settings
 
 
-
-class Browser():
+class Browser:
     def __init__(self):
         self.current_directory = os.getcwd()
         self.cookie_file = Settings.COOKIES
@@ -37,24 +36,18 @@ class Browser():
         current_url.replace(txt_start, f'start={start_page}')
         current_url.replace(txt_length, f'length={item_in_page}')
         
-        new_url = current_url.replace(
-            txt_start, f'start={start_page}'
-        ).replace(
-            txt_length, f'length={item_in_page}'
-        )
+        new_url = current_url
+        new_url.replace(txt_start, f'start={start_page}')
+        new_url.replace(txt_length, f'length={item_in_page}')
 
         self.open_url(new_url)
 
     # генерация следующей ссылки
     def next_url_translate(self, item_in_page):
         current_url = self.web_browser.current_url
-        
         start = re.search(r'start=(\d+)', current_url)
-        
         txt_start = start.group()
-
         new_number = int(start.group(1)) + int(item_in_page)
-
         new_url = current_url.replace(txt_start, f'start={new_number}')
         return new_url
 

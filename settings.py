@@ -16,6 +16,7 @@ class Settings(object):
     ROOT_PATH = os.path.abspath(os.path.dirname(__file__))
 
     COOKIES = os.path.join(ROOT_PATH, 'source', 'chrome', 'session')
-    
-    def convert_path_to_linux(windows_path):
-        return windows_path.replace("\\", "/")
+
+    @staticmethod
+    def convert_path_to_linux(window_path: str) -> str:
+        return window_path.replace("\\", "/")

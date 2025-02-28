@@ -1,3 +1,5 @@
+import os.path
+
 from yt_dlp import YoutubeDL
 from PyQt5.QtCore import QObject
 from PyQt5.QtCore import pyqtSignal
@@ -15,7 +17,8 @@ class YouTube(QObject):
             # 'format': '248+140',
             # 'format': 'best',
             # 'format': 'bestvideo+bestaudio/best',
-            'outtmpl': self.path_save + '/%(title)s.%(ext)s',
+            # 'outtmpl': self.path_save + '/%(title)s.%(ext)s',
+            'outtmpl': '%(title)s.%(ext)s',
             'noplaylist': True,
             'quiet': True,
             'no_warnings': True,
@@ -30,8 +33,8 @@ class YouTube(QObject):
         self.dict_format_audio = {format: {} for format in self.list_format_audio}
         self.type_file_audio = ['webm', 'mp4', 'm4a']
 
-    def set_patch(self, path_save):
-        self.path_save = path_save
+    # def set_patch(self, path_save):
+    #     self.path_save = path_save
 
     def info_video(self, video_url):
         with YoutubeDL(self.ydl_options) as ydl:
@@ -69,21 +72,25 @@ class YouTube(QObject):
      # получаем список всех доступных форматов
     def get_all_available_formats(self, response):
         formats = response.get('formats', [])
-        available_formats = [
-            [f.get('format_id'), f.get('ext'), f.get('resolution', 'audio only'), f.get('format_note')]
-            for f in formats if f.get('format_id') and f.get('ext') and f.get('format_note')
-        ]
-        reverse_list = available_formats[::-1]
-        # print('reverse_list', reverse_list)
-        return reverse_list
+        if formats:
+            available_formats = [
+                [f.get('format_id'), f.get('ext'), f.get('resolution', 'audio only'), f.get('format_note')]
+                for f in formats if f.get('format_id') and f.get('ext') and f.get('format_note')
+            ]
+            reverse_list = available_formats[::-1]
+            print('reverse_list', reverse_list)
+            return reverse_list
+        else:
+            return []
 
     def download(self, video_url, yt_format_video_id, yt_format_audio_id):
         self.ydl_options['format'] = f'{yt_format_video_id}+{yt_format_audio_id}'
-        print(self.ydl_options['format'])
+        self.ydl_options['outtmpl'] = self.path_save + '/' + '%(title)s.%(ext)s'
         try:
             with YoutubeDL(self.ydl_options) as ydl:
                 ydl.extract_info(video_url, download=True)
         except Exception as error:
+            ydl.extract_info(video_url, download=True, format='best')
             print(error)
 
     def progress(self, percent):
