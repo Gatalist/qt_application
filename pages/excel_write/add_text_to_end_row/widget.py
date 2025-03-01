@@ -19,6 +19,6 @@ class WindowAddEndRow(QWidget):
         cell_to = self.ui.lineEdit_to.text()
         text = self.ui.search_text.text()
         print(cell_to, text)
-        read = write_excel_document.add_text_to_cell(excel_document, cell_to, text, 'end')
+        read = write_excel_document.add_text_to_cell(document=excel_document, cell=cell_to, text=text, position='end')
         for string in read:
             self.ui.textEdit.append(string)

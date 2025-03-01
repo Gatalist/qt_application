@@ -1,11 +1,8 @@
-from openpyxl import load_workbook
-import pandas
-import re
-from settings import Settings
-import json
-import codecs
-import os
+import re, json, codecs
 import threading
+import pandas
+from openpyxl import load_workbook
+from settings import Settings
 
 
 class JsonDocument(Settings):
@@ -17,7 +14,7 @@ class JsonDocument(Settings):
     
     def __init__(self) -> None:
         self.format_open = 'Json (*.json)'
-        self.document: str = None # ссылка на документ json
+        self.document: str | None = None # ссылка на документ json
         self.all_list_admin_value = []
     
     def load_data_from_file(self, file_name):
@@ -41,13 +38,13 @@ class ExcelDocument(Settings):
     
     def __init__(self) -> None:
         self.format_open = 'Excel (*.xlsx);;Excel (*.xls)'
-        self.document: str = None # ссылка на документ xlsx
+        self.document: str| None = None # ссылка на документ xlsx
         
         self.data_frame: object = None  # получаем data_frame документа в pandas
         self.work_book: object = None  # открываем документ в openpyxl
         self.list_sheet: list = []  # получаем список листов в документе
         self.work_sheet: object = None  # получаем рабочий лист в документе
-        self.count_row: int = None  # получаем список строк в документе
+        self.count_row: int | None = None  # получаем список строк в документе
         self.start_row: int = 2 # с какой строки начинать читать документ
         self.list_row: list = [] # список колонок на листе
         self.list_column: list = [] # список колонок на листе
@@ -69,7 +66,7 @@ class ExcelDocument(Settings):
         self.work_sheet = self.work_book[sheet_name]  # делаем лист активным по умолчанию
         self.load_data_from_sheet(sheet_name=sheet_name)
 
-    # возвращаем список нумерованых строк с данными в указаной ячейке
+    # возвращаем список нумерованных строк с данными в указанной ячейке
     def get_rows_from_column(self, column_name) -> list:
         data_rows = []
         start_number_string = self.start_row
@@ -82,7 +79,7 @@ class ExcelDocument(Settings):
             start_number_string += 1
         return data_rows
 
-    # получаем обьект ячейки по координатам: например 'AC4'
+    # получаем объект ячейки по координатам: например 'AC4'
     def get_cell_obj(self, cell_letter, cell_number) -> object:
         call = f'{cell_letter}{cell_number}'
         return self.work_sheet[call]
@@ -100,11 +97,11 @@ class ReadExcelDocument:
     symbol_forbidden = '⛔️'
 
     @staticmethod
-    # возвращаем список нумерованых строк с данными в указаной ячейке
+    # возвращаем список нумерованных строк с данными в указанной ячейке
     def out_text(number_string, message) -> str:
         return f'-----[ Строка: {number_string} ]-----\n{message}\n'
     
-    # Выводим данные ячейки. Аргумент "read_line" разобъет текст на строки по символу ";"
+    # Выводим данные ячейки. Аргумент "read_line" разобьет текст на строки по символу ";"
     def read_list_data_row(self, list_data: str) -> str:
         number = 0
         if len(list_data) > 0:
@@ -145,7 +142,7 @@ class ReadExcelDocument:
         else:
             yield f"{self.symbol_ok} Ошибок не обнаружено\n\n"
 
-    # ищим фрагмент текста в ячейке
+    # ищем фрагмент текста в ячейке
     def search_text(self, list_data, search: str):
         result = 0
         for number_string, text in list_data:
@@ -175,7 +172,8 @@ class ReadExcelDocument:
                 yield f"{elem}\n"
         yield f"\n{self.symbol_ok} Уникальных строк {self.symbol_arrow} {len(unique_elem)}"
 
-    def get_unused_value_in_admin(self, list_data_xl, list_data_admin):
+    @staticmethod
+    def get_unused_value_in_admin(list_data_xl, list_data_admin):
         unique_elem = []
         for number_string, text in list_data_xl:
             for line in text.split(';'):
@@ -198,7 +196,8 @@ class WriteExcelDocument:
     symbols_2 = ["  ", "   ", "    ", "\t", "\r\n", "\n", "\r"]
 
     # делаем первую букву каждой строки заглавной
-    def upper_first_letter_in_text(self, text: str) -> str:
+    @staticmethod
+    def upper_first_letter_in_text(text: str) -> str:
         split_text = text.split(';')
         new_list = []
         for line in split_text:
@@ -206,7 +205,7 @@ class WriteExcelDocument:
             new_list.append(capitalized)
         return ';'.join(new_list)
     
-    # заменяем сымволы в строке
+    # заменяем символы в строке
     def replace_symbol(self, text: str) -> str:
         for symbol in self.symbols_1:
             text.replace(symbol, ';')
@@ -223,19 +222,13 @@ class WriteExcelDocument:
             if text[-1] == ';':
                 text = text[:-1]
         return text.strip()
-    
-    def out_text(self, number_string, message):
+
+    @staticmethod
+    def out_text(number_string, message):
         return f'-----[ Строка: {number_string} ]-----\n{message}\n'
-        # return f'<span style="color: #228B22;">{text}</span>'
-    
-    # меняем текст ячейки на новый
-    # def change_text_to_cell(self, document, cell_object: object, text: str) -> object:
-    #         document.save_result_in_cell(cell_object, upper_first_letter)
 
-    #         document.save_result_in_cell(cell_object, None)
-    #     return document
-
-    def delete_symbol_enter(self, text):
+    @staticmethod
+    def delete_symbol_enter(text):
         pattern = r'[;\n]'
         # Разделение строки по указанным разделителям
         result = re.split(pattern, text)
@@ -244,7 +237,7 @@ class WriteExcelDocument:
         return ";".join(result)
 
     # добавление фрагмента текста
-    def add_text(self, document, cell_object: object, text: str) -> object:
+    def add_text(self, document, cell_object, text: str) -> object:
         if text:
             cell_object_value = cell_object.value
             if cell_object_value is not None:
@@ -261,26 +254,25 @@ class WriteExcelDocument:
         return document
 
     # добавление фрагмента текста в конец в ячейки
-    def add_text_from_position(self, document: object, cell_object: object, text: str, position: str) -> object:
+    @staticmethod
+    def add_text_from_position(document, cell, text: str, position: str) -> object:
         if text:
-            cell_object_value = cell_object.value
-            if position == 'start' and cell_object_value is not None:
-                cell_object_value = f'{text};{cell_object_value}'
-               
-            if position == 'end' and cell_object_value is not None:
-                cell_object_value = f'{cell_object_value};{text}'
-              
-            if position == 'all' and cell_object_value is not None:
-                cell_object_value = f'{text};{cell_object_value}'
-            else:
-                cell_object_value = text
-                
-            document.save_result_in_cell(cell_object, cell_object_value)
-        else:
-            document.save_result_in_cell(cell_object, None)
-        return document
+            cell_object_value = cell.value
+            if cell_object_value is not None:
+                if position == 'start':
+                    cell_object_value = f'{text}{cell_object_value}'
 
-    ######################
+                if position == 'end':
+                    cell_object_value = f'{cell_object_value}{text}'
+
+                if position == 'all' and cell_object_value is not None:
+                    cell_object_value = f'{text}{cell_object_value}{text}'
+            # else:
+            #     cell_object_value = text
+                
+            document.save_result_in_cell(cell, cell_object_value)
+
+        return document
 
     # вырезаем весь текст с одной ячейки и добавляем в другую
     def move_text_to_another_cell(self, document, cell_move: str, cell_past: str):
@@ -305,19 +297,19 @@ class WriteExcelDocument:
         yield f"✅ Текст перемещен с ячеек [ {cell_move} ] в [ {cell_past} ] - {result}\n"
 
     # добавление фрагмента текста в ячейку
-    def add_text_to_cell(self, document: object, cell_past: str, text: str, position: str):
+    def add_text_to_cell(self, document, cell: str, text: str, position: str):
         result = 0
         for number_string in document.list_row:
-            cell_move_obj = document.get_cell_obj(cell_past, number_string)
-            self.add_text_from_position(document, cell_move_obj, text, position)
+            cell_obj = document.get_cell_obj(cell, number_string)
+            self.add_text_from_position(document=document, cell=cell_obj, text=text, position=position)
 
             yield self.out_text(number_string, text)
             result += 1
 
-        yield f"✅ Текст добавлен в колонку [ {cell_past} ] - {result} \n"
+        yield f"✅ Текст добавлен в колонку [ {cell} ] - {result} \n"
 
     # удаляем текст поиска с ячейки и добавляем в другую ячейку
-    def move_search_text_to_other_cell(self, document: object, cell_move: str, cell_past: str, search: str):
+    def move_search_text_to_other_cell(self, document, cell_move: str, cell_past: str, search: str):
         result = 0
         list_search_text_lower = [word.lower() for word in search.split(';')]
         print("[+] SEARCH TEXT", list_search_text_lower)
@@ -351,11 +343,10 @@ class WriteExcelDocument:
                 cell_past_txt_add = ";".join(new_cell_list_text)
                 document.save_result_in_cell(cell_past_obj, cell_past_txt_add)
 
-                print(number_string, "text_old", call_current_text)
-                print(number_string, "text_cur_call", new_current_text)
-                print(number_string, "text_new_call", cell_past_txt_add, '\n')
+                # print(number_string, "text_old", call_current_text)
+                # print(number_string, "text_cur_call", new_current_text)
+                # print(number_string, "text_new_call", cell_past_txt_add, '\n')
                 yield self.out_text(number_string, new_current_text)
                 result += 1
 
         yield f"✅ Изменено строк - {result} \n"
-

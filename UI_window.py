@@ -362,7 +362,7 @@ class Ui_MainWindow(object):
         self.btn_move_search_to_cell.setText(_translate("MainWindow", "Вырезать совпадение текста"))
         self.btn_add_text_to_start.setText(_translate("MainWindow", "Добавить текст в начало"))
         self.btn_add_text_to_end.setText(_translate("MainWindow", "Добавить текст в конец"))
-        self.btn_add_text_to_all.setText(_translate("MainWindow", "Добавить текст во все строки"))
+        self.btn_add_text_to_all.setText(_translate("MainWindow", "Добавить текст в начало и конец"))
         self.toolBox.setItemText(self.toolBox.indexOf(self.excel_write), _translate("MainWindow", "Редактирование Excel"))
         self.menu_btn_youtube.setText(_translate("MainWindow", "Youtube"))
         self.menu_btn_create_greed.setText(_translate("MainWindow", "Создать сетку с файла"))
