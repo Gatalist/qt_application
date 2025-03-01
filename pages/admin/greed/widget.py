@@ -6,9 +6,9 @@ from .create_table import CreateTable
 from components.document import Settings
 
 
-class WindowCreateSetka(QWidget):
+class WindowCreateGreed(QWidget):
     def __init__(self):
-        super(WindowCreateSetka, self).__init__()
+        super(WindowCreateGreed, self).__init__()
         self.ui = Ui_Form()
         self.ui.setupUi(self)
 

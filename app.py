@@ -20,7 +20,7 @@ from pages.excel_write.add_text_to_end_row.widget import WindowAddEndRow
 from pages.excel_write.add_text_to_all_row.widget import WindowAddAllRow
 
 from pages.admin.youtube.widget import WindowYoutube
-from pages.admin.setka_auto.widget import WindowCreateSetka
+from pages.admin.greed.widget import WindowCreateGreed
 from pages.admin.translate_fields.widget import WindowTranslate
 from pages.admin.translate_card.widget import WindowTranslateCard
 from pages.admin.structure.widget import WindowStructure
@@ -31,7 +31,7 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__()
 
         ## ==========================================================
-        ## Добавляем текущую директорию в перемую среду
+        ## Добавляем текущую директорию в переменную среду
         ## ==========================================================
         # ROOT_PATH = os.path.abspath(os.path.dirname(__file__))
         sys.path.append(Settings.ROOT_PATH)  # add root path
@@ -61,7 +61,7 @@ class MainWindow(QMainWindow):
         self.menu_btn_add_all = self.ui.btn_add_text_to_all
         # excel admin
         self.menu_btn_youtube = self.ui.menu_btn_youtube
-        self.menu_btn_create_setka = self.ui.menu_btn_create_setka
+        self.menu_btn_create_greed = self.ui.menu_btn_create_greed
         self.menu_btn_translate_attr = self.ui.menu_btn_translate_attr
         self.menu_btn_translate_card = self.ui.menu_btn_translate_card
         self.menu_btn_structure = self.ui.menu_btn_structure
@@ -84,7 +84,7 @@ class MainWindow(QMainWindow):
         self.window_add_all_row = WindowAddAllRow()
 
         self.window_youtube = WindowYoutube()
-        self.window_setka = WindowCreateSetka()
+        self.window_greed = WindowCreateGreed()
         self.window_translate = WindowTranslate()
         self.window_translate_card = WindowTranslateCard()
         self.window_structure = WindowStructure()
@@ -109,14 +109,14 @@ class MainWindow(QMainWindow):
             self.menu_btn_add_all: self.window_add_all_row,
             # Admin
             self.menu_btn_youtube: self.window_youtube,
-            self.menu_btn_create_setka: self.window_setka,
+            self.menu_btn_create_greed: self.window_greed,
             self.menu_btn_translate_attr: self.window_translate,
             self.menu_btn_translate_card: self.window_translate_card,
             self.menu_btn_structure: self.window_structure
         }
 
         ## ===========================================================
-        ## Показываем окно при запуке приложения
+        ## Показываем окно при запуске приложения
         ## ===========================================================
         self.show_home_window()
          
@@ -138,7 +138,7 @@ class MainWindow(QMainWindow):
         self.menu_btn_add_all.clicked.connect(self.show_selected_window)
 
         self.menu_btn_youtube.clicked.connect(self.show_selected_window)
-        self.menu_btn_create_setka.clicked.connect(self.show_selected_window)
+        self.menu_btn_create_greed.clicked.connect(self.show_selected_window)
         self.menu_btn_translate_attr.clicked.connect(self.show_selected_window)
         self.menu_btn_translate_card.clicked.connect(self.show_selected_window)
         self.menu_btn_structure.clicked.connect(self.show_selected_window)
@@ -146,7 +146,7 @@ class MainWindow(QMainWindow):
         self.ui.tabWidget.tabCloseRequested.connect(self.close_tab)
         self.ui.tabWidget.currentChanged.connect(self.on_tab_changed)
         
-        # Соединяем сигнал self.window_open_file с слотами для передачи в них данных
+        # Соединяем сигнал self.window_open_file и слота для передачи в него данных
         self.window_open_file.send_object_document.connect(self.window_read_columns.receive_object_document)
         self.window_open_file.send_object_document.connect(self.window_check_errors.receive_object_document)
         self.window_open_file.send_object_document.connect(self.window_search_text.receive_object_document)
@@ -167,8 +167,8 @@ class MainWindow(QMainWindow):
             self.ui.tabWidget.setCurrentIndex(result[1])
         else:
             title = self.menu_btn_open_file.text()
-            curIndex = self.ui.tabWidget.addTab(self.window_open_file, title)
-            self.ui.tabWidget.setCurrentIndex(curIndex)
+            self_index = self.ui.tabWidget.addTab(self.window_open_file, title)
+            self.ui.tabWidget.setCurrentIndex(self_index)
             self.ui.tabWidget.setVisible(True)
 
     def show_selected_window(self):
@@ -179,8 +179,8 @@ class MainWindow(QMainWindow):
             self.ui.tabWidget.setCurrentIndex(result[1])
         else:
             title = button.text()
-            curIndex = self.ui.tabWidget.addTab(self.menu_btn_windows[button], title)
-            self.ui.tabWidget.setCurrentIndex(curIndex)
+            self_index = self.ui.tabWidget.addTab(self.menu_btn_windows[button], title)
+            self.ui.tabWidget.setCurrentIndex(self_index)
             self.ui.tabWidget.setVisible(True)
 
     def close_tab(self, index):

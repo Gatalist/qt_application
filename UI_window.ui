@@ -704,7 +704,7 @@ border: none;</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="menu_btn_create_setka">
+            <widget class="QPushButton" name="menu_btn_create_greed">
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
              </property>
