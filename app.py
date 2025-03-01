@@ -1,10 +1,9 @@
-import sys, os
-
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
-
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow
 from UI_window import Ui_MainWindow
 from settings import Settings
 
+# Импортируем все окна
 from pages.home.open_files.widget import WindowOpenFile
 
 from pages.excel_read.read_columns.widget import WindowReadColumns
@@ -13,7 +12,7 @@ from pages.excel_read.search_text.widget import WindowSearchText
 from pages.excel_read.unique_values.widget import WindowUniqueValues
 from pages.excel_read.unused_value.widget import WindowUnusedValues
 
-from pages.excel_write.move_to_another_cell.widget import WindowRemoweAnother 
+from pages.excel_write.move_to_another_cell.widget import WindowRemoweAnother
 from pages.excel_write.move_search_to_cell.widget import WindowMoveSearchCell
 from pages.excel_write.add_text_to_start_row.widget import WindowAddStartRow
 from pages.excel_write.add_text_to_end_row.widget import WindowAddEndRow
@@ -28,184 +27,101 @@ from pages.admin.structure.widget import WindowStructure
 
 class MainWindow(QMainWindow):
     def __init__(self):
-        super(MainWindow, self).__init__()
+        super().__init__()
 
-        ## ==========================================================
-        ## Добавляем текущую директорию в переменную среду
-        ## ==========================================================
-        # ROOT_PATH = os.path.abspath(os.path.dirname(__file__))
-        sys.path.append(Settings.ROOT_PATH)  # add root path
-        
-        ## ==========================================================
-        ## Загрузить интерфейс из ui.py файла
-        ## ==========================================================
+        # Добавляем текущую директорию в переменные среды
+        sys.path.append(Settings.ROOT_PATH)
+
+        # Загружаем UI
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        ## ==========================================================
-        ## получаем ui кнопки
-        ## ==========================================================
-        # home
-        self.menu_btn_open_file = self.ui.btn_open_file
-        # excel read
-        self.menu_btn_read_column = self.ui.btn_read_column
-        self.menu_btn_check_errors = self.ui.btn_check_errors
-        self.menu_btn_search_text = self.ui.btn_search_text
-        self.menu_btn_unique_values = self.ui.btn_unique_values
-        self.menu_btn_unused_values = self.ui.menu_btn_not_use_value
-        # excel write
-        self.menu_btn_remove_another = self.ui.btn_move_to_another
-        self.menu_btn_move_search  = self.ui.btn_move_search_to_cell
-        self.menu_btn_add_start = self.ui.btn_add_text_to_start
-        self.menu_btn_add_end = self.ui.btn_add_text_to_end
-        self.menu_btn_add_all = self.ui.btn_add_text_to_all
-        # excel admin
-        self.menu_btn_youtube = self.ui.menu_btn_youtube
-        self.menu_btn_create_greed = self.ui.menu_btn_create_greed
-        self.menu_btn_translate_attr = self.ui.menu_btn_translate_attr
-        self.menu_btn_translate_card = self.ui.menu_btn_translate_card
-        self.menu_btn_structure = self.ui.menu_btn_structure
-
-        ## ==========================================================
-        ## инициализируем ui окна
-        ## ==========================================================
-        self.window_open_file = WindowOpenFile()
-        
-        self.window_read_columns = WindowReadColumns()
-        self.window_check_errors = WindowCheckErrors()
-        self.window_search_text = WindowSearchText()
-        self.window_unique_values = WindowUniqueValues()
-        self.windows_unused_values = WindowUnusedValues()
-        
-        self.window_remove_to_another = WindowRemoweAnother()
-        self.window_move_search_cell = WindowMoveSearchCell()
-        self.window_add_start_row = WindowAddStartRow()
-        self.window_add_end_row = WindowAddEndRow()
-        self.window_add_all_row = WindowAddAllRow()
-
-        self.window_youtube = WindowYoutube()
-        self.window_greed = WindowCreateGreed()
-        self.window_translate = WindowTranslate()
-        self.window_translate_card = WindowTranslateCard()
-        self.window_structure = WindowStructure()
-
-        ## ==========================================================
-        ## Создаем dict меню, присваиваем ui кнопкам наши окна
-        ## ==========================================================
+        # Словарь кнопок и соответствующих окон
         self.menu_btn_windows = {
-            # home
-            self.menu_btn_open_file: self.window_open_file,
-            # Excel read
-            self.menu_btn_read_column: self.window_read_columns,
-            self.menu_btn_check_errors: self.window_check_errors,
-            self.menu_btn_search_text: self.window_search_text,
-            self.menu_btn_unique_values: self.window_unique_values,
-            self.menu_btn_unused_values: self.windows_unused_values,
-            # Excel write
-            self.menu_btn_remove_another: self.window_remove_to_another,
-            self.menu_btn_move_search: self.window_move_search_cell,
-            self.menu_btn_add_start: self.window_add_start_row,
-            self.menu_btn_add_end: self.window_add_end_row,
-            self.menu_btn_add_all: self.window_add_all_row,
-            # Admin
-            self.menu_btn_youtube: self.window_youtube,
-            self.menu_btn_create_greed: self.window_greed,
-            self.menu_btn_translate_attr: self.window_translate,
-            self.menu_btn_translate_card: self.window_translate_card,
-            self.menu_btn_structure: self.window_structure
+            self.ui.btn_open_file: WindowOpenFile(),
+            self.ui.btn_read_column: WindowReadColumns(),
+            self.ui.btn_check_errors: WindowCheckErrors(),
+            self.ui.btn_search_text: WindowSearchText(),
+            self.ui.btn_unique_values: WindowUniqueValues(),
+            self.ui.menu_btn_not_use_value: WindowUnusedValues(),
+            self.ui.btn_move_to_another: WindowRemoweAnother(),
+            self.ui.btn_move_search_to_cell: WindowMoveSearchCell(),
+            self.ui.btn_add_text_to_start: WindowAddStartRow(),
+            self.ui.btn_add_text_to_end: WindowAddEndRow(),
+            self.ui.btn_add_text_to_all: WindowAddAllRow(),
+            self.ui.menu_btn_youtube: WindowYoutube(),
+            self.ui.menu_btn_create_greed: WindowCreateGreed(),
+            self.ui.menu_btn_translate_attr: WindowTranslate(),
+            self.ui.menu_btn_translate_card: WindowTranslateCard(),
+            self.ui.menu_btn_structure: WindowStructure()
         }
 
-        ## ===========================================================
-        ## Показываем окно при запуске приложения
-        ## ===========================================================
+        # Привязываем кнопки к функции открытия окон
+        for btn in self.menu_btn_windows:
+            btn.clicked.connect(self.show_selected_window)
+
+        # Показываем стартовое окно
         self.show_home_window()
-         
-        ## ===========================================================
-        ## Подключаем signal и slot
-        ## ===========================================================
-        self.menu_btn_open_file.clicked.connect(self.show_selected_window)
-        
-        self.menu_btn_read_column.clicked.connect(self.show_selected_window)
-        self.menu_btn_check_errors.clicked.connect(self.show_selected_window)
-        self.menu_btn_search_text.clicked.connect(self.show_selected_window)
-        self.menu_btn_unique_values.clicked.connect(self.show_selected_window)
-        self.menu_btn_unused_values.clicked.connect(self.show_selected_window)
-        
-        self.menu_btn_remove_another.clicked.connect(self.show_selected_window)
-        self.menu_btn_move_search.clicked.connect(self.show_selected_window)
-        self.menu_btn_add_start.clicked.connect(self.show_selected_window)
-        self.menu_btn_add_end.clicked.connect(self.show_selected_window)
-        self.menu_btn_add_all.clicked.connect(self.show_selected_window)
 
-        self.menu_btn_youtube.clicked.connect(self.show_selected_window)
-        self.menu_btn_create_greed.clicked.connect(self.show_selected_window)
-        self.menu_btn_translate_attr.clicked.connect(self.show_selected_window)
-        self.menu_btn_translate_card.clicked.connect(self.show_selected_window)
-        self.menu_btn_structure.clicked.connect(self.show_selected_window)
-
+        # Подключаем сигналы
         self.ui.tabWidget.tabCloseRequested.connect(self.close_tab)
         self.ui.tabWidget.currentChanged.connect(self.on_tab_changed)
-        
-        # Соединяем сигнал self.window_open_file и слота для передачи в него данных
-        self.window_open_file.send_object_document.connect(self.window_read_columns.receive_object_document)
-        self.window_open_file.send_object_document.connect(self.window_check_errors.receive_object_document)
-        self.window_open_file.send_object_document.connect(self.window_search_text.receive_object_document)
-        self.window_open_file.send_object_document.connect(self.window_unique_values.receive_object_document)
-        self.window_open_file.send_object_document.connect(self.windows_unused_values.receive_object_document)
 
-    ## ===========================================================
-    ## Методы главного окна
-    ## ===========================================================
-    def on_tab_changed(self, index):
-        print(f"Active tab index: {index}")
-        print(f"Active tab name: {self.ui.tabWidget.tabText(index)}")
-    
+        # Связываем передачу объекта документа со всеми окнами
+        self.menu_btn_windows[self.ui.btn_open_file].send_object_document.connect(self.receive_object_document)
+
     def show_home_window(self):
-        result = self.open_tab_flag(self.menu_btn_open_file.text())
-        self.set_btn_checked(self.menu_btn_open_file)
-        if result[0]:
-            self.ui.tabWidget.setCurrentIndex(result[1])
-        else:
-            title = self.menu_btn_open_file.text()
-            self_index = self.ui.tabWidget.addTab(self.window_open_file, title)
-            self.ui.tabWidget.setCurrentIndex(self_index)
-            self.ui.tabWidget.setVisible(True)
+        """Открывает главное окно при запуске."""
+        self.show_window(self.ui.btn_open_file.text(), self.menu_btn_windows[self.ui.btn_open_file])
 
     def show_selected_window(self):
+        """Открывает окно, соответствующее нажатой кнопке."""
         button = self.sender()
-        result = self.open_tab_flag(button.text())
-        self.set_btn_checked(button)
+        self.show_window(button.text(), self.menu_btn_windows[button])
+
+    def show_window(self, title, window):
+        """Логика открытия окна с проверкой вкладок."""
+        result = self.open_tab_flag(title)
+        self.set_btn_checked(title)
         if result[0]:
             self.ui.tabWidget.setCurrentIndex(result[1])
         else:
-            title = button.text()
-            self_index = self.ui.tabWidget.addTab(self.menu_btn_windows[button], title)
-            self.ui.tabWidget.setCurrentIndex(self_index)
+            self.ui.tabWidget.addTab(window, title)
+            self.ui.tabWidget.setCurrentWidget(window)
             self.ui.tabWidget.setVisible(True)
 
     def close_tab(self, index):
+        """Закрывает вкладку и возвращает на стартовое окно, если вкладок больше нет."""
         self.ui.tabWidget.removeTab(index)
         if self.ui.tabWidget.count() == 0:
-            self.ui.toolBox.setCurrentIndex(0)
             self.show_home_window()
 
     def open_tab_flag(self, tab):
-        open_tab_count = self.ui.tabWidget.count()
-        for i in range(open_tab_count):
-            tab_name = self.ui.tabWidget.tabText(i)
-            if tab_name == tab:
+        """Проверяет, открыта ли уже вкладка с таким именем."""
+        for i in range(self.ui.tabWidget.count()):
+            if self.ui.tabWidget.tabText(i) == tab:
                 return True, i
-            else:
-                continue
         return False,
 
-    def set_btn_checked(self, btn):
-        for button in self.menu_btn_windows.keys():
-            if button != btn:
-                button.setChecked(False)
-            else:
-                button.setChecked(True)
+    def set_btn_checked(self, title):
+        """Устанавливает состояние нажатой кнопки."""
+        for btn in self.menu_btn_windows:
+            btn.setChecked(btn.text() == title)
 
+    def on_tab_changed(self, index):
+        """Выводит в консоль информацию о смене вкладки."""
+        print(f"Активная вкладка: {index} - {self.ui.tabWidget.tabText(index)}")
+
+    def receive_object_document(self, document):
+        """Передает объект документа во все связанные окна."""
+        for window in [
+            self.menu_btn_windows[self.ui.btn_read_column],
+            self.menu_btn_windows[self.ui.btn_check_errors],
+            self.menu_btn_windows[self.ui.btn_search_text],
+            self.menu_btn_windows[self.ui.btn_unique_values],
+            self.menu_btn_windows[self.ui.menu_btn_not_use_value]
+        ]:
+            window.receive_object_document(document)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
