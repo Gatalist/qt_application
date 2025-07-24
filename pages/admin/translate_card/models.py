@@ -4,8 +4,9 @@ from PyQt5.QtCore import QObject
 from PyQt5.QtCore import pyqtSignal
 
 import time
-from components.browser import Base
 
+class Base:
+	pass
 
 
 class CardAttribute(QObject, Base):

@@ -45,5 +45,10 @@
     <file>icons/edit_w.svg</file>
     <file>icons/feed_w.svg</file>
     <file>icons/library_w.svg</file>
+    <file>icons/api.svg</file>
+    <file>icons/parser.svg</file>
+    <file>icons/speed-test.svg</file>
+    <file>icons/card-data.svg</file>
+    <file>icons/card-id.svg</file>
   </qresource>
 </RCC>

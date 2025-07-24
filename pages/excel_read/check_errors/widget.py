@@ -23,7 +23,7 @@ class WindowCheckErrors(QWidget):
         for string in read:
             self.ui.textEdit.append(string)
 
-    # выводим все колонки документа в осписок нашего окна
+    # выводим все колонки документа в список нашего окна
     def add_list_columns(self, data_list):
         self.ui.comboBox.clear() # очищаем список
         for column in data_list:

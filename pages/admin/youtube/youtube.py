@@ -1,5 +1,3 @@
-import os.path
-
 from yt_dlp import YoutubeDL
 from PyQt5.QtCore import QObject
 from PyQt5.QtCore import pyqtSignal

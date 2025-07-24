@@ -4,3 +4,16 @@ pyuic5.exe UI_window.ui -o UI_window.py
 
 # получить данные иконок и тд. в файл resource_qrc.py с файла resource.qrc
 pyrcc5.exe resource.qrc -o resource_rc.py
+
+
+# запустить QT дизайнер
+pyqt5-tools designer
+
+
+pip install pytest-playwright
+
+playwright install chromium
+
+or
+
+playwright install # all browser
