@@ -47,7 +47,6 @@ class WindowTranslate(QWidget):
 
         self.queue = Queue()
         self.row_index = 1
-        # self.row_position = self.ui.tableWidget.rowCount()
 
         # Таймер для чтения из очереди
         self.timer = QTimer()

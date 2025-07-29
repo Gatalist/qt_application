@@ -1,6 +1,5 @@
 from PyQt5.QtCore import QObject
 from PyQt5.QtCore import pyqtSignal
-from playwright.sync_api import expect
 from components.browser import Browser
 import time
 import re
@@ -37,8 +36,9 @@ class ProductGroupValue(QObject, Browser):
 			row = rows.nth(i)
 			cells = row.locator("td")
 
-			obj_text_uk = None
-			row_data = {}
+			row_data = {
+				"translate": True
+			}
 
 			for j in range(cells.count()):
 
@@ -50,7 +50,7 @@ class ProductGroupValue(QObject, Browser):
 					td = cells.nth(j)
 					divs = td.locator("div")
 
-					for k in range(divs.count()):  # ограничим до 3 div
+					for k in range(divs.count()):
 						div_text = divs.nth(k).inner_text().strip()
 
 						if div_text == "uk: Нет перевода()":
@@ -58,7 +58,6 @@ class ProductGroupValue(QObject, Browser):
 							row_data["uk"] = ""
 
 						if _match_uk := re.search(pattern_uk, div_text):
-							row_data["translate"] = True
 							row_data["uk"] = _match_uk.group(1)
 
 						if _match_ru := re.search(pattern_ru, div_text):
