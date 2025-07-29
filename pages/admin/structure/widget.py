@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QTableWidget, QApplication
+from PyQt5.QtWidgets import QTableWidget, QApplication, QHeaderView
 from PyQt5.QtGui import QKeySequence
 from PyQt5.QtWidgets import QWidget, QTableWidgetItem
 from multiprocessing import Process, Queue
@@ -71,7 +71,8 @@ class WindowStructure(QWidget):
         font = old_table.font()
 
         new_table = CopyableTableWidget(parent)
-        new_table.setGeometry(geometry)
+        new_table.horizontalHeader().setStretchLastSection(True)
+        new_table.horizontalHeader().setSectionResizeMode(QHeaderView.Interactive)
         new_table.setObjectName("tableWidget")
         new_table.setFont(font)
         new_table.setColumnCount(1)
@@ -82,6 +83,7 @@ class WindowStructure(QWidget):
         layout.addWidget(new_table)
 
         self.ui.tableWidget = new_table
+        self.setLayout(layout)
         old_table.deleteLater()
 
     def check_queue(self):
@@ -90,8 +92,6 @@ class WindowStructure(QWidget):
             print("queue:", msg)
             self.structure = msg
             self.ui.message.setText("Готово ✅")
-
-
 
     @staticmethod
     def run_process_get_structure(page_name, queue):
@@ -122,6 +122,7 @@ class WindowStructure(QWidget):
             self.ui.message.setText("")
             process = Process(target=self.run_process_get_structure, kwargs={"page_name": "citrus", "queue": self.queue})
             process.start()
+            # process.join() # blocked interface
 
         if method == Methods.BREEDING:
             self.ui.message.setText("")

@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QWidget, QFileDialog, QMessageBox, QTableWidgetItem
+from PyQt5.QtWidgets import QWidget, QFileDialog, QMessageBox, QTableWidgetItem, QHeaderView
 from PyQt5.QtCore import Qt
 from datetime import datetime
 import threading
@@ -27,6 +27,9 @@ class WindowYoutube(QWidget):
         self.ui.check_youtube_url.clicked.connect(self.get_info_video)
         self.ui.btn_select.clicked.connect(self.select_folder)
         self.ui.btn_download.clicked.connect(self.download_video)
+
+        self.ui.tableWidget.horizontalHeader().setStretchLastSection(True)
+        self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Interactive)
 
     # получить информацию о видео
     def get_info_video(self):

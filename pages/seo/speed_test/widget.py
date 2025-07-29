@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QTableWidget, QApplication
+from PyQt5.QtWidgets import QTableWidget, QApplication, QHeaderView
 from PyQt5.QtGui import QKeySequence
 import threading
 from .speed_test_api import SpeedPageTest
@@ -56,7 +56,8 @@ class WindowGetSpeedTest(QWidget):
 
         # Создаём кастомную таблицу
         new_table = CopyableTableWidget(parent)
-        new_table.setGeometry(geometry)
+        new_table.horizontalHeader().setStretchLastSection(True)
+        new_table.horizontalHeader().setSectionResizeMode(QHeaderView.Interactive)
         new_table.setObjectName("tableWidget")
         new_table.setFont(font)
         new_table.setColumnCount(8)
@@ -68,6 +69,7 @@ class WindowGetSpeedTest(QWidget):
         layout.addWidget(new_table)
 
         self.ui.tableWidget = new_table
+        self.setLayout(layout)
         old_table.deleteLater()
 
     def get_api_data(self):

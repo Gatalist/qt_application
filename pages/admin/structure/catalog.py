@@ -1,6 +1,7 @@
 import json
 import time
 import os
+import re
 from settings import Settings
 from components.browser import Browser
 
@@ -11,6 +12,21 @@ class Category(Browser):
         self.link_structure = "https://my.ctrs.com.ua/contento/content/catalog/categories/structure/datatable/"
         self.datatable_file = os.path.join(Settings.ROOT_PATH, "source", "datatable.json")
         self.structure = {}
+
+    @staticmethod
+    def get_json_for_pre(content):
+        match = re.search(r'<pre[^>]*>(.*?)</pre>', content, re.DOTALL)
+        if match:
+            try:
+                data = json.loads(match.group(1))
+                print("✅ Успешно загружено", len(data), "записей")
+                # print("data:", data)
+                return data
+            except json.JSONDecodeError as e:
+                print("❌ Ошибка парсинга JSON:", e)
+                return []
+        else:
+            print("❌ JSON не найден в <pre>...")
 
     def get_structure(self, page_name: str, link: str):
         self.open_url(page_name=page_name, link=link)
@@ -73,7 +89,7 @@ class Category(Browser):
             data = json.load(file)
         return data
 
-    def get_categories_name(self, dict_data: dict, lang: str ="uk", all_cat: bool = False):
+    def get_categories_name(self, dict_data: dict, lang: str ="uk", all_cat: bool = False) -> list:
         last_children = []
         for idd, category in dict_data.items():
             res = self.get_child(dict_data=category, lang=lang, all_cat=all_cat)

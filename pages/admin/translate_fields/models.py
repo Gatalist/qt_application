@@ -1,89 +1,163 @@
-from selenium.common.exceptions import StaleElementReferenceException
-from selenium.webdriver.common.by import By
 from PyQt5.QtCore import QObject
 from PyQt5.QtCore import pyqtSignal
-
+from playwright.sync_api import expect
+from components.browser import Browser
 import time
-
-class Base:
-	pass
+import re
 
 
-class ProductGroupValue(QObject, Base):
+class ProductGroupValue(QObject, Browser):
 	send_result_translate = pyqtSignal(str)
 
-	def __init__(self):
-		super().__init__()
+	def __init__(self , queue, visible=False):
+		super().__init__(visible=visible)
+		self.queue = queue
 
-	def for_element_in_table(self):
-		result = ''
-		try:
-			table = self.web_browser.find_element(by=By.TAG_NAME, value="table")
-			tbody = table.find_element(by=By.TAG_NAME, value='tbody')
-			tr = tbody.find_elements(by=By.TAG_NAME, value='tr')
-			for element in tr:
-				columns_in_row = element.find_elements(by=By.TAG_NAME, value='td')
-				column = 1
-				name = 2
-				translate = len(columns_in_row)
+	def for_element_in_table(self, page_name: str):
+		obj_page = self.pages[page_name]
 
-				uk_translate = ''
-				ru_translate = ''
+		# Ждём появления хотя бы одной строки таблицы
+		obj_page.wait_for_selector("#data-table tbody tr")
 
-				for elem in columns_in_row:
-					if column == name:
-						for div in elem.find_elements(by=By.TAG_NAME, value='div'):
-							if (div.text).startswith('uk:'):
-								uk = div.find_element(by=By.TAG_NAME, value='a')
-								uk_translate = uk.get_attribute('title')
-							if (div.text).startswith('ru: '):
-								ru = div.find_element(by=By.TAG_NAME, value='a')
-								ru_translate = ru.get_attribute('title')
+		headers = obj_page.locator("table thead tr th")
+		print("headers:", headers.count())
+		column_names = [headers.nth(i).inner_text() for i in range(headers.count())]
+		print("Колонки:", column_names)
 
-					if column == translate:
-						if uk_translate == '':
-							result += f"IDD: {columns_in_row[0].text}\n"
-							result += f"--------------\n"
-							result += f"Name ru: {ru_translate}\n"
-							result += "Name uk: Translate..\n\n"
+		obj_page.wait_for_selector("#data-table tbody tr")
 
-							for a in elem.find_elements(by=By.TAG_NAME, value='a'):
-								if a.get_attribute('title') == 'google перевод':
-									a.click()
-									time.sleep(1)
-					column += 1
-				
-				yield result
-		
-		except StaleElementReferenceException:
-			pass
+		rows = obj_page.locator("#data-table tbody tr")
+		row_count = rows.count()
+		print("Найдено строк:", row_count)
+
+		pattern_ru = r"ru: Есть перевод\((.*?)\)"
+		pattern_uk = r"uk: Есть перевод\((.*?)\)"
+
+		for i in range(row_count):
+			row = rows.nth(i)
+			cells = row.locator("td")
+
+			obj_text_uk = None
+			row_data = {}
+
+			for j in range(cells.count()):
+
+				if column_names[j] == 'ID':
+					td = cells.nth(j)
+					row_data["id"] = td.inner_text()
+
+				if column_names[j] == 'name':
+					td = cells.nth(j)
+					divs = td.locator("div")
+
+					for k in range(divs.count()):  # ограничим до 3 div
+						div_text = divs.nth(k).inner_text().strip()
+
+						if div_text == "uk: Нет перевода()":
+							row_data["translate"] = False
+							row_data["uk"] = ""
+
+						if _match_uk := re.search(pattern_uk, div_text):
+							row_data["translate"] = True
+							row_data["uk"] = _match_uk.group(1)
+
+						if _match_ru := re.search(pattern_ru, div_text):
+							row_data["ru"] = _match_ru.group(1)
+
+				if column_names[j] == '':  # btn translate
+					if not row_data["translate"]:
+						td = cells.nth(j)
+						links = td.locator("a")
+
+						for k in range(links.count()):
+							link = links.nth(k)
+							title = link.get_attribute("title")
+							if title:
+								link.click()
+
+								# Ждём появления div с нужным текстом внутри ячейки name
+								name_td = cells.nth(column_names.index("name"))
+								name_td.locator("div", has_text="uk: Есть перевод(").wait_for(timeout=5000)
+
+								# Теперь можно читать текст заново
+								divs = name_td.locator("div")
+								for k in range(divs.count()):
+									div_text = divs.nth(k).inner_text().strip()
+									if _match_uk := re.search(pattern_uk, div_text):
+										row_data["uk"] = _match_uk.group(1)
+
+			time.sleep(1)
+
+			if not row_data["translate"]:
+				yield row_data
+			else:
+				yield {}
+
+	def _get_model_names(self, page_name):
+		obj_page = self.pages[page_name]
+		selects = obj_page.locator("select#model_name option")
+
+		result = []
+		for i in range(selects.count()):
+			select = selects.nth(i)
+			# k_v = select.get_attribute("value"), select.inner_text()
+			result.append(select.inner_text())
+		return result
+
+	def _select_option(self, page_name: str, option_name: str):
+		obj_page = self.pages[page_name]
+		obj_page.locator("select#model_name").select_option(
+			label=option_name
+		)
+
+	# def _select_option(self, page_name: str, option_name: str):
+	# 	obj_page = self.pages[page_name]
+	# 	select = obj_page.locator("select#model_name")
+	#
+	# 	# Ждём, пока селект появится и будет доступен
+	# 	select.wait_for(state="attached")
+	#
+	# 	# Ждём появления нужной опции
+	# 	options = select.locator("option")
+	# 	options.wait_for(timeout=5000)  # ожидание появления хотя бы одной опции
+	#
+	# 	# Получаем все опции
+	# 	option_elements = options.all()
+	#
+	# 	for option in option_elements:
+	# 		if option.inner_text().strip() == option_name:
+	# 			value = option.get_attribute("value")
+	# 			select.select_option(value=value)
+	# 			return
+	#
+	# 	raise ValueError(f"Опция '{option_name}' не найдена в select#model_name")
 
 
-	def start(self, start_page, page_checking, item_in_page, link_translate, name_option):
-		self.login()
-		self.open_url(link_translate)
-		self.search_model()
-		self.select_options(name_option)
-		self.change_url(start_page, item_in_page)
+	def start(self, page_name: str, start_page: int, checking_page: int, item_in_page, link_translate, name_option):
+		self.login(page_name=page_name)
+		self.open_url(page_name=page_name, link=link_translate, wait_until="domcontentloaded")
+		self.change_url(page_name=page_name, start_page=start_page, item_in_page=item_in_page)
+		self._get_model_names(page_name=page_name)
+		self._select_option(page_name=page_name, option_name=name_option)
 
-		for page in range(1, int(page_checking) + 1):
+		for page in range(int(checking_page) + 1):
 			info_page_start = f"\tCтраница: {page}\n"
 			print(info_page_start)
-			self.send_result_translate.emit(info_page_start)
-			
-			self.centre_browser()
-			data_table = self.for_element_in_table()
+			# self.send_result_translate.emit(info_page_start)
+
+			# self.centre_browser()
+			data_table = self.for_element_in_table(page_name=page_name)
 			for result in data_table:
 				if result:
-					print(result)
-					self.send_result_translate.emit(result)
-			
-			if page < int(page_checking):
-				new_page = self.next_url_translate(item_in_page)
-				self.open_url(new_page)
-			else:
-				self.open_url(self.web_browser.current_url)
+					# print(result)
+					self.queue.put(result)
+				# self.send_result_translate.emit(result)
+
+			if page <= int(checking_page):
+				new_page = self.next_url_translate(page_name=page_name, next_page=page)
+				print("next_url:", new_page)
+				self.open_url(page_name=page_name, link=new_page, wait_until="domcontentloaded")
 
 		info_page_end = f"[+] Все атрибуты переведены\n"
 		print(info_page_end)
-		self.send_result_translate.emit(info_page_end)
+	# self.send_result_translate.emit(info_page_end)

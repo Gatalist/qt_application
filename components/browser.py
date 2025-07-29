@@ -9,7 +9,7 @@ from settings import Settings
 class Browser:
     def __init__(self, visible=False):
         self.current_directory = os.getcwd()
-        self.cookie_file = os.path.join(Settings.ROOT_PATH, "components", "session.json")
+        self.cookie_file = os.path.join(Settings.ROOT_PATH, "source", "session.json")
         self.visible = visible
         self.base_url_admin = 'https://my.ctrs.com.ua'
         self.link_login = self.base_url_admin + '/ru/auth/login'
@@ -56,19 +56,19 @@ class Browser:
     def open_url(self, page_name: str, link: str, wait_until="load"):
         return self.pages[page_name].goto(link, wait_until=wait_until)
 
-    # def change_url(self, page_name: str, start_page: int, item_in_page: int):
-    #     current_url = self.pages[page_name].url
-    #     current_url = re.sub(r'start=\d+', f'start={start_page}', current_url)
-    #     current_url = re.sub(r'length=\d+', f'length={item_in_page}', current_url)
-    #     self.open_url(page_name=page_name, link=current_url)
+    def change_url(self, page_name: str, start_page: int, item_in_page: int):
+        current_url = self.pages[page_name].url
+        current_url = re.sub(r'start=\d+', f'start={start_page}', current_url)
+        current_url = re.sub(r'length=\d+', f'length={item_in_page}', current_url)
+        self.open_url(page_name=page_name, link=current_url)
 
-    # def next_url_translate(self, item_in_page: int):
-    #     current_url = self.pages[page_name].url
-    #     match = re.search(r'start=(\d+)', current_url)
-    #     if match:
-    #         new_start = int(match.group(1)) + int(item_in_page)
-    #         current_url = re.sub(r'start=\d+', f'start={new_start}', current_url)
-    #     return current_url
+    def next_url_translate(self, page_name: str, next_page: int):
+        current_url = self.pages[page_name].url
+        match = re.search(r'start=(\d+)', current_url)
+        if match:
+            new_start = int(match.group(1)) + int(next_page)
+            current_url = re.sub(r'start=\d+', f'start={new_start}', current_url)
+        return current_url
 
     def auth_user(self, page_name: str):
         self.open_url(page_name, self.link_login, wait_until="domcontentloaded")
@@ -97,18 +97,3 @@ class Browser:
     def close(self):
         self.browser.close()
         self.playwright.stop()
-
-    @staticmethod
-    def get_json_for_pre(content):
-        match = re.search(r'<pre[^>]*>(.*?)</pre>', content, re.DOTALL)
-        if match:
-            try:
-                data = json.loads(match.group(1))
-                print("✅ Успешно загружено", len(data), "записей")
-                # print("data:", data)
-                return data
-            except json.JSONDecodeError as e:
-                print("❌ Ошибка парсинга JSON:", e)
-                return []
-        else:
-            print("❌ JSON не найден в <pre>...")
