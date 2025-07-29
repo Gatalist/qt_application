@@ -5,6 +5,7 @@ import threading
 
 from .UI_window import Ui_Form
 from .youtube import YouTube
+from components.copyable_table import CopyableTableWidget
 
 
 class WindowYoutube(QWidget):
@@ -28,8 +29,33 @@ class WindowYoutube(QWidget):
         self.ui.btn_select.clicked.connect(self.select_folder)
         self.ui.btn_download.clicked.connect(self.download_video)
 
-        self.ui.tableWidget.horizontalHeader().setStretchLastSection(True)
-        self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Interactive)
+        self.replace_table_with_copyable()
+
+        # self.ui.tableWidget.horizontalHeader().setStretchLastSection(True)
+        # self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Interactive)
+
+    def replace_table_with_copyable(self):
+        old_table = self.ui.tableWidget
+        parent = old_table.parent()
+        layout = parent.layout()
+        font = old_table.font()
+
+        # Создаём кастомную таблицу
+        new_table = CopyableTableWidget(parent)
+        new_table.horizontalHeader().setStretchLastSection(True)
+        new_table.horizontalHeader().setSectionResizeMode(QHeaderView.Interactive)
+        new_table.setObjectName("tableWidget")
+        new_table.setFont(font)
+        new_table.setColumnCount(3)
+        new_table.setHorizontalHeaderLabels([
+            "Название", "Дата", "URL"
+        ])
+        # Добавляем в layout
+        layout.addWidget(new_table)
+
+        self.ui.tableWidget = new_table
+        self.setLayout(layout)
+        old_table.deleteLater()
 
     # получить информацию о видео
     def get_info_video(self):
@@ -65,7 +91,7 @@ class WindowYoutube(QWidget):
         self.ui.plainTextEdit.appendPlainText(video_title)
         self.title_video = video_title
 
-    # окно выбира folder
+    # окно выбора folder
     def select_folder(self):
         options = QFileDialog.Options()  # Создание объекта options
         options |= QFileDialog.ShowDirsOnly  # Добавление флага ShowDirsOnly

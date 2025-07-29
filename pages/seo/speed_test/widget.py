@@ -1,37 +1,9 @@
-from PyQt5.QtWidgets import QTableWidget, QApplication, QHeaderView
-from PyQt5.QtGui import QKeySequence
-import threading
-from .speed_test_api import SpeedPageTest
+from PyQt5.QtWidgets import QHeaderView
 from PyQt5.QtWidgets import QWidget, QTableWidgetItem
+import threading
 from .UI_window import Ui_Form
-
-
-class CopyableTableWidget(QTableWidget):
-    def keyPressEvent(self, event):
-        if event.matches(QKeySequence.Copy):
-            self.copy_selection()
-        else:
-            super().keyPressEvent(event)
-
-    def copy_selection(self):
-        selection = self.selectedIndexes()
-
-        if not selection:
-            return
-
-        selection.sort(key=lambda x: (x.row(), x.column()))
-        rows = {}
-        for index in selection:
-            item = self.item(index.row(), index.column())
-            if item:
-                rows.setdefault(index.row(), {})[index.column()] = item.text()
-
-        copied_text = ''
-        for row in sorted(rows):
-            line = '\t'.join(rows[row].get(col, '') for col in sorted(rows[row]))
-            copied_text += line + '\n'
-
-        QApplication.clipboard().setText(copied_text.strip())
+from .speed_test_api import SpeedPageTest
+from components.copyable_table import CopyableTableWidget
 
 
 class WindowGetSpeedTest(QWidget):
@@ -51,7 +23,6 @@ class WindowGetSpeedTest(QWidget):
         old_table = self.ui.tableWidget
         parent = old_table.parent()
         layout = parent.layout()
-        geometry = old_table.geometry()
         font = old_table.font()
 
         # Создаём кастомную таблицу
@@ -123,18 +94,3 @@ class WindowGetSpeedTest(QWidget):
             self.ui.tableWidget.setItem(row_index, 5, QTableWidgetItem(str(card_data['cumulative_layout_shift'])))
             self.ui.tableWidget.setItem(row_index, 6, QTableWidgetItem(str(card_data['speed_index'])))
             self.ui.tableWidget.setItem(row_index, 7, QTableWidgetItem(str(card_data['performance'])))
-
-
-
-        # ------------------------ Записываем в xlsx документ
-        # pyxl = CreateTable(save_name_xl)
-        # # создаем лист на который будем записывать данные
-        # sheet_obj = pyxl.add_new_sheet('content - webp')
-        # # добавляем титульную строку
-        # pyxl.add_title_column(sheet_obj)
-        # # добавляем результаты Speed Page Test
-        # pyxl.complete_table(sheet_obj, save_name_result_test)
-        # # добавляем средние результаты в конец
-        # pyxl.complete_average_value(sheet_obj)
-        # # сохраняем файл
-        # pyxl.save_xlsx(save_name_xl)

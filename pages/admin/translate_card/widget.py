@@ -1,38 +1,10 @@
-from PyQt5.QtWidgets import QWidget, QTableWidget, QApplication, QHeaderView, QTableWidgetItem
-from PyQt5.QtGui import QKeySequence
+from PyQt5.QtWidgets import QWidget, QHeaderView, QTableWidgetItem
 from multiprocessing import Process, Queue
 from PyQt5.QtCore import QTimer
 from queue import Empty
 from .UI_window import Ui_Form
 from .models import CardAttribute
-
-
-class CopyableTableWidget(QTableWidget):
-    def keyPressEvent(self, event):
-        if event.matches(QKeySequence.Copy):
-            self.copy_selection()
-        else:
-            super().keyPressEvent(event)
-
-    def copy_selection(self):
-        selection = self.selectedIndexes()
-
-        if not selection:
-            return
-
-        selection.sort(key=lambda x: (x.row(), x.column()))
-        rows = {}
-        for index in selection:
-            item = self.item(index.row(), index.column())
-            if item:
-                rows.setdefault(index.row(), {})[index.column()] = item.text()
-
-        copied_text = ''
-        for row in sorted(rows):
-            line = '\t'.join(rows[row].get(col, '') for col in sorted(rows[row]))
-            copied_text += line + '\n'
-
-        QApplication.clipboard().setText(copied_text.strip())
+from components.copyable_table import CopyableTableWidget
 
 
 class WindowTranslateCard(QWidget):
@@ -57,18 +29,15 @@ class WindowTranslateCard(QWidget):
         old_table = self.ui.tableWidget
         parent = old_table.parent()
         layout = parent.layout()
-        geometry = old_table.geometry()
         font = old_table.font()
 
         new_table = CopyableTableWidget(parent)
-        # new_table.setGeometry(geometry)
         new_table.horizontalHeader().setStretchLastSection(True)
         new_table.horizontalHeader().setSectionResizeMode(QHeaderView.Interactive)
 
         new_table.setObjectName("tableWidget")
         new_table.setFont(font)
         new_table.setColumnCount(3)
-        # new_table.rowCount()
         new_table.setHorizontalHeaderLabels([
             "ID", "RU", "UK"
         ])
