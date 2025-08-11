@@ -9,9 +9,9 @@ from components.copyable_table import CopyableTableWidget
 
 
 class Methods(str, Enum):
-    ALL = "Название всех категорий",
-    BREEDING = "Название категорий на выведение",
-    STRUCTURE = "Генерация всей структуры категорий",
+    ALL = "Название всех категорий"
+    BREEDING = "Название категорий на выведение"
+    STRUCTURE = "Генерация всей структуры категорий"
 
 
 class WindowStructure(QWidget):

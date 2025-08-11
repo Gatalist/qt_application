@@ -1,8 +1,10 @@
 import re, json, codecs
 import threading
 import pandas
+import enum
 from openpyxl import load_workbook
 from settings import Settings
+from .convertor import Convertor
 
 
 class JsonDocument(Settings):
@@ -194,6 +196,7 @@ class ReadExcelDocument:
 class WriteExcelDocument:
     symbols_1 = [";;", ";;;", ";;;;", "; ;", ";  ;", ";   ;"]
     symbols_2 = ["  ", "   ", "    ", "\t", "\r\n", "\n", "\r"]
+    convertor = Convertor()
 
     # делаем первую букву каждой строки заглавной
     @staticmethod
@@ -350,3 +353,27 @@ class WriteExcelDocument:
                 result += 1
 
         yield f"✅ Изменено строк - {result} \n"
+
+    # вырезаем весь текст с одной ячейки и добавляем в другую
+    def convert_units(self, document, cell_data: str, cell_result: str, select_unit: str):
+        result = 0
+        for number_string in document.list_row:
+            cell_data_obj = document.get_cell_obj(cell_data, number_string)
+
+            # вырезаем данные с ячейки если она не пустая
+            if cell_data_obj.value is not None:
+                current_text = cell_data_obj.value
+                print("---", number_string, "---")
+                print("current_text:", current_text)
+                convert_text = self.convertor.convert(text=current_text, select_unit=select_unit)
+                cell_result_obj = document.get_cell_obj(cell_result, number_string)
+                print("convert_text:", convert_text)
+                print("---")
+                # очищаем ячейку откуда копируем текст
+                document.save_result_in_cell(cell_data_obj, current_text)
+                document.save_result_in_cell(cell_result_obj, convert_text)
+
+                # yield self.out_text(number_string, save_data_text)
+                yield [str(number_string), current_text, convert_text]
+                result += 1
+

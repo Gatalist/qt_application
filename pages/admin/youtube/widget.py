@@ -142,7 +142,7 @@ class WindowYoutube(QWidget):
         dialog.exec_()
 
     # Добавление данных в таблицу
-    def add_data_to_table(self, data):
+    def add_data_to_table(self, data: list[str]):
         for col_index, cell_data in enumerate(data):
             item = QTableWidgetItem(str(cell_data))
             self.ui.tableWidget.setItem(self.table_row_index, col_index, item)

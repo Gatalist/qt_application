@@ -23,6 +23,7 @@ from pages.admin.greed.widget import WindowCreateGreed
 from pages.admin.translate_fields.widget import WindowTranslate
 from pages.admin.translate_card.widget import WindowTranslateCard
 from pages.admin.structure.widget import WindowStructure
+from pages.admin.convertor.widget import WindowConvertor
 
 from pages.api.api_get_idd.widget import WindowGetCardsID
 from pages.api.api_get_data.widget import WindowGetCardsData
@@ -59,6 +60,7 @@ class MainWindow(QMainWindow):
             self.ui.menu_btn_translate_attr: WindowTranslate(),
             self.ui.menu_btn_translate_card: WindowTranslateCard(),
             self.ui.menu_btn_structure: WindowStructure(),
+            self.ui.btn_convertor: WindowConvertor(),
             self.ui.api_get_idd: WindowGetCardsID(),
             self.ui.api_get_all: WindowGetCardsData(),
             self.ui.btn_speed_test: WindowGetSpeedTest()

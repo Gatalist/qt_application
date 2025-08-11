@@ -50,5 +50,6 @@
     <file>icons/speed-test.svg</file>
     <file>icons/card-data.svg</file>
     <file>icons/card-id.svg</file>
+    <file>icons/convert.svg</file>
   </qresource>
 </RCC>
