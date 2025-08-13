@@ -1,8 +1,10 @@
+import os.path
 import re, json, codecs
 import threading
 import pandas
-import enum
-from openpyxl import load_workbook
+from datetime import datetime
+from openpyxl import Workbook, load_workbook
+from openpyxl.utils import get_column_letter
 from settings import Settings
 from .convertor import Convertor
 
@@ -91,6 +93,46 @@ class ExcelDocument(Settings):
         self.work_sheet[cell_object.coordinate] = text
         return self.work_sheet
 
+    def get_row_data(self, number_string):
+        cell_letters = [get_column_letter(col_idx) for col_idx in range(1, len(self.list_column) + 1)]
+        data = []
+        for cell_idx in cell_letters:
+            cell_data_obj = self.get_cell_obj(cell_idx, number_string)
+            if cell_data_obj.value is not None:
+                data.append(cell_data_obj.value)
+            else:
+                data.append('')
+        return data
+
+    @staticmethod
+    def get_current_time():
+        now = datetime.now()
+        time_str = now.strftime("%H-%M-%S")
+        return time_str
+
+    def save_new_file(self, path_save: str, data: list[list]):
+        # Создаём новый Excel-файл
+        wb = Workbook()
+        # Выбираем активный лист
+        ws = wb.active
+        ws.title = "Worksheet"
+        file_name = f"rows_for_id-{self.get_current_time()}.xlsx"
+        # Заголовки колонок
+        headers = self.list_column
+        print("headers:", headers)
+        ws.append(headers)  # append() сразу добавляет строку
+
+        print("data:", data)
+        print()
+        # Записываем данные
+        for row in data:
+            ws.append(row)
+            print("row:", row)
+
+        # Сохраняем файл
+        _path_save = os.path.join(path_save, file_name)
+        wb.save(_path_save)
+        print("file saved:", _path_save)
 
 class ReadExcelDocument:
     symbol_arrow = '👉'
@@ -377,3 +419,18 @@ class WriteExcelDocument:
                 yield [str(number_string), current_text, convert_text]
                 result += 1
 
+    # вырезаем весь текст с одной ячейки и добавляем в другую
+    @staticmethod
+    def copy_row_by_id(document, cell_id: str, list_id: list, path_save: str):
+        data = []
+        for number_string in document.list_row:
+            cell_data_obj = document.get_cell_obj(cell_id, number_string)
+
+            # вырезаем данные с ячейки если она не пустая
+            if cell_data_obj.value is not None:
+                current_text = str(cell_data_obj.value)
+                if current_text in list_id:
+                    data.append(document.get_row_data(number_string=number_string))
+                    yield [str(number_string), str(current_text)]
+
+        document.save_new_file(path_save, data)
