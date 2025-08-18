@@ -22,21 +22,21 @@
        <height>0</height>
       </size>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
        <spacer name="horizontalSpacer_6">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>100</width>
+          <width>50</width>
           <height>27</height>
          </size>
         </property>
        </spacer>
       </item>
-      <item>
+      <item row="0" column="1">
        <widget class="QComboBox" name="comboBox">
         <property name="minimumSize">
          <size>
@@ -52,7 +52,7 @@
         </property>
        </widget>
       </item>
-      <item>
+      <item row="0" column="2">
        <spacer name="horizontalSpacer_5">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -65,7 +65,7 @@
         </property>
        </spacer>
       </item>
-      <item>
+      <item row="0" column="3">
        <widget class="QPushButton" name="btn_start">
         <property name="minimumSize">
          <size>
@@ -103,14 +103,57 @@
         </property>
        </widget>
       </item>
-      <item>
+      <item row="0" column="4">
        <spacer name="horizontalSpacer_4">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
+          <width>50</width>
+          <height>27</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="btn_find">
+        <property name="minimumSize">
+         <size>
           <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#btn_find {
+	background-color:#198754;
+    color: #fff;
+    border-radius: 4px;
+}
+
+#btn_find:hover {
+    color: #fff;
+	background-color:#157347;
+}
+
+#btn_find:pressed {
+	border: 4px solid #9dccb6;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Поиск</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>50</width>
           <height>27</height>
          </size>
         </property>
@@ -139,8 +182,8 @@ p, li { white-space: pre-wrap; }
   </layout>
  </widget>
  <resources>
-  <include location="../../source/resource.qrc"/>
-  <include location="../../source/resource.qrc"/>
+  <include location="../../../source/resource.qrc"/>
+  <include location="../../../source/resource.qrc"/>
  </resources>
  <connections/>
 </ui>
