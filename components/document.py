@@ -83,6 +83,16 @@ class ExcelDocument(Settings):
             start_number_string += 1
         return data_rows
 
+    # возвращаем список нумерованных строк с данными в указанной ячейке
+    def get_collect_from_column(self, column_name) -> dict:
+        data_rows = {}
+        start_number_string = self.start_row
+        for row in self.data_frame[column_name]:
+            if type(row) == str:
+                data_rows[start_number_string] = row
+            start_number_string += 1
+        return data_rows
+
     # получаем объект ячейки по координатам: например 'AC4'
     def get_cell_obj(self, cell_letter, cell_number) -> object:
         call = f'{cell_letter}{cell_number}'
@@ -141,6 +151,14 @@ class ReadExcelDocument:
     symbol_forbidden = '⛔️'
 
     @staticmethod
+    def split_text_to_value(text) -> str:
+        string = ''
+        call_data = text.split(';')
+        for line in call_data:
+            string += f'{line}\n'
+        return string
+
+    @staticmethod
     # возвращаем список нумерованных строк с данными в указанной ячейке
     def out_text(number_string, message) -> str:
         return f'-----[ Строка: {number_string} ]-----\n{message}\n'
@@ -149,17 +167,28 @@ class ReadExcelDocument:
     def read_list_data_row(self, list_data: str) -> str:
         number = 0
         if len(list_data) > 0:
-            for number_string, text in list_data:              
-                string = ''
-                call_data = text.split(';')
-                for line in call_data:
-                    string += f'{line}\n'
+            for number_string, text in list_data:
+                string = self.split_text_to_value(text)
+                # string = ''
+                # call_data = text.split(';')
+                # for line in call_data:
+                #     string += f'{line}\n'
                 number += 1
                 yield self.out_text(number_string, string)
         else:
             yield f"{self.symbol_forbidden} Колонка пустая\n"
         yield f"{self.symbol_ok} Прочитано строк {self.symbol_arrow} {number}\n\n"
-    
+
+    # Выводим данные ячейки. Аргумент "read_line" разобьет текст на строки по символу ";"
+    def sorted_data_row(self, dict_data: dict) -> dict:
+        unique_strings = {}
+        for key, value in dict_data.items():
+            if value not in unique_strings:
+                unique_strings[value] = []
+            unique_strings[value].append(key)
+
+        return unique_strings
+
     # проверяем строку на первую заглавную букву
     def check_error_in_column(self, list_data) -> str:
         errors = 0

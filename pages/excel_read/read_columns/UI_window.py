@@ -22,8 +22,6 @@ class Ui_Form(object):
         self.widget_2.setObjectName("widget_2")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.widget_2)
         self.gridLayout_2.setObjectName("gridLayout_2")
-        spacerItem = QtWidgets.QSpacerItem(50, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem, 0, 0, 1, 1)
         self.comboBox = QtWidgets.QComboBox(self.widget_2)
         self.comboBox.setMinimumSize(QtCore.QSize(250, 0))
         font = QtGui.QFont()
@@ -32,37 +30,68 @@ class Ui_Form(object):
         self.comboBox.setFont(font)
         self.comboBox.setObjectName("comboBox")
         self.gridLayout_2.addWidget(self.comboBox, 0, 1, 1, 1)
-        spacerItem1 = QtWidgets.QSpacerItem(100, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem1, 0, 2, 1, 1)
-        self.btn_start = QtWidgets.QPushButton(self.widget_2)
-        self.btn_start.setMinimumSize(QtCore.QSize(100, 25))
+        spacerItem = QtWidgets.QSpacerItem(50, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem, 0, 0, 1, 1)
+        spacerItem1 = QtWidgets.QSpacerItem(50, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem1, 0, 6, 1, 1)
+        self.btn_start_sorted = QtWidgets.QPushButton(self.widget_2)
+        self.btn_start_sorted.setMinimumSize(QtCore.QSize(120, 25))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(10)
         font.setBold(True)
         font.setWeight(75)
-        self.btn_start.setFont(font)
-        self.btn_start.setStyleSheet("#btn_start {\n"
+        self.btn_start_sorted.setFont(font)
+        self.btn_start_sorted.setStyleSheet("#btn_start_sorted {\n"
 "    background-color:#198754;\n"
 "    color: #fff;\n"
 "    border-radius: 4px;\n"
 "}\n"
 "\n"
-"#btn_start:hover {\n"
+"#btn_start_sorted:hover {\n"
 "    color: #fff;\n"
 "    background-color:#157347;\n"
 "}\n"
 "\n"
-"#btn_start:pressed {\n"
+"#btn_start_sorted:pressed {\n"
 "    border: 4px solid #9dccb6;\n"
 "}\n"
 "")
-        self.btn_start.setObjectName("btn_start")
-        self.gridLayout_2.addWidget(self.btn_start, 0, 3, 1, 1)
-        spacerItem2 = QtWidgets.QSpacerItem(50, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem2, 0, 4, 1, 1)
+        self.btn_start_sorted.setObjectName("btn_start_sorted")
+        self.gridLayout_2.addWidget(self.btn_start_sorted, 0, 5, 1, 1)
+        self.btn_start_read = QtWidgets.QPushButton(self.widget_2)
+        self.btn_start_read.setMinimumSize(QtCore.QSize(100, 25))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.btn_start_read.setFont(font)
+        self.btn_start_read.setStyleSheet("#btn_start_read {\n"
+"    background-color:#198754;\n"
+"    color: #fff;\n"
+"    border-radius: 4px;\n"
+"}\n"
+"\n"
+"#btn_start_read:hover {\n"
+"    color: #fff;\n"
+"    background-color:#157347;\n"
+"}\n"
+"\n"
+"#btn_start_read:pressed {\n"
+"    border: 4px solid #9dccb6;\n"
+"}\n"
+"")
+        self.btn_start_read.setObjectName("btn_start_read")
+        self.gridLayout_2.addWidget(self.btn_start_read, 0, 3, 1, 1)
         self.btn_find = QtWidgets.QPushButton(self.widget_2)
         self.btn_find.setMinimumSize(QtCore.QSize(100, 25))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.btn_find.setFont(font)
         self.btn_find.setStyleSheet("#btn_find {\n"
 "    background-color:#198754;\n"
 "    color: #fff;\n"
@@ -79,9 +108,13 @@ class Ui_Form(object):
 "}\n"
 "")
         self.btn_find.setObjectName("btn_find")
-        self.gridLayout_2.addWidget(self.btn_find, 0, 5, 1, 1)
-        spacerItem3 = QtWidgets.QSpacerItem(50, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem3, 0, 6, 1, 1)
+        self.gridLayout_2.addWidget(self.btn_find, 0, 7, 1, 1)
+        spacerItem2 = QtWidgets.QSpacerItem(50, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem2, 0, 8, 1, 1)
+        spacerItem3 = QtWidgets.QSpacerItem(100, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem3, 0, 2, 1, 1)
+        spacerItem4 = QtWidgets.QSpacerItem(50, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem4, 0, 4, 1, 1)
         self.gridLayout.addWidget(self.widget_2, 0, 0, 1, 1)
         self.textEdit = QtWidgets.QTextEdit(Form)
         font = QtGui.QFont()
@@ -97,7 +130,8 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.btn_start.setText(_translate("Form", "Начать"))
+        self.btn_start_sorted.setText(_translate("Form", "Отсортировать"))
+        self.btn_start_read.setText(_translate("Form", "Прочитать"))
         self.btn_find.setText(_translate("Form", "Поиск"))
         self.textEdit.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"

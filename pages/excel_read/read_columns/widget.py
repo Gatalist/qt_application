@@ -41,7 +41,8 @@ class WindowReadColumns(QWidget):
         self.ui.setupUi(self)
 
         # привязываем события | чтение документа
-        self.ui.btn_start.clicked.connect(self.btn_start_work)
+        self.ui.btn_start_read.clicked.connect(self._start_read)
+        self.ui.btn_start_sorted.clicked.connect(self._start_sorted)
         self.ui.btn_find.clicked.connect(self.show_find_dialog)
 
     def show_find_dialog(self):
@@ -66,14 +67,26 @@ class WindowReadColumns(QWidget):
             cursor.mergeCharFormat(_format)
             cursor = self.ui.textEdit.document().find(text, cursor)
 
-    # обработка результата - кнопка начать
-    def btn_start_work(self):
+    def _start_read(self):
         self.ui.textEdit.clear()
         column_name = self.ui.comboBox.currentText()
         list_data = excel_document.get_rows_from_column(column_name)
         read = read_excel_document.read_list_data_row(list_data)
         for string in read:
             self.ui.textEdit.append(string)
+
+    def _start_sorted(self):
+        self.ui.textEdit.clear()
+        column_name = self.ui.comboBox.currentText()
+        list_data = excel_document.get_collect_from_column(column_name)
+        unique_strings = read_excel_document.sorted_data_row(list_data)
+
+        for string, keys in unique_strings.items():
+            format_text = read_excel_document.split_text_to_value(string)
+            self.ui.textEdit.append(f'----- Строки: {keys} -----\n{format_text}\n')
+
+        end_text = f"\n{read_excel_document.symbol_ok} Уникальных строк {read_excel_document.symbol_arrow} {len(unique_strings)}"
+        self.ui.textEdit.append(end_text)
 
     # выводим все колонки документа в осписок нашего окна
     def add_list_columns(self, data_list):
