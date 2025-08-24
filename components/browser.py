@@ -53,20 +53,23 @@ class Browser:
             cookies = json.load(f)
             self.context.add_cookies(cookies)
 
-    def open_url(self, page_name: str, link: str, wait_until="load"):
+    def open_url(self, page_name: str, link: str, wait_until="domcontentloaded"):
+        print("[ + ] open_url:", link)
         return self.pages[page_name].goto(link, wait_until=wait_until)
 
-    def change_url(self, page_name: str, start_page: int, item_in_page: int):
-        current_url = self.pages[page_name].url
-        current_url = re.sub(r'start=\d+', f'start={start_page}', current_url)
-        current_url = re.sub(r'length=\d+', f'length={item_in_page}', current_url)
-        self.open_url(page_name=page_name, link=current_url)
+    @staticmethod
+    def change_url(url: str, start_page: int, item_in_page: int):
+        start_item = 0 if item_in_page == 1 else start_page * item_in_page
+        replace_start = re.sub(r'start=\d+', f'start={start_item}', url)
+        replace_length = re.sub(r'length=\d+', f'length={item_in_page}', replace_start)
+        print("new_url:", replace_length)
+        return replace_length
 
-    def next_url_translate(self, page_name: str, next_page: int):
+    def next_url_translate(self, page_name: str, next_items: int):
         current_url = self.pages[page_name].url
         match = re.search(r'start=(\d+)', current_url)
         if match:
-            new_start = int(match.group(1)) + int(next_page)
+            new_start = int(match.group(1)) + int(next_items)
             current_url = re.sub(r'start=\d+', f'start={new_start}', current_url)
         return current_url
 

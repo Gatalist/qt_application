@@ -77,19 +77,19 @@ class WindowTranslateCard(QWidget):
         browser.close()
 
     def open_browser(self):
+        print("start_page", self.ui.start_page_text.text())
+        print("end_page", self.ui.end_page_text.text())
+        print("item_in_page", self.ui.item_page_text.text())
+        self.ui.tableWidget.clear()
         process = Process(
             target=self.run_process_translate,
             kwargs={
                 "queue": self.queue,
                 "page_name": "citrus",
-                "start_page": self.ui.start_page_text.text(),
-                "end_page": self.ui.end_page_text.text(),
-                "item_in_page": self.ui.item_page_text.text(),
+                "start_page": int(self.ui.start_page_text.text()),
+                "end_page": int(self.ui.end_page_text.text()),
+                "item_in_page": int(self.ui.item_page_text.text()),
                 "url_translate": self.ui.translate_url_text.text()
             }
         )
         process.start()
-        # self.model_translate.send_result_translate.connect(self.view_result)
-
-    # def view_result(self, result):
-    #     self.ui.textEdit.append(result)

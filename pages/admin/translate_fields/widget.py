@@ -78,14 +78,15 @@ class WindowTranslate(QWidget):
         browser.close()
 
     def open_browser(self):
+        self.ui.tableWidget.clear()
         process = Process(
             target=self.run_process_translate,
             kwargs={
                 "queue": self.queue,
                 "page_name": "citrus",
-                "start_page": self.ui.start_page_text.text(),
-                "end_page": self.ui.end_page_text.text(),
-                "item_in_page": self.ui.item_page_text.text(),
+                "start_page": int(self.ui.start_page_text.text()),
+                "end_page": int(self.ui.end_page_text.text()),
+                "item_in_page": int(self.ui.item_page_text.text()),
                 "name_option": self.ui.comboBox_option.currentText(),
                 "url_translate": 'https://my.ctrs.com.ua/contento/translations/fields?search=&start=0&length=5&order=0&sort=asc'
             }
@@ -106,6 +107,3 @@ class WindowTranslate(QWidget):
         self.ui.comboBox_option.clear() # очищаем список
         for option in list_options:
             self.ui.comboBox_option.addItem(option)
-
-    # def view_result(self, result):
-    #     self.ui.textEdit.append(result)

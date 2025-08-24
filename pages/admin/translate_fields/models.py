@@ -76,7 +76,7 @@ class ProductGroupValue(QObject, Browser):
 
 								# Ждём появления div с нужным текстом внутри ячейки name
 								name_td = cells.nth(column_names.index("name"))
-								name_td.locator("div", has_text="uk: Есть перевод(").wait_for(timeout=5000)
+								name_td.locator("div", has_text="uk: Есть перевод(").wait_for(timeout=10000)
 
 								# Теперь можно читать текст заново
 								divs = name_td.locator("div")
@@ -109,54 +109,28 @@ class ProductGroupValue(QObject, Browser):
 			label=option_name
 		)
 
-	# def _select_option(self, page_name: str, option_name: str):
-	# 	obj_page = self.pages[page_name]
-	# 	select = obj_page.locator("select#model_name")
-	#
-	# 	# Ждём, пока селект появится и будет доступен
-	# 	select.wait_for(state="attached")
-	#
-	# 	# Ждём появления нужной опции
-	# 	options = select.locator("option")
-	# 	options.wait_for(timeout=5000)  # ожидание появления хотя бы одной опции
-	#
-	# 	# Получаем все опции
-	# 	option_elements = options.all()
-	#
-	# 	for option in option_elements:
-	# 		if option.inner_text().strip() == option_name:
-	# 			value = option.get_attribute("value")
-	# 			select.select_option(value=value)
-	# 			return
-	#
-	# 	raise ValueError(f"Опция '{option_name}' не найдена в select#model_name")
-
-
 	def start(self, page_name: str, start_page: int, checking_page: int, item_in_page, link_translate, name_option):
 		self.login(page_name=page_name)
 		self.open_url(page_name=page_name, link=link_translate, wait_until="domcontentloaded")
-		self.change_url(page_name=page_name, start_page=start_page, item_in_page=item_in_page)
+		new_url = self.change_url(url=link_translate, start_page=start_page, item_in_page=item_in_page)
+		self.open_url(page_name=page_name, link=new_url, wait_until="domcontentloaded")
 		self._get_model_names(page_name=page_name)
 		self._select_option(page_name=page_name, option_name=name_option)
 
 		for page in range(int(checking_page) + 1):
 			info_page_start = f"\tCтраница: {page}\n"
 			print(info_page_start)
-			# self.send_result_translate.emit(info_page_start)
 
-			# self.centre_browser()
 			data_table = self.for_element_in_table(page_name=page_name)
 			for result in data_table:
 				if result:
-					# print(result)
 					self.queue.put(result)
-				# self.send_result_translate.emit(result)
 
 			if page <= int(checking_page):
-				new_page = self.next_url_translate(page_name=page_name, next_page=page)
+				new_page = self.next_url_translate(page_name=page_name, next_items=item_in_page)
 				print("next_url:", new_page)
 				self.open_url(page_name=page_name, link=new_page, wait_until="domcontentloaded")
 
 		info_page_end = f"[+] Все атрибуты переведены\n"
 		print(info_page_end)
-	# self.send_result_translate.emit(info_page_end)
+
