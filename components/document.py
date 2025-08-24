@@ -2,6 +2,7 @@ import os.path
 import re, json, codecs
 import threading
 import pandas
+from typing import Iterator
 from datetime import datetime
 from openpyxl import Workbook, load_workbook
 from openpyxl.utils import get_column_letter
@@ -50,8 +51,9 @@ class ExcelDocument(Settings):
         self.work_sheet: object = None  # получаем рабочий лист в документе
         self.count_row: int | None = None  # получаем список строк в документе
         self.start_row: int = 2 # с какой строки начинать читать документ
-        self.list_row: list = [] # список колонок на листе
+        self.list_row: list = [] # список строк на листе
         self.list_column: list = [] # список колонок на листе
+        self.list_column_letters = [] # список колонок на листе типа ['A', 'B', 'C', ...]
 
     def load_data_from_file(self, file_name):
         self.document = file_name
@@ -65,6 +67,7 @@ class ExcelDocument(Settings):
         self.count_row = len(self.data_frame.index) + 1 # получаем список строк в листе
         self.list_row = [string for string in range(self.start_row, self.count_row + 1)] # генерируем список строк [начало, конец]
         self.list_column = self.data_frame.columns.values.tolist() # получаем все колонки на листе
+        self.list_column_letters = [get_column_letter(col_idx) for col_idx in range(1, len(self.list_column) + 1)]
 
     def active_list_to_write(self, sheet_name):
         self.work_sheet = self.work_book[sheet_name]  # делаем лист активным по умолчанию
@@ -104,9 +107,8 @@ class ExcelDocument(Settings):
         return self.work_sheet
 
     def get_row_data(self, number_string):
-        cell_letters = [get_column_letter(col_idx) for col_idx in range(1, len(self.list_column) + 1)]
         data = []
-        for cell_idx in cell_letters:
+        for cell_idx in self.list_column_letters:
             cell_data_obj = self.get_cell_obj(cell_idx, number_string)
             if cell_data_obj.value is not None:
                 data.append(cell_data_obj.value)
@@ -169,10 +171,6 @@ class ReadExcelDocument:
         if len(list_data) > 0:
             for number_string, text in list_data:
                 string = self.split_text_to_value(text)
-                # string = ''
-                # call_data = text.split(';')
-                # for line in call_data:
-                #     string += f'{line}\n'
                 number += 1
                 yield self.out_text(number_string, string)
         else:
@@ -263,6 +261,22 @@ class ReadExcelDocument:
         
         yield f"\n✅ Не используемых значений -> {len(unused_value_for_admin)}"
 
+    # Читаем все колонки каждой строки для каждой (выводим данные всей карточки)
+    @staticmethod
+    def read_card_all_attr(document) -> Iterator[list]:
+        for number_string in document.list_row:
+            data = [['number', number_string]]
+
+            for cell_letter in document.list_column_letters:
+                cell_data_obj = document.get_cell_obj(cell_letter, number_string)
+                cell_id = document.list_column_letters.index(cell_letter)
+                column_name = document.list_column[cell_id]
+                cell_data_text = ""
+                if cell_data_obj.value is not None:
+                    cell_data_text = str(cell_data_obj.value)
+                data.append([column_name, cell_data_text])
+
+            yield data
 
 class WriteExcelDocument:
     symbols_1 = [";;", ";;;", ";;;;", "; ;", ";  ;", ";   ;"]

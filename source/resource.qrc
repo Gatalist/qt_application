@@ -52,5 +52,6 @@
     <file>icons/card-id.svg</file>
     <file>icons/convert.svg</file>
     <file>icons/sample-row.svg</file>
+    <file>icons/card-data-attr.svg</file>
   </qresource>
 </RCC>

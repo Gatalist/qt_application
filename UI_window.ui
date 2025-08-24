@@ -290,7 +290,7 @@ border: none;</string>
 }</string>
          </property>
          <property name="currentIndex">
-          <number>2</number>
+          <number>1</number>
          </property>
          <property name="tabSpacing">
           <number>5</number>
@@ -412,6 +412,23 @@ border: none;</string>
             </widget>
            </item>
            <item>
+            <widget class="QPushButton" name="btn_read_all_cards">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>Вывести все карточки</string>
+             </property>
+             <property name="icon">
+              <iconset resource="source/resource.qrc">
+               <normaloff>:/icons/icons/card-data-attr.svg</normaloff>:/icons/icons/card-data-attr.svg</iconset>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
             <widget class="QPushButton" name="btn_check_errors">
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
@@ -499,8 +516,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>253</width>
-            <height>280</height>
+            <width>270</width>
+            <height>288</height>
            </rect>
           </property>
           <property name="minimumSize">

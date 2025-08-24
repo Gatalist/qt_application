@@ -11,6 +11,7 @@ from pages.excel_read.check_errors.widget import WindowCheckErrors
 from pages.excel_read.search_text.widget import WindowSearchText
 from pages.excel_read.unique_values.widget import WindowUniqueValues
 from pages.excel_read.unused_value.widget import WindowUnusedValues
+from pages.excel_read.read_cards.widget import WindowReadCards
 
 from pages.excel_write.move_to_another_cell.widget import WindowRemoweAnother
 from pages.excel_write.move_search_to_cell.widget import WindowMoveSearchCell
@@ -51,6 +52,7 @@ class MainWindow(QMainWindow):
             self.ui.btn_search_text: WindowSearchText(),
             self.ui.btn_unique_values: WindowUniqueValues(),
             self.ui.menu_btn_not_use_value: WindowUnusedValues(),
+            self.ui.btn_read_all_cards: WindowReadCards(),
             self.ui.btn_move_to_another: WindowRemoweAnother(),
             self.ui.btn_move_search_to_cell: WindowMoveSearchCell(),
             self.ui.btn_add_text_to_start: WindowAddStartRow(),
