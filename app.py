@@ -32,6 +32,10 @@ from pages.api.api_get_data.widget import WindowGetCardsData
 
 from pages.seo.speed_test.widget import WindowGetSpeedTest
 
+from pages.image.crop.widget import WindowCropImage
+from pages.image.resize.widget import WindowResizeImage
+from pages.image.move.widget import WindowMoveImage
+
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -67,7 +71,10 @@ class MainWindow(QMainWindow):
             self.ui.btn_convertor: WindowConvertor(),
             self.ui.api_get_idd: WindowGetCardsID(),
             self.ui.api_get_all: WindowGetCardsData(),
-            self.ui.btn_speed_test: WindowGetSpeedTest()
+            self.ui.btn_speed_test: WindowGetSpeedTest(),
+            self.ui.crop_space: WindowCropImage(),
+            self.ui.resize_image: WindowResizeImage(),
+            self.ui.collect_one_folder: WindowMoveImage()
         }
 
         # Привязываем кнопки к функции открытия окон
