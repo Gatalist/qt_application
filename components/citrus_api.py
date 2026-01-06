@@ -1,5 +1,4 @@
 from time import sleep
-
 from .parser import WebRequester
 
 
@@ -15,7 +14,7 @@ class CitrusApi(WebRequester):
     def get_category_cards(self, category_slug, page_start, page_end):
         card_list = []
         for page in range(page_start, page_end + 1):
-            url = f'{self.base_citrus_api_url}/{category_slug}/page_{page}/'
+            url = f'{self.base_citrus_api_url}{category_slug}page_{page}/'
             print(url)
 
             page_data = self.request_data(url)
