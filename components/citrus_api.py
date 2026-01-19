@@ -10,6 +10,7 @@ class CitrusApi(WebRequester):
         self.category_cards = None
         self.cards_id = []
         self.cards_data = []
+        self.category_filters = []
 
     def get_category_cards(self, category_slug, page_start, page_end):
         card_list = []
@@ -67,3 +68,16 @@ class CitrusApi(WebRequester):
     def get_data(self, category_slug, page_start, page_end):
         self.get_category_cards(category_slug, page_start, page_end)
         self.get_cards_data()
+
+    def get_filters(self, category_slug):
+        url = f'{self.base_citrus_api_url}{category_slug}'
+        print(url)
+
+        page_data = self.request_data(url)
+        _json_data = self.get_response_json(page_data)
+        if _json_data:
+            data = _json_data["data"]
+            facet_object = data["facetObject"]
+            self.category_filters = facet_object["attributes"]
+
+        return self.category_filters

@@ -30,6 +30,7 @@ from pages.admin.convertor.widget import WindowConvertor
 
 from pages.api.api_get_idd.widget import WindowGetCardsID
 from pages.api.api_get_data.widget import WindowGetCardsData
+from pages.api.api_get_filters.widget import WindowGetFilterData
 
 from pages.seo.speed_test.widget import WindowGetSpeedTest
 
@@ -73,6 +74,7 @@ class MainWindow(QMainWindow):
             self.ui.btn_convertor: WindowConvertor(),
             self.ui.api_get_idd: WindowGetCardsID(),
             self.ui.api_get_all: WindowGetCardsData(),
+            self.ui.api_get_filters: WindowGetFilterData(),
             self.ui.btn_speed_test: WindowGetSpeedTest(),
             self.ui.crop_space: WindowCropImage(),
             self.ui.resize_image: WindowResizeImage(),

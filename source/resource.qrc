@@ -55,5 +55,6 @@
     <file>icons/card-data-attr.svg</file>
     <file>icons/picture.svg</file>
     <file>icons/layout-split.svg</file>
+    <file>icons/funnel-fill.svg</file>
   </qresource>
 </RCC>
