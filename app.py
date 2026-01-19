@@ -5,6 +5,7 @@ from settings import Settings
 
 # Импортируем все окна
 from pages.home.open_files.widget import WindowOpenFile
+from pages.home.split_file.widget import WindowSplitFile
 
 from pages.excel_read.read_columns.widget import WindowReadColumns
 from pages.excel_read.check_errors.widget import WindowCheckErrors
@@ -51,6 +52,7 @@ class MainWindow(QMainWindow):
         # Словарь кнопок и соответствующих окон
         self.menu_btn_windows = {
             self.ui.btn_open_file: WindowOpenFile(),
+            self.ui.btn_split_file: WindowSplitFile(),
             self.ui.btn_read_column: WindowReadColumns(),
             self.ui.btn_check_errors: WindowCheckErrors(),
             self.ui.btn_search_text: WindowSearchText(),

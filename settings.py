@@ -8,6 +8,8 @@ class Settings(object):
 
     # переменные сообщений
     MESSAGE_FAILED_SAVE_DOCUMENT = '⛔️ Ошибка сохранения'
+    MESSAGE_DOCUMENT_IS_NOT_SAVE_PATH = '⛔️ Не выбрана папка для сохранения'
+
     MESSAGE_DOCUMENT_IS_NOT_OPEN = '⚠️ Не открыт документ'
     MESSAGE_DOCUMENT_IS_SAVE = '💾 Сохранено\n'
 

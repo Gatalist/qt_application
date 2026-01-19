@@ -262,7 +262,7 @@ border: none;</string>
 }</string>
          </property>
          <property name="currentIndex">
-          <number>7</number>
+          <number>0</number>
          </property>
          <property name="tabSpacing">
           <number>5</number>
@@ -272,8 +272,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>156</width>
-            <height>141</height>
+            <width>262</width>
+            <height>135</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -316,6 +316,17 @@ border: none;</string>
              </property>
              <property name="checked">
               <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_split_file">
+             <property name="text">
+              <string>Разбить файл на части</string>
+             </property>
+             <property name="icon">
+              <iconset resource="source/resource.qrc">
+               <normaloff>:/icons/icons/layout-split.svg</normaloff>:/icons/icons/layout-split.svg</iconset>
              </property>
             </widget>
            </item>
@@ -652,7 +663,7 @@ border: none;</string>
          <widget class="QWidget" name="admin">
           <property name="geometry">
            <rect>
-            <x>-43</x>
+            <x>0</x>
             <y>0</y>
             <width>182</width>
             <height>190</height>
@@ -786,8 +797,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>156</width>
-            <height>141</height>
+            <width>145</width>
+            <height>46</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -850,8 +861,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>156</width>
-            <height>141</height>
+            <width>135</width>
+            <height>82</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -919,8 +930,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>135</height>
+            <width>102</width>
+            <height>82</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -976,6 +987,14 @@ border: none;</string>
           </layout>
          </widget>
          <widget class="QWidget" name="page_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>100</width>
+            <height>30</height>
+           </rect>
+          </property>
           <attribute name="icon">
            <iconset resource="source/resource.qrc">
             <normaloff>:/icons/icons/card-data-attr.svg</normaloff>:/icons/icons/card-data-attr.svg</iconset>
