@@ -2,7 +2,6 @@ import threading
 from time import sleep
 from PyQt5.QtWidgets import QWidget
 from .UI_window import Ui_Form
-
 from components.browser import Browser
 
 
@@ -14,7 +13,6 @@ class WindowUpdateCards(QWidget, Browser):
 
         # привязываем события нажатия клавиши
         self.ui.btn_request.clicked.connect(self.update_cards)
-
         self.updated_cards = []
 
     def update_cards(self):
@@ -24,7 +22,6 @@ class WindowUpdateCards(QWidget, Browser):
             return None
 
         card_ids_split = card_ids_text.split('\n')
-        # for card_id in card_ids_split:
         if card_ids_split[-1] == '':
             card_ids_split.pop()
 
@@ -65,10 +62,6 @@ class WindowUpdateCards(QWidget, Browser):
         for _id in card_ids:
             new_url = f"{self.base_url_admin}/contento/content/tovar/card/{_id}/index/update"
             result = self.open_url(page_name=page_name, link=new_url, wait_until="domcontentloaded")
-
             request_status = result.ok
-
-            if request_status:
-                print(f"Failed to update card with ID {id}. Status code: {request_status}")
             self.updated_cards.append(f"{_id} = status {request_status}")
             sleep(2)
