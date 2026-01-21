@@ -14,18 +14,25 @@ class CitrusApi(WebRequester):
 
     def get_category_cards(self, category_slug, page_start, page_end):
         card_list = []
+        count = 1
         for page in range(page_start, page_end + 1):
             url = f'{self.base_citrus_api_url}{category_slug}page_{page}/'
-            print(url)
+            print(count, url)
 
             page_data = self.request_data(url)
-            _json_data = self.get_response_json(page_data)
-            if _json_data:
-                data = _json_data["data"]
-                facet_object = data["facetObject"]
-                items = facet_object["items"]
-                card_list.extend(items)
+            request_status = page_data.status_code
 
+            # print("request:", page_data)
+            _json_data = self.get_response_json(page_data)
+            # print("_json_data:", _json_data)
+            if request_status == 200 and _json_data:
+                data = _json_data.get("data")
+                if data.get("status_code") == 301:
+                    break
+                facet_object = data.get("facetObject")
+                items = facet_object.get("items")
+                card_list.extend(items)
+            count += 1
             sleep(1)
 
         self.category_cards = card_list
@@ -34,9 +41,9 @@ class CitrusApi(WebRequester):
     def get_cards_id(self):
         data_list = []
         for item in self.category_cards:
-            print("\n< ----- >")
-            print("CARD:", item)
-            print("< ----- >\n")
+            # print("\n< ----- >")
+            # print("CARD:", item)
+            # print("< ----- >\n")
             idd = item.get('id')
             data_list.append(idd)
         self.cards_id = data_list

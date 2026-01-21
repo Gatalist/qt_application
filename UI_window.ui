@@ -272,8 +272,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>135</height>
+            <width>165</width>
+            <height>82</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -350,8 +350,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>262</height>
+            <width>213</width>
+            <height>226</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -499,7 +499,7 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
+            <width>215</width>
             <height>280</height>
            </rect>
           </property>
@@ -665,8 +665,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>230</height>
+            <width>182</width>
+            <height>190</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -797,8 +797,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>135</height>
+            <width>145</width>
+            <height>46</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -862,7 +862,7 @@ border: none;</string>
             <x>0</x>
             <y>0</y>
             <width>262</width>
-            <height>135</height>
+            <height>158</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -922,6 +922,17 @@ border: none;</string>
             </widget>
            </item>
            <item>
+            <widget class="QPushButton" name="api_update_cards">
+             <property name="text">
+              <string>Обновить карточки</string>
+             </property>
+             <property name="icon">
+              <iconset resource="source/resource.qrc">
+               <normaloff>:/icons/icons/convert.svg</normaloff>:/icons/icons/convert.svg</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
             <spacer name="verticalSpacer_6">
              <property name="orientation">
               <enum>Qt::Orientation::Vertical</enum>
@@ -941,8 +952,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>135</height>
+            <width>102</width>
+            <height>82</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -1002,8 +1013,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>135</height>
+            <width>100</width>
+            <height>30</height>
            </rect>
           </property>
           <attribute name="icon">

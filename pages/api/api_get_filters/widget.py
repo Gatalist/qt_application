@@ -4,7 +4,7 @@ import threading
 from components.citrus_api import CitrusApi
 from PyQt5.QtWidgets import QWidget, QTableWidgetItem
 from .UI_window import Ui_Form
-from components.copy_table_widget import CopyableTableWidget
+from components.copyable_table import CopyableTableWidget
 
 
 class WindowGetFilterData(QWidget):
