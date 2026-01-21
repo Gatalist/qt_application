@@ -1,67 +1,81 @@
-import threading
 from time import sleep
 from PyQt5.QtWidgets import QWidget
+from PyQt5.QtCore import QThread
+from PyQt5.QtCore import QObject, pyqtSignal
 from .UI_window import Ui_Form
 from components.browser import Browser
 
 
+class UpdateCardsWorker(QObject):
+    log = pyqtSignal(str)
+    finished = pyqtSignal()
+
+    def __init__(self, browser, card_ids):
+        super().__init__()
+        self.browser = browser
+        self.card_ids = card_ids
+
+    def run(self):
+        try:
+            page_name = "update_cards"
+            self.browser.create_page(page_name)
+            self.browser.login(page_name=page_name)
+
+            for card_id in self.card_ids:
+                url = f"{self.browser.base_url_admin}/contento/content/tovar/card/{card_id}/index/update"
+
+                result = self.browser.open_url(page_name=page_name, link=url, wait_until="domcontentloaded")
+
+                status = result.ok if result else False
+                self.log.emit(f"{card_id} = status {status}")
+
+                sleep(2)
+
+        except Exception as e:
+            self.log.emit(f"Ошибка: {e}")
+
+        self.finished.emit()
+
+
 class WindowUpdateCards(QWidget, Browser):
     def __init__(self):
-        super(WindowUpdateCards, self).__init__()
+        super().__init__()
+
         self.ui = Ui_Form()
         self.ui.setupUi(self)
 
-        # привязываем события нажатия клавиши
         self.ui.btn_request.clicked.connect(self.update_cards)
-        self.updated_cards = []
+
+        self.thread = None
+        self.worker = None
+
 
     def update_cards(self):
-        card_ids_text = self.ui.textEdit_ids.toPlainText()
+        card_ids_text = self.ui.textEdit_ids.toPlainText().strip()
+
         if not card_ids_text:
-            self.ui.textEdit_res.addItem("Введите ID!")
-            return None
+            self.ui.textEdit_res.append("Введите ID!")
+            return
 
-        card_ids_split = card_ids_text.split('\n')
-        if card_ids_split[-1] == '':
-            card_ids_split.pop()
-
-        errors = []
         card_ids = []
-        for card_id in card_ids_split:
-            error = f"{card_id} - не является числом!"
-            if card_id in (" ", "   ", "\t"):
-                self.ui.textEdit_res.addItem(error)
-                errors.append(error)
-                continue
+        for line in card_ids_text.splitlines():
+            if not line.isdigit():
+                self.ui.textEdit_res.append(f"{line} — не число")
+                return
+            card_ids.append(line)
 
-            if int(card_id):
-                card_ids.append(card_id)
-            else:
-                errors.append(error)
+        self.ui.textEdit_res.clear()
 
-        if not errors:
-            print(card_ids_split)
+        self.thread = QThread()
+        self.worker = UpdateCardsWorker(self, card_ids)
 
-            thread = threading.Thread(
-                target=self.update_index_card,
-                args=(card_ids,)
-            )
+        self.worker.moveToThread(self.thread)
 
-            thread.start()
-            thread.join()  # Дождаться завершения
+        self.thread.started.connect(self.worker.run)
+        self.worker.log.connect(self.ui.textEdit_res.append)
 
-            self.ui.textEdit_res.clear()  # очищаем список
-            for idd in self.updated_cards:
-                self.ui.textEdit_res.append(str(idd))
+        self.worker.finished.connect(self.thread.quit)
+        self.worker.finished.connect(self.worker.deleteLater)
+        self.thread.finished.connect(self.thread.deleteLater)
 
-    def update_index_card(self, card_ids: list[int]):
-        page_name = "update_cards"
-        self.create_page(page_name)
-        self.login(page_name=page_name)
-
-        for _id in card_ids:
-            new_url = f"{self.base_url_admin}/contento/content/tovar/card/{_id}/index/update"
-            result = self.open_url(page_name=page_name, link=new_url, wait_until="domcontentloaded")
-            request_status = result.ok
-            self.updated_cards.append(f"{_id} = status {request_status}")
-            sleep(2)
+        self.thread.start()
