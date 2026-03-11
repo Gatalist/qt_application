@@ -7,7 +7,7 @@ from settings import Settings
 
 
 class Browser:
-    def __init__(self, visible=False):
+    def __init__(self, visible=True):
         self.current_directory = os.getcwd()
         self.cookie_file = os.path.join(Settings.ROOT_PATH, "source", "session.json")
         self.visible = visible
