@@ -346,17 +346,17 @@ class WriteExcelDocument:
     def add_text_from_position(document, cell, text: str, position: str) -> object:
         if text:
             cell_object_value = cell.value
-            if cell_object_value is not None:
+            if cell_object_value is None:
+                cell_object_value = f'{text}'
+            else:
                 if position == 'start':
-                    cell_object_value = f'{text}{cell_object_value}'
+                    cell_object_value = f'{text};{cell_object_value}'
 
                 if position == 'end':
-                    cell_object_value = f'{cell_object_value}{text}'
+                    cell_object_value = f'{cell_object_value};{text}'
 
-                if position == 'all' and cell_object_value is not None:
-                    cell_object_value = f'{text}{cell_object_value}{text}'
-            # else:
-            #     cell_object_value = text
+                # if position == 'all' and cell_object_value is not None:
+                #     cell_object_value = f'{text}{cell_object_value}{text}'
                 
             document.save_result_in_cell(cell, cell_object_value)
 
@@ -477,3 +477,11 @@ class WriteExcelDocument:
                     yield [str(number_string), str(current_text)]
 
         document.save_new_file(path_save, data)
+
+    def add_data_by_id(self, document, cell_id_card: str, cell_idd_add_text: str, text: str, list_id: list):
+        for number_string in document.list_row:
+            cell_obj_card = document.get_cell_obj(cell_letter=cell_id_card, cell_number=number_string)
+            if str(cell_obj_card.value) in list_id:
+                cell_obj = document.get_cell_obj(cell_letter=cell_idd_add_text, cell_number=number_string)
+                self.add_text_from_position(document=document, cell=cell_obj, text=text, position='end')
+                yield f"{number_string}: {text}"
