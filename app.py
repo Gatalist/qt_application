@@ -21,6 +21,7 @@ from pages.excel_write.add_text_to_end_row.widget import WindowAddEndRow
 from pages.excel_write.add_text_to_all_row.widget import WindowAddAllRow
 from pages.excel_write.get_row_by_id.widget import WindowGetRowsById
 from pages.excel_write.set_data_by_id.widget import WindowSetDataById
+from pages.excel_write.get_row_is_column_data.widget import WindowGetRowsIsColumnData
 
 from pages.admin.youtube.widget import WindowYoutube
 from pages.admin.greed.widget import WindowCreateGreed
@@ -69,6 +70,7 @@ class MainWindow(QMainWindow):
             self.ui.btn_add_text_to_all: WindowAddAllRow(),
             self.ui.btn_get_row_by_id: WindowGetRowsById(),
             self.ui.btn_set_data_by_id: WindowSetDataById(),
+            self.ui.btn_get_row_is_column_data: WindowGetRowsIsColumnData(),
             self.ui.menu_btn_youtube: WindowYoutube(),
             self.ui.menu_btn_create_greed: WindowCreateGreed(),
             self.ui.menu_btn_translate_attr: WindowTranslate(),

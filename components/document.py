@@ -485,3 +485,15 @@ class WriteExcelDocument:
                 cell_obj = document.get_cell_obj(cell_letter=cell_idd_add_text, cell_number=number_string)
                 self.add_text_from_position(document=document, cell=cell_obj, text=text, position='end')
                 yield f"{number_string}: {text}"
+
+    # получаем карточки по колонке если в ней есть данные
+    @staticmethod
+    def copy_row_is_column_data(document, cell_id: str, path_save: str):
+        data = []
+        for number_string in document.list_row:
+            cell_data_obj = document.get_cell_obj(cell_id, number_string)
+            if cell_data_obj.value is not None:
+                data.append(document.get_row_data(number_string=number_string))
+                yield f"{number_string}"
+
+        document.save_new_file(path_save, data)
