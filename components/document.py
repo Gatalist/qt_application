@@ -396,8 +396,8 @@ class WriteExcelDocument:
 
         yield f"✅ Текст добавлен в колонку [ {cell} ] - {result} \n"
 
-    # удаляем текст поиска с ячейки и добавляем в другую ячейку
-    def move_search_text_to_other_cell(self, document, cell_move: str, cell_past: str, search: str):
+    # копируем текст поиска с ячейки и добавляем в другую ячейку
+    def copy_search_text_to_other_cell(self, document, cell_move: str, cell_past: str, search: str):
         result = 0
         list_search_text_lower = [word.lower() for word in search.split(';')]
         print("[+] SEARCH TEXT", list_search_text_lower)
@@ -406,35 +406,23 @@ class WriteExcelDocument:
             cell_move_obj = document.get_cell_obj(cell_move, number_string)
             cell_past_obj = document.get_cell_obj(cell_past, number_string)
             
-            call_current_text = cell_move_obj.value
-            if call_current_text is not None:
-                new_cell_list_text = []
-                current_cell_list_text = []
+            cell_move_text = cell_move_obj.value
+            cell_past_text = cell_past_obj.value
+            if cell_move_text is not None:
+                for search_word in list_search_text_lower:
+                    if cell_move_text.lower().find(search_word) != -1:
 
-                # Разбиваем строку, сохраняя порядок
-                list_cur_text = [line.strip() for line in call_current_text.split(';')]
+                        # save text in current cell
+                        document.save_result_in_cell(cell_move_obj, cell_move_text)
 
-                for line in list_cur_text:
-                    for search_word in list_search_text_lower:
-                        if line.lower().find(search_word) != -1 and line not in new_cell_list_text:
-                           new_cell_list_text.append(line)  # Добавляем в новый список
+                        # добавление фрагмента текста в другую ячейку
+                        if cell_past_text is not None:
+                            cell_past_text = ";".join(cell_move_text)
+                        else:
+                            cell_past_text = cell_move_text
+                        document.save_result_in_cell(cell_past_obj, cell_past_text)
 
-                for line in list_cur_text:
-                    if line not in new_cell_list_text and line not in current_cell_list_text:
-                        current_cell_list_text.append(line)
-
-                # save text in current cell
-                new_current_text = ";".join(current_cell_list_text)
-                document.save_result_in_cell(cell_move_obj, new_current_text)
-
-                # добавление фрагмента текста в другую ячейку
-                cell_past_txt_add = ";".join(new_cell_list_text)
-                document.save_result_in_cell(cell_past_obj, cell_past_txt_add)
-
-                # print(number_string, "text_old", call_current_text)
-                # print(number_string, "text_cur_call", new_current_text)
-                # print(number_string, "text_new_call", cell_past_txt_add, '\n')
-                yield self.out_text(number_string, new_current_text)
+                yield self.out_text(number_string, cell_past_text)
                 result += 1
 
         yield f"✅ Изменено строк - {result} \n"

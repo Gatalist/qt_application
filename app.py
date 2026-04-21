@@ -16,6 +16,7 @@ from pages.excel_read.read_cards.widget import WindowReadCards
 
 from pages.excel_write.move_to_another_cell.widget import WindowRemoweAnother
 from pages.excel_write.move_search_to_cell.widget import WindowMoveSearchCell
+from pages.excel_write.copy_search_to_cell.widget import WindowCopySearchCell
 from pages.excel_write.add_text_to_start_row.widget import WindowAddStartRow
 from pages.excel_write.add_text_to_end_row.widget import WindowAddEndRow
 from pages.excel_write.add_text_to_all_row.widget import WindowAddAllRow
@@ -64,6 +65,7 @@ class MainWindow(QMainWindow):
             self.ui.menu_btn_not_use_value: WindowUnusedValues(),
             self.ui.btn_read_all_cards: WindowReadCards(),
             self.ui.btn_move_to_another: WindowRemoweAnother(),
+            self.ui.btn_copy_to_another: WindowCopySearchCell(),
             self.ui.btn_move_search_to_cell: WindowMoveSearchCell(),
             self.ui.btn_add_text_to_start: WindowAddStartRow(),
             self.ui.btn_add_text_to_end: WindowAddEndRow(),
