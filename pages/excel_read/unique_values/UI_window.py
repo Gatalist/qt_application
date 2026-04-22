@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'window_unique_value.ui'
+# Form implementation generated from reading ui file 'window_search.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.10
 #
@@ -14,16 +14,71 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(792, 505)
+        Form.resize(846, 476)
         self.gridLayout = QtWidgets.QGridLayout(Form)
         self.gridLayout.setObjectName("gridLayout")
+        self.search_widget = QtWidgets.QWidget(Form)
+        self.search_widget.setStyleSheet("#search_widget {background-color: #ABB2B9;}")
+        self.search_widget.setObjectName("search_widget")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.search_widget)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        spacerItem = QtWidgets.QSpacerItem(100, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem)
+        self.search_frame = QtWidgets.QFrame(self.search_widget)
+        self.search_frame.setMinimumSize(QtCore.QSize(350, 30))
+        self.search_frame.setMaximumSize(QtCore.QSize(1000, 30))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.search_frame.setFont(font)
+        self.search_frame.setStyleSheet("#search_frame {\n"
+"    border:  1px solid #aa7e6f;\n"
+"    border-radius: 15px;\n"
+"    background-color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#search_btn {\n"
+"    padding:5px 5px;\n"
+"    border-radius: 15px;\n"
+"}\n"
+"\n"
+"#search_btn:pressed {\n"
+"    padding-left: 10px;\n"
+"}")
+        self.search_frame.setFrameShape(QtWidgets.QFrame.Box)
+        self.search_frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.search_frame.setObjectName("search_frame")
+        self.horizontalLayout_10 = QtWidgets.QHBoxLayout(self.search_frame)
+        self.horizontalLayout_10.setContentsMargins(15, 0, 5, 0)
+        self.horizontalLayout_10.setObjectName("horizontalLayout_10")
+        self.search_text = QtWidgets.QLineEdit(self.search_frame)
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(10)
+        self.search_text.setFont(font)
+        self.search_text.setFrame(False)
+        self.search_text.setClearButtonEnabled(True)
+        self.search_text.setObjectName("search_text")
+        self.horizontalLayout_10.addWidget(self.search_text)
+        self.search_btn = QtWidgets.QPushButton(self.search_frame)
+        self.search_btn.setStyleSheet("")
+        self.search_btn.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/icons/icons/search_b.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.search_btn.setIcon(icon)
+        self.search_btn.setIconSize(QtCore.QSize(20, 20))
+        self.search_btn.setObjectName("search_btn")
+        self.horizontalLayout_10.addWidget(self.search_btn)
+        self.horizontalLayout_2.addWidget(self.search_frame)
+        spacerItem1 = QtWidgets.QSpacerItem(100, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem1)
+        self.gridLayout.addWidget(self.search_widget, 0, 0, 1, 1)
         self.widget_2 = QtWidgets.QWidget(Form)
         self.widget_2.setMinimumSize(QtCore.QSize(400, 0))
         self.widget_2.setObjectName("widget_2")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget_2)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        spacerItem = QtWidgets.QSpacerItem(100, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem)
+        spacerItem2 = QtWidgets.QSpacerItem(100, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem2)
         self.comboBox = QtWidgets.QComboBox(self.widget_2)
         self.comboBox.setMinimumSize(QtCore.QSize(250, 0))
         font = QtGui.QFont()
@@ -32,8 +87,8 @@ class Ui_Form(object):
         self.comboBox.setFont(font)
         self.comboBox.setObjectName("comboBox")
         self.horizontalLayout.addWidget(self.comboBox)
-        spacerItem1 = QtWidgets.QSpacerItem(100, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem1)
+        spacerItem3 = QtWidgets.QSpacerItem(100, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem3)
         self.btn_start = QtWidgets.QPushButton(self.widget_2)
         self.btn_start.setMinimumSize(QtCore.QSize(100, 25))
         font = QtGui.QFont()
@@ -59,16 +114,16 @@ class Ui_Form(object):
 "")
         self.btn_start.setObjectName("btn_start")
         self.horizontalLayout.addWidget(self.btn_start)
-        spacerItem2 = QtWidgets.QSpacerItem(100, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem2)
-        self.gridLayout.addWidget(self.widget_2, 0, 0, 1, 1)
+        spacerItem4 = QtWidgets.QSpacerItem(100, 27, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem4)
+        self.gridLayout.addWidget(self.widget_2, 1, 0, 1, 1)
         self.textEdit = QtWidgets.QTextEdit(Form)
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(12)
         self.textEdit.setFont(font)
         self.textEdit.setObjectName("textEdit")
-        self.gridLayout.addWidget(self.textEdit, 1, 0, 1, 1)
+        self.gridLayout.addWidget(self.textEdit, 2, 0, 1, 1)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -76,5 +131,5 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
+        self.search_text.setPlaceholderText(_translate("Form", "Введите что-нибудь..."))
         self.btn_start.setText(_translate("Form", "Начать"))
-

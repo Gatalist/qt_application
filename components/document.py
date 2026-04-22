@@ -228,6 +228,22 @@ class ReadExcelDocument:
                 yield self.out_text(number_string, string)
         yield f"{self.symbol_ok} Найдено совпадений {self.symbol_arrow} {result}"
 
+    # ищем фрагмент текста в ячейке
+    @staticmethod
+    def search_text_(list_data, search: str):
+        result = 0
+        for text in list_data:
+            like = False
+            string = ''
+            for element in text.split(';'):
+                if element.lower().find(search.lower()) != -1:
+                    string += f"{element}\n"
+                    result += 1
+                    like = True
+            if like:
+                yield string
+        yield ""
+
     # получаем уникальные строки ячейки
     def get_unique_strings(self, list_data):
         unique_elem = []

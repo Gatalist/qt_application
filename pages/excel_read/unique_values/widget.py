@@ -18,8 +18,14 @@ class WindowUniqueValues(QWidget):
     def btn_start_work(self):
         self.ui.textEdit.clear()
         column_name = self.ui.comboBox.currentText()
+        search = self.ui.search_text.text()
+
         list_data = excel_document.get_rows_from_column(column_name)
-        read = read_excel_document.get_unique_strings(list_data)
+        unique_read = read_excel_document.get_unique_strings(list_data)
+        print("=============== unique_read ==========")
+        print(unique_read)
+        unique_list = [string for string in unique_read]
+        read = read_excel_document.search_text_(unique_list, search)
         for string in read:
             self.ui.textEdit.append(string)
 
