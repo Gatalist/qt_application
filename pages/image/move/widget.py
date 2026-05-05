@@ -71,7 +71,7 @@ class WindowMoveImage(QWidget):
 
         thread = threading.Thread(
             target=self.image_manager.move_for_one_folder,
-            args=path_folder
+            args=(path_folder,)
         )
 
         thread.start()

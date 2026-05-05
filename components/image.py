@@ -74,30 +74,37 @@ class ImageManager:
                 # Копируем остальные файлы
                 new_path = os.path.join(output_folder, file)
 
+                base_name, ext = os.path.splitext(file)
+                # base_name = self.return_text_part(text=base_name, split_symbol="_", return_part=1)
+
                 # Если файл с таким именем уже существует — переименуем
                 if os.path.exists(new_path):
-                    base, ext = os.path.splitext(file)
                     count = 1
+                    new_name = ""
                     while os.path.exists(new_path):
-                        new_name = f"{base}_{count}{ext}"
+                        new_name = f"{base_name}_{count}{ext}"
                         new_path = os.path.join(output_folder, new_name)
                         count += 1
+                    base_name = new_name
 
-                        self.move_result.append({
-                            "name": new_name,
-                            "path": new_path,
-                            "status": "→"
-                        })
+                self.move_result.append({
+                    "name": base_name,
+                    "path": new_path,
+                    "status": "→"
+                })
                 print("Копирую:", file_path, "→", new_path)
                 shutil.copy2(file_path, new_path)
 
         print("\nГотово!")
 
-    def resize_image(self, in_path: str, max_width: int = 2500):
-        """
-            :param in_path: "C:\Desktop\Content"
-            :param max_width: "max width image. If size > converting on max_width if < be default"
-        """
+    @staticmethod
+    def return_text_part(text: str, split_symbol: str = "_", return_part: int = 0):
+        _split = text.split(split_symbol)
+        if len(_split) > 1:
+            text = _split[return_part]
+        return text
+
+    def resize_image(self, in_path: str, max_width: int = 2500, quality=90, safe_format="webp"):
         self.resize_result = []
         output_folder = in_path + "_resize"
         os.makedirs(output_folder, exist_ok=True)
@@ -107,32 +114,52 @@ class ImageManager:
                 continue
 
             source_path = os.path.join(in_path, filename)
-            output_path = os.path.join(output_folder, filename)
+            name, ext = os.path.splitext(filename)
+
+            # Определяем целевой формат
+            # Если safe_format передан, берем его, иначе оставляем старое расширение (без точки)
+            target_format = safe_format.lower() if safe_format else ext.replace(".", "").lower()
+
+            # Для корректного сохранения в Pillow (jpeg -> jpg)
+            save_format = "JPEG" if target_format == "jpg" else target_format.upper()
+
+            new_filename = f"{name}.{target_format}"
+            output_path = os.path.join(output_folder, new_filename)
 
             image_data = {
-                "name": filename,
+                "name": new_filename,
                 "path": output_path
             }
 
-            with Image.open(source_path) as img:
-                width, height = img.size
+            try:
+                with Image.open(source_path) as img:
+                    width, height = img.size
+                    current_img = img
 
-                if width > max_width:
-                    # вычисляем новую высоту с сохранением пропорций
-                    ratio = max_width / width
-                    new_height = int(height * ratio)
+                    # 1. Делаем ресайз, если нужно
+                    if width > max_width:
+                        ratio = max_width / width
+                        new_height = int(height * ratio)
+                        current_img = img.resize((max_width, new_height), Image.LANCZOS)
+                        status_msg = f"✅ {width}px → {max_width}px (resize)"
+                    else:
+                        status_msg = f"✖️ {width}px"
 
-                    # уменьшаем изображение
-                    resized = img.resize((max_width, new_height), Image.LANCZOS)
+                    # 2. Обработка прозрачности перед сохранением
+                    # Если сохраняем в JPEG (который не ест прозрачность), конвертируем в RGB
+                    if save_format == "JPEG":
+                        current_img = current_img.convert("RGB")
+                    elif current_img.mode in ("RGBA", "P") and save_format == "WEBP":
+                        current_img = current_img.convert("RGBA")
+                    elif current_img.mode not in ("RGB", "RGBA"):
+                        current_img = current_img.convert("RGB")
 
-                    # сохраняем уменьшенное
-                    resized.save(output_path)
-                    print(f"Изменено и сохранено: {filename} ({width}px → {max_width}px)")
-                    image_data["status"] = f"✅ {width}px → {max_width}px"
-                else:
-                    # просто копируем, если изменение не требуется
-                    shutil.copy2(source_path, output_path)
-                    print(f"Без изменений, скопировано: {filename} ({width}px)")
-                    image_data["status"] = f"✖️ {width}px"
+                    # 3. Сохранение
+                    current_img.save(output_path, save_format, quality=quality)
+                    image_data["status"] = f"{status_msg} ({save_format})"
 
-                self.resize_result.append(image_data)
+            except Exception as e:
+                print(f"Ошибка при обработке {filename}: {e}")
+                image_data["status"] = "❌ Ошибка"
+
+            self.resize_result.append(image_data)

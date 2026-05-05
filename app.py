@@ -14,7 +14,7 @@ from pages.excel_read.unique_values.widget import WindowUniqueValues
 from pages.excel_read.unused_value.widget import WindowUnusedValues
 from pages.excel_read.read_cards.widget import WindowReadCards
 
-from pages.excel_write.move_to_another_cell.widget import WindowRemoweAnother
+from pages.excel_write.move_to_another_cell.widget import WindowMoveAnotherCell
 from pages.excel_write.move_search_to_cell.widget import WindowMoveSearchCell
 from pages.excel_write.copy_search_to_cell.widget import WindowCopySearchCell
 from pages.excel_write.add_text_to_start_row.widget import WindowAddStartRow
@@ -64,7 +64,7 @@ class MainWindow(QMainWindow):
             self.ui.btn_unique_values: WindowUniqueValues(),
             self.ui.menu_btn_not_use_value: WindowUnusedValues(),
             self.ui.btn_read_all_cards: WindowReadCards(),
-            self.ui.btn_move_to_another: WindowRemoweAnother(),
+            self.ui.btn_move_to_another: WindowMoveAnotherCell(),
             self.ui.btn_copy_to_another: WindowCopySearchCell(),
             self.ui.btn_move_search_to_cell: WindowMoveSearchCell(),
             self.ui.btn_add_text_to_start: WindowAddStartRow(),
@@ -147,14 +147,14 @@ class MainWindow(QMainWindow):
 
     def receive_object_document(self, document):
         """Передает объект документа во все связанные окна."""
-        for window in [
+        for _window in [
             self.menu_btn_windows[self.ui.btn_read_column],
             self.menu_btn_windows[self.ui.btn_check_errors],
             self.menu_btn_windows[self.ui.btn_search_text],
             self.menu_btn_windows[self.ui.btn_unique_values],
             self.menu_btn_windows[self.ui.menu_btn_not_use_value]
         ]:
-            window.receive_object_document(document)
+            _window.receive_object_document(document)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

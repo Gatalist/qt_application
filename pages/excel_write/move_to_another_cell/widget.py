@@ -2,9 +2,10 @@ from PyQt5.QtWidgets import QWidget
 from .UI_window import Ui_Form
 from components import excel_document, write_excel_document
 
-class WindowRemoweAnother(QWidget):
+
+class WindowMoveAnotherCell(QWidget):
     def __init__(self):
-        super(WindowRemoweAnother, self).__init__()
+        super(WindowMoveAnotherCell, self).__init__()
         
         self.ui = Ui_Form()
         self.ui.setupUi(self)

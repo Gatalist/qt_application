@@ -1,0 +1,15 @@
+**__pycache__**
+**/opt/**
+/.venv
+/.git
+/.idea
+/temp
+**.env
+**.log*
+**tar.gz
+*/venv/
+.idea
+.env
+*.pem
+!*.gitkeep
+.DS_Store
