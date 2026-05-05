@@ -1,11 +1,26 @@
 from PyQt5.QtWidgets import QWidget
-from PyQt5.QtCore import pyqtSignal
+from PyQt5.QtCore import QObject, QThread, pyqtSignal
 from PyQt5 import QtWidgets
-
 from .UI_window import Ui_Form
-# from components.document import ExcelDocument, JsonDocument, excel_document
 from components import excel_document, json_document
 
+
+class ExcelLoader(QObject):
+    finished = pyqtSignal()
+    error = pyqtSignal(str)
+
+    def __init__(self, file_path, excel_manager):
+        super().__init__()
+        self.file_path = file_path
+        self.excel_manager = excel_manager
+
+    def run(self):
+        try:
+            # Выполняем тяжелую загрузку
+            self.excel_manager.load_data_from_file(self.file_path)
+            self.finished.emit()
+        except Exception as e:
+            self.error.emit(str(e))
 
 
 class WindowOpenFile(QWidget):
@@ -27,22 +42,41 @@ class WindowOpenFile(QWidget):
 
         self.ui.comboBox.activated.connect(self.select_work_sheet)
 
-    # окно выбира файла xlsx
+    # окно выбора файла xlsx
     def open_excel_file(self):
-        file = QtWidgets.QFileDialog.getOpenFileName(self, excel_document.WINDOW_EXPLORE_OPEN_NAME, './', excel_document.format_open)
-        
-        if file:
-            if file[0]:
-                excel_document.load_data_from_file(file[0])
-                # добавляем вывод у виджет с сылкой на файл
-                self.ui.label_open_file_xl.setText(f"{excel_document.document} ✅")
-                self.add_list_sheet_to_comboBox()
-                # передаем сигнал с данными
-                self.send_object_document.emit(excel_document)
-   
-            if not excel_document.document:
-                self.ui.label_open_file_xl.setText(excel_document.MESSAGE_DOCUMENT_IS_NOT_OPEN)
-            print(excel_document.document)
+        result = QtWidgets.QFileDialog.getOpenFileName(self, excel_document.WINDOW_EXPLORE_OPEN_NAME, './', excel_document.format_open)
+        file_path = result[0] if result else None
+
+        if file_path:  # Проверяем, что путь не пустой (пользователь не нажал "Отмена")
+            # 1. Блокируем интерфейс
+            self.ui.btn_open_xlsx.setEnabled(False)
+            self.ui.label_open_file_xl.setText("Загрузка...")
+
+            # 2. Создаем поток и воркер, передаем ПУТЬ (строку), а не кортеж
+            self.thread = QThread()
+            self.worker = ExcelLoader(file_path, excel_document)  # Передаем file_path
+            self.worker.moveToThread(self.thread)
+
+            # ... далее без изменений ...
+            self.thread.started.connect(self.worker.run)
+            self.worker.finished.connect(self.on_load_finished)
+            self.worker.finished.connect(self.thread.quit)
+            self.worker.finished.connect(self.worker.deleteLater)
+            self.thread.finished.connect(self.thread.deleteLater)
+            self.worker.error.connect(self.on_load_error)  # Лучше создать метод для ошибки
+            self.thread.start()
+
+    def on_load_finished(self):
+        # Этот метод выполнится, когда файл прочитан
+        self.ui.btn_open_xlsx.setEnabled(True)
+        self.ui.label_open_file_xl.setText(f"{excel_document.document} ✅")
+        self.add_list_sheet_to_combo_box()
+        self.send_object_document.emit(excel_document)
+
+    def on_load_error(self, message):
+        self.ui.btn_open_xlsx.setEnabled(True)
+        self.ui.label_open_file_xl.setText("Ошибка при открытии!")
+        QtWidgets.QMessageBox.critical(self, "Ошибка", f"Не удалось загрузить файл: {message}")
 
     # save new file
     def save_excel_file(self):
@@ -57,7 +91,7 @@ class WindowOpenFile(QWidget):
         self.ui.label_save_file_xl.setText(string)
 
     # Добавляем все листы документа в comboBox
-    def add_list_sheet_to_comboBox(self) -> None:
+    def add_list_sheet_to_combo_box(self) -> None:
         self.ui.comboBox.clear()
         for sheet_name in excel_document.list_sheet:
             self.ui.comboBox.addItem(sheet_name)
@@ -69,7 +103,7 @@ class WindowOpenFile(QWidget):
         # передаем сигнал с данными
         self.send_object_document.emit(excel_document)
 
-    # окно выбира файла json
+    # окно выбора файла json
     def open_json_file(self):
         file = QtWidgets.QFileDialog.getOpenFileName(self, json_document.WINDOW_EXPLORE_OPEN_NAME, './', json_document.format_open)
         if file:
