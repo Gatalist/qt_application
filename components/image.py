@@ -165,3 +165,4 @@ class ImageManager:
                 image_data["status"] = "❌ Ошибка"
 
             self.resize_result.append(image_data)
+        return self.resize_result

@@ -1,26 +1,9 @@
-from PyQt5.QtCore import QThread, pyqtSignal
+from components.universal_worker import UniversalWorker
 from PyQt5.QtWidgets import QWidget, QTableWidgetItem
 from components.image import ImageManager
 from components.copyable_table import CopyableTableWidget
 from .UI_window import Ui_Form
 
-
-class ResizeWorker(QThread):
-    # Сигнал, который передаст результат обратно в окно
-    finished = pyqtSignal(list)
-
-    def __init__(self, manager, path, max_width):
-        super().__init__()
-        self.manager = manager
-        self.path = path
-        self.max_width = max_width
-
-    def run(self):
-        # Запускаем тяжелую задачу в отдельном потоке
-        self.manager.resize_image(self.path, self.max_width)
-        # Когда закончили, отправляем результат через сигнал
-        self.finished.emit(self.manager.resize_result)
-        
 
 class WindowResizeImage(QWidget):
     def __init__(self):
@@ -70,11 +53,17 @@ class WindowResizeImage(QWidget):
         self.ui.label_7.setText("Обработка... ⏳")
 
         self.ui.tableWidget.clearContents()
-
+        self.ui.tableWidget.setRowCount(0)
+        
         # Создаем поток
-        self.worker = ResizeWorker(self.image_manager, path_folder, max_width_img)
+        self.worker = UniversalWorker(
+            fn=self.image_manager.resize_image,
+            in_path=path_folder,
+            max_width=max_width_img
+        )
         # Подключаем функцию, которая выполнится ПОСЛЕ завершения
         self.worker.finished.connect(self.on_resize_finished)
+        self.worker.error.connect(lambda err: print(f"Ошибка: {err}"))
         # Запускаем (теперь БЕЗ .join(), интерфейс будет работать!)
         self.worker.start()
 
