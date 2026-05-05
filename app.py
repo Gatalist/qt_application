@@ -40,7 +40,7 @@ from pages.seo.speed_test.widget import WindowGetSpeedTest
 
 from pages.image.crop.widget import WindowCropImage
 from pages.image.resize.widget import WindowResizeImage
-from pages.image.move.widget import WindowMoveImage
+from pages.image.move.widget import WindowCopyImage
 
 
 class MainWindow(QMainWindow):
@@ -86,7 +86,7 @@ class MainWindow(QMainWindow):
             self.ui.btn_speed_test: WindowGetSpeedTest(),
             self.ui.crop_space: WindowCropImage(),
             self.ui.resize_image: WindowResizeImage(),
-            self.ui.collect_one_folder: WindowMoveImage()
+            self.ui.collect_one_folder: WindowCopyImage()
         }
 
         # Привязываем кнопки к функции открытия окон

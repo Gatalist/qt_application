@@ -63,7 +63,7 @@ class WindowResizeImage(QWidget):
         # Заменяем tableWidget на кастомный, чтобы работал Ctrl+C
         self.replace_table_with_copyable()
 
-        self.ui.btn_start.clicked.connect(self.get_api_data)
+        self.ui.btn_start.clicked.connect(self.start_resize_process)
 
     def replace_table_with_copyable(self):
         old_table = self.ui.tableWidget
@@ -85,7 +85,7 @@ class WindowResizeImage(QWidget):
         self.ui.tableWidget = new_table
         old_table.deleteLater()
 
-    def get_api_data(self):
+    def start_resize_process(self):
         path_folder = self.ui.str_path.text()
         max_width_img = self.ui.end_page_text.text()
 
@@ -97,6 +97,8 @@ class WindowResizeImage(QWidget):
         # Блокируем кнопку, чтобы не запустили дважды
         self.ui.btn_start.setEnabled(False)
         self.ui.label_7.setText("Обработка... ⏳")
+
+        self.ui.tableWidget.clearContents()
 
         # Создаем поток
         self.worker = ResizeWorker(self.image_manager, path_folder, max_width_img)
