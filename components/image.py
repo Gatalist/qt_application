@@ -5,7 +5,7 @@ from PIL import Image, ImageChops
 
 class ImageManager:
     def __init__(self):
-        self.format_allowed = ('.png', '.jpg', '.jpeg', '.webp')
+        self.format_allowed = ('.png', '.jpg', '.jpeg', '.jpeg', '.webp')
         self.format_forbidden = ('.psd',)
         self.crop_result = []
         self.resize_result = []
