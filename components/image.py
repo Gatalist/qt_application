@@ -54,6 +54,8 @@ class ImageManager:
                     }
                     self.crop_result.append(image_data)
 
+        return self.crop_result
+
     def move_for_one_folder(self, in_path: str):
         """
             :param in_path: "C:\Desktop\Content"
