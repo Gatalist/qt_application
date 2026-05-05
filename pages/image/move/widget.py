@@ -1,24 +1,8 @@
-from PyQt5.QtCore import QThread, pyqtSignal
 from PyQt5.QtWidgets import QWidget, QTableWidgetItem
 from components.image import ImageManager
 from components.copyable_table import CopyableTableWidget
+from components.universal_worker import UniversalWorker
 from .UI_window import Ui_Form
-
-
-class CopyImageWorker(QThread):
-    # Сигнал, который передаст результат обратно в окно
-    finished = pyqtSignal(list)
-
-    def __init__(self, manager, path):
-        super().__init__()
-        self.manager = manager
-        self.path = path
-
-    def run(self):
-        # Запускаем тяжелую задачу в отдельном потоке
-        self.manager.move_for_one_folder(self.path)
-        # Когда закончили, отправляем результат через сигнал
-        self.finished.emit(self.manager.move_result)
 
 
 class WindowCopyImage(QWidget):
@@ -62,10 +46,17 @@ class WindowCopyImage(QWidget):
         self.ui.label_7.setText("Обработка... ⏳")
 
         self.ui.tableWidget.clearContents()
+        self.ui.tableWidget.setRowCount(0)
 
-        self.worker = CopyImageWorker(self.image_manager, path_folder)
+        # Создаем поток
+        self.worker = UniversalWorker(
+            fn=self.image_manager.move_for_one_folder,
+            in_path=path_folder
+        )
+
         # Подключаем функцию, которая выполнится ПОСЛЕ завершения
         self.worker.finished.connect(self.on_resize_finished)
+        self.worker.error.connect(lambda err: print(f"Ошибка: {err}"))
         # Запускаем (теперь БЕЗ .join(), интерфейс будет работать!)
         self.worker.start()
 

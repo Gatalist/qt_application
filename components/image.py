@@ -98,6 +98,7 @@ class ImageManager:
                 shutil.copy2(file_path, new_path)
 
         print("\nГотово!")
+        return self.move_result
 
     @staticmethod
     def return_text_part(text: str, split_symbol: str = "_", return_part: int = 0):
