@@ -1,8 +1,8 @@
 from PyQt5.QtWidgets import QTableWidget, QApplication
 from PyQt5.QtGui import QKeySequence
-import threading
-from components.image import ImageManager
+from PyQt5.QtCore import QThread, pyqtSignal
 from PyQt5.QtWidgets import QWidget, QTableWidgetItem
+from components.image import ImageManager
 from .UI_window import Ui_Form
 
 
@@ -34,6 +34,23 @@ class CopyableTableWidget(QTableWidget):
         QApplication.clipboard().setText(copied_text.strip())
 
 
+class ResizeWorker(QThread):
+    # Сигнал, который передаст результат обратно в окно
+    finished = pyqtSignal(list)
+
+    def __init__(self, manager, path, max_width):
+        super().__init__()
+        self.manager = manager
+        self.path = path
+        self.max_width = max_width
+
+    def run(self):
+        # Запускаем тяжелую задачу в отдельном потоке
+        self.manager.resize_image(self.path, self.max_width)
+        # Когда закончили, отправляем результат через сигнал
+        self.finished.emit(self.manager.resize_result)
+        
+
 class WindowResizeImage(QWidget):
     def __init__(self):
         super(WindowResizeImage, self).__init__()
@@ -41,6 +58,7 @@ class WindowResizeImage(QWidget):
         self.ui.setupUi(self)
         self.ui.end_page_text.setText("2500")
         self.image_manager = ImageManager()
+        self.worker = None # Для хранения ссылки на поток
 
         # Заменяем tableWidget на кастомный, чтобы работал Ctrl+C
         self.replace_table_with_copyable()
@@ -73,23 +91,28 @@ class WindowResizeImage(QWidget):
 
         try:
             max_width_img = int(max_width_img)
-
         except ValueError:
-            print("page_start и page_end должны быть целыми числами")
             return
 
-        thread = threading.Thread(
-            target=self.image_manager.resize_image,
-            args=(path_folder, max_width_img)
-        )
+        # Блокируем кнопку, чтобы не запустили дважды
+        self.ui.btn_start.setEnabled(False)
+        self.ui.label_7.setText("Обработка... ⏳")
 
-        thread.start()
-        thread.join()
+        # Создаем поток
+        self.worker = ResizeWorker(self.image_manager, path_folder, max_width_img)
+        # Подключаем функцию, которая выполнится ПОСЛЕ завершения
+        self.worker.finished.connect(self.on_resize_finished)
+        # Запускаем (теперь БЕЗ .join(), интерфейс будет работать!)
+        self.worker.start()
 
+    def on_resize_finished(self, result_data):
+        # Эта функция сработает сама, когда поток закончит работу
         print("START ADD DATA FOR TABLE")
         self.ui.label_7.setText("Готово ✅")
+        self.ui.btn_start.setEnabled(True)
+        
         self.ui.tableWidget.clearContents()
-        self.add_data_to_table(self.image_manager.resize_result)
+        self.add_data_to_table(result_data)
 
     def add_data_to_table(self, data: list[dict]):
         self.ui.tableWidget.setRowCount(len(data))
