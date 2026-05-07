@@ -1,8 +1,31 @@
 import threading
 from components.citrus_api import CitrusApi
-from PyQt5.QtWidgets import QWidget, QTableWidgetItem
+from PyQt5.QtWidgets import QWidget, QTableWidgetItem, QMessageBox
+from PyQt5.QtCore import QObject, pyqtSignal, QThread
 from .UI_window import Ui_Form
 from components.copyable_table import CopyableTableWidget
+
+
+class ApiWorker(QObject):
+    data_ready = pyqtSignal(list)
+    finished = pyqtSignal()
+    error = pyqtSignal(str)
+
+    def __init__(self, citrus_api, category_slug, page_start, page_end):
+        super().__init__()
+        self.citrus = citrus_api
+        self.category_slug = category_slug
+        self.page_start = page_start
+        self.page_end = page_end
+
+    def run(self):
+        try:
+            self.citrus.get_data(self.category_slug, self.page_start, self.page_end)
+            self.data_ready.emit(self.citrus.cards_data)
+        except Exception as e:
+            self.error.emit(str(e))
+        finally:
+            self.finished.emit()
 
 
 class WindowGetCardsData(QWidget):
@@ -42,29 +65,58 @@ class WindowGetCardsData(QWidget):
         old_table.deleteLater()
 
     def get_api_data(self):
-        category_slug = self.ui.category_slug.text()
-        page_start = self.ui.start_page_text.text()
-        page_end = self.ui.end_page_text.text()
+        category_slug = self.ui.category_slug.text().strip()
+        page_start_text = self.ui.start_page_text.text().strip()
+        page_end_text = self.ui.end_page_text.text().strip()
 
-        try:
-            page_start = int(page_start)
-            page_end = int(page_end)
-        except ValueError:
-            print("page_start и page_end должны быть целыми числами")
+        # 1. Проверка на заполнение всех полей
+        if not category_slug:
+            QMessageBox.warning(self, "Warning", "Пожалуйста, заполните category_slug")
+            return
+        if not category_slug.startswith("/") or not category_slug.endswith("/"):
+            QMessageBox.warning(self, "Warning", "category_slug должен начинаться и заканчиваться на '/'")
+            return
+        if not page_start_text:
+            QMessageBox.warning(self, "Warning", "Пожалуйста, заполните page_start")
+            return
+        if not page_end_text:
+            QMessageBox.warning(self, "Warning", "Пожалуйста, заполните page_end")
             return
 
-        thread = threading.Thread(
-            target=self.citrus.get_data,
-            args=(category_slug, page_start, page_end)
-        )
+        # 2. Проверка на корректность чисел
+        try:
+            page_start = int(page_start_text)
+            page_end = int(page_end_text)
+        except ValueError:
+            QMessageBox.warning(self, "Warning", "page_start и page_end должны быть целыми числами")
+            return
 
-        thread.start()
-        thread.join()
-
-        print("START ADD DATA FOR TABLE")
-
+        # 3. Очистка таблицы и блокировка кнопки
+        self.ui.tableWidget.setRowCount(0)
         self.ui.tableWidget.clearContents()
-        self.add_data_to_table(self.citrus.cards_data)
+        self.ui.btn_request.setEnabled(False)
+
+        # Создаем поток и воркер
+        self.thread = QThread()
+        self.worker = ApiWorker(self.citrus, category_slug, page_start, page_end)
+        self.worker.moveToThread(self.thread)
+
+        # Подключаем сигналы
+        self.thread.started.connect(self.worker.run)
+        self.worker.data_ready.connect(self.add_data_to_table)
+        self.worker.error.connect(self.handle_api_error)
+
+        # Правильное завершение
+        self.worker.finished.connect(self.thread.quit)
+        self.worker.finished.connect(self.worker.deleteLater)
+        self.thread.finished.connect(self.thread.deleteLater)
+        self.thread.finished.connect(lambda: self.ui.btn_request.setEnabled(True))
+
+        self.thread.start()
+
+    def handle_api_error(self, err):
+        self.ui.btn_request.setEnabled(True)
+        QMessageBox.critical(self, "Error", f"Произошла ошибка: {err}")
 
     def add_data_to_table(self, data):
         print("CARD_DATA:", data)
