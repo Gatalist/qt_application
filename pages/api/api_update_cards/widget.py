@@ -28,7 +28,12 @@ class UpdateCardsWorker(QObject):
             for card_id in self.card_ids: # Теперь self.card_ids — это точно список
                 new_url = f"{browser_instance.base_url_admin}/contento/content/tovar/card/{card_id}/index/update"
                 result = browser_instance.open_url(page_name=page_name, link=new_url)
-                self.log.emit(f"{card_id} = updated")
+                print("result:", result)
+                print("status_code:", result.status, type(result.status))
+                if result.status == 200:
+                    self.log.emit(f"{card_id} = ✅ updated")
+                else:
+                    self.log.emit(f"{card_id} = ⚠️ error (status: {result.status})")
                 sleep(2)
 
         except Exception as e:
