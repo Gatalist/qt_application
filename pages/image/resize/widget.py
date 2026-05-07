@@ -64,7 +64,6 @@ class WindowResizeImage(QWidget):
         # Подключаем функцию, которая выполнится ПОСЛЕ завершения
         self.worker.finished.connect(self.on_resize_finished)
         self.worker.error.connect(lambda err: print(f"Ошибка: {err}"))
-        # Запускаем (теперь БЕЗ .join(), интерфейс будет работать!)
         self.worker.start()
 
     def on_resize_finished(self, result_data):

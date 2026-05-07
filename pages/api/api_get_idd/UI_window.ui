@@ -558,7 +558,7 @@
             <bool>false</bool>
            </property>
            <property name="placeholderText">
-            <string>planshety</string>
+            <string>/planshety/</string>
            </property>
            <property name="clearButtonEnabled">
             <bool>true</bool>

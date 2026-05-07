@@ -288,7 +288,7 @@ class Ui_Form(object):
         self.start_page_text.setPlaceholderText(_translate("Form", "1"))
         self.end_page_text.setPlaceholderText(_translate("Form", "15"))
         self.label_audio.setText(_translate("Form", "slug категории"))
-        self.category_slug.setPlaceholderText(_translate("Form", "planshety"))
+        self.category_slug.setPlaceholderText(_translate("Form", "/planshety/"))
         self.btn_request.setText(_translate("Form", "Получить "))
         self.label_7.setText(_translate("Form", "Результат ответа"))
         self.textEdit.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"

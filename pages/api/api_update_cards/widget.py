@@ -74,6 +74,7 @@ class WindowUpdateCards(QWidget):
             card_ids.append(line)
 
         self.ui.textEdit_res.clear()
+        self.ui.label_7.setText("Обработка... ⏳")
 
         self.thread = QThread()
         self.worker = UpdateCardsWorker(card_ids)
@@ -88,6 +89,7 @@ class WindowUpdateCards(QWidget):
 
         def on_finished():
             self.thread = None
+            self.ui.label_7.setText("Готово ✅")
             self.ui.btn_request.setEnabled(True)
             
         self.thread.finished.connect(on_finished)
