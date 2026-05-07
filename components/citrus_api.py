@@ -82,9 +82,12 @@ class CitrusApi(WebRequester):
 
         page_data = self.request_data(url)
         _json_data = self.get_response_json(page_data)
+        print("_json_data:", _json_data)
         if _json_data:
-            data = _json_data["data"]
-            facet_object = data["facetObject"]
-            self.category_filters = facet_object["attributes"]
+            data = _json_data.get("data")
+            if data:
+                facet_object = data.get("facetObject")
+                if facet_object:
+                    self.category_filters = facet_object.get("attributes", [])
 
         return self.category_filters

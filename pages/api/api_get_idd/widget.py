@@ -39,6 +39,10 @@ class WindowGetCardsID(QWidget):
         page_start_text = self.ui.start_page_text.text()
         page_end_text = self.ui.end_page_text.text()
 
+        if not category_slug.startswith("/") or not category_slug.endswith("/"):
+            self.ui.textEdit.append("category_slug должен начинаться и заканчиваться на '/'")
+            return
+
         if not page_start_text or not page_end_text:
             self.ui.textEdit.append("page_start и page_end должны быть заполнены!")
             return
