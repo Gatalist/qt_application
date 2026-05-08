@@ -78,7 +78,7 @@ class WindowTranslate(QWidget):
         browser.close()
 
     def open_browser(self):
-        self.ui.tableWidget.clear()
+        self.ui.tableWidget.setRowCount(0)
         process = Process(
             target=self.run_process_translate,
             kwargs={

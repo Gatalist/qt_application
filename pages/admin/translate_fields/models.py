@@ -73,7 +73,6 @@ class ProductGroupValue(QObject, Browser):
 
 							else:
 								self.custom_translate(obj_page, row_data, link)
-				time.sleep(1)
 
 			if not row_data["translate"]:
 				yield row_data
@@ -83,14 +82,22 @@ class ProductGroupValue(QObject, Browser):
 	@staticmethod
 	def admin_translate(row_data, column_names, link, cells, pattern_uk):
 		link.click()
-
-		# Ждём появления div с нужным текстом внутри ячейки name
 		name_td = cells.nth(column_names.index("name"))
+		
+		# Ждем появления текста, но не падаем с ошибкой, если он уже там или не появился
 		try:
-			name_td.locator("div", has_text="uk: Есть перевод(").wait_for(timeout=10000)
-		except TimeoutError:
-			print("Превышено время ожидания появления текста 'uk: Есть перевод('")
-		# Можно добавить retry или пропустить этот элемент
+			# Вместо wait_for используем ожидание с проверкой
+			found = False
+			for _ in range(20): # 10 секунд (20 * 0.5)
+				if "uk: Есть перевод(" in name_td.inner_text():
+					found = True
+					break
+				time.sleep(0.5)
+			
+			if not found:
+				print("Текст 'Есть перевод' не появился вовремя")
+		except Exception as e:
+			print(f"Ошибка при ожидании перевода: {e}")
 
 		# Теперь можно читать текст заново
 		divs = name_td.locator("div")
@@ -101,23 +108,23 @@ class ProductGroupValue(QObject, Browser):
 		return row_data
 
 	def custom_translate(self, obj_page, row_data, link):
-		# 1. Кликаем и ждем модалку
+		# 1. Кликаем
 		link.click()
-		
-		# Ждем конкретно инпут, который должен появиться (это надежнее, чем ждать класс модалки)
-		# try:
-		# 	obj_page.wait_for_selector('input[name="name[ru]"]', timeout=5000)
-		# except:
-		# 	print("Не удалось дождаться появления инпутов")
-		# 	return
 
-		print("Модалка загружена, начинаем поиск")
+		# Ждем сначала саму модалку (по классу или ID), а потом уже вкладку
+		try:
+			# Увеличиваем таймаут до 5 секунд и ждем именно видимости
+			obj_page.wait_for_selector(".modal.in", state="visible", timeout=5000)
+			# Теперь ждем активную вкладку
+			obj_page.wait_for_selector(".tab-pane.active", state="visible", timeout=5000)
+		except Exception as e:
+			print(f"Ошибка: Модалка не открылась или вкладка не видна: {e}")
+			# Если модалка не открылась, пробуем закрыть её (на всякий случай) и идем дальше
+			obj_page.keyboard.press("Escape")
+			return row_data
 
-		# 2. Берем все инпуты RU и UK на текущей АКТИВНОЙ вкладке
-		# Используем более простой подход без вложенных циклов по row, если структура плоская
-		obj_page.wait_for_selector('.tab-pane.active', timeout=2000)
 		active_pane = obj_page.locator(".tab-pane.active")
-		
+
 		input_ru = active_pane.locator('input[name="name[ru]"]')
 		input_uk = active_pane.locator('input[name="name[uk]"]')
 
@@ -127,20 +134,20 @@ class ProductGroupValue(QObject, Browser):
 
 		for i in range(count):
 			val_ru = input_ru.nth(i).input_value()
-			
+
 			if val_ru:
 				target_input = input_uk.nth(i)
-				
+
 				# Попробуем сначала сфокусироваться
 				target_input.focus()
-				
+
 				# translate_uk = val_ru
 				translate_uk = self.method_translate.translate_text(text=val_ru)
 
 				# Заполняем UK
 				target_input.fill(val_ru)
 				row_data["uk"] = translate_uk
-				
+
 				# Если fill все равно не работает, используй это (эмуляция клавиатуры):
 				target_input.click()
 				obj_page.keyboard.press("Control+A")
@@ -153,12 +160,12 @@ class ProductGroupValue(QObject, Browser):
 
 		# Ищем кнопку именно внутри открытой модалки
 		save_button = obj_page.locator(".modal.in .modal-footer .btn-primary")
-		
+
 		# Проверяем, что кнопка есть и нажимаем
 		if save_button.count() > 0:
 			save_button.click()
 			print("Кнопка 'Сохранить' нажата")
-			
+
 			# Важно: ждем, пока модалка исчезнет после сохранения
 			# (чтобы следующий цикл не начал работать со старой модалкой)
 			obj_page.wait_for_selector(".modal-translations", state="hidden", timeout=10000)
@@ -185,12 +192,8 @@ class ProductGroupValue(QObject, Browser):
 	def _select_option(self, page_name: str, option_name: str):
 		obj_page = self.pages[page_name]
 		select_locator = obj_page.locator("select#model_name")
-
-		# 1. Запоминаем текущее состояние первой строки, чтобы понять, когда данные обновятся
-		first_row = obj_page.locator("#data-table tbody tr").first
-		old_text = ""
-		if first_row.count() > 0:
-			old_text = first_row.inner_text()
+		
+		print(f"Выбираем опцию: {option_name}")
 
 		# Ждём, пока селект станет видимым
 		select_locator.wait_for(state="visible")
@@ -198,20 +201,20 @@ class ProductGroupValue(QObject, Browser):
 		# 2. Выбираем опцию
 		select_locator.select_option(label=option_name)
 
-		# 3. Ждём, пока содержимое таблицы изменится
-		# Используем wait_for_function для ожидания изменения текста первой строки
 		try:
-			# Экранируем старый текст для JS
-			js_old_text = repr(old_text)
-			obj_page.wait_for_function(
-				f"() => {{ const row = document.querySelector('#data-table tbody tr'); return row && row.innerText !== {js_old_text}; }}"
-				, timeout=3000)
-		except Exception as e:
-			print(f"Предупреждение: данные таблицы не изменились или произошел таймаут: {e}")
+			obj_page.wait_for_load_state("networkidle", timeout=5000)
+		except Exception:
+			print("Слишком долгий networkidle, проверяем таблицу напрямую")
 
-		# Дополнительный сетевой ожидание для надежности
-		obj_page.wait_for_load_state("networkidle")
-		obj_page.wait_for_selector("#data-table tbody tr")
+		# Ждем, чтобы строки таблицы были прикреплены к DOM и видны
+		try:
+			obj_page.wait_for_selector("#data-table tbody tr", state="visible", timeout=5000)
+			print("Таблица готова к работе")
+		except Exception as e:
+			print(f"Таблица не появилась или пуста: {e}")
+
+		# Даем крошечную паузу для отработки внутренних скриптов страницы
+		obj_page.wait_for_timeout(500)
 
 	def start(self, page_name: str, start_page: int, checking_page: int, item_in_page, link_translate, name_option):
 		self.login(page_name=page_name)
@@ -234,6 +237,8 @@ class ProductGroupValue(QObject, Browser):
 				new_page = self.next_url_translate(page_name=page_name, next_items=item_in_page)
 				print("next_url:", new_page)
 				self.open_url(page_name=page_name, link=new_page, wait_until="domcontentloaded")
+			
+			time.sleep(1)
 
 		info_page_end = f"[+] Все атрибуты переведены\n"
 		print(info_page_end)
