@@ -63,7 +63,7 @@ class WindowTranslate(QWidget):
                 break  # Как только очередь пуста — выходим из while
 
     @staticmethod
-    def run_process_translate(queue, page_name, start_page, end_page, item_in_page, name_option, url_translate):
+    def run_process_translate(queue, page_name, start_page, end_page, item_in_page, name_option):
         browser = ProductGroupValue(queue=queue, visible=True, translate="deepl")
         browser.create_page(page_name=page_name)
         browser.login(page_name=page_name)
@@ -72,7 +72,6 @@ class WindowTranslate(QWidget):
             start_page=start_page,
             checking_page=end_page,
             item_in_page=item_in_page,
-            link_translate=url_translate,
             name_option=name_option
         )
         browser.close()
@@ -88,7 +87,6 @@ class WindowTranslate(QWidget):
                 "end_page": int(self.ui.end_page_text.text()),
                 "item_in_page": int(self.ui.item_page_text.text()),
                 "name_option": self.ui.comboBox_option.currentText(),
-                "url_translate": 'https://my.ctrs.com.ua/contento/translations/fields?search=&start=0&length=5&order=0&sort=asc'
             }
         )
         process.start()

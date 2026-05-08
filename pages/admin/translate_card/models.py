@@ -1,9 +1,7 @@
 from time import sleep
-
 from PyQt5.QtCore import QObject
 from PyQt5.QtCore import pyqtSignal
 from components.browser import Browser
-import time
 
 
 class CardAttribute(QObject, Browser):
@@ -12,187 +10,6 @@ class CardAttribute(QObject, Browser):
 	def __init__(self, queue, visible=False):
 		super().__init__(visible=visible)
 		self.queue = queue
-
-	# def for_element_in_table(self, page_name: str):
-	# 	obj_page = self.pages[page_name]
-	#
-	# 	# Ждём появления хотя бы одной строки таблицы
-	# 	obj_page.wait_for_selector("#data-table tbody tr")
-	#
-	# 	# Получаем заголовки один раз, так как они не меняются
-	# 	headers = obj_page.locator("table thead tr th")
-	# 	print("headers:", headers.count())
-	# 	column_names = [headers.nth(i).inner_text() for i in range(headers.count())]
-	# 	print("Колонки:", column_names)
-	#
-	# 	obj_page.wait_for_selector("#data-table tbody tr")
-	#
-	# 	rows = obj_page.locator("#data-table tbody tr")
-	# 	row_count = rows.count()
-	# 	print("Найдено строк:", row_count)
-	#
-	# 	for i in range(row_count):
-	# 		# Получаем строки таблицы заново на каждой итерации
-	# 		rows = obj_page.locator("#data-table tbody tr")
-	#
-	# 		row = rows.nth(i)
-	# 		cells = row.locator("td")
-	#
-	# 		row_data = {
-	# 			"translate": True
-	# 		}
-	#
-			# for j in range(cells.count()):
-			#
-			# 	if column_names[j] == 'ID':
-			# 		td = cells.nth(j)
-			# 		row_data["id"] = td.inner_text()
-			#
-			# 	if column_names[j] == 'Значение':
-			# 		td = cells.nth(j)
-			#
-			# 		div_value_wrapper = td.locator("div.valueWrapper")
-			# 		wrapper_links = div_value_wrapper.locator("a")
-	#
-	# 				google_translate = td.locator("div.googleTranslateWrapper a")
-	#
-	# 				for k in range(wrapper_links.count()):
-	# 					link = wrapper_links.nth(k)
-	# 					name = link.get_attribute("data-name")
-	# 					link_text = link.inner_text()
-	#
-	# 					if name == 'uk' and link_text == 'Пусто':
-	# 						print("link_text uk:", link_text)
-	# 						row_data["translate"] = False
-	#
-	# 					if name == 'ru':
-	# 						print("link_text ru:", link_text)
-	# 						row_data["ru"] = link_text
-	#
-	# 				if not row_data["translate"]:
-	# 					google_translate.click()
-	# 					time.sleep(2)
-	#
-	# 					# Ждём, пока внутри td появится перевод
-	# 					obj_page.wait_for_function(
-	# 						"""(node) => {
-    #                             const el = node.querySelector("div.valueWrapper a[data-name='uk']");
-    #                             return el && el.innerText !== 'Пусто';
-    #                         }""",
-	# 						arg=td.element_handle(),
-	# 						timeout=60000
-	# 					)
-	#
-	# 					# Читаем обновлённые ссылки
-	# 					wrapper_links = td.locator("div.valueWrapper a").wait_for(timeout=10000)
-	#
-	# 					for e in range(wrapper_links.count()):
-	# 						_link = wrapper_links.nth(e)
-	# 						_name = _link.get_attribute("data-name")
-	# 						_link_text = _link.inner_text()
-	#
-	# 						if _name == 'uk':
-	# 							print("new_link_text uk:", _link_text)
-	# 							row_data["uk"] = _link_text
-	#
-	# 		print("row_data:", row_data)
-	# 		if not row_data["translate"]:
-	# 			yield row_data
-	# 		else:
-	# 			yield {}
-
-	# def for_element_in_table(self, page_name: str):
-	# 	obj_page = self.pages[page_name]
-	#
-	# 	# Ждём появления хотя бы одной строки таблицы
-	# 	obj_page.wait_for_selector("#data-table tbody tr")
-	#
-	# 	# Получаем заголовки один раз, так как они не меняются
-	# 	headers = obj_page.locator("table thead tr th")
-	# 	column_names = [headers.nth(i).inner_text() for i in range(headers.count())]
-	# 	print("Колонки:", column_names)
-	#
-	# 	while True:
-	# 		# Получаем строки таблицы заново на каждой итерации
-	# 		rows = obj_page.locator("#data-table tbody tr")
-	# 		row_count = rows.count()
-	# 		print("Найдено строк:", row_count)
-	#
-	# 		found_untranslated_row = False  # Флаг для выхода из цикла, если все строки переведены
-	#
-	# 		for i in range(row_count):
-	# 			# Получаем строки таблицы заново на каждой итерации
-	# 			rows = obj_page.locator("#data-table tbody tr")
-	#
-	# 			row = rows.nth(i)
-	# 			cells = row.locator("td")
-	#
-	# 			row_data = {
-	# 				"translate": True
-	# 			}
-	#
-	# 			for j in range(cells.count()):
-	#
-	# 				if column_names[j] == 'ID':
-	# 					td = cells.nth(j)
-	# 					row_data["id"] = td.inner_text()
-	#
-	# 				if column_names[j] == 'Значение':
-	# 					td = cells.nth(j)
-	#
-	# 					div_value_wrapper = td.locator("div.valueWrapper")
-	# 					wrapper_links = div_value_wrapper.locator("a")
-	#
-	# 					google_translate = td.locator("div.googleTranslateWrapper a")
-	#
-	# 					for k in range(wrapper_links.count()):
-	# 						link = wrapper_links.nth(k)
-	# 						name = link.get_attribute("data-name")
-	# 						link_text = link.inner_text()
-	#
-	# 						if name == 'uk' and link_text == 'Пусто':
-	# 							print("link_text uk:", link_text)
-	# 							row_data["translate"] = False
-	#
-	# 						if name == 'ru':
-	# 							print("link_text ru:", link_text)
-	# 							row_data["ru"] = link_text
-	#
-	# 					if not row_data["translate"]:
-	# 						google_translate.click()
-	# 						time.sleep(2)
-	#
-	# 						# Ждём, пока внутри td появится перевод
-	# 						obj_page.wait_for_function(
-	# 							"""(node) => {
-	# 								const el = node.querySelector("div.valueWrapper a[data-name='uk']");
-	# 								return el && el.innerText !== 'Пусто';
-	# 							}""",
-	# 							arg=td.element_handle(),
-	# 							timeout=60000
-	# 						)
-	#
-	# 						# Читаем обновлённые ссылки
-	# 						wrapper_links = td.locator("div.valueWrapper a").wait_for(timeout=10000)
-	#
-	# 						for e in range(wrapper_links.count()):
-	# 							_link = wrapper_links.nth(e)
-	# 							_name = _link.get_attribute("data-name")
-	# 							_link_text = _link.inner_text()
-	#
-	# 							if _name == 'uk':
-	# 								print("new_link_text uk:", _link_text)
-	# 								row_data["uk"] = _link_text
-	#
-	# 			print("row_data:", row_data)
-	# 			if not row_data["translate"]:
-	# 				yield row_data
-	#
-	# 		# Если внутренний цикл завершился и не было найдено ни одной строки для перевода,
-	# 		# значит, все строки переведены. Выходим из внешнего цикла.
-	# 		if not found_untranslated_row:
-	# 			print("Все строки переведены. Завершение работы.")
-	# 			break
 
 	def for_element_in_table(self, page_name: str):
 		obj_page = self.pages[page_name]
@@ -260,26 +77,11 @@ class CardAttribute(QObject, Browser):
 					google_translate_btn = value_td.locator("div.googleTranslateWrapper a")
 					google_translate_btn.click()
 
-					# Ждём, пока текст в украинской ссылке обновится
-					# Используем точный CSS-селектор для ожидания
-					# obj_page.locator(
-					# 	f"tr:nth-of-type({i + 1}) td:nth-of-type({value_col_index + 1}) a[data-name='uk']:not(:has-text('Пусто'))"
-					# ).wait_for(timeout=60000)
-
-					# # Получаем обновлённый текст украинской ссылки
-					# updated_uk_link = value_td.locator("a[data-name='uk']")
-					# row_data["uk"] = updated_uk_link.inner_text()
-					#
-					# print("row_data:", row_data)
-					# yield row_data
-
 					yield {}
 					sleep(1.5)
 					break
 				else:
 					yield {}
-					# После успешного перевода одной строки, выходим из внутреннего цикла,
-					# чтобы перезапустить внешний и получить свежие локаторы.
 					check_count += 1
 
 				print("row_count:", row_count, "|", "check_count:", check_count)
@@ -324,4 +126,3 @@ class CardAttribute(QObject, Browser):
 
 		info_page_end = f"[+] Все атрибуты переведены\n"
 		print(info_page_end)
-				

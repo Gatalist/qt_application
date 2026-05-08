@@ -82,11 +82,15 @@ class Browser:
         
     def open_url(self, page_name: str, link: str, wait_until="domcontentloaded"):
         print("[ + ] open_url:", link)
-        return self.pages[page_name].goto(link, wait_until=wait_until)
+        self.pages[page_name].goto(link, wait_until=wait_until)
+        # self.pages[page_name].wait_for_load_state("networkidle", timeout=5000)
+        return self.pages[page_name]
 
     @staticmethod
     def change_url(url: str, start_page: int, item_in_page: int):
-        start_item = 0 if item_in_page == 1 else start_page * item_in_page
+        if start_page == 0 or start_page == 1:
+            start_page = 0
+        start_item = 0 if start_page == 0 else (start_page * item_in_page) - item_in_page
         replace_start = re.sub(r'start=\d+', f'start={start_item}', url)
         replace_length = re.sub(r'length=\d+', f'length={item_in_page}', replace_start)
         print("new_url:", replace_length)
