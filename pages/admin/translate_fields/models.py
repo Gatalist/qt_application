@@ -20,6 +20,13 @@ class ProductGroupValue(QObject, Browser):
 		column_names = [headers.nth(i).inner_text() for i in range(headers.count())]
 		print("Колонки:", column_names)
 
+		# Определяем имя текстовой колонки для использования в модалке
+		text_column_name = None
+		for col in column_names:
+			if col == 'name' or col == 'text_value':
+				text_column_name = col
+				break
+
 		rows = obj_page.locator("#data-table tbody tr")
 		row_count = rows.count()
 		print("Найдено строк:", row_count)
@@ -69,9 +76,8 @@ class ProductGroupValue(QObject, Browser):
 							# кнопка перевода с админки
 							if link.get_attribute("title") and self.translate == "admin":
 								self.admin_translate(row_data, column_names, link, cells, pattern_uk)
-
 							else:
-								self.custom_translate(obj_page, row_data, link)
+								self.custom_translate(obj_page, row_data, link, text_column_name)
 
 			if not row_data["translate"]:
 				yield row_data
@@ -82,7 +88,7 @@ class ProductGroupValue(QObject, Browser):
 	def admin_translate(row_data, column_names, link, cells, pattern_uk):
 		link.click()
 		name_td = cells.nth(column_names.index("name"))
-		
+
 		# Ждем появления текста, но не падаем с ошибкой, если он уже там или не появился
 		try:
 			# Вместо wait_for используем ожидание с проверкой
@@ -92,7 +98,7 @@ class ProductGroupValue(QObject, Browser):
 					found = True
 					break
 				time.sleep(0.5)
-			
+
 			if not found:
 				print("Текст 'Есть перевод' не появился вовремя")
 		except Exception as e:
@@ -106,7 +112,7 @@ class ProductGroupValue(QObject, Browser):
 				row_data["uk"] = _match_uk.group(1)
 		return row_data
 
-	def custom_translate(self, obj_page, row_data, link):
+	def custom_translate(self, obj_page, row_data, link, text_column_name="name"):
 		# 1. Кликаем
 		link.click()
 
@@ -124,38 +130,25 @@ class ProductGroupValue(QObject, Browser):
 
 		active_pane = obj_page.locator(".tab-pane.active")
 
-		input_ru = active_pane.locator('input[name="name[ru]"]')
-		input_uk = active_pane.locator('input[name="name[uk]"]')
+		# Используем динамическое имя колонки для поиска инпутов
+		input_ru = active_pane.locator(f'input[name="{text_column_name}[ru]"]')
+		input_uk = active_pane.locator(f'input[name="{text_column_name}[uk]"]')
+		
+		val_ru = input_ru.input_value()
+		print(f"[RU] исходное значение: '{val_ru}'")
+		if val_ru:
+			# Попробуем сначала сфокусироваться
+			input_uk.focus()
+			input_uk.click()
+			# translate_uk = val_ru
+			translate_uk = self.method_translate.translate_text(text=val_ru)
 
-		# Проверяем количество
-		count = input_ru.count()
-		print(f"Найдено полей для перевода: {count}")
-
-		for i in range(count):
-			val_ru = input_ru.nth(i).input_value()
-
-			if val_ru:
-				target_input = input_uk.nth(i)
-
-				# Попробуем сначала сфокусироваться
-				target_input.focus()
-
-				# translate_uk = val_ru
-				translate_uk = self.method_translate.translate_text(text=val_ru)
-
-				# Заполняем UK
-				target_input.fill(val_ru)
-				row_data["uk"] = translate_uk
-
-				# Если fill все равно не работает, используй это (эмуляция клавиатуры):
-				target_input.click()
-				obj_page.keyboard.press("Control+A")
-				obj_page.keyboard.press("Backspace")
-				target_input.type(val_ru)
-
-				print(f"Индекс {i}: Обновлено на '{val_ru}'")
-			else:
-				print(f"Индекс {i}: RU пустое")
+			# Заполняем UK
+			input_uk.fill(translate_uk)
+			row_data["uk"] = translate_uk
+	
+		else:
+			print(f"[RU] пустое")
 
 		# Ищем кнопку именно внутри открытой модалки
 		save_button = obj_page.locator(".modal.in .modal-footer .btn-primary")
@@ -165,8 +158,6 @@ class ProductGroupValue(QObject, Browser):
 			save_button.click()
 			print("Кнопка 'Сохранить' нажата")
 
-			# Важно: ждем, пока модалка исчезнет после сохранения
-			# (чтобы следующий цикл не начал работать со старой модалкой)
 			obj_page.wait_for_selector(".modal-translations", state="hidden", timeout=10000)
 			print("Модалка закрылась")
 		else:
@@ -191,19 +182,13 @@ class ProductGroupValue(QObject, Browser):
 	def _select_option(self, page_name: str, option_name: str):
 		obj_page = self.pages[page_name]
 		select_locator = obj_page.locator("select#model_name")
-		
+
 		print(f"Выбираем опцию: {option_name}")
-
-		# Ждём, пока селект станет видимым
 		select_locator.wait_for(state="visible")
-
-		# 2. Выбираем опцию
 		select_locator.select_option(label=option_name)
 
-		try:
-			obj_page.wait_for_load_state("networkidle", timeout=5000)
-		except Exception:
-			print("Слишком долгий networkidle, проверяем таблицу напрямую")
+		# Ждём завершения сетевой активности (AJAX/Reload)
+		obj_page.wait_for_timeout(2500)
 
 		# Ждем, чтобы строки таблицы были прикреплены к DOM и видны
 		try:
@@ -212,18 +197,17 @@ class ProductGroupValue(QObject, Browser):
 		except Exception as e:
 			print(f"Таблица не появилась или пуста: {e}")
 
-		# Даем крошечную паузу для отработки внутренних скриптов страницы
-		obj_page.wait_for_timeout(500)
-
-	def start(self, page_name: str, start_page: int, checking_page: int, item_in_page, link_translate, name_option):
+	def start(self, page_name: str, start_page: int, checking_page: int, item_in_page, name_option):
+		if start_page in [0, 1]:
+			start_page = 0
 		self.login(page_name=page_name)
-		self.open_url(page_name=page_name, link=link_translate, wait_until="domcontentloaded")
-		new_url = self.change_url(url=link_translate, start_page=start_page, item_in_page=item_in_page)
+		self.open_url(page_name=page_name, link=self.link_all_translate, wait_until="domcontentloaded")
+		new_url = self.change_url(url=self.link_all_translate, start_page=start_page, item_in_page=item_in_page)
 		self.open_url(page_name=page_name, link=new_url, wait_until="domcontentloaded")
 		self._get_model_names(page_name=page_name)
 		self._select_option(page_name=page_name, option_name=name_option)
 
-		for page in range(int(checking_page) + 1):
+		for page in range(start_page, checking_page - 1):
 			info_page_start = f"\tCтраница: {page}\n"
 			print(info_page_start)
 
@@ -236,8 +220,8 @@ class ProductGroupValue(QObject, Browser):
 				new_page = self.next_url_translate(page_name=page_name, next_items=item_in_page)
 				print("next_url:", new_page)
 				self.open_url(page_name=page_name, link=new_page, wait_until="domcontentloaded")
-			
-			time.sleep(1)
+
+			time.sleep(2)
 
 		info_page_end = f"[+] Все атрибуты переведены\n"
 		print(info_page_end)
