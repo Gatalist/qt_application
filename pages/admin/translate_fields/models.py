@@ -1,6 +1,7 @@
 from PyQt5.QtCore import QObject
 from PyQt5.QtCore import pyqtSignal
 from components.browser import Browser
+from playwright.sync_api import TimeoutError
 import time
 import re
 
@@ -8,22 +9,17 @@ import re
 class ProductGroupValue(QObject, Browser):
 	send_result_translate = pyqtSignal(str)
 
-	def __init__(self , queue, visible=False):
-		super().__init__(visible=visible)
+	def __init__(self, queue, translate, visible=False):
+		super().__init__(visible=visible, translate=translate)
 		self.queue = queue
+		self.translate = translate
 
 	def for_element_in_table(self, page_name: str):
 		obj_page = self.pages[page_name]
-
-		# Ждём появления хотя бы одной строки таблицы
-		obj_page.wait_for_selector("#data-table tbody tr")
-
 		headers = obj_page.locator("table thead tr th")
 		print("headers:", headers.count())
 		column_names = [headers.nth(i).inner_text() for i in range(headers.count())]
 		print("Колонки:", column_names)
-
-		obj_page.wait_for_selector("#data-table tbody tr")
 
 		rows = obj_page.locator("#data-table tbody tr")
 		row_count = rows.count()
@@ -46,7 +42,7 @@ class ProductGroupValue(QObject, Browser):
 					td = cells.nth(j)
 					row_data["id"] = td.inner_text()
 
-				if column_names[j] == 'name':
+				if column_names[j] == 'name' or column_names[j] == 'text_value': # колонка с переводами (текст)
 					td = cells.nth(j)
 					divs = td.locator("div")
 
@@ -70,20 +66,13 @@ class ProductGroupValue(QObject, Browser):
 
 						for k in range(links.count()):
 							link = links.nth(k)
-							title = link.get_attribute("title")
-							if title:
-								link.click()
 
-								# Ждём появления div с нужным текстом внутри ячейки name
-								name_td = cells.nth(column_names.index("name"))
-								name_td.locator("div", has_text="uk: Есть перевод(").wait_for(timeout=10000)
+							# кнопка перевода с админки
+							if link.get_attribute("title") and self.translate == "admin":
+								self.admin_translate(row_data, column_names, link, cells, pattern_uk)
 
-								# Теперь можно читать текст заново
-								divs = name_td.locator("div")
-								for k in range(divs.count()):
-									div_text = divs.nth(k).inner_text().strip()
-									if _match_uk := re.search(pattern_uk, div_text):
-										row_data["uk"] = _match_uk.group(1)
+							elif self.translate == "deepl":
+								self.deepl_translate()
 
 			time.sleep(1)
 
@@ -92,8 +81,34 @@ class ProductGroupValue(QObject, Browser):
 			else:
 				yield {}
 
+	@staticmethod
+	def admin_translate(row_data, column_names, link, cells, pattern_uk):
+		link.click()
+
+		# Ждём появления div с нужным текстом внутри ячейки name
+		name_td = cells.nth(column_names.index("name"))
+		try:
+			name_td.locator("div", has_text="uk: Есть перевод(").wait_for(timeout=10000)
+		except TimeoutError:
+			print("Превышено время ожидания появления текста 'uk: Есть перевод('")
+		# Можно добавить retry или пропустить этот элемент
+
+		# Теперь можно читать текст заново
+		divs = name_td.locator("div")
+		for k in range(divs.count()):
+			div_text = divs.nth(k).inner_text().strip()
+			if _match_uk := re.search(pattern_uk, div_text):
+				row_data["uk"] = _match_uk.group(1)
+		return row_data
+
+	@staticmethod
+	def deepl_translate():
+		print("deepl_translate")
+
 	def _get_model_names(self, page_name):
 		obj_page = self.pages[page_name]
+		# Ждём появления хотя бы одной строки таблицы
+		obj_page.wait_for_selector("#data-table tbody tr")
 		selects = obj_page.locator("select#model_name option")
 
 		result = []
@@ -105,9 +120,11 @@ class ProductGroupValue(QObject, Browser):
 
 	def _select_option(self, page_name: str, option_name: str):
 		obj_page = self.pages[page_name]
+		# Ждём появления хотя бы одной строки таблицы
 		obj_page.locator("select#model_name").select_option(
 			label=option_name
 		)
+		obj_page.wait_for_selector("#data-table tbody tr")
 
 	def start(self, page_name: str, start_page: int, checking_page: int, item_in_page, link_translate, name_option):
 		self.login(page_name=page_name)

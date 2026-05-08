@@ -30,6 +30,8 @@ class WindowGetCardsID(QWidget):
         self.ui.setupUi(self)
 
         self.citrus = CitrusApi()
+        self.thread: QThread | None = None
+        self.worker = None
 
         # привязываем события нажатия клавиши
         self.ui.btn_request.clicked.connect(self.get_api_data)

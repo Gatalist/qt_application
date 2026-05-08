@@ -7,15 +7,20 @@ from settings import Settings
 
 
 class Browser:
-    def __init__(self, visible=False):
+    def __init__(self, translate, visible=False):
         self.current_directory = os.getcwd()
         self.cookie_file = os.path.join(Settings.ROOT_PATH, "source", "session.json")
+        self.api_key_file = os.path.join(Settings.ROOT_PATH, "source", "api_keys.json")
         self.visible = visible
         self.base_url_admin = 'https://my.ctrs.com.ua'
         self.link_login = self.base_url_admin + '/ru/auth/login'
         self.link_login_email = self.base_url_admin + '/ru/auth/email'
         self.link_login_sms = self.base_url_admin + '/ru/auth/sms_code'
-
+        self.link_all_translate = self.base_url_admin + '/contento/translations/fields?search=&start=0&length=5&order=0&sort=asc'
+        self.translates = ["admin", "deepl"]
+        if translate not in self.translates:
+            raise f"Not valid method '{translate}' translate"
+        self.api_key = self.get_api_key(translate)
         self.headless = False if self.visible else True # visible Ui interface
         self.pages = {}
 
@@ -52,6 +57,17 @@ class Browser:
         with open(self.cookie_file, "r") as f:
             cookies = json.load(f)
             self.context.add_cookies(cookies)
+
+    def get_api_key(self, name: str) -> str | None:
+        try:
+            with open(self.api_key_file, "r") as f:
+                api_keys = json.load(f)
+                for item in api_keys:
+                    if item["name"] == name:
+                        return item["value"]
+                return None
+        except FileNotFoundError:
+            return None
 
     def open_url(self, page_name: str, link: str, wait_until="domcontentloaded"):
         print("[ + ] open_url:", link)

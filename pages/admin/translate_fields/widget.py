@@ -64,7 +64,7 @@ class WindowTranslate(QWidget):
 
     @staticmethod
     def run_process_translate(queue, page_name, start_page, end_page, item_in_page, name_option, url_translate):
-        browser = ProductGroupValue(queue=queue, visible=True)
+        browser = ProductGroupValue(queue=queue, visible=True, translate="admin")
         browser.create_page(page_name=page_name)
         browser.login(page_name=page_name)
         browser.start(
@@ -92,7 +92,6 @@ class WindowTranslate(QWidget):
             }
         )
         process.start()
-        # process.join() # blocked interface
 
     def add_option_name(self):
         list_options = [
