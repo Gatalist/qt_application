@@ -98,6 +98,9 @@ class Browser:
         if match:
             new_start = int(match.group(1)) + int(next_items)
             current_url = re.sub(r'start=\d+', f'start={new_start}', current_url)
+
+        # Принудительно устанавливаем length, чтобы сервер не менял его на дефолтный
+        current_url = re.sub(r'length=\d+', f'length={next_items}', current_url)
         return current_url
 
     def auth_user(self, page_name: str):
