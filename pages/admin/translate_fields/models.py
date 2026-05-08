@@ -1,7 +1,6 @@
 from PyQt5.QtCore import QObject
 from PyQt5.QtCore import pyqtSignal
 from components.browser import Browser
-from playwright.sync_api import TimeoutError
 import time
 import re
 
