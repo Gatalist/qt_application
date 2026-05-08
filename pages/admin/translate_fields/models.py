@@ -71,10 +71,9 @@ class ProductGroupValue(QObject, Browser):
 							if link.get_attribute("title") and self.translate == "admin":
 								self.admin_translate(row_data, column_names, link, cells, pattern_uk)
 
-							elif self.translate == "deepl":
-								self.deepl_translate()
-
-			time.sleep(1)
+							else:
+								self.custom_translate(obj_page, row_data, link)
+				time.sleep(1)
 
 			if not row_data["translate"]:
 				yield row_data
@@ -101,9 +100,73 @@ class ProductGroupValue(QObject, Browser):
 				row_data["uk"] = _match_uk.group(1)
 		return row_data
 
-	@staticmethod
-	def deepl_translate():
-		print("deepl_translate")
+	def custom_translate(self, obj_page, row_data, link):
+		# 1. Кликаем и ждем модалку
+		link.click()
+		
+		# Ждем конкретно инпут, который должен появиться (это надежнее, чем ждать класс модалки)
+		# try:
+		# 	obj_page.wait_for_selector('input[name="name[ru]"]', timeout=5000)
+		# except:
+		# 	print("Не удалось дождаться появления инпутов")
+		# 	return
+
+		print("Модалка загружена, начинаем поиск")
+
+		# 2. Берем все инпуты RU и UK на текущей АКТИВНОЙ вкладке
+		# Используем более простой подход без вложенных циклов по row, если структура плоская
+		obj_page.wait_for_selector('.tab-pane.active', timeout=2000)
+		active_pane = obj_page.locator(".tab-pane.active")
+		
+		input_ru = active_pane.locator('input[name="name[ru]"]')
+		input_uk = active_pane.locator('input[name="name[uk]"]')
+
+		# Проверяем количество
+		count = input_ru.count()
+		print(f"Найдено полей для перевода: {count}")
+
+		for i in range(count):
+			val_ru = input_ru.nth(i).input_value()
+			
+			if val_ru:
+				target_input = input_uk.nth(i)
+				
+				# Попробуем сначала сфокусироваться
+				target_input.focus()
+				
+				# translate_uk = val_ru
+				translate_uk = self.method_translate.translate_text(text=val_ru)
+
+				# Заполняем UK
+				target_input.fill(val_ru)
+				row_data["uk"] = translate_uk
+				
+				# Если fill все равно не работает, используй это (эмуляция клавиатуры):
+				target_input.click()
+				obj_page.keyboard.press("Control+A")
+				obj_page.keyboard.press("Backspace")
+				target_input.type(val_ru)
+
+				print(f"Индекс {i}: Обновлено на '{val_ru}'")
+			else:
+				print(f"Индекс {i}: RU пустое")
+
+		# Ищем кнопку именно внутри открытой модалки
+		save_button = obj_page.locator(".modal.in .modal-footer .btn-primary")
+		
+		# Проверяем, что кнопка есть и нажимаем
+		if save_button.count() > 0:
+			save_button.click()
+			print("Кнопка 'Сохранить' нажата")
+			
+			# Важно: ждем, пока модалка исчезнет после сохранения
+			# (чтобы следующий цикл не начал работать со старой модалкой)
+			obj_page.wait_for_selector(".modal-translations", state="hidden", timeout=10000)
+			print("Модалка закрылась")
+		else:
+			print("Ошибка: Кнопка 'Сохранить' не найдена!")
+
+		return row_data
 
 	def _get_model_names(self, page_name):
 		obj_page = self.pages[page_name]
@@ -116,14 +179,38 @@ class ProductGroupValue(QObject, Browser):
 			select = selects.nth(i)
 			# k_v = select.get_attribute("value"), select.inner_text()
 			result.append(select.inner_text())
+		print("options:", result)
 		return result
 
 	def _select_option(self, page_name: str, option_name: str):
 		obj_page = self.pages[page_name]
-		# Ждём появления хотя бы одной строки таблицы
-		obj_page.locator("select#model_name").select_option(
-			label=option_name
-		)
+		select_locator = obj_page.locator("select#model_name")
+
+		# 1. Запоминаем текущее состояние первой строки, чтобы понять, когда данные обновятся
+		first_row = obj_page.locator("#data-table tbody tr").first
+		old_text = ""
+		if first_row.count() > 0:
+			old_text = first_row.inner_text()
+
+		# Ждём, пока селект станет видимым
+		select_locator.wait_for(state="visible")
+
+		# 2. Выбираем опцию
+		select_locator.select_option(label=option_name)
+
+		# 3. Ждём, пока содержимое таблицы изменится
+		# Используем wait_for_function для ожидания изменения текста первой строки
+		try:
+			# Экранируем старый текст для JS
+			js_old_text = repr(old_text)
+			obj_page.wait_for_function(
+				f"() => {{ const row = document.querySelector('#data-table tbody tr'); return row && row.innerText !== {js_old_text}; }}"
+				, timeout=3000)
+		except Exception as e:
+			print(f"Предупреждение: данные таблицы не изменились или произошел таймаут: {e}")
+
+		# Дополнительный сетевой ожидание для надежности
+		obj_page.wait_for_load_state("networkidle")
 		obj_page.wait_for_selector("#data-table tbody tr")
 
 	def start(self, page_name: str, start_page: int, checking_page: int, item_in_page, link_translate, name_option):
@@ -150,4 +237,3 @@ class ProductGroupValue(QObject, Browser):
 
 		info_page_end = f"[+] Все атрибуты переведены\n"
 		print(info_page_end)
-

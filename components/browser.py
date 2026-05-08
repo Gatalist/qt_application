@@ -4,10 +4,11 @@ import os
 import re
 import time
 from settings import Settings
+from components.deepl_api import DeepLTranslator
 
 
 class Browser:
-    def __init__(self, translate, visible=False):
+    def __init__(self, visible=False, translate="admin"):
         self.current_directory = os.getcwd()
         self.cookie_file = os.path.join(Settings.ROOT_PATH, "source", "session.json")
         self.api_key_file = os.path.join(Settings.ROOT_PATH, "source", "api_keys.json")
@@ -21,6 +22,8 @@ class Browser:
         if translate not in self.translates:
             raise f"Not valid method '{translate}' translate"
         self.api_key = self.get_api_key(translate)
+        self.deepl_translate = DeepLTranslator(self.api_key)
+        self.method_translate = self.get_method_translate(translate)
         self.headless = False if self.visible else True # visible Ui interface
         self.pages = {}
 
@@ -68,7 +71,15 @@ class Browser:
                 return None
         except FileNotFoundError:
             return None
-
+    
+    def get_method_translate(self, text: str) -> str:
+        if text == "deepl":
+            return self.deepl_translate
+        elif text == "admin":
+            return None
+        else:
+            raise f"Not valid method '{self.method_translate}' translate"
+        
     def open_url(self, page_name: str, link: str, wait_until="domcontentloaded"):
         print("[ + ] open_url:", link)
         return self.pages[page_name].goto(link, wait_until=wait_until)
