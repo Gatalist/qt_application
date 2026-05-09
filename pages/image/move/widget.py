@@ -1,7 +1,8 @@
-from PyQt5.QtWidgets import QWidget, QTableWidgetItem
+from PyQt5.QtWidgets import QWidget, QTableWidgetItem, QMessageBox
 from components.image import ImageManager
 from components.copyable_table import CopyableTableWidget
 from components.universal_worker import UniversalWorker
+from pathlib import Path
 from .UI_window import Ui_Form
 
 
@@ -41,6 +42,10 @@ class WindowCopyImage(QWidget):
     def start_copy_image_process(self):
         path_folder = self.ui.str_path.text()
 
+        if not self.is_existing_path(path_folder):
+            self.handle_api_error("Пожалуйста, введите корректный путь (папка не найдена)")
+            return
+
         # Блокируем кнопку, чтобы не запустили дважды
         self.ui.btn_start.setEnabled(False)
         self.ui.label_7.setText("Обработка... ⏳")
@@ -66,7 +71,7 @@ class WindowCopyImage(QWidget):
         self.ui.label_7.setText("Готово ✅")
         self.ui.btn_start.setEnabled(True)
 
-        self.ui.tableWidget.clearContents()
+        self.ui.tableWidget.setRowCount(0)
         self.add_data_to_table(result_data)
 
     def add_data_to_table(self, data: list[dict]):
@@ -75,3 +80,14 @@ class WindowCopyImage(QWidget):
             self.ui.tableWidget.setItem(row_index, 0, QTableWidgetItem(card_data['name']))
             self.ui.tableWidget.setItem(row_index, 1, QTableWidgetItem(card_data['status']))
             self.ui.tableWidget.setItem(row_index, 2, QTableWidgetItem(str(card_data['path'])))
+
+    def handle_api_error(self, err):
+        self.ui.btn_start.setEnabled(True)
+        QMessageBox.critical(self, "Error", f"{err}")
+
+    @staticmethod
+    def is_existing_path(text):
+        if text:
+            path = Path(text)
+            return path.exists()
+        return False

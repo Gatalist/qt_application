@@ -1,7 +1,8 @@
-from PyQt5.QtWidgets import QWidget, QTableWidgetItem
+from PyQt5.QtWidgets import QWidget, QTableWidgetItem, QMessageBox
 from components.copyable_table import CopyableTableWidget
 from components.image import ImageManager
 from components.universal_worker import UniversalWorker
+from pathlib import Path
 from .UI_window import Ui_Form
 
 
@@ -46,12 +47,18 @@ class WindowCropImage(QWidget):
 
         try:
             padding_space = int(padding_space)
-
         except ValueError:
-            print("page_start и page_end должны быть целыми числами")
+            self.handle_api_error("padding_space должен быть целым числом")
             return
 
-        self.ui.tableWidget.clearContents()
+        if padding_space < 0:
+            self.handle_api_error("Пожалуйста, введите положительные числа.")
+            return
+
+        if not self.is_existing_path(path_folder):
+            self.handle_api_error("Пожалуйста, введите корректный путь (папка не найдена)")
+            return
+
         self.ui.tableWidget.setRowCount(0)
         self.ui.label_7.setText("Обработка... ⏳")
 
@@ -81,3 +88,14 @@ class WindowCropImage(QWidget):
             self.ui.tableWidget.setItem(row_index, 0, QTableWidgetItem(card_data['name']))
             self.ui.tableWidget.setItem(row_index, 1, QTableWidgetItem(card_data['status']))
             self.ui.tableWidget.setItem(row_index, 2, QTableWidgetItem(str(card_data['path'])))
+
+    def handle_api_error(self, err):
+        self.ui.btn_start.setEnabled(True)
+        QMessageBox.critical(self, "Error", f"{err}")
+
+    @staticmethod
+    def is_existing_path(text):
+        if text:
+            path = Path(text)
+            return path.exists()
+        return False

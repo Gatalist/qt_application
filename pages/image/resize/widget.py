@@ -1,7 +1,8 @@
 from components.universal_worker import UniversalWorker
-from PyQt5.QtWidgets import QWidget, QTableWidgetItem
+from PyQt5.QtWidgets import QWidget, QTableWidgetItem, QMessageBox
 from components.image import ImageManager
 from components.copyable_table import CopyableTableWidget
+from pathlib import Path
 from .UI_window import Ui_Form
 
 
@@ -46,13 +47,21 @@ class WindowResizeImage(QWidget):
         try:
             max_width_img = int(max_width_img)
         except ValueError:
+            self.handle_api_error("padding_space должен быть целым числом")
+            return
+
+        if max_width_img < 20:
+            self.handle_api_error("max_width не может біть меньше 20")
+            return
+
+        if not self.is_existing_path(path_folder):
+            self.handle_api_error("Пожалуйста, введите корректный путь (папка не найдена)")
             return
 
         # Блокируем кнопку, чтобы не запустили дважды
         self.ui.btn_start.setEnabled(False)
         self.ui.label_7.setText("Обработка... ⏳")
 
-        self.ui.tableWidget.clearContents()
         self.ui.tableWidget.setRowCount(0)
         
         # Создаем поток
@@ -81,3 +90,14 @@ class WindowResizeImage(QWidget):
             self.ui.tableWidget.setItem(row_index, 0, QTableWidgetItem(card_data['name']))
             self.ui.tableWidget.setItem(row_index, 1, QTableWidgetItem(card_data['status']))
             self.ui.tableWidget.setItem(row_index, 2, QTableWidgetItem(str(card_data['path'])))
+
+    def handle_api_error(self, err):
+        self.ui.btn_start.setEnabled(True)
+        QMessageBox.critical(self, "Error", f"{err}")
+
+    @staticmethod
+    def is_existing_path(text):
+        if text:
+            path = Path(text)
+            return path.exists()
+        return False

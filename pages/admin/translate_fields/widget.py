@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QWidget, QTableWidgetItem, QHeaderView
+from PyQt5.QtWidgets import QWidget, QTableWidgetItem, QHeaderView, QMessageBox
 from multiprocessing import Process, Queue
 from PyQt5.QtCore import QTimer
 from queue import Empty
@@ -14,7 +14,7 @@ class WindowTranslate(QWidget):
         self.ui.setupUi(self)
 
         # привязываем события | чтение документа
-        self.ui.open_browser.clicked.connect(self.open_browser)
+        self.ui.open_browser.clicked.connect(self.start_browser)
         self.add_option_name()
 
         self.queue = Queue()
@@ -78,16 +78,29 @@ class WindowTranslate(QWidget):
         )
         browser.close()
 
-    def open_browser(self):
+    def start_browser(self):
+        try:
+            start_page = int(self.ui.start_page_text.text())
+            end_page = int(self.ui.end_page_text.text())
+            item_in_page = int(self.ui.item_page_text.text())
+        except ValueError:
+            self.handle_api_error("Пожалуйста, введите корректные числовые значения для всех полей.")
+            return
+
+        if start_page < 0 or end_page < 0 or item_in_page < 0:
+            self.handle_api_error("Пожалуйста, введите положительные числа.")
+            return
+
         self.ui.tableWidget.setRowCount(0)
+        
         process = Process(
             target=self.run_process_translate,
             kwargs={
                 "queue": self.queue,
                 "page_name": "citrus",
-                "start_page": int(self.ui.start_page_text.text()),
-                "end_page": int(self.ui.end_page_text.text()),
-                "item_in_page": int(self.ui.item_page_text.text()),
+                "start_page": start_page,
+                "end_page": end_page,
+                "item_in_page": item_in_page,
                 "name_option": self.ui.comboBox_option.currentText(),
                 "method_translate": self.ui.comboBox_translate.currentText(),
             }
@@ -107,3 +120,7 @@ class WindowTranslate(QWidget):
         self.ui.comboBox_option.clear() # очищаем список
         for option in list_options:
             self.ui.comboBox_option.addItem(option)
+
+    def handle_api_error(self, err):
+        self.ui.open_browser.setEnabled(True)
+        QMessageBox.critical(self, "Error", f"{err}")
