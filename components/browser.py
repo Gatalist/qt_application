@@ -18,11 +18,12 @@ class Browser:
         self.link_login_email = self.base_url_admin + '/ru/auth/email'
         self.link_login_sms = self.base_url_admin + '/ru/auth/sms_code'
         self.link_all_translate = self.base_url_admin + '/contento/translations/fields?search=&start=0&length=5&order=0&sort=asc'
-        self.translates = ["admin", "deepl"]
+        self.google_translate_page = "https://translate.google.com/?hl=ru&sl=ru&tl=uk&op=translate"
+        self.translates = ["admin", "deepl", "google_page"]
         if translate not in self.translates:
             raise f"Not valid method '{translate}' translate"
         self.api_key = self.get_api_key(translate)
-        self.deepl_translate = DeepLTranslator(self.api_key)
+        # self.deepl_translate = DeepLTranslator(self.api_key)
         self.method_translate = self.get_method_translate(translate)
         self.headless = False if self.visible else True # visible Ui interface
         self.pages = {}
@@ -72,10 +73,12 @@ class Browser:
         except FileNotFoundError:
             return None
     
-    def get_method_translate(self, text: str) -> str:
+    def get_method_translate(self, text: str) -> object | None:
         if text == "deepl":
             return self.deepl_translate
         elif text == "admin":
+            return None
+        elif text == "google_page":
             return None
         else:
             raise f"Not valid method '{self.method_translate}' translate"

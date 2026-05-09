@@ -64,7 +64,10 @@ class WindowTranslate(QWidget):
 
     @staticmethod
     def run_process_translate(queue, page_name, start_page, end_page, item_in_page, name_option):
-        browser = ProductGroupValue(queue=queue, visible=True, translate="deepl")
+        translate = "google_page"
+        browser = ProductGroupValue(queue=queue, visible=True, translate=translate)
+        if translate == "google_page":
+            browser.create_page(page_name=translate)
         browser.create_page(page_name=page_name)
         browser.login(page_name=page_name)
         browser.start(

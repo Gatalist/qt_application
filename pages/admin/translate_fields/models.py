@@ -3,6 +3,7 @@ from PyQt5.QtCore import pyqtSignal
 from components.browser import Browser
 import time
 import re
+import pyperclip
 
 
 class ProductGroupValue(QObject, Browser):
@@ -112,6 +113,30 @@ class ProductGroupValue(QObject, Browser):
 				row_data["uk"] = _match_uk.group(1)
 		return row_data
 
+	def google_page_translate(self, text: str):
+		obj_page = self.pages[self.translate]
+		obj_page.bring_to_front()
+		self.open_url(page_name=self.translate, link=self.google_translate_page, wait_until="domcontentloaded")
+		textarea = obj_page.locator('textarea[aria-label="Исходный текст"]')
+
+		# 1. Кликаем, чтобы сфокусироваться
+		textarea.click()
+		textarea.fill(text)
+		obj_page.wait_for_timeout(2000)
+		copy_button = obj_page.locator('button[aria-label="Копировать перевод"]')
+
+		try:
+			copy_button.wait_for(state="visible", timeout=10000)  # Даем 10 секунд на перевод
+			copy_button.click()
+		except Exception as e:
+			print(f"Кнопка копирования не появилась. Возможно, перевод не завершен: {e}")
+
+		obj_page.wait_for_timeout(250)
+		translated_text = pyperclip.paste()
+		obj_page.locator('textarea[aria-label="Удалить исходный текст"]')
+
+		return translated_text
+
 	def custom_translate(self, obj_page, row_data, link, text_column_name="name"):
 		# 1. Кликаем
 		link.click()
@@ -133,7 +158,7 @@ class ProductGroupValue(QObject, Browser):
 		# Используем динамическое имя колонки для поиска инпутов
 		input_ru = active_pane.locator(f'input[name="{text_column_name}[ru]"]')
 		input_uk = active_pane.locator(f'input[name="{text_column_name}[uk]"]')
-		
+
 		val_ru = input_ru.input_value()
 		print(f"[RU] исходное значение: '{val_ru}'")
 		if val_ru:
@@ -141,12 +166,16 @@ class ProductGroupValue(QObject, Browser):
 			input_uk.focus()
 			input_uk.click()
 			# translate_uk = val_ru
-			translate_uk = self.method_translate.translate_text(text=val_ru)
+			if self.translate == "google_page":
+				translate_uk = self.google_page_translate(text=val_ru)
+				obj_page.bring_to_front()
+			else:
+				translate_uk = self.method_translate.translate_text(text=val_ru)
 
 			# Заполняем UK
 			input_uk.fill(translate_uk)
 			row_data["uk"] = translate_uk
-	
+
 		else:
 			print(f"[RU] пустое")
 
@@ -164,6 +193,16 @@ class ProductGroupValue(QObject, Browser):
 			print("Ошибка: Кнопка 'Сохранить' не найдена!")
 
 		return row_data
+
+	@staticmethod
+	def validate_text_units(text):
+		units = (
+			'мм', 'см', 'м', 'км',
+			'г', 'кг',
+			'л', 'мл',
+			'HZ',
+		)
+		return text.strip().lower().endswith(units)
 
 	def _get_model_names(self, page_name):
 		obj_page = self.pages[page_name]
