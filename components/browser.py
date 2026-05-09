@@ -8,7 +8,7 @@ from components.deepl_api import DeepLTranslator
 
 
 class Browser:
-    def __init__(self, visible=False, translate="admin"):
+    def __init__(self, visible=False, translate="Admin btn"):
         self.current_directory = os.getcwd()
         self.cookie_file = os.path.join(Settings.ROOT_PATH, "source", "session.json")
         self.api_key_file = os.path.join(Settings.ROOT_PATH, "source", "api_keys.json")
@@ -19,15 +19,11 @@ class Browser:
         self.link_login_sms = self.base_url_admin + '/ru/auth/sms_code'
         self.link_all_translate = self.base_url_admin + '/contento/translations/fields?search=&start=0&length=5&order=0&sort=asc'
         self.google_translate_page = "https://translate.google.com/?hl=ru&sl=ru&tl=uk&op=translate"
-        self.translates = ["admin", "deepl", "google_page"]
-        if translate not in self.translates:
-            raise f"Not valid method '{translate}' translate"
-        self.api_key = self.get_api_key(translate)
-        # self.deepl_translate = DeepLTranslator(self.api_key)
-        self.method_translate = self.get_method_translate(translate)
+        self.translates = ["Admin btn", "Deepl API", "Google page"]
+        self.Translator = self.get_translater(translate)
+        self.translate = translate
         self.headless = False if self.visible else True # visible Ui interface
         self.pages = {}
-
         self.playwright = None
         self.browser = None
         self.context = None
@@ -73,16 +69,15 @@ class Browser:
         except FileNotFoundError:
             return None
     
-    def get_method_translate(self, text: str) -> object | None:
-        if text == "deepl":
-            return self.deepl_translate
-        elif text == "admin":
-            return None
-        elif text == "google_page":
-            return None
-        else:
-            raise f"Not valid method '{self.method_translate}' translate"
-        
+    def get_translater(self, text: str) -> None | object:
+        if text == "Deepl API":
+            api_key = self.get_api_key(text)
+            if not api_key:
+                raise "[ error ] No Deepl API key"
+            translator = DeepLTranslator(api_key)
+            return translator
+        return None
+
     def open_url(self, page_name: str, link: str, wait_until="domcontentloaded"):
         print("[ + ] open_url:", link)
         self.pages[page_name].goto(link, wait_until=wait_until)

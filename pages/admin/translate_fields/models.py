@@ -12,7 +12,6 @@ class ProductGroupValue(QObject, Browser):
 	def __init__(self, queue, translate, visible=False):
 		super().__init__(visible=visible, translate=translate)
 		self.queue = queue
-		self.translate = translate
 
 	def for_element_in_table(self, page_name: str):
 		obj_page = self.pages[page_name]
@@ -75,7 +74,7 @@ class ProductGroupValue(QObject, Browser):
 							link = links.nth(k)
 
 							# кнопка перевода с админки
-							if link.get_attribute("title") and self.translate == "admin":
+							if link.get_attribute("title") and self.translate == "Admin btn":
 								self.admin_translate(row_data, column_names, link, cells, pattern_uk)
 							else:
 								self.custom_translate(obj_page, row_data, link, text_column_name)
@@ -166,11 +165,11 @@ class ProductGroupValue(QObject, Browser):
 			input_uk.focus()
 			input_uk.click()
 			# translate_uk = val_ru
-			if self.translate == "google_page":
+			if self.translate == "Google page":
 				translate_uk = self.google_page_translate(text=val_ru)
 				obj_page.bring_to_front()
 			else:
-				translate_uk = self.method_translate.translate_text(text=val_ru)
+				translate_uk = self.Translator.translate_text(text=val_ru)
 
 			# Заполняем UK
 			input_uk.fill(translate_uk)
@@ -246,7 +245,7 @@ class ProductGroupValue(QObject, Browser):
 		self._get_model_names(page_name=page_name)
 		self._select_option(page_name=page_name, option_name=name_option)
 
-		for page in range(start_page, checking_page - 1):
+		for page in range(start_page, checking_page):
 			info_page_start = f"\tCтраница: {page}\n"
 			print(info_page_start)
 
