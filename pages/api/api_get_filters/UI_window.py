@@ -181,6 +181,6 @@ class Ui_Form(object):
         item = self.tableWidget.horizontalHeaderItem(2)
         item.setText(_translate("Form", "FilterURL"))
         self.label_7.setText(_translate("Form", "Результат ответа"))
-        self.category_slug.setPlaceholderText(_translate("Form", "planshety"))
+        self.category_slug.setPlaceholderText(_translate("Form", "/planshety/"))
         self.btn_request.setText(_translate("Form", "Получить "))
         self.label_audio.setText(_translate("Form", "slug категории"))

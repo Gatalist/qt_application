@@ -309,7 +309,7 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.category_slug.setPlaceholderText(_translate("Form", "planshety"))
+        self.category_slug.setPlaceholderText(_translate("Form", "/planshety/"))
         self.btn_request.setText(_translate("Form", "Получить "))
         self.label_8.setText(_translate("Form", "Страница старта"))
         self.label_9.setText(_translate("Form", "Страница финиша"))
