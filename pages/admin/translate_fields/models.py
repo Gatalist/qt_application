@@ -9,9 +9,10 @@ import pyperclip
 class ProductGroupValue(QObject, Browser):
 	send_result_translate = pyqtSignal(str)
 
-	def __init__(self, queue, translate, visible=False):
+	def __init__(self, queue, translate, visible=False, not_uk=False):
 		super().__init__(visible=visible, translate=translate)
 		self.queue = queue
+		self.not_uk = not_uk
 
 	def for_element_in_table(self, page_name: str):
 		obj_page = self.pages[page_name]
@@ -19,6 +20,15 @@ class ProductGroupValue(QObject, Browser):
 		print("headers:", headers.count())
 		column_names = [headers.nth(i).inner_text() for i in range(headers.count())]
 		print("Колонки:", column_names)
+		not_uk = obj_page.locator('a[data-target="uk"]')
+		if self.not_uk:
+			not_uk.click()
+			# Ждем, чтобы строки таблицы были прикреплены к DOM и видны
+			try:
+				obj_page.wait_for_selector("#data-table tbody tr", state="visible", timeout=5000)
+				print("Таблица готова к работе")
+			except Exception as e:
+				print(f"Таблица не появилась или пуста: {e}")
 
 		# Определяем имя текстовой колонки для использования в модалке
 		text_column_name = None
@@ -43,7 +53,6 @@ class ProductGroupValue(QObject, Browser):
 			}
 
 			for j in range(cells.count()):
-
 				if column_names[j] == 'ID':
 					td = cells.nth(j)
 					row_data["id"] = td.inner_text()
@@ -83,6 +92,7 @@ class ProductGroupValue(QObject, Browser):
 				yield row_data
 			else:
 				yield {}
+		return False
 
 	@staticmethod
 	def admin_translate(row_data, column_names, link, cells, pattern_uk):
@@ -245,21 +255,30 @@ class ProductGroupValue(QObject, Browser):
 		self._get_model_names(page_name=page_name)
 		self._select_option(page_name=page_name, option_name=name_option)
 
-		for page in range(start_page, checking_page):
-			info_page_start = f"\tCтраница: {page}\n"
-			print(info_page_start)
+		if self.not_uk:
+			while True:
+				data_table = self.for_element_in_table(page_name=page_name)
+				if type(data_table) == bool:
+					break
+				for result in data_table:
+					if result:
+						self.queue.put(result)
+		else:
+			for page in range(start_page, checking_page):
+				info_page_start = f"\tCтраница: {page}\n"
+				print(info_page_start)
 
-			data_table = self.for_element_in_table(page_name=page_name)
-			for result in data_table:
-				if result:
-					self.queue.put(result)
+				data_table = self.for_element_in_table(page_name=page_name)
+				for result in data_table:
+					if result:
+						self.queue.put(result)
 
-			if page <= int(checking_page):
-				new_page = self.next_url_translate(page_name=page_name, next_items=item_in_page)
-				print("next_url:", new_page)
-				self.open_url(page_name=page_name, link=new_page, wait_until="domcontentloaded")
+				if page <= int(checking_page):
+					new_page = self.next_url_translate(page_name=page_name, next_items=item_in_page)
+					print("next_url:", new_page)
+					self.open_url(page_name=page_name, link=new_page, wait_until="domcontentloaded")
 
-			time.sleep(2)
+				time.sleep(2)
 
-		info_page_end = f"[+] Все атрибуты переведены\n"
-		print(info_page_end)
+			info_page_end = f"[+] Все атрибуты переведены\n"
+			print(info_page_end)

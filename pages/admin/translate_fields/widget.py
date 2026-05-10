@@ -63,8 +63,8 @@ class WindowTranslate(QWidget):
                 break  # Как только очередь пуста — выходим из while
 
     @staticmethod
-    def run_process_translate(queue, page_name, start_page, end_page, item_in_page, name_option, method_translate):
-        browser = ProductGroupValue(queue=queue, visible=True, translate=method_translate)
+    def run_process_translate(queue, page_name, start_page, end_page, item_in_page, name_option, method_translate, not_uk):
+        browser = ProductGroupValue(queue=queue, visible=True, translate=method_translate, not_uk=not_uk)
         if method_translate == "Google page":
             browser.create_page(page_name=method_translate)
         browser.create_page(page_name=page_name)
@@ -103,6 +103,7 @@ class WindowTranslate(QWidget):
                 "item_in_page": item_in_page,
                 "name_option": self.ui.comboBox_option.currentText(),
                 "method_translate": self.ui.comboBox_translate.currentText(),
+                "not_uk": self.ui.not_uk.isChecked()
             }
         )
         process.start()
