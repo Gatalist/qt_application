@@ -204,6 +204,24 @@ class ReadExcelDocument:
                             check = True
                             string += f'{self.symbol_warning}{line}\n'
                             errors += 1
+                        elif '\n' in line or '\r' in line:
+                            check = True
+                            string += f'{line}{self.symbol_warning}\n'
+                            errors += 1
+                        elif line.endswith(' '):
+                            if check:
+                                string += f'{self.symbol_warning}\n'
+                            else:
+                                string += f'{line}{self.symbol_warning}\n'
+                            check = True
+                            errors += 1
+                        elif line.endswith('.'):
+                            if check:
+                                string += f'{self.symbol_warning}\n'
+                            else:
+                                string += f'{line}{self.symbol_warning}\n'
+                            check = True
+                            errors += 1
                         else:
                             string += f'{line}\n'
                 if check:
@@ -212,6 +230,19 @@ class ReadExcelDocument:
             yield f"❌ Ошибок {self.symbol_arrow} {errors}\n\n"
         else:
             yield f"{self.symbol_ok} Ошибок не обнаружено\n\n"
+
+    @staticmethod
+    def check_error(string) -> bool:
+        check = False
+        if not string[0].istitle() and not string[0].isdigit():
+            check = True
+        elif '\n' in string or '\r' in string:
+            check = True
+        elif string.endswith(' '):
+            check = True
+        elif string.endswith('.'):
+            check = True
+        return check
 
     # ищем фрагмент текста в ячейке
     def search_text(self, list_data, search: str):
