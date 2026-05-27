@@ -490,23 +490,8 @@
        <height>50</height>
       </size>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_5">
-      <property name="spacing">
-       <number>0</number>
-      </property>
-      <property name="leftMargin">
-       <number>0</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>0</number>
-      </property>
-      <property name="bottomMargin">
-       <number>0</number>
-      </property>
-      <item>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0" rowspan="2">
        <spacer name="horizontalSpacer_5">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -519,7 +504,27 @@
         </property>
        </spacer>
       </item>
-      <item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QCheckBox" name="checkBox">
+        <property name="text">
+         <string>    Все страницы</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" rowspan="2">
+       <spacer name="horizontalSpacer_10">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>77</width>
+          <height>24</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="3" rowspan="2">
        <widget class="QFrame" name="start_page">
         <property name="minimumSize">
          <size>
@@ -591,20 +596,7 @@
         </layout>
        </widget>
       </item>
-      <item>
-       <spacer name="horizontalSpacer_17">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
+      <item row="0" column="5" rowspan="2">
        <widget class="QFrame" name="end_page">
         <property name="minimumSize">
          <size>
@@ -675,7 +667,7 @@
         </layout>
        </widget>
       </item>
-      <item>
+      <item row="0" column="6" rowspan="2">
        <spacer name="horizontalSpacer_18">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -688,12 +680,25 @@
         </property>
        </spacer>
       </item>
-      <item>
+      <item row="0" column="7">
        <widget class="QLabel" name="label_3">
         <property name="text">
          <string/>
         </property>
        </widget>
+      </item>
+      <item row="1" column="4">
+       <spacer name="horizontalSpacer_17">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
       </item>
      </layout>
     </widget>

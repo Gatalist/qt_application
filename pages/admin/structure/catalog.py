@@ -95,6 +95,13 @@ class Category(Browser):
             res = self.get_child(dict_data=category, lang=lang, all_cat=all_cat)
             last_children.extend(res)
         return last_children
+    
+    def get_categories_name_url(self, dict_data: dict, lang: str ="uk", all_cat: bool = False) -> list:
+        last_children = []
+        for idd, category in dict_data.items():
+            res = self.get_child_(dict_data=category, lang=lang, all_cat=all_cat)
+            last_children.extend(res)
+        return last_children
 
     @staticmethod
     def get_child(dict_data: dict, lang: str = 'uk', all_cat: bool = False):
@@ -106,6 +113,30 @@ class Category(Browser):
             else:
                 if _all_cat:
                     leaf_dicts.append(node.get("translations", {}).get("name", {}).get(_lang, ""))
+                for child in node["parent"].values():
+                    traverse(node=child, _lang=_lang, _all_cat=_all_cat)
+        traverse(node=dict_data, _lang=lang, _all_cat=all_cat)
+        return leaf_dicts
+
+    @staticmethod
+    def get_child_(dict_data: dict, lang: str = 'uk', all_cat: bool = False):
+        leaf_dicts = []
+
+        def traverse(node: dict, _lang: str, _all_cat: bool):
+            _node = []
+            if not node.get("parent"):
+                _node_name = node.get("translations", {}).get("name", {}).get(_lang, "")
+                _node_url = node.get("uri", "")
+                _node.append(_node_name)
+                _node.append(_node_url)
+                leaf_dicts.append(_node)
+            else:
+                if _all_cat:
+                    _node_name = node.get("translations", {}).get("name", {}).get(_lang, "")
+                    _node_url = node.get("uri", "")
+                    _node.append(_node_name)
+                    _node.append(_node_url)
+                    leaf_dicts.append(_node)
                 for child in node["parent"].values():
                     traverse(node=child, _lang=_lang, _all_cat=_all_cat)
         traverse(node=dict_data, _lang=lang, _all_cat=all_cat)

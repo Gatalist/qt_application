@@ -11,8 +11,8 @@ from components.copyable_table import CopyableTableWidget
 class Methods(str, Enum):
     ALL = "Название всех категорий"
     BREEDING = "Название категорий на выведение"
+    BREEDING_NAME_URL = "Название и URL категорий на выведение"
     STRUCTURE = "Генерация всей структуры категорий"
-
 
 class WindowStructure(QWidget):
     def __init__(self):
@@ -84,6 +84,14 @@ class WindowStructure(QWidget):
         cats_data = cats.get_structure_from_json()
         return cats.get_categories_name(dict_data=cats_data, lang=lang, all_cat=all_cat)
 
+    @staticmethod
+    def run_process_get_all_names_and_urls(lang: str, all_cat: bool):
+        cats = Category()
+        cats_data = cats.get_structure_from_json()
+        return cats.get_categories_name_url(dict_data=cats_data, lang=lang, all_cat=all_cat)
+    
+    
+
     def generate(self):
         method = self.ui.comboBoxMethod.currentText()
         language = self.ui.comboBoxLang.currentText()
@@ -108,11 +116,19 @@ class WindowStructure(QWidget):
             self.ui.tableWidget.clearContents()
             self.add_data_to_table(data)
             self.ui.message.setText("Готово ✅")
+        
+        if method == Methods.BREEDING_NAME_URL:
+            self.ui.message.setText("")
+            data = self.run_process_get_all_names_and_urls(lang=language, all_cat=False)
+            self.ui.tableWidget.clearContents()
+            self.add_data_to_table_name_url(data)
+            self.ui.message.setText("Готово ✅")
 
     def add_method_to_combobox(self):
         list_method = [
             Methods.STRUCTURE,
             Methods.BREEDING,
+            Methods.BREEDING_NAME_URL,
             Methods.ALL,
         ]
 
@@ -122,7 +138,28 @@ class WindowStructure(QWidget):
 
     def add_data_to_table(self, data):
         print("CARD_DATA:", data)
+        self.ui.tableWidget.clear()
+        self.ui.tableWidget.setColumnCount(1)
+        self.ui.tableWidget.setHorizontalHeaderLabels([
+            "Name",
+        ])
         self.ui.tableWidget.setRowCount(len(data))
 
         for row_index, card_data in enumerate(data):
             self.ui.tableWidget.setItem(row_index, 0, QTableWidgetItem(card_data))
+    
+    def add_data_to_table_name_url(self, data):
+        print("CARD_DATA:", data)
+        self.ui.tableWidget.clear()
+        self.ui.tableWidget.setColumnCount(2)
+        self.ui.tableWidget.setHorizontalHeaderLabels([
+            "Name",
+            "URL"
+        ])
+        self.ui.tableWidget.setRowCount(len(data))
+
+        for row_index, card_data in enumerate(data):
+            print("card_data:", card_data)
+            self.ui.tableWidget.setItem(row_index, 0, QTableWidgetItem(card_data[0]))
+            self.ui.tableWidget.setItem(row_index, 1, QTableWidgetItem(f'/{card_data[1]}/'))
+    

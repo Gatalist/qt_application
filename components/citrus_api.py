@@ -17,7 +17,7 @@ class CitrusApi(WebRequester):
         count = 1
         for page in range(page_start, page_end + 1):
             url = f'{self.base_citrus_api_url}{category_slug}page_{page}/'
-            print(count, url)
+            print(f"[ {page_start} / {page_end} ] : {url}")
 
             page_data = self.request_data(url)
             request_status = page_data.status_code
@@ -35,6 +35,47 @@ class CitrusApi(WebRequester):
             count += 1
             sleep(1)
 
+        self.category_cards = card_list
+        return card_list
+    
+    def get_category_all_card(self, category_slug):
+        card_list = []
+        page_start = 1
+        page_end = 1
+        count = 1
+
+        while True:
+            url = f'{self.base_citrus_api_url}{category_slug}page_{page_start}/'
+            print(f"[ {page_start} / {page_end} ] : {url}")
+
+            page_data = self.request_data(url)
+            request_status = page_data.status_code
+
+            # print("request:", page_data)
+            _json_data = self.get_response_json(page_data)
+            # print("_json_data:", _json_data)
+            if request_status == 200 and _json_data:
+                data = _json_data.get("data")
+                if data.get("status_code") == 301:
+                    break
+                facet_object = data.get("facetObject")
+                items = facet_object.get("items")
+                card_list.extend(items)
+                pagination = facet_object.get("pagination")
+                if pagination:
+                    for page_info in pagination:
+                        if page_info.get("page", 1) > page_end:
+                            page_end = page_info.get("page", page_start)
+
+                    if count == page_end:
+                        break
+
+                    count += 1
+                    page_start += 1
+                    sleep(1)
+                else:
+                    break
+            
         self.category_cards = card_list
         return card_list
 
@@ -57,12 +98,12 @@ class CitrusApi(WebRequester):
                 "name": item.get('name'),
                 "brand": item.get('brand').get('name') if item.get('brand') else "",
                 "status": item.get('status').get('description') if item.get('status') else "",
-                "price": item.get('prices').get('price') if item.get('prices') else "",
-                "ordering": item.get('ordering'),
-                "ordering_action": item.get('ordering_action'),
-                "ordering_catalog": item.get('ordering_catalog'),
-                "url": self.domain + item.get('url'),
-                "image": item.get('preview').get('src') if item.get('preview') else "",
+                # "price": item.get('prices').get('price') if item.get('prices') else "",
+                # "ordering": item.get('ordering'),
+                # "ordering_action": item.get('ordering_action'),
+                # "ordering_catalog": item.get('ordering_catalog'),
+                # "url": self.domain + item.get('url'),
+                # "image": item.get('preview').get('src') if item.get('preview') else "",
             }
             data_list.append(card)
 
@@ -74,6 +115,10 @@ class CitrusApi(WebRequester):
 
     def get_data(self, category_slug, page_start, page_end):
         self.get_category_cards(category_slug, page_start, page_end)
+        self.get_cards_data()
+
+    def get_data_all(self, category_slug):
+        self.get_category_all_card(category_slug)
         self.get_cards_data()
 
     def get_filters(self, category_slug):
