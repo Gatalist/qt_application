@@ -8,12 +8,12 @@ from components.deepl_api import DeepLTranslator
 
 
 class Browser:
-    def __init__(self, visible=False, translate="Admin btn"):
+    def __init__(self, visible=True, translate="Admin btn"):
         self.current_directory = os.getcwd()
         self.cookie_file = os.path.join(Settings.ROOT_PATH, "source", "session.json")
         self.api_key_file = os.path.join(Settings.ROOT_PATH, "source", "api_keys.json")
         self.visible = visible
-        self.base_url_admin = 'https://my.ctrs.com.ua'
+        self.base_url_admin = 'https://my.citrus.ua'
         self.link_login = self.base_url_admin + '/ru/auth/login'
         self.link_login_email = self.base_url_admin + '/ru/auth/email'
         self.link_login_sms = self.base_url_admin + '/ru/auth/sms_code'
@@ -31,12 +31,16 @@ class Browser:
     def create_browser(self):
         if not self.playwright:
             self.playwright = sync_playwright().start()
-            self.browser = self.playwright.chromium.launch(
-                headless=self.headless,
-            )
-            self.context = self.browser.new_context(
-                viewport=None
-            )
+            self.browser = self.playwright.chromium.launch(headless=self.headless)
+
+            if os.path.exists(self.cookie_file):
+                print("Обнаружен файл сессии, создаем контекст с ним...")
+                self.context = self.browser.new_context(
+                    viewport=None,
+                    storage_state=self.cookie_file  # Инициализируем контекст сразу со всеми куками и localStorage
+                )
+            else:
+                self.context = self.browser.new_context(viewport=None)
 
     def create_page(self, page_name: str):
         self.create_browser()
@@ -47,16 +51,8 @@ class Browser:
         del self.pages[page_name]
 
     def save_cookies(self):
-        """ Сохранить куки """
-        cookies = self.context.cookies()
-        with open(self.cookie_file, "w") as f:
-            json.dump(cookies, f)
-
-    def get_cookies(self):
-        """ загрузка cookies """
-        with open(self.cookie_file, "r") as f:
-            cookies = json.load(f)
-            self.context.add_cookies(cookies)
+        """ Сохранить полное состояние (Куки + LocalStorage) """
+        self.context.storage_state(path=self.cookie_file)
 
     def get_api_key(self, name: str) -> str | None:
         try:
@@ -81,7 +77,7 @@ class Browser:
     def open_url(self, page_name: str, link: str, wait_until="domcontentloaded"):
         print("[ + ] open_url:", link)
         self.pages[page_name].goto(link, wait_until=wait_until)
-        self.pages[page_name].wait_for_load_state("networkidle", timeout=5000)
+        self.pages[page_name].wait_for_load_state("networkidle", timeout=30000)
         return self.pages[page_name]
 
     @staticmethod
@@ -120,12 +116,13 @@ class Browser:
         self.save_cookies()
 
     def login(self, page_name: str):
-        try:
-            self.get_cookies()
-            print("Куки загружены")
-        except FileNotFoundError:
+        self.open_url(page_name, self.base_url_admin, wait_until="domcontentloaded")
+
+        if "auth" in self.pages[page_name].url:
+            print("Мы не авторизованы или сессия истекла. Переходим к авторизации...")
             self.auth_user(page_name=page_name)
-            print("Вы вошли в систему, данные сохранены")
+        else:
+            print("Успешный вход по сохраненной сессии!")
 
     def close(self):
         self.browser.close()

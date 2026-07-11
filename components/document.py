@@ -14,10 +14,14 @@ class JsonDocument(Settings):
     _instance = None
     def __new__(class_, *args, **kwargs):
         if not isinstance(class_._instance, class_):
-            class_._instance = object.__new__(class_, *args, **kwargs)
+            class_._instance = object.__new__(class_)
         return class_._instance
     
     def __init__(self) -> None:
+        if getattr(self, '_initialized', False):
+            return
+        self._initialized = True
+
         self.format_open = 'Json (*.json)'
         self.document: str | None = None # ссылка на документ json
         self.all_list_admin_value = []
@@ -38,10 +42,14 @@ class ExcelDocument(Settings):
     _instance = None
     def __new__(class_, *args, **kwargs):
         if not isinstance(class_._instance, class_):
-            class_._instance = object.__new__(class_, *args, **kwargs)
+            class_._instance = object.__new__(class_)
         return class_._instance
     
     def __init__(self) -> None:
+        if getattr(self, '_initialized', False):
+            return
+        self._initialized = True
+
         self.format_open = 'Excel (*.xlsx);;Excel (*.xls)'
         self.document: str| None = None # ссылка на документ xlsx
         
@@ -79,7 +87,7 @@ class ExcelDocument(Settings):
         start_number_string = self.start_row
         for row in self.data_frame[column_name]:
             row_to_line = []
-            if type(row) == str:
+            if isinstance(row, str):
                 row_to_line.append(start_number_string)
                 row_to_line.append(row)
                 data_rows.append(row_to_line)
@@ -91,7 +99,7 @@ class ExcelDocument(Settings):
         data_rows = {}
         start_number_string = self.start_row
         for row in self.data_frame[column_name]:
-            if type(row) == str:
+            if isinstance(row, str):
                 data_rows[start_number_string] = row
             start_number_string += 1
         return data_rows
@@ -100,11 +108,12 @@ class ExcelDocument(Settings):
     def get_cell_obj(self, cell_letter, cell_number) -> object:
         call = f'{cell_letter}{cell_number}'
         return self.work_sheet[call]
-    
-    # сохраняем результат в ячейку
-    def save_result_in_cell(self, cell_object: object, text: str) -> object:
-        self.work_sheet[cell_object.coordinate] = text
-        return self.work_sheet
+
+    @staticmethod
+    def write_result_in_cell(cell_object: object, text: str) -> object:
+        target_sheet = cell_object.parent
+        target_sheet[cell_object.coordinate] = text
+        return target_sheet
 
     def get_row_data(self, number_string):
         data = []
@@ -145,6 +154,7 @@ class ExcelDocument(Settings):
         _path_save = os.path.join(path_save, file_name)
         wb.save(_path_save)
         print("file saved:", _path_save)
+
 
 class ReadExcelDocument:
     symbol_arrow = '👉'
@@ -325,6 +335,7 @@ class ReadExcelDocument:
 
             yield data
 
+
 class WriteExcelDocument:
     symbols_1 = [";;", ";;;", ";;;;", "; ;", ";  ;", ";   ;"]
     symbols_2 = ["  ", "   ", "    ", "\t", "\r\n", "\n", "\r"]
@@ -343,12 +354,10 @@ class WriteExcelDocument:
     # заменяем символы в строке
     def replace_symbol(self, text: str) -> str:
         for symbol in self.symbols_1:
-            text.replace(symbol, ';')
-
+            text = text.replace(symbol, ';')
         for symbol in self.symbols_2:
-            text.replace(symbol, ' ')
-
-        text.strip()
+            text = text.replace(symbol, ' ')
+        text = text.strip()
 
         if len(text) > 0:
             if text[0] == ';':
@@ -383,9 +392,9 @@ class WriteExcelDocument:
             clear = self.delete_symbol_enter(cell_object_value)
             clear_txt = self.replace_symbol(clear)
             upper_first_letter = self.upper_first_letter_in_text(clear_txt)
-            document.save_result_in_cell(cell_object, upper_first_letter)
+            document.write_result_in_cell(cell_object, upper_first_letter)
         else:
-            document.save_result_in_cell(cell_object, None)
+            document.write_result_in_cell(cell_object, None)
         return document
 
     # добавление фрагмента текста в конец в ячейки
@@ -405,7 +414,7 @@ class WriteExcelDocument:
                 # if position == 'all' and cell_object_value is not None:
                 #     cell_object_value = f'{text}{cell_object_value}{text}'
                 
-            document.save_result_in_cell(cell, cell_object_value)
+            document.write_result_in_cell(cell, cell_object_value)
 
         return document
 
@@ -424,7 +433,7 @@ class WriteExcelDocument:
                 self.add_text(document, cell_past_obj, text=cell_move_obj.value)
 
                 # очищаем ячейку откуда копируем текст
-                document.save_result_in_cell(cell_move_obj, None)
+                document.write_result_in_cell(cell_move_obj, None)
                 
                 yield self.out_text(number_string, save_to_return_text)
                 result += 1
@@ -443,6 +452,49 @@ class WriteExcelDocument:
 
         yield f"✅ Текст добавлен в колонку [ {cell} ] - {result} \n"
 
+    # перемещаем текст поиска с ячейки и добавляем в другую ячейку (удаляем из исходной)
+    def move_search_text_to_other_cell(self, document, cell_move: str, cell_past: str, search: str):
+        result = 0
+        list_search_text_lower = [word.lower() for word in search.split(';')]
+        print("[+] SEARCH TEXT", list_search_text_lower)
+
+        for number_string in document.list_row:
+            cell_move_obj = document.get_cell_obj(cell_move, number_string)
+            cell_past_obj = document.get_cell_obj(cell_past, number_string)
+
+            cell_move_text = cell_move_obj.value
+            cell_past_text = cell_past_obj.value
+
+            if cell_move_text is not None:
+                # разбиваем содержимое ячейки на отдельные значения
+                segments = [s.strip() for s in cell_move_text.split(';') if s.strip()]
+
+                matched_fragments = []
+                remaining_fragments = []
+
+                for segment in segments:
+                    segment_lower = segment.lower()
+                    if any(search_word in segment_lower for search_word in list_search_text_lower):
+                        matched_fragments.append(segment)  # именно этот фрагмент, а не весь текст
+                    else:
+                        remaining_fragments.append(segment)  # остаётся в исходной ячейке
+
+                if matched_fragments:
+                    # добавляем только совпавшие фрагменты в целевую ячейку
+                    new_parts = [cell_past_text] if cell_past_text else []
+                    new_parts.extend(matched_fragments)
+                    cell_past_text = ";".join(new_parts)
+                    document.write_result_in_cell(cell_past_obj, cell_past_text)
+
+                    # в исходной ячейке оставляем только то, что НЕ совпало
+                    new_move_text = ";".join(remaining_fragments) if remaining_fragments else None
+                    document.write_result_in_cell(cell_move_obj, new_move_text)
+
+                    yield self.out_text(number_string, cell_past_text)
+                    result += 1
+
+        yield f"✅ Текст перемещён из ячеек [ {cell_move} ] в [ {cell_past} ] - {result} строк\n"
+
     # копируем текст поиска с ячейки и добавляем в другую ячейку
     def copy_search_text_to_other_cell(self, document, cell_move: str, cell_past: str, search: str):
         result = 0
@@ -455,26 +507,28 @@ class WriteExcelDocument:
             
             cell_move_text = cell_move_obj.value
             cell_past_text = cell_past_obj.value
+
             if cell_move_text is not None:
+                matched_fragments = []
                 for search_word in list_search_text_lower:
-                    if cell_move_text.lower().find(search_word) != -1:
+                    if search_word in cell_move_text.lower():
+                        matched_fragments.append(cell_move_text)
 
-                        # save text in current cell
-                        document.save_result_in_cell(cell_move_obj, cell_move_text)
+                if matched_fragments:
+                    # исходную ячейку не трогаем — просто пересохраняем как есть
+                    # document.write_result_in_cell(cell_move_obj, cell_move_text)
 
-                        # добавление фрагмента текста в другую ячейку
-                        if cell_past_text is not None:
-                            cell_past_text = ";".join(cell_move_text)
-                        else:
-                            cell_past_text = cell_move_text
-                        document.save_result_in_cell(cell_past_obj, cell_past_text)
+                    # объединяем все совпадения, не теряя предыдущее содержимое
+                    new_parts = [cell_past_text] if cell_past_text else []
+                    new_parts.extend(matched_fragments)
+                    cell_past_text = ";".join(new_parts)
 
-                yield self.out_text(number_string, cell_past_text)
-                result += 1
+                    document.write_result_in_cell(cell_past_obj, cell_past_text)
+
+                    yield self.out_text(number_string, cell_past_text)
+                    result += 1
 
         yield f"✅ Изменено строк - {result} \n"
-
-    # вырезаем весь текст с одной ячейки и добавляем в другую
     def convert_units(self, document, cell_data: str, cell_result: str, select_unit: str):
         result = 0
         for number_string in document.list_row:
@@ -490,8 +544,8 @@ class WriteExcelDocument:
                 print("convert_text:", convert_text)
                 print("---")
                 # очищаем ячейку откуда копируем текст
-                document.save_result_in_cell(cell_data_obj, current_text)
-                document.save_result_in_cell(cell_result_obj, convert_text)
+                document.write_result_in_cell(cell_data_obj, current_text)
+                document.write_result_in_cell(cell_result_obj, convert_text)
 
                 # yield self.out_text(number_string, save_data_text)
                 yield [str(number_string), current_text, convert_text]
@@ -500,23 +554,27 @@ class WriteExcelDocument:
     # вырезаем весь текст с одной ячейки и добавляем в другую
     @staticmethod
     def copy_row_by_id(document, cell_id: str, list_id: list, path_save: str):
+        # не зависело от исходного типа элементов list_id (int/str/float и т.д.)
+        normalized_ids = {str(item) for item in list_id}
+
         data = []
         for number_string in document.list_row:
             cell_data_obj = document.get_cell_obj(cell_id, number_string)
 
-            # вырезаем данные с ячейки если она не пустая
             if cell_data_obj.value is not None:
                 current_text = str(cell_data_obj.value)
-                if current_text in list_id:
+                if current_text in normalized_ids:
                     data.append(document.get_row_data(number_string=number_string))
-                    yield [str(number_string), str(current_text)]
+                    yield [str(number_string), current_text]
 
         document.save_new_file(path_save, data)
 
     def add_data_by_id(self, document, cell_id_card: str, cell_idd_add_text: str, text: str, list_id: list):
+        normalized_ids = {str(item) for item in list_id}
+
         for number_string in document.list_row:
             cell_obj_card = document.get_cell_obj(cell_letter=cell_id_card, cell_number=number_string)
-            if str(cell_obj_card.value) in list_id:
+            if str(cell_obj_card.value) in normalized_ids:
                 cell_obj = document.get_cell_obj(cell_letter=cell_idd_add_text, cell_number=number_string)
                 self.add_text_from_position(document=document, cell=cell_obj, text=text, position='end')
                 yield f"{number_string}: {text}"
