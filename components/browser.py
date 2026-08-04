@@ -12,7 +12,6 @@ class Browser:
         self.current_directory = os.getcwd()
         self.cookie_file = os.path.join(Settings.ROOT_PATH, "source", "session.json")
         self.api_key_file = os.path.join(Settings.ROOT_PATH, "source", "api_keys.json")
-        self.visible = visible
         self.base_url_admin = 'https://my.citrus.ua'
         self.link_login = self.base_url_admin + '/ru/auth/login'
         self.link_login_email = self.base_url_admin + '/ru/auth/email'
@@ -22,7 +21,7 @@ class Browser:
         self.translates = ["Admin btn", "Deepl API", "Google page"]
         self.Translator = self.get_translater(translate)
         self.translate = translate
-        self.headless = False if self.visible else True # visible Ui interface
+        self.headless = False if visible else True # visible Ui interface
         self.pages = {}
         self.playwright = None
         self.browser = None

@@ -13,38 +13,19 @@ class WindowConvertor(QWidget):
         self.convertor = Convertor()
         self.ui = Ui_Form()
         self.ui.setupUi(self)
+        self.render_combo_box()
 
         # привязываем события | чтение документа
         self.ui.btn_start.clicked.connect(self.btn_start_work)
 
-        self.table_row_index = 1
-
-        self.replace_table_with_copyable()
-        self.render_combo_box()
-
-    def replace_table_with_copyable(self):
-        old_table = self.ui.tableWidget
-        parent = old_table.parent()
-        layout = parent.layout()
-        font = old_table.font()
-
-        # Создаём кастомную таблицу
-        new_table = CopyableTableWidget(parent)
-        new_table.verticalHeader().setVisible(False)
-        new_table.horizontalHeader().setStretchLastSection(True)
-        new_table.horizontalHeader().setSectionResizeMode(QHeaderView.Interactive)
-        new_table.setObjectName("tableWidget")
-        new_table.setFont(font)
-        new_table.setColumnCount(3)
-        new_table.setHorizontalHeaderLabels([
-            "№ строки в таблице", "Исходный текст", "Результат"
-        ])
-        # Добавляем в layout
-        layout.addWidget(new_table)
-
-        self.ui.tableWidget = new_table
-        self.setLayout(layout)
-        old_table.deleteLater()
+        self.ui.tableWidget = CopyableTableWidget.replace_table_with_copyable(
+            self.ui.tableWidget,
+            headers=["№ строки в таблице", "Исходный текст", "Результат"],
+            column_count=3,
+            row_count=5,
+            # auto_add_rows=True,
+            # auto_add_require_all_columns=False,
+        )
 
     def render_combo_box(self):
         self.ui.comboBoxUnits.clear()  # очищаем список

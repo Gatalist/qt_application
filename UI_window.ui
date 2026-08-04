@@ -303,7 +303,7 @@ border: none;</string>
 }</string>
          </property>
          <property name="currentIndex">
-          <number>7</number>
+          <number>5</number>
          </property>
          <property name="tabSpacing">
           <number>5</number>
@@ -313,8 +313,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>143</height>
+            <width>191</width>
+            <height>82</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -391,8 +391,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>266</height>
+            <width>217</width>
+            <height>226</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -540,8 +540,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>289</height>
+            <width>246</width>
+            <height>280</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -724,8 +724,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>230</height>
+            <width>189</width>
+            <height>190</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -856,8 +856,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>143</height>
+            <width>155</width>
+            <height>46</height>
            </rect>
           </property>
           <attribute name="icon">
@@ -992,6 +992,17 @@ border: none;</string>
             </widget>
            </item>
            <item>
+            <widget class="QPushButton" name="api_upload_videos">
+             <property name="text">
+              <string>Загрузить видео</string>
+             </property>
+             <property name="icon">
+              <iconset resource="source/resource.qrc">
+               <normaloff>:/icons/icons/add_w.svg</normaloff>:/icons/icons/add_w.svg</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
             <spacer name="verticalSpacer_6">
              <property name="orientation">
               <enum>Qt::Vertical</enum>
@@ -1011,8 +1022,8 @@ border: none;</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>262</width>
-            <height>143</height>
+            <width>104</width>
+            <height>78</height>
            </rect>
           </property>
           <attribute name="icon">

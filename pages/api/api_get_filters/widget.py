@@ -37,35 +37,20 @@ class WindowGetFilterData(QWidget):
         self.row = 1
 
         # Заменяем tableWidget на кастомный, чтобы работал Ctrl+C
-        self.replace_table_with_copyable()
+        self.ui.tableWidget = CopyableTableWidget.replace_table_with_copyable(
+            self.ui.tableWidget,
+            headers=["FilterGroup", "FilterName", "FilterURL"],
+            row_count=5,
+            column_count=3,
+            # auto_add_rows=True,
+            # auto_add_require_all_columns=False,
+        )
 
         self.ui.btn_request.clicked.connect(self.start_api_thread)
 
         # Храним ссылки на поток и воркер, чтобы их не удалил сборщик мусора
         self.thread = None
         self.worker = None
-
-    def replace_table_with_copyable(self):
-        old_table = self.ui.tableWidget
-        parent = old_table.parent()
-        layout = parent.layout()
-        geometry = old_table.geometry()
-        font = old_table.font()
-
-        # Создаём кастомную таблицу
-        new_table = CopyableTableWidget(parent)
-        new_table.setGeometry(geometry)
-        new_table.setObjectName("tableWidget")
-        new_table.setFont(font)
-        new_table.setColumnCount(3)
-        new_table.setHorizontalHeaderLabels([
-            "FilterGroup", "FilterName", "FilterURL"
-        ])
-        # Добавляем в layout
-        layout.addWidget(new_table)
-
-        self.ui.tableWidget = new_table
-        old_table.deleteLater()
 
     def start_api_thread(self):
         category_slug = self.ui.category_slug.text().strip()

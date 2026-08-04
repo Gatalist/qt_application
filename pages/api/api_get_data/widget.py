@@ -42,32 +42,20 @@ class WindowGetCardsData(QWidget):
 
         # Заменяем tableWidget на кастомный, чтобы работал Ctrl+C
         self.replace_table_with_copyable()
+        self.ui.tableWidget = CopyableTableWidget.replace_table_with_copyable(
+            self.ui.tableWidget,
+            headers=[
+                "ID", "Name", "Brand", "Status",
+                "Price", "Ordering", "Ordering_action",
+                "Ordering_catalog", "URL", "Image"
+            ],
+            row_count=5,
+            column_count=10,
+            # auto_add_rows=True,
+            # auto_add_require_all_columns=False,
+        )
 
         self.ui.btn_request.clicked.connect(self.get_api_data)
-
-    def replace_table_with_copyable(self):
-        old_table = self.ui.tableWidget
-        parent = old_table.parent()
-        layout = parent.layout()
-        geometry = old_table.geometry()
-        font = old_table.font()
-
-        # Создаём кастомную таблицу
-        new_table = CopyableTableWidget(parent)
-        new_table.setGeometry(geometry)
-        new_table.setObjectName("tableWidget")
-        new_table.setFont(font)
-        new_table.setColumnCount(10)
-        new_table.setHorizontalHeaderLabels([
-            "ID", "Name", "Brand", "Status", 
-            # "Price", "Ordering", "Ordering_action", 
-            # "Ordering_catalog", "URL", "Image"
-        ])
-        # Добавляем в layout
-        layout.addWidget(new_table)
-
-        self.ui.tableWidget = new_table
-        old_table.deleteLater()
 
     def get_api_data(self):
         category_slug = self.ui.category_slug.text().strip()
@@ -137,9 +125,9 @@ class WindowGetCardsData(QWidget):
             self.ui.tableWidget.setItem(row_index, 1, QTableWidgetItem(card_data['name']))
             self.ui.tableWidget.setItem(row_index, 2, QTableWidgetItem(card_data['brand']))
             self.ui.tableWidget.setItem(row_index, 3, QTableWidgetItem(card_data['status']))
-            # self.ui.tableWidget.setItem(row_index, 4, QTableWidgetItem(str(card_data['price'])))
-            # self.ui.tableWidget.setItem(row_index, 5, QTableWidgetItem(str(card_data['ordering'])))
-            # self.ui.tableWidget.setItem(row_index, 6, QTableWidgetItem(str(card_data['ordering_action'])))
-            # self.ui.tableWidget.setItem(row_index, 7, QTableWidgetItem(str(card_data['ordering_catalog'])))
-            # self.ui.tableWidget.setItem(row_index, 8, QTableWidgetItem(card_data['url']))
-            # self.ui.tableWidget.setItem(row_index, 9, QTableWidgetItem(card_data['image']))
+            self.ui.tableWidget.setItem(row_index, 4, QTableWidgetItem(str(card_data['price'])))
+            self.ui.tableWidget.setItem(row_index, 5, QTableWidgetItem(str(card_data['ordering'])))
+            self.ui.tableWidget.setItem(row_index, 6, QTableWidgetItem(str(card_data['ordering_action'])))
+            self.ui.tableWidget.setItem(row_index, 7, QTableWidgetItem(str(card_data['ordering_catalog'])))
+            self.ui.tableWidget.setItem(row_index, 8, QTableWidgetItem(card_data['url']))
+            self.ui.tableWidget.setItem(row_index, 9, QTableWidgetItem(card_data['image']))

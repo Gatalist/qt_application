@@ -35,6 +35,7 @@ from pages.api.api_get_idd.widget import WindowGetCardsID
 from pages.api.api_get_data.widget import WindowGetCardsData
 from pages.api.api_get_filters.widget import WindowGetFilterData
 from pages.api.api_update_cards.widget import WindowUpdateCards
+from pages.api.api_upload_videos.widget import WindowUploadVideo
 
 from pages.seo.speed_test.widget import WindowGetSpeedTest
 
@@ -83,6 +84,7 @@ class MainWindow(QMainWindow):
             self.ui.api_get_all: WindowGetCardsData(),
             self.ui.api_get_filters: WindowGetFilterData(),
             self.ui.api_update_cards: WindowUpdateCards(),
+            self.ui.api_upload_videos: WindowUploadVideo(),
             self.ui.btn_speed_test: WindowGetSpeedTest(),
             self.ui.crop_space: WindowCropImage(),
             self.ui.resize_image: WindowResizeImage(),

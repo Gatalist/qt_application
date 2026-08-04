@@ -98,12 +98,12 @@ class CitrusApi(WebRequester):
                 "name": item.get('name'),
                 "brand": item.get('brand').get('name') if item.get('brand') else "",
                 "status": item.get('status').get('description') if item.get('status') else "",
-                # "price": item.get('prices').get('price') if item.get('prices') else "",
-                # "ordering": item.get('ordering'),
-                # "ordering_action": item.get('ordering_action'),
-                # "ordering_catalog": item.get('ordering_catalog'),
-                # "url": self.domain + item.get('url'),
-                # "image": item.get('preview').get('src') if item.get('preview') else "",
+                "price": item.get('prices').get('price') if item.get('prices') else "",
+                "ordering": item.get('ordering'),
+                "ordering_action": item.get('ordering_action'),
+                "ordering_catalog": item.get('ordering_catalog'),
+                "url": self.domain + item.get('url'),
+                "image": item.get('preview').get('src') if item.get('preview') else "",
             }
             data_list.append(card)
 

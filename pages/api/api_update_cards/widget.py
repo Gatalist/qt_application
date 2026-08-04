@@ -3,7 +3,6 @@ from PyQt5.QtWidgets import QWidget
 from PyQt5.QtCore import QThread
 from PyQt5.QtCore import QObject, pyqtSignal
 from .UI_window import Ui_Form
-# from components.browser import Browser
 
 
 class UpdateCardsWorker(QObject):
@@ -18,22 +17,32 @@ class UpdateCardsWorker(QObject):
         # Создаем экземпляр браузера прямо ВНУТРИ потока
         # ВАЖНО: Browser должен быть доступен для импорта или инициализации здесь
         from components.browser import Browser 
-        browser_instance = Browser() 
+        browser_instance = Browser(visible=False)
+
+        headers = {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "X-Requested-With": "XMLHttpRequest"  # Часто требуется для AJAX API
+        }
 
         try:
             page_name = "update_cards"
             browser_instance.create_page(page_name)
             browser_instance.login(page_name=page_name)
 
+            page = browser_instance.pages[page_name]
+
             for card_id in self.card_ids: # Теперь self.card_ids — это точно список
                 new_url = f"{browser_instance.base_url_admin}/contento/content/tovar/card/{card_id}/index/update"
-                result = browser_instance.open_url(page_name=page_name, link=new_url)
-                print("result:", result)
-                # print("status_code:", result.status, type(result.status))
-                # if result.status == 200:
+                print(f"{new_url=}")
+                response = page.request.get(
+                    new_url,
+                    headers=headers
+                )
+                print(f"{response=}")
+
                 self.log.emit(f"{card_id} = ✅ updated")
-                # else:
-                #     self.log.emit(f"{card_id} = ⚠️ error (status: {result.status})")
+
                 sleep(2)
 
         except Exception as e:

@@ -26,26 +26,14 @@ class WindowTranslateCard(QWidget):
         self.timer.start()
 
         # Создаём кастомную таблицу
-        old_table = self.ui.tableWidget
-        parent = old_table.parent()
-        layout = parent.layout()
-        font = old_table.font()
-
-        new_table = CopyableTableWidget(parent)
-        new_table.horizontalHeader().setStretchLastSection(True)
-        new_table.horizontalHeader().setSectionResizeMode(QHeaderView.Interactive)
-
-        new_table.setObjectName("tableWidget")
-        new_table.setFont(font)
-        new_table.setColumnCount(3)
-        new_table.setHorizontalHeaderLabels([
-            "ID", "RU", "UK"
-        ])
-        # Добавляем в layout
-        layout.addWidget(new_table)
-        self.ui.tableWidget = new_table
-        self.setLayout(layout)
-        old_table.deleteLater()
+        self.ui.tableWidget = CopyableTableWidget.replace_table_with_copyable(
+            self.ui.tableWidget,
+            headers=["ID", "RU", "UK"],
+            column_count=3,
+            row_count=5,
+            # auto_add_rows=True,
+            # auto_add_require_all_columns=False,
+        )
 
     def check_queue(self):
         while True:

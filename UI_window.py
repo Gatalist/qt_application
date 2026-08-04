@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'UI_window.ui'
+# Form implementation generated from reading ui file '.\UI_window.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -143,7 +143,7 @@ class Ui_MainWindow(object):
 "}")
         self.toolBox.setObjectName("toolBox")
         self.home = QtWidgets.QWidget()
-        self.home.setGeometry(QtCore.QRect(0, 0, 262, 143))
+        self.home.setGeometry(QtCore.QRect(0, 0, 191, 82))
         self.home.setObjectName("home")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.home)
         self.verticalLayout_4.setContentsMargins(5, 5, 5, 5)
@@ -170,7 +170,7 @@ class Ui_MainWindow(object):
         icon5.addPixmap(QtGui.QPixmap(":/icons/icons/home_w.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toolBox.addItem(self.home, icon5, "")
         self.excel_read = QtWidgets.QWidget()
-        self.excel_read.setGeometry(QtCore.QRect(0, 0, 262, 266))
+        self.excel_read.setGeometry(QtCore.QRect(0, 0, 217, 226))
         self.excel_read.setObjectName("excel_read")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.excel_read)
         self.verticalLayout_3.setContentsMargins(5, 5, 5, 5)
@@ -230,7 +230,7 @@ class Ui_MainWindow(object):
         icon12.addPixmap(QtGui.QPixmap(":/icons/icons/feed_w.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toolBox.addItem(self.excel_read, icon12, "")
         self.excel_write = QtWidgets.QWidget()
-        self.excel_write.setGeometry(QtCore.QRect(0, 0, 262, 289))
+        self.excel_write.setGeometry(QtCore.QRect(0, 0, 246, 280))
         self.excel_write.setMinimumSize(QtCore.QSize(0, 280))
         self.excel_write.setObjectName("excel_write")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.excel_write)
@@ -305,7 +305,7 @@ class Ui_MainWindow(object):
         icon19.addPixmap(QtGui.QPixmap(":/icons/icons/edit_w.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toolBox.addItem(self.excel_write, icon19, "")
         self.admin = QtWidgets.QWidget()
-        self.admin.setGeometry(QtCore.QRect(0, 0, 262, 230))
+        self.admin.setGeometry(QtCore.QRect(0, 0, 189, 190))
         self.admin.setObjectName("admin")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.admin)
         self.verticalLayout.setContentsMargins(5, 5, 5, 5)
@@ -355,7 +355,7 @@ class Ui_MainWindow(object):
         icon24.addPixmap(QtGui.QPixmap(":/icons/icons/switch_access_w.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toolBox.addItem(self.admin, icon24, "")
         self.seo = QtWidgets.QWidget()
-        self.seo.setGeometry(QtCore.QRect(0, 0, 262, 143))
+        self.seo.setGeometry(QtCore.QRect(0, 0, 155, 46))
         self.seo.setObjectName("seo")
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.seo)
         self.verticalLayout_5.setContentsMargins(5, 5, 5, 5)
@@ -403,13 +403,17 @@ class Ui_MainWindow(object):
         self.api_update_cards.setIcon(icon16)
         self.api_update_cards.setObjectName("api_update_cards")
         self.verticalLayout_6.addWidget(self.api_update_cards)
+        self.api_upload_videos = QtWidgets.QPushButton(self.page)
+        self.api_upload_videos.setIcon(icon18)
+        self.api_upload_videos.setObjectName("api_upload_videos")
+        self.verticalLayout_6.addWidget(self.api_upload_videos)
         spacerItem7 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout_6.addItem(spacerItem7)
         icon30 = QtGui.QIcon()
         icon30.addPixmap(QtGui.QPixmap(":/icons/icons/api.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toolBox.addItem(self.page, icon30, "")
         self.parser = QtWidgets.QWidget()
-        self.parser.setGeometry(QtCore.QRect(0, 0, 262, 143))
+        self.parser.setGeometry(QtCore.QRect(0, 0, 104, 78))
         self.parser.setObjectName("parser")
         self.gridLayout_4 = QtWidgets.QGridLayout(self.parser)
         self.gridLayout_4.setContentsMargins(5, 5, 5, 5)
@@ -452,7 +456,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(-1)
-        self.toolBox.setCurrentIndex(7)
+        self.toolBox.setCurrentIndex(5)
         self.toolBox.layout().setSpacing(5)
         self.btn_hide_menu.toggled['bool'].connect(self.widget_menu.setHidden) # type: ignore
         self.btn_hide_menu.toggled['bool'].connect(self.widget_menu.setHidden) # type: ignore
@@ -497,6 +501,7 @@ class Ui_MainWindow(object):
         self.api_get_idd.setText(_translate("MainWindow", "Получить idd"))
         self.api_get_filters.setText(_translate("MainWindow", "Получить фильтры"))
         self.api_update_cards.setText(_translate("MainWindow", "Обновить карточки"))
+        self.api_upload_videos.setText(_translate("MainWindow", "Загрузить видео"))
         self.toolBox.setItemText(self.toolBox.indexOf(self.page), _translate("MainWindow", "API"))
         self.pushButton_3.setText(_translate("MainWindow", "PushButton"))
         self.pushButton_4.setText(_translate("MainWindow", "PushButton"))

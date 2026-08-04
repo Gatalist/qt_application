@@ -29,33 +29,13 @@ class WindowYoutube(QWidget):
         self.ui.btn_select.clicked.connect(self.select_folder)
         self.ui.btn_download.clicked.connect(self.download_video)
 
-        self.replace_table_with_copyable()
-
-        # self.ui.tableWidget.horizontalHeader().setStretchLastSection(True)
-        # self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Interactive)
-
-    def replace_table_with_copyable(self):
-        old_table = self.ui.tableWidget
-        parent = old_table.parent()
-        layout = parent.layout()
-        font = old_table.font()
-
-        # Создаём кастомную таблицу
-        new_table = CopyableTableWidget(parent)
-        new_table.horizontalHeader().setStretchLastSection(True)
-        new_table.horizontalHeader().setSectionResizeMode(QHeaderView.Interactive)
-        new_table.setObjectName("tableWidget")
-        new_table.setFont(font)
-        new_table.setColumnCount(3)
-        new_table.setHorizontalHeaderLabels([
-            "Название", "Дата", "URL"
-        ])
-        # Добавляем в layout
-        layout.addWidget(new_table)
-
-        self.ui.tableWidget = new_table
-        self.setLayout(layout)
-        old_table.deleteLater()
+        self.ui.tableWidget = CopyableTableWidget.replace_table_with_copyable(
+            self.ui.tableWidget,
+            headers=["Название", "Дата", "URL"],
+            row_count=5,
+            # auto_add_rows=True,
+            # auto_add_require_all_columns=False,
+        )
 
     # получить информацию о видео
     def get_info_video(self):
