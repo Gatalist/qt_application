@@ -41,7 +41,6 @@ class WindowGetCardsData(QWidget):
         self.citrus = CitrusApi()
 
         # Заменяем tableWidget на кастомный, чтобы работал Ctrl+C
-        self.replace_table_with_copyable()
         self.ui.tableWidget = CopyableTableWidget.replace_table_with_copyable(
             self.ui.tableWidget,
             headers=[
