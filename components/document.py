@@ -581,12 +581,17 @@ class WriteExcelDocument:
 
     # получаем карточки по колонке если в ней есть данные
     @staticmethod
-    def copy_row_is_column_data(document, cell_id: str, path_save: str):
+    def copy_row_is_column_data(document, cell_id: str, call_text: str, path_save: str):
         data = []
         for number_string in document.list_row:
-            cell_data_obj = document.get_cell_obj(cell_id, number_string)
+            cell_data_obj = document.get_cell_obj(cell_letter=cell_id, cell_number=number_string)
             if cell_data_obj.value is not None:
-                data.append(document.get_row_data(number_string=number_string))
-                yield f"{number_string}"
+                if call_text is None:
+                    data.append(document.get_row_data(number_string=number_string))
+                    yield f"{number_string}"
+                else:
+                    if call_text in str(cell_data_obj.value):
+                        data.append(document.get_row_data(number_string=number_string))
+                        yield f"{number_string}"
 
         document.save_new_file(path_save, data)

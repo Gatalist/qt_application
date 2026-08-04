@@ -2,7 +2,6 @@ from PyQt5.QtWidgets import QWidget, QFileDialog, QHeaderView, QMessageBox, QTab
 from PyQt5.QtCore import Qt
 from .UI_window import Ui_Form
 from components import excel_document, write_excel_document
-from components.copyable_table import CopyableTableWidget
 
 
 class WindowGetRowsIsColumnData(QWidget):
@@ -27,14 +26,17 @@ class WindowGetRowsIsColumnData(QWidget):
                 text="Не выбрана папка для сохранения",
                 info=""
             )
-        else:
-            cell_id = self.ui.lineEdit.text()
-            read = write_excel_document.copy_row_is_column_data(document=excel_document, cell_id=cell_id, path_save=self.folder)
-            for string in read:
-                print("return_string:", string)
-                self.ui.textEdit.append(string)
+            return
 
-            self.ui.label_finish.setText("✅ Сохранено в файл")
+        cell_id = self.ui.column.text()
+        call_text = self.ui.name.text()
+        print(f"{cell_id=}, {call_text=}")
+        read = write_excel_document.copy_row_is_column_data(document=excel_document, cell_id=cell_id, call_text=call_text, path_save=self.folder)
+        for string in read:
+            print("return_string:", string)
+            self.ui.textEdit.append(string)
+
+        self.ui.label_4.setText("✅ Сохранено в файл")
 
     # save new file
     def save_excel_file(self):

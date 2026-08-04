@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QWidget, QFileDialog, QHeaderView, QMessageBox, QTableWidgetItem
+from PyQt5.QtWidgets import QWidget, QFileDialog, QMessageBox, QTableWidgetItem
 from PyQt5.QtCore import Qt
 from .UI_window import Ui_Form
 from components import excel_document, write_excel_document
@@ -16,34 +16,16 @@ class WindowGetRowsById(QWidget):
         self.ui.btn_start.clicked.connect(self.btn_start_work)
         self.ui.btn_save_rows_xlsx.clicked.connect(self.save_excel_file)
 
-        self.table_row_index = 1
-        self.replace_table_with_copyable()
         self.folder = ''
 
-
-    def replace_table_with_copyable(self):
-        old_table = self.ui.tableWidget
-        parent = old_table.parent()
-        layout = parent.layout()
-        font = old_table.font()
-
-        # Создаём кастомную таблицу
-        new_table = CopyableTableWidget(parent)
-        new_table.verticalHeader().setVisible(False)
-        new_table.horizontalHeader().setStretchLastSection(True)
-        new_table.horizontalHeader().setSectionResizeMode(QHeaderView.Interactive)
-        new_table.setObjectName("tableWidget")
-        new_table.setFont(font)
-        new_table.setColumnCount(2)
-        new_table.setHorizontalHeaderLabels([
-            "№ строки в таблице", "IDD",
-        ])
-        # Добавляем в layout
-        layout.addWidget(new_table)
-
-        self.ui.tableWidget = new_table
-        self.setLayout(layout)
-        old_table.deleteLater()
+        self.ui.tableWidget = CopyableTableWidget.replace_table_with_copyable(
+            self.ui.tableWidget,
+            headers=["№ строки в таблице", "IDD",],
+            row_count=5,
+            column_count=2,
+            # auto_add_rows=True,
+            # auto_add_require_all_columns=False,
+        )
 
     # обработка результата - кнопка начать
     def btn_start_work(self):
