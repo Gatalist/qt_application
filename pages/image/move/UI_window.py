@@ -180,6 +180,6 @@ class Ui_Form(object):
         item.setText(_translate("Form", "Status"))
         item = self.tableWidget.horizontalHeaderItem(2)
         item.setText(_translate("Form", "Path"))
-        self.btn_start.setText(_translate("Form", "Обрезать"))
+        self.btn_start.setText(_translate("Form", "Собрать"))
         self.label_7.setText(_translate("Form", "Результат ответа"))
         self.label_path.setText(_translate("Form", "  Путь к папке"))

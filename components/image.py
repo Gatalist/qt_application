@@ -1,22 +1,20 @@
 import os
 import shutil
 from PIL import Image, ImageChops
+from queue import Queue
 
 
 class ImageManager:
     def __init__(self):
         self.format_allowed = ('.png', '.jpg', '.jpeg', '.jpeg', '.webp')
         self.format_forbidden = ('.psd',)
-        self.crop_result = []
-        self.resize_result = []
-        self.move_result = []
 
-    def crop_space(self, in_path: str, padding_space: int = 10):
+    def crop_space(self, in_path: str, padding_space: int = 10, result_queue: Queue = None):
         """
             :param in_path: "C:\Desktop\Content"
             :param padding_space: int (padding space px)
+            :param result_queue: Queue для передачи результатов
         """
-        self.crop_result = []
         output_folder = in_path + "_crop"
         os.makedirs(output_folder, exist_ok=True)  # Создаём корневую папку сразу
 
@@ -35,38 +33,50 @@ class ImageManager:
                     src_path = os.path.join(root, filename)
                     dst_path = os.path.join(save_dir, filename)
 
-                    img = Image.open(src_path).convert("RGB")
-                    bg = Image.new("RGB", img.size, (255, 255, 255))
+                    try:
+                        img = Image.open(src_path).convert("RGB")
+                        bg = Image.new("RGB", img.size, (255, 255, 255))
 
-                    diff = ImageChops.difference(img, bg)
-                    diff = Image.eval(diff, lambda x: 255 if x > 10 else 0)  # маска отличий
-                    bbox = diff.getbbox()
+                        diff = ImageChops.difference(img, bg)
+                        diff = Image.eval(diff, lambda x: 255 if x > 10 else 0)
+                        bbox = diff.getbbox()
 
-                    if bbox:
-                        left   = max(bbox[0] - padding_space, 0)
-                        upper  = max(bbox[1] - padding_space, 0)
-                        right  = min(bbox[2] + padding_space, img.width)
-                        lower  = min(bbox[3] + padding_space, img.height)
-                        cropped = img.crop((left, upper, right, lower))
-                    else:
-                        cropped = img  # если не нашли содержимого, оставляем как есть
+                        if bbox:
+                            left = max(bbox[0] - padding_space, 0)
+                            upper = max(bbox[1] - padding_space, 0)
+                            right = min(bbox[2] + padding_space, img.width)
+                            lower = min(bbox[3] + padding_space, img.height)
+                            cropped = img.crop((left, upper, right, lower))
+                        else:
+                            cropped = img
 
-                    cropped.save(dst_path)
-                    print(f"✅ {dst_path}")
-                    image_data = {
-                        "name": filename,
-                        "status": "✅",
-                        "path": dst_path
-                    }
-                    self.crop_result.append(image_data)
+                        cropped.save(dst_path)
+                        print(f"✅ {dst_path}")
 
-        return self.crop_result
+                        image_data = {
+                            "name": filename,
+                            "status": "✅",
+                            "path": dst_path
+                        }
 
-    def move_for_one_folder(self, in_path: str):
+                        # Отправляем результат в очередь
+                        if result_queue:
+                            result_queue.put(image_data)
+
+                    except Exception as e:
+                        print(f"❌ Ошибка при обработке {filename}: {e}")
+                        if result_queue:
+                            result_queue.put({
+                                "name": filename,
+                                "status": "❌ Ошибка",
+                                "path": dst_path
+                            })
+
+    def move_for_one_folder(self, in_path: str, result_queue: Queue = None):
         """
             :param in_path: "C:\Desktop\Content"
+            :param result_queue: Queue для передачи результатов
         """
-        self.move_result = []
         output_folder = in_path + "_new"
 
         # Создаём новую папку, если её нет
@@ -83,7 +93,6 @@ class ImageManager:
                 new_path = os.path.join(output_folder, file)
 
                 base_name, ext = os.path.splitext(file)
-                # base_name = self.return_text_part(text=base_name, split_symbol="_", return_part=1)
 
                 # Если файл с таким именем уже существует — переименуем
                 if os.path.exists(new_path):
@@ -95,16 +104,20 @@ class ImageManager:
                         count += 1
                     base_name = new_name
 
-                self.move_result.append({
+                image_data = {
                     "name": base_name,
                     "path": new_path,
-                    "status": "→"
-                })
+                    "status": "✅"
+                }
+
                 print("Копирую:", file_path, "→", new_path)
                 shutil.copy2(file_path, new_path)
 
+                # Отправляем результат в очередь
+                if result_queue:
+                    result_queue.put(image_data)
+
         print("\nГотово!")
-        return self.move_result
 
     @staticmethod
     def return_text_part(text: str, split_symbol: str = "_", return_part: int = 0):
@@ -113,8 +126,7 @@ class ImageManager:
             text = _split[return_part]
         return text
 
-    def resize_image(self, in_path: str, max_width: int = 2500, quality=90, safe_format="webp"):
-        self.resize_result = []
+    def resize_image(self, in_path: str, max_width: int = 2500, quality=90, safe_format="webp", result_queue: Queue = None):
         output_folder = in_path + "_resize"
         os.makedirs(output_folder, exist_ok=True)
 
@@ -166,10 +178,12 @@ class ImageManager:
                     # 3. Сохранение
                     current_img.save(output_path, save_format, quality=quality)
                     image_data["status"] = f"{status_msg} ({save_format})"
-                    print(f"✅ {status_msg}")
+                    print(status_msg)
             except Exception as e:
-                print(f"Ошибка при обработке {filename}: {e}")
                 image_data["status"] = "❌ Ошибка"
+                print(f"{image_data['status']} при обработке {filename}: {e}")
 
-            self.resize_result.append(image_data)
-        return self.resize_result
+            # Отправляем результат в очередь
+            if result_queue:
+                result_queue.put(image_data)
+        print("\nГотово!")

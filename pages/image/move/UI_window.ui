@@ -141,7 +141,7 @@
 </string>
         </property>
         <property name="text">
-         <string>Обрезать</string>
+         <string>Собрать</string>
         </property>
         <property name="icon">
          <iconset resource="../../../source/resource.qrc">

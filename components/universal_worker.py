@@ -4,18 +4,18 @@ class UniversalWorker(QThread):
     """
     Универсальный воркер для выполнения любой функции в отдельном потоке.
     """
-    finished = pyqtSignal(list)  # Передает результат выполнения функции
+    finished = pyqtSignal()  # Передает результат выполнения функции
     error = pyqtSignal(str)      # Передает текст ошибки
 
-    def __init__(self, fn, **kwargs):
+    def __init__(self, fn, *args, **kwargs):
         super().__init__()
         self.fn = fn
+        self.args = args
         self.kwargs = kwargs
 
     def run(self):
         try:
-            # Выполняем переданную функцию с любыми аргументами
-            result = self.fn(**self.kwargs)
-            self.finished.emit(result)
+            self.fn(*self.args, **self.kwargs)
+            self.finished.emit()  # без аргументов
         except Exception as e:
             self.error.emit(str(e))
