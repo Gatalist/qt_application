@@ -18,10 +18,16 @@ class ImageManager:
         """
         self.crop_result = []
         output_folder = in_path + "_crop"
+        os.makedirs(output_folder, exist_ok=True)  # Создаём корневую папку сразу
 
         for root, _, files in os.walk(in_path):
             rel_path = os.path.relpath(root, in_path)
-            save_dir = os.path.join(output_folder, rel_path)
+
+            if rel_path == '.':
+                save_dir = output_folder
+            else:
+                save_dir = os.path.join(output_folder, rel_path)
+
             os.makedirs(save_dir, exist_ok=True)
 
             for filename in files:
@@ -130,7 +136,7 @@ class ImageManager:
             output_path = os.path.join(output_folder, new_filename)
 
             image_data = {
-                "name": new_filename,
+                "name": f"{name}{ext}",
                 "path": output_path
             }
 
@@ -160,7 +166,7 @@ class ImageManager:
                     # 3. Сохранение
                     current_img.save(output_path, save_format, quality=quality)
                     image_data["status"] = f"{status_msg} ({save_format})"
-
+                    print(f"✅ {status_msg}")
             except Exception as e:
                 print(f"Ошибка при обработке {filename}: {e}")
                 image_data["status"] = "❌ Ошибка"

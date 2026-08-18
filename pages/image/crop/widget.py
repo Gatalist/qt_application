@@ -16,30 +16,16 @@ class WindowCropImage(QWidget):
         self.worker = None  # Для хранения ссылки на поток
         self.thread = None
 
-        # Заменяем tableWidget на кастомный, чтобы работал Ctrl+C
-        self.replace_table_with_copyable()
-
         self.ui.btn_start.clicked.connect(self.start_crop_process)
 
-    def replace_table_with_copyable(self):
-        old_table = self.ui.tableWidget
-        parent = old_table.parent()
-        layout = parent.layout()
-        geometry = old_table.geometry()
-        font = old_table.font()
-
-        # Создаём кастомную таблицу
-        new_table = CopyableTableWidget(parent)
-        new_table.setGeometry(geometry)
-        new_table.setObjectName("tableWidget")
-        new_table.setFont(font)
-        new_table.setColumnCount(3)
-        new_table.setHorizontalHeaderLabels(["Name","Status", "Path"])
-        # Добавляем в layout
-        layout.addWidget(new_table)
-
-        self.ui.tableWidget = new_table
-        old_table.deleteLater()
+        self.ui.tableWidget = CopyableTableWidget.replace_table_with_copyable(
+            self.ui.tableWidget,
+            headers=["Name", "Status", "Path"],
+            column_count=3,
+            row_count=5,
+            # auto_add_rows=True,
+            # auto_add_require_all_columns=False,
+        )
 
     def start_crop_process(self):
         path_folder = self.ui.str_path.text()
