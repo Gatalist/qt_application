@@ -4,8 +4,8 @@ from .parser import WebRequester
 
 class CitrusApi(WebRequester):
     def __init__(self):
-        self.domain_api = "https://api.ctrs.com.ua"
-        self.domain = "https://www.ctrs.com.ua"
+        self.domain_api = "https://api.citrus.ua"
+        self.domain = "https://citrus.ua"
         self.base_citrus_api_url = f'{self.domain_api}/router?with_meta=1&l=uk&url='
         self.category_cards = None
         self.cards_id = []
@@ -18,17 +18,17 @@ class CitrusApi(WebRequester):
         for page in range(page_start, page_end + 1):
             url = f'{self.base_citrus_api_url}{category_slug}page_{page}/'
             print(f"[ {page_start} / {page_end} ] : {url}")
+        
+            page_data = self.request_data(url=url, headers=self.get_headers())
+            # request_status = page_data.status_code
 
-            page_data = self.request_data(url)
-            request_status = page_data.status_code
-
-            # print("request:", page_data)
+            print("request:", page_data)
             _json_data = self.get_response_json(page_data)
             # print("_json_data:", _json_data)
-            if request_status == 200 and _json_data:
+            if not 'error' in _json_data:
                 data = _json_data.get("data")
-                if data.get("status_code") == 301:
-                    break
+                #if data.get("status_code") == 301:
+                 #   break
                 facet_object = data.get("facetObject")
                 items = facet_object.get("items")
                 card_list.extend(items)
@@ -48,16 +48,16 @@ class CitrusApi(WebRequester):
             url = f'{self.base_citrus_api_url}{category_slug}page_{page_start}/'
             print(f"[ {page_start} / {page_end} ] : {url}")
 
-            page_data = self.request_data(url)
-            request_status = page_data.status_code
+            page_data = self.request_data(url=url, headers=self.get_headers())
+            # request_status = page_data.status_code
 
-            # print("request:", page_data)
+            print("request:", page_data)
             _json_data = self.get_response_json(page_data)
             # print("_json_data:", _json_data)
-            if request_status == 200 and _json_data:
+            if not 'error' in _json_data:
                 data = _json_data.get("data")
-                if data.get("status_code") == 301:
-                    break
+                #if data.get("status_code") == 301:
+                #   break
                 facet_object = data.get("facetObject")
                 items = facet_object.get("items")
                 card_list.extend(items)

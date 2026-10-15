@@ -10,32 +10,40 @@ class WebRequester:
     def get_user_agent() -> dict:
         """Получение рандомный User-Agent"""
         return {'User-Agent': UserAgent().random}
+    
+    @staticmethod    
+    def get_headers() -> dict:
+        return {
+            "User-Agent": UserAgent().random,
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Language": "uk-UA,uk;q=0.9,en;q=0.8",
+        }
 
     def request_data(self, url: str, headers: dict = None):
-        """Получаем данные с ответа сервера"""
+        """Получаем ответ от сервера"""
         try:
-            response = requests.get(url, headers=headers, timeout=self.timeout)
-            if hasattr(response, 'status_code'):
-                if response.status_code == 200:
-                    print("response status:", response.status_code)
-                    return response
-            print("response status:", "Bad response -_-")
-            return {}
+            response = requests.get(
+                url,
+                headers=headers,
+                timeout=self.timeout,
+                allow_redirects=True
+            )
 
-        except requests.ConnectionError as conn_err:
-            raise ConnectionError(f"Ошибка подключения")
+            print("response status:", response.status_code)
+            print("final url:", response.url)
+
+            response.raise_for_status()
+            return response
 
         except requests.Timeout:
             raise TimeoutError(f"Таймаут при подключении к {url}")
 
-        except requests.exceptions.HTTPError as http_err:
-            raise ConnectionError(f"HTTP ошибка")
-
-        except requests.exceptions.RequestException as req_err:
-            raise ConnectionError(f"Ошибка запроса")
+        except requests.exceptions.RequestException as err:
+            raise ConnectionError(f"Ошибка запроса: {err}")
 
     @staticmethod
     def get_response_json(response: requests.Response) -> dict:
-        if response:
+        try:
             return response.json()
-        return {'error': "error response data"}
+        except Exception as err:
+            return {'error': "error response data"}
