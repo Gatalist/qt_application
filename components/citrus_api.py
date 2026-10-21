@@ -125,7 +125,7 @@ class CitrusApi(WebRequester):
         url = f'{self.base_citrus_api_url}{category_slug}'
         print(url)
 
-        page_data = self.request_data(url)
+        page_data = self.request_data(url=url, headers=self.get_headers())
         _json_data = self.get_response_json(page_data)
         print("_json_data:", _json_data)
         if _json_data:
